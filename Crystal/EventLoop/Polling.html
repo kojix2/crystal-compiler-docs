@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::EventLoop::Polling - Crystal 1.15.0-dev</title>
+  <title>Crystal::EventLoop::Polling - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7098,14 +7098,14 @@ before suspending the fiber, then after resume it will raise
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L2" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L2" target="_blank">
         crystal/event_loop/polling.cr:2
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L58" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L58" target="_blank">
         crystal/event_loop/polling.cr:58
       </a>
     
@@ -7210,20 +7210,6 @@ before suspending the fiber, then after resume it will raise
       </li>
     
       <li class="entry-summary">
-        <a href="#remove%28file_descriptor%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="signature"><strong>#remove</strong>(file_descriptor : System::FileDescriptor) : Nil</a>
-        
-          <div class="summary"><p>Removes the file descriptor from the event loop.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#remove%28socket%3A%3A%3ASocket%29%3ANil-instance-method" class="signature"><strong>#remove</strong>(socket : ::Socket) : Nil</a>
-        
-          <div class="summary"><p>Removes the socket from the event loop.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
         <a href="#run%28blocking%3ABool%29%3ABool-instance-method" class="signature"><strong>#run</strong>(blocking : Bool) : Bool</a>
         
           <div class="summary"><p><span class="flag purple">NOTE</span>  thread unsafe</p></div>
@@ -7306,9 +7292,19 @@ before suspending the fiber, then after resume it will raise
   <h3>Class methods inherited from class <code><a href="../../Crystal/EventLoop.html">Crystal::EventLoop</a></code></h3>
   
   
+    <a href="../../Crystal/EventLoop.html#backend_class-class-method" class="tooltip">
+      <span>backend_class</span>
+    backend_class</a>, 
+    
+  
     <a href="../../Crystal/EventLoop.html#current%3F%3Aself%7CNil-class-method" class="tooltip">
       <span>current? : <span class="k">self</span> | Nil</span>
-    current?</a>
+    current?</a>, 
+    
+  
+    <a href="../../Crystal/EventLoop.html#remove%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-class-method" class="tooltip">
+      <span>remove(file_descriptor : Crystal::System::FileDescriptor) : Nil<br/>remove(socket : ::Socket) : Nil</span>
+    remove</a>
     
   
 
@@ -7347,11 +7343,6 @@ before suspending the fiber, then after resume it will raise
     receive_from</a>, 
     
   
-    <a href="../../Crystal/EventLoop/Socket.html#remove%28socket%3A%3A%3ASocket%29%3ANil-instance-method" class="tooltip">
-      <span>remove(socket : ::Socket) : Nil</span>
-    remove</a>, 
-    
-  
     <a href="../../Crystal/EventLoop/Socket.html#send_to%28socket%3A%3A%3ASocket%2Cslice%3ABytes%2Caddress%3A%3A%3ASocket%3A%3AAddress%29%3AInt32-instance-method" class="tooltip">
       <span>send_to(socket : ::Socket, slice : Bytes, address : ::Socket::Address) : Int32</span>
     send_to</a>, 
@@ -7387,11 +7378,6 @@ before suspending the fiber, then after resume it will raise
     <a href="../../Crystal/EventLoop/FileDescriptor.html#read%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%2Cslice%3ABytes%29%3AInt32-instance-method" class="tooltip">
       <span>read(file_descriptor : Crystal::System::FileDescriptor, slice : Bytes) : Int32</span>
     read</a>, 
-    
-  
-    <a href="../../Crystal/EventLoop/FileDescriptor.html#remove%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="tooltip">
-      <span>remove(file_descriptor : Crystal::System::FileDescriptor) : Nil</span>
-    remove</a>, 
     
   
     <a href="../../Crystal/EventLoop/FileDescriptor.html#write%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%2Cslice%3ABytes%29%3AInt32-instance-method" class="tooltip">
@@ -7807,7 +7793,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L185" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L185" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7828,7 +7814,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L108" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7850,7 +7836,7 @@ event loop, which would prevent closing file descriptors for example.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L104" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L104" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7875,7 +7861,7 @@ event loop, which would prevent closing file descriptors for example.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L163" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7900,7 +7886,7 @@ event loop, which would prevent closing file descriptors for example.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L266" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L266" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7928,7 +7914,7 @@ raising it as an exception if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L218" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7953,7 +7939,7 @@ raising it as an exception if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L125" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L125" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7978,7 +7964,7 @@ raising it as an exception if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8007,7 +7993,7 @@ Returns 0 when EOF is reached.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L135" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8037,7 +8023,7 @@ Returns 0 when the socket is closed and no data available.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L173" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L173" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8067,65 +8053,7 @@ and the source address.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L242" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="remove(file_descriptor:System::FileDescriptor):Nil-instance-method">
-      <div class="signature">
-        
-        def <strong>remove</strong>(file_descriptor : System::FileDescriptor) : <a href="../../Nil.html">Nil</a>
-
-        <a class="method-permalink" href="#remove%28file_descriptor%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-            <div class="doc-inherited">
-              Description copied from module <a href="../../Crystal/EventLoop/FileDescriptor.html">Crystal::EventLoop::FileDescriptor</a>
-            </div>
-          
-          <p>Removes the file descriptor from the event loop. Can be used to free up
-memory resources associated with the file descriptor, as well as removing
-the file descriptor from kernel data structures.</p>
-<p>Called by <code><a href="../../IO/FileDescriptor.html#finalize-instance-method">::IO::FileDescriptor#finalize</a></code> before closing the file
-descriptor. Errors shall be silently ignored.</p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L167" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="remove(socket:::Socket):Nil-instance-method">
-      <div class="signature">
-        
-        def <strong>remove</strong>(socket : <a href="../../Socket.html">::Socket</a>) : <a href="../../Nil.html">Nil</a>
-
-        <a class="method-permalink" href="#remove%28socket%3A%3A%3ASocket%29%3ANil-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-            <div class="doc-inherited">
-              Description copied from module <a href="../../Crystal/EventLoop/Socket.html">Crystal::EventLoop::Socket</a>
-            </div>
-          
-          <p>Removes the socket from the event loop. Can be used to free up memory
-resources associated with the socket, as well as removing the socket from
-kernel data structures.</p>
-<p>Called by <code><a href="../../Socket.html#finalize-instance-method">::Socket#finalize</a></code> before closing the socket. Errors shall be
-silently ignored.</p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L270" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8146,7 +8074,7 @@ silently ignored.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L116" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8175,7 +8103,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L236" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L236" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8203,7 +8131,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L149" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L149" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8232,7 +8160,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/polling.cr#L179" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/polling.cr#L179" target="_blank">View source</a>]
         
       </div>
     </div>

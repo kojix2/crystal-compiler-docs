@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::EventLoop - Crystal 1.15.0-dev</title>
+  <title>Crystal::EventLoop - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7069,28 +7069,28 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L1" target="_blank">
         crystal/event_loop.cr:1
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L74" target="_blank">
-        crystal/event_loop.cr:74
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L78" target="_blank">
+        crystal/event_loop.cr:78
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/file_descriptor.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/file_descriptor.cr#L1" target="_blank">
         crystal/event_loop/file_descriptor.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop/socket.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/socket.cr#L5" target="_blank">
         crystal/event_loop/socket.cr
       </a>
     
@@ -7138,7 +7138,26 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
+        <a href="#backend_class-class-method" class="signature"><strong>.backend_class</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#current%3F%3Aself%7CNil-class-method" class="signature"><strong>.current?</strong> : <span class="k">self</span> | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#remove%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-class-method" class="signature"><strong>.remove</strong>(file_descriptor : Crystal::System::FileDescriptor) : Nil</a>
+        
+          <div class="summary"><p>Removes the file descriptor from the event loop.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#remove%28socket%3A%3A%3ASocket%29%3ANil-class-method" class="signature"><strong>.remove</strong>(socket : ::Socket) : Nil</a>
+        
+          <div class="summary"><p>Removes the socket from the event loop.</p></div>
         
       </li>
     
@@ -7222,11 +7241,6 @@
     receive_from</a>, 
     
   
-    <a href="../Crystal/EventLoop/Socket.html#remove%28socket%3A%3A%3ASocket%29%3ANil-instance-method" class="tooltip">
-      <span>remove(socket : ::Socket) : Nil</span>
-    remove</a>, 
-    
-  
     <a href="../Crystal/EventLoop/Socket.html#send_to%28socket%3A%3A%3ASocket%2Cslice%3ABytes%2Caddress%3A%3A%3ASocket%3A%3AAddress%29%3AInt32-instance-method" class="tooltip">
       <span>send_to(socket : ::Socket, slice : Bytes, address : ::Socket::Address) : Int32</span>
     send_to</a>, 
@@ -7262,11 +7276,6 @@
     <a href="../Crystal/EventLoop/FileDescriptor.html#read%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%2Cslice%3ABytes%29%3AInt32-instance-method" class="tooltip">
       <span>read(file_descriptor : Crystal::System::FileDescriptor, slice : Bytes) : Int32</span>
     read</a>, 
-    
-  
-    <a href="../Crystal/EventLoop/FileDescriptor.html#remove%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="tooltip">
-      <span>remove(file_descriptor : Crystal::System::FileDescriptor) : Nil</span>
-    remove</a>, 
     
   
     <a href="../Crystal/EventLoop/FileDescriptor.html#write%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%2Cslice%3ABytes%29%3AInt32-instance-method" class="tooltip">
@@ -7669,7 +7678,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L24" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7685,7 +7694,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L25" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L29" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7702,6 +7711,22 @@
     Class Method Detail
   </h2>
   
+    <div class="entry-detail" id="backend_class-class-method">
+      <div class="signature">
+        
+        def self.<strong>backend_class</strong>
+
+        <a class="method-permalink" href="#backend_class-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="current?:self|Nil-class-method">
       <div class="signature">
         
@@ -7713,7 +7738,57 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L30" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="remove(file_descriptor:Crystal::System::FileDescriptor):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>remove</strong>(file_descriptor : Crystal::System::FileDescriptor) : <a href="../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#remove%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Removes the file descriptor from the event loop. Can be used to free up
+memory resources associated with the file descriptor, as well as removing
+the file descriptor from kernel data structures.</p>
+<p>Called by <code><a href="../IO/FileDescriptor.html#finalize-instance-method">::IO::FileDescriptor#finalize</a></code> before closing the file
+descriptor. Errors shall be silently ignored.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/file_descriptor.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="remove(socket:::Socket):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>remove</strong>(socket : <a href="../Socket.html">::Socket</a>) : <a href="../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#remove%28socket%3A%3A%3ASocket%29%3ANil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Removes the socket from the event loop. Can be used to free up memory
+resources associated with the socket, as well as removing the socket from
+kernel data structures.</p>
+<p>Called by <code><a href="../Socket.html#finalize-instance-method">::Socket#finalize</a></code> before closing the socket. Errors shall be
+silently ignored.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop/socket.cr#L73" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7748,7 +7823,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L58" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7769,7 +7844,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L61" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L65" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7797,7 +7872,7 @@ time in parallel, but this assumption may change in the future!</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L55" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L59" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7824,7 +7899,7 @@ events.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/crystal/event_loop.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/crystal/event_loop.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>

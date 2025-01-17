@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Regex::CompileOptions - Crystal 1.15.0-dev</title>
+  <title>Regex::CompileOptions - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7059,7 +7059,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/regex.cr#L325" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/regex.cr#L325" target="_blank">
         regex.cr
       </a>
     
@@ -7067,144 +7067,6 @@
   
 
 
-
-  
-    <h2>
-      <a id="constant-summary" class="anchor" href="#constant-summary">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-      Constant Summary
-    </h2>
-  
-  <dl>
-    
-      <dt class="entry-const" id="All">
-        <strong>All</strong> = <code><span class="n">6980118591_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="ANCHORED">
-        <strong>ANCHORED</strong> = <code><span class="n">16_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Force pattern anchoring at the start of the subject.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="DOLLAR_ENDONLY">
-        <strong>DOLLAR_ENDONLY</strong> = <code><span class="n">32_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="DOTALL">
-        <strong>DOTALL</strong> = <code><span class="n">2_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="ENDANCHORED">
-        <strong>ENDANCHORED</strong> = <code><span class="n">2147483648_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Force pattern anchoring at the end of the subject.</p>
-<p>Unsupported with PCRE.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="EXTENDED">
-        <strong>EXTENDED</strong> = <code><span class="n">8_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Ignore white space and <code>#</code> comments.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="FIRSTLINE">
-        <strong>FIRSTLINE</strong> = <code><span class="n">262144_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="IGNORE_CASE">
-        <strong>IGNORE_CASE</strong> = <code><span class="n">1_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Case insensitive match.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="MATCH_INVALID_UTF">
-        <strong>MATCH_INVALID_UTF</strong> = <code><span class="n">4294967296_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Enable matching against subjects containing invalid UTF bytes.
-Invalid bytes never match anything. The entire subject string is
-effectively split into segments of valid UTF.</p>
-<p>Read more in the <a href="https://www.pcre.org/current/doc/html/pcre2unicode.html#matchinvalid">PCRE2 documentation</a>.</p>
-<p>When this option is set, <code><a href="../Regex/MatchOptions.html#NO_UTF_CHECK">MatchOptions::NO_UTF_CHECK</a></code> is ignored at match time.</p>
-<p>Unsupported with PCRE.</p>
-<p><span class="flag purple">NOTE</span>  This option was introduced in PCRE2 10.34 but a bug that can lead to an
-infinite loop is only fixed in 10.36 (https://github.com/PCRE2Project/pcre2/commit/e0c6029a62db9c2161941ecdf459205382d4d379).</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="MULTILINE">
-        <strong>MULTILINE</strong> = <code><span class="n">6_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Multiline matching.</p>
-<p>Equivalent to <code><a href="../Regex/Options.html#MULTILINE">MULTILINE</a> | <a href="../Regex/Options.html#DOTALL">DOTALL</a></code> in PCRE and PCRE2.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="MULTILINE_ONLY">
-        <strong>MULTILINE_ONLY</strong> = <code><span class="n">4_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Equivalent to <code><a href="../Regex/Options.html#MULTILINE">MULTILINE</a></code> in PCRE and PCRE2.</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="NO_UTF_CHECK">
-        <strong>NO_UTF_CHECK</strong> = <code><span class="n">8192_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Do not check the pattern for valid UTF encoding.</p>
-<p>This option is potentially dangerous and must only be used when the
-pattern is guaranteed to be valid (e.g. <code><a href="../String.html#valid_encoding%3F%3ABool-instance-method">String#valid_encoding?</a></code>).
-Failing to do so can lead to undefined behaviour in the regex library
-and may crash the entire process.</p>
-<p><span class="flag purple">NOTE</span>  <code><a href="../String.html">String</a></code> is <em>supposed</em> to be valid UTF-8, but this is not guaranteed or
-enforced. Especially data originating from external sources should not be
-trusted.</p>
-<p>UTF validation is comparatively expensive, so skipping it can produce a
-significant performance improvement.</p>
-<pre><code class="language-crystal">pattern <span class="o">=</span> <span class="s">&quot;fo+&quot;</span>
-<span class="k">if</span> pattern.valid_encoding?
-  regex <span class="o">=</span> <span class="t">Regex</span>.new(pattern, options: <span class="t">Regex</span><span class="t">::</span><span class="t">CompileOptions</span><span class="t">::</span><span class="t">NO_UTF_CHECK</span>)
-  regex.match(foo)
-<span class="k">else</span>
-  raise <span class="s">&quot;Invalid UTF in regex pattern&quot;</span>
-<span class="k">end</span></code></pre>
-<p>The standard library implicitly applies this option when it can be sure
-about the patterns's validity (e.g. on repeated matches in <code><a href="../String.html#gsub%28%26block%3AChar-%3E_%29%3AString-instance-method">String#gsub</a></code>).</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="None">
-        <strong>None</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-  </dl>
 
 
 

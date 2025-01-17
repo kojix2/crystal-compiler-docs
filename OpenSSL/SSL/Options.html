@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>OpenSSL::SSL::Options - Crystal 1.15.0-dev</title>
+  <title>OpenSSL::SSL::Options - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7047,7 +7047,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/openssl.cr#L102" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/openssl.cr#L102" target="_blank">
         openssl.cr
       </a>
     
@@ -7055,190 +7055,6 @@
   
 
 
-
-  
-    <h2>
-      <a id="constant-summary" class="anchor" href="#constant-summary">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-      Constant Summary
-    </h2>
-  
-  <dl>
-    
-      <dt class="entry-const" id="ALL">
-        <strong>ALL</strong> = <code><span class="n">2147486719_u64</span></code>
-      </dt>
-      
-      <dd class="entry-const-doc">
-        <p>Various bug workarounds that should be rather harmless.
-This used to be <code>0x000FFFFF</code> before 0.9.7</p>
-      </dd>
-      
-    
-      <dt class="entry-const" id="ALLOW_UNSAFE_LEGACY_RENEGOTIATION">
-        <strong>ALLOW_UNSAFE_LEGACY_RENEGOTIATION</strong> = <code><span class="n">262144_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="CIPHER_SERVER_PREFERENCE">
-        <strong>CIPHER_SERVER_PREFERENCE</strong> = <code><span class="n">4194304_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="CISCO_ANYCONNECT">
-        <strong>CISCO_ANYCONNECT</strong> = <code><span class="n">32768_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="COOKIE_EXCHANGE">
-        <strong>COOKIE_EXCHANGE</strong> = <code><span class="n">8192_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="CRYPTOPRO_TLSEXT_BUG">
-        <strong>CRYPTOPRO_TLSEXT_BUG</strong> = <code><span class="n">2147483648_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="DONT_INSERT_EMPTY_FRAGMENTS">
-        <strong>DONT_INSERT_EMPTY_FRAGMENTS</strong> = <code><span class="n">2048_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="LEGACY_SERVER_CONNECT">
-        <strong>LEGACY_SERVER_CONNECT</strong> = <code><span class="n">4_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="MICROSOFT_BIG_SSL_V3_BUFFER">
-        <strong>MICROSOFT_BIG_SSL_V3_BUFFER</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="MICROSOFT_SESS_ID_BUG">
-        <strong>MICROSOFT_SESS_ID_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NETSCAPE_CA_DN_BUG">
-        <strong>NETSCAPE_CA_DN_BUG</strong> = <code><span class="n">536870912_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NETSCAPE_CHALLENGE_BUG">
-        <strong>NETSCAPE_CHALLENGE_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NETSCAPE_DEMO_CIPHER_CHANGE_BUG">
-        <strong>NETSCAPE_DEMO_CIPHER_CHANGE_BUG</strong> = <code><span class="n">1073741824_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NETSCAPE_REUSE_CIPHER_CHANGE_BUG">
-        <strong>NETSCAPE_REUSE_CIPHER_CHANGE_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_COMPRESSION">
-        <strong>NO_COMPRESSION</strong> = <code><span class="n">131072_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_QUERY_MTU">
-        <strong>NO_QUERY_MTU</strong> = <code><span class="n">4096_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_RENEGOTIATION">
-        <strong>NO_RENEGOTIATION</strong> = <code><span class="n">1073741824_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_SESSION_RESUMPTION_ON_RENEGOTIATION">
-        <strong>NO_SESSION_RESUMPTION_ON_RENEGOTIATION</strong> = <code><span class="n">65536_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_SSL_V2">
-        <strong>NO_SSL_V2</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_SSL_V3">
-        <strong>NO_SSL_V3</strong> = <code><span class="n">33554432_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_TICKET">
-        <strong>NO_TICKET</strong> = <code><span class="n">16384_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_TLS_V1">
-        <strong>NO_TLS_V1</strong> = <code><span class="n">67108864_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_TLS_V1_1">
-        <strong>NO_TLS_V1_1</strong> = <code><span class="n">268435456_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_TLS_V1_2">
-        <strong>NO_TLS_V1_2</strong> = <code><span class="n">134217728_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="NO_TLS_V1_3">
-        <strong>NO_TLS_V1_3</strong> = <code><span class="n">536870912_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="SAFARI_ECDHE_ECDSA_BUG">
-        <strong>SAFARI_ECDHE_ECDSA_BUG</strong> = <code><span class="n">64_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="SINGLE_DH_USE">
-        <strong>SINGLE_DH_USE</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="SINGLE_ECDH_USE">
-        <strong>SINGLE_ECDH_USE</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="SSLEAY_080_CLIENT_DH_BUG">
-        <strong>SSLEAY_080_CLIENT_DH_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="SSLREF2_REUSE_CERT_TYPE_BUG">
-        <strong>SSLREF2_REUSE_CERT_TYPE_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="TLS_BLOCK_PADDING_BUG">
-        <strong>TLS_BLOCK_PADDING_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="TLS_D5_BUG">
-        <strong>TLS_D5_BUG</strong> = <code><span class="n">0_u64</span></code>
-      </dt>
-      
-    
-      <dt class="entry-const" id="TLS_ROLLBACK_BUG">
-        <strong>TLS_ROLLBACK_BUG</strong> = <code><span class="n">8388608_u64</span></code>
-      </dt>
-      
-    
-  </dl>
 
 
 

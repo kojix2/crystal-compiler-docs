@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Repl - Crystal 1.15.0-dev</title>
+  <title>Crystal::Repl - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7039,28 +7039,28 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/closure_context.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/closure_context.cr#L1" target="_blank">
         compiler/crystal/interpreter/closure_context.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/compiled_block.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/compiled_block.cr#L3" target="_blank">
         compiler/crystal/interpreter/compiled_block.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/compiled_def.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/compiled_def.cr#L3" target="_blank">
         compiler/crystal/interpreter/compiled_def.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L1" target="_blank">
         compiler/crystal/interpreter/repl.cr
       </a>
     
@@ -7197,7 +7197,7 @@
     type_id <span class="o">=</span> (pointer.<span class="k">as</span>(<span class="t">::</span><span class="t">Pointer</span>(<span class="t">Int32</span>))).value
     <span class="k">type</span> <span class="o">=</span> type_from_type_id(type_id)
     filter_type <span class="o">=</span> type_from_type_id(filter_type_id)
-    <span class="o">!</span>(<span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type)))
+    <span class="o">!</span><span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type))
   <span class="k">end</span>
 <span class="k">end</span>, disassemble: {filter_type_id: context.type_from_id(filter_type_id)}}, metaclass_is_a: {operands: [filter_type_id : <span class="t">Int32</span>], pop_values: [metaclass_id : <span class="t">Int32</span>], push: <span class="n">true</span>, code: <span class="k">begin</span>
   <span class="k">type</span> <span class="o">=</span> type_from_type_id(metaclass_id)
@@ -7205,14 +7205,14 @@
   <span class="k">if</span> <span class="k">type</span>.<span class="k">is_a?</span>(<span class="t">VirtualMetaclassType</span>)
     <span class="k">type</span>.devirtualize <span class="o">==</span> filter_type
   <span class="k">else</span>
-    <span class="o">!</span>(<span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type)))
+    <span class="o">!</span><span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type))
   <span class="k">end</span>
 <span class="k">end</span>, disassemble: {filter_type_id: context.type_from_id(filter_type_id)}}, union_is_a: {operands: [union_size : <span class="t">Int32</span>, filter_type_id : <span class="t">Int32</span>], push: <span class="n">true</span>, code: <span class="k">begin</span>
   type_id <span class="o">=</span> ((stack <span class="o">-</span> union_size).<span class="k">as</span>(<span class="t">::</span><span class="t">Pointer</span>(<span class="t">Int32</span>))).value
   <span class="k">type</span> <span class="o">=</span> type_from_type_id(type_id)
   stack_shrink_by(union_size)
   filter_type <span class="o">=</span> type_from_type_id(filter_type_id)
-  <span class="o">!</span>(<span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type)))
+  <span class="o">!</span><span class="o">!</span>(<span class="k">type</span>.filter_by(filter_type))
 <span class="k">end</span>, disassemble: {filter_type_id: context.type_from_id(filter_type_id)}}, tuple_indexer_known_index: {operands: [tuple_size : <span class="t">Int32</span>, offset : <span class="t">Int32</span>, value_size : <span class="t">Int32</span>], code: <span class="k">begin</span>
   (stack <span class="o">-</span> tuple_size).move_from((stack <span class="o">-</span> tuple_size) <span class="o">+</span> offset, value_size)
   aligned_value_size <span class="o">=</span> align(value_size)
@@ -7858,7 +7858,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L6" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L6" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7890,7 +7890,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7906,7 +7906,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L81" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L81" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7922,7 +7922,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7938,7 +7938,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L2" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L2" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7954,7 +7954,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L2" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L2" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7970,7 +7970,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7986,7 +7986,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L14" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8002,7 +8002,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L71" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8018,7 +8018,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/interpreter/repl.cr#L57" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/interpreter/repl.cr#L57" target="_blank">View source</a>]
         
       </div>
     </div>

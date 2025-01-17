@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>UNIXSocket - Crystal 1.15.0-dev</title>
+  <title>UNIXSocket - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7074,7 +7074,7 @@ sock.close</code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L17" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L17" target="_blank">
         socket/unix_socket.cr
       </a>
     
@@ -7096,14 +7096,14 @@ sock.close</code></pre>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28path%3AString%2Ctype%3AType%3DType%3A%3ASTREAM%29-class-method" class="signature"><strong>.new</strong>(path : String, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>)</a>
+        <a href="#new%28path%3APath%7CString%2Ctype%3AType%3DType%3A%3ASTREAM%29-class-method" class="signature"><strong>.new</strong>(path : Path | String, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>)</a>
         
           <div class="summary"><p>Connects a named UNIX socket, bound to a filesystem pathname.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#new%28%2A%2Cfd%3AHandle%2Ctype%3AType%3DType%3A%3ASTREAM%2Cpath%3AString%7CNil%3Dnil%29-class-method" class="signature"><strong>.new</strong>(*, fd : Handle, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, path : String | Nil = <span class="n">nil</span>)</a>
+        <a href="#new%28%2A%2Cfd%3AHandle%2Ctype%3AType%3DType%3A%3ASTREAM%2Cpath%3APath%7CString%7CNil%3Dnil%29-class-method" class="signature"><strong>.new</strong>(*, fd : Handle, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, path : Path | String | Nil = <span class="n">nil</span>)</a>
         
           <div class="summary"><p>Creates a UNIXSocket from an already configured raw file descriptor</p></div>
         
@@ -7124,7 +7124,7 @@ sock.close</code></pre>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#open%28path%2Ctype%3AType%3DType%3A%3ASTREAM%2C%26%29-class-method" class="signature"><strong>.open</strong>(path, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, &)</a>
+        <a href="#open%28path%3APath%7CString%2Ctype%3AType%3DType%3A%3ASTREAM%2C%26%29-class-method" class="signature"><strong>.open</strong>(path : Path | String, type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, &)</a>
         
           <div class="summary"><p>Opens an UNIX socket to a filesystem pathname, yields it to the block, then eventually closes the socket when the block returns.</p></div>
         
@@ -8204,12 +8204,12 @@ sock.close</code></pre>
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(path:String,type:Type=Type::STREAM)-class-method">
+    <div class="entry-detail" id="new(path:Path|String,type:Type=Type::STREAM)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(path : <a href="String.html">String</a>, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>)
+        def self.<strong>new</strong>(path : <a href="Path.html">Path</a> | <a href="String.html">String</a>, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>)
 
-        <a class="method-permalink" href="#new%28path%3AString%2Ctype%3AType%3DType%3A%3ASTREAM%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28path%3APath%7CString%2Ctype%3AType%3DType%3A%3ASTREAM%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8220,17 +8220,17 @@ sock.close</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="new(*,fd:Handle,type:Type=Type::STREAM,path:String|Nil=nil)-class-method">
+    <div class="entry-detail" id="new(*,fd:Handle,type:Type=Type::STREAM,path:Path|String|Nil=nil)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(*, fd : Handle, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, path : <a href="String.html">String</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>)
+        def self.<strong>new</strong>(*, fd : Handle, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, path : <a href="Path.html">Path</a> | <a href="String.html">String</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#new%28%2A%2Cfd%3AHandle%2Ctype%3AType%3DType%3A%3ASTREAM%2Cpath%3AString%7CNil%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28%2A%2Cfd%3AHandle%2Ctype%3AType%3DType%3A%3ASTREAM%2Cpath%3APath%7CString%7CNil%3Dnil%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8241,7 +8241,7 @@ sock.close</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L36" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8258,12 +8258,12 @@ sock.close</code></pre>
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="open(path,type:Type=Type::STREAM,&amp;)-class-method">
+    <div class="entry-detail" id="open(path:Path|String,type:Type=Type::STREAM,&amp;)-class-method">
       <div class="signature">
         
-        def self.<strong>open</strong>(path, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, &)
+        def self.<strong>open</strong>(path : <a href="Path.html">Path</a> | <a href="String.html">String</a>, type : <a href="Socket/Type.html">Type</a> = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, &)
 
-        <a class="method-permalink" href="#open%28path%2Ctype%3AType%3DType%3A%3ASTREAM%2C%26%29-class-method">#</a>
+        <a class="method-permalink" href="#open%28path%3APath%7CString%2Ctype%3AType%3DType%3A%3ASTREAM%2C%26%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8276,7 +8276,7 @@ eventually closes the socket when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L45" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8310,7 +8310,7 @@ left.gets <span class="c"># =&gt; &quot;message&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L70" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L72" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8334,7 +8334,7 @@ block. Eventually closes both sockets when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L82" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8364,7 +8364,7 @@ block. Eventually closes both sockets when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L92" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8380,7 +8380,7 @@ block. Eventually closes both sockets when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8411,7 +8411,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L100" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L102" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8427,7 +8427,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/socket/unix_socket.cr#L96" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/socket/unix_socket.cr#L98" target="_blank">View source</a>]
         
       </div>
     </div>

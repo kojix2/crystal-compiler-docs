@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::TypeNode - Crystal 1.15.0-dev</title>
+  <title>Crystal::TypeNode - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7050,14 +7050,14 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L1837" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L1839" target="_blank">
         compiler/crystal/macros/methods.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/semantic/ast.cr#L85" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/semantic/ast.cr#L85" target="_blank">
         compiler/crystal/semantic/ast.cr
       </a>
     
@@ -7128,6 +7128,11 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#has_inner_pointers%3F%28type%2Cname_loc%29-class-method" class="signature"><strong>.has_inner_pointers?</strong>(type, name_loc)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#has_method%3F%28type%2Cname%29-class-method" class="signature"><strong>.has_method?</strong>(type, name)</a>
         
       </li>
@@ -7138,7 +7143,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#instance_vars%28type%29-class-method" class="signature"><strong>.instance_vars</strong>(type)</a>
+        <a href="#instance_vars%28type%2Cname_loc%29-class-method" class="signature"><strong>.instance_vars</strong>(type, name_loc)</a>
         
       </li>
     
@@ -7972,7 +7977,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/semantic/ast.cr#L86" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/semantic/ast.cr#L86" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8000,7 +8005,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2131" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2154" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8016,7 +8021,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2106" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8032,7 +8037,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2093" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2116" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8048,7 +8053,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2186" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8064,7 +8069,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2150" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2173" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8080,7 +8085,23 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2159" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2182" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has_inner_pointers?(type,name_loc)-class-method">
+      <div class="signature">
+        
+        def self.<strong>has_inner_pointers?</strong>(type, name_loc)
+
+        <a class="method-permalink" href="#has_inner_pointers%3F%28type%2Cname_loc%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2103" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8096,7 +8117,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2185" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2208" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8112,23 +8133,23 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2030" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2032" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="instance_vars(type)-class-method">
+    <div class="entry-detail" id="instance_vars(type,name_loc)-class-method">
       <div class="signature">
         
-        def self.<strong>instance_vars</strong>(type)
+        def self.<strong>instance_vars</strong>(type, name_loc)
 
-        <a class="method-permalink" href="#instance_vars%28type%29-class-method">#</a>
+        <a class="method-permalink" href="#instance_vars%28type%2Cname_loc%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2080" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2082" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8144,7 +8165,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2198" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8160,7 +8181,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2189" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8176,7 +8197,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2122" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8192,7 +8213,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2138" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8208,7 +8229,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2043" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2045" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8224,7 +8245,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L2140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L2163" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8277,7 +8298,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/semantic/ast.cr#L93" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/semantic/ast.cr#L93" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8316,7 +8337,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L1838" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L1840" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8332,7 +8353,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/semantic/ast.cr#L89" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/semantic/ast.cr#L89" target="_blank">View source</a>]
         
       </div>
     </div>

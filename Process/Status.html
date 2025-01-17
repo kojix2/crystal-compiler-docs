@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Process::Status - Crystal 1.15.0-dev</title>
+  <title>Process::Status - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7050,7 +7050,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L104" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L104" target="_blank">
         process/status.cr
       </a>
     
@@ -7129,7 +7129,8 @@
       <li class="entry-summary">
         <a href="#exit_status%3AInt32-instance-method" class="signature"><strong>#exit_status</strong> : Int32</a>
         
-          <div class="summary"><p>Platform-specific exit status code, which usually contains either the exit code or a termination signal.</p></div>
+          <div class="summary"><p>Platform-specific exit status code, which usually contains either the exit code or a termination signal.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../Process/Status.html#exit_reason%3AExitReason-instance-method">#exit_reason</a></code>, <code><a href="../Process/Status.html#exit_code%3AInt32-instance-method">#exit_code</a></code>, or <code><a href="../Process/Status.html#system_exit_status%3AUInt32-instance-method">#system_exit_status</a></code> instead</p></div>
         
       </li>
     
@@ -7612,7 +7613,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L209" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L210" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7637,7 +7638,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L251" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L252" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7662,7 +7663,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L264" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L265" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7683,7 +7684,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7708,7 +7709,7 @@ which also works on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L220" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L221" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7733,7 +7734,7 @@ which also works on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L233" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L234" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7750,12 +7751,13 @@ which also works on Windows.</p>
           
           <p>Platform-specific exit status code, which usually contains either the exit code or a termination signal.
 The other <code><a href="../Process/Status.html">Process::Status</a></code> methods extract the values from <code><a href="../Process/Status.html#exit_status%3AInt32-instance-method">#exit_status</a></code>.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../Process/Status.html#exit_reason%3AExitReason-instance-method">#exit_reason</a></code>, <code><a href="../Process/Status.html#exit_code%3AInt32-instance-method">#exit_code</a></code>, or <code><a href="../Process/Status.html#system_exit_status%3AUInt32-instance-method">#system_exit_status</a></code> instead</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L108" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7803,7 +7805,7 @@ delimited by square brackets, and constants use full paths:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L293" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L294" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7829,7 +7831,7 @@ delimited by square brackets, and constants use full paths:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L199" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L200" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7856,7 +7858,7 @@ is considered a signal.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L189" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L190" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7877,7 +7879,7 @@ is considered a signal.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L276" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L277" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7899,7 +7901,7 @@ is considered a signal.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7923,7 +7925,7 @@ A signal exit status prints the name of the <code><a href="../Signal.html">Signa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L336" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L337" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7947,7 +7949,7 @@ A signal exit status prints the name of the <code><a href="../Signal.html">Signa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/process/status.cr#L361" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/process/status.cr#L362" target="_blank">View source</a>]
         
       </div>
     </div>

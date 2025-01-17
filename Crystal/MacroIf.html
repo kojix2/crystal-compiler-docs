@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.13.3">
-<meta name="crystal_docs.project_version" content="1.15.0-dev">
+<meta name="generator" content="Crystal Docs 1.14.0">
+<meta name="crystal_docs.project_version" content="1.16.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::MacroIf - Crystal 1.15.0-dev</title>
+  <title>Crystal::MacroIf - Crystal 1.16.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.15.0-dev
+        1.16.0-dev
       </span>
     </div>
   </div>
@@ -7069,21 +7069,21 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L1535" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L1535" target="_blank">
         compiler/crystal/macros/methods.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/semantic/ast.cr#L652" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/semantic/ast.cr#L652" target="_blank">
         compiler/crystal/semantic/ast.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2237" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2237" target="_blank">
         compiler/crystal/syntax/ast.cr
       </a>
     
@@ -7105,7 +7105,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28cond%3ACrystal%3A%3AASTNode%2Ca_then%3Dnil%2Ca_else%3Dnil%29-class-method" class="signature"><strong>.new</strong>(cond : Crystal::ASTNode, a_then = <span class="n">nil</span>, a_else = <span class="n">nil</span>)</a>
+        <a href="#new%28cond%3ACrystal%3A%3AASTNode%2Ca_then%3Dnil%2Ca_else%3Dnil%2Cis_unless%3ABool%3Dfalse%29-class-method" class="signature"><strong>.new</strong>(cond : Crystal::ASTNode, a_then = <span class="n">nil</span>, a_else = <span class="n">nil</span>, is_unless : Bool = <span class="n">false</span>)</a>
         
       </li>
     
@@ -7173,6 +7173,16 @@
     
       <li class="entry-summary">
         <a href="#interpret%28method%3AString%2Cargs%3AArray%28ASTNode%29%2Cnamed_args%3AHash%28String%2CASTNode%29%7CNil%2Cblock%3ACrystal%3A%3ABlock%7CNil%2Cinterpreter%3ACrystal%3A%3AMacroInterpreter%2Cname_loc%3ALocation%7CNil%29-instance-method" class="signature"><strong>#interpret</strong>(method : String, args : Array(ASTNode), named_args : Hash(String, ASTNode) | Nil, block : Crystal::Block | Nil, interpreter : Crystal::MacroInterpreter, name_loc : Location | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_unless%3D%28is_unless%3ABool%29-instance-method" class="signature"><strong>#is_unless=</strong>(is_unless : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_unless%3F%3ABool-instance-method" class="signature"><strong>#is_unless?</strong> : Bool</a>
         
       </li>
     
@@ -7957,18 +7967,18 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(cond:Crystal::ASTNode,a_then=nil,a_else=nil)-class-method">
+    <div class="entry-detail" id="new(cond:Crystal::ASTNode,a_then=nil,a_else=nil,is_unless:Bool=false)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(cond : <a href="../Crystal/ASTNode.html">Crystal::ASTNode</a>, a_then = <span class="n">nil</span>, a_else = <span class="n">nil</span>)
+        def self.<strong>new</strong>(cond : <a href="../Crystal/ASTNode.html">Crystal::ASTNode</a>, a_then = <span class="n">nil</span>, a_else = <span class="n">nil</span>, is_unless : <a href="../Bool.html">Bool</a> = <span class="n">false</span>)
 
-        <a class="method-permalink" href="#new%28cond%3ACrystal%3A%3AASTNode%2Ca_then%3Dnil%2Ca_else%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28cond%3ACrystal%3A%3AASTNode%2Ca_then%3Dnil%2Ca_else%3Dnil%2Cis_unless%3ABool%3Dfalse%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2242" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2243" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8023,7 +8033,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2247" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2248" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8039,7 +8049,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2253" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8055,7 +8065,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2238" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2238" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8071,7 +8081,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2238" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2238" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8087,7 +8097,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2240" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2240" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8103,7 +8113,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2240" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2240" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8142,7 +8152,39 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/macros/methods.cr#L1536" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/macros/methods.cr#L1536" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_unless=(is_unless:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_unless=</strong>(is_unless : <a href="../Bool.html">Bool</a>)
+
+        <a class="method-permalink" href="#is_unless%3D%28is_unless%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2241" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_unless?:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>is_unless?</strong> : <a href="../Bool.html">Bool</a>
+
+        <a class="method-permalink" href="#is_unless%3F%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2241" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8158,7 +8200,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2239" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2239" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8174,7 +8216,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/e921f2c/src/compiler/crystal/syntax/ast.cr#L2239" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/fd4d56f/src/compiler/crystal/syntax/ast.cr#L2239" target="_blank">View source</a>]
         
       </div>
     </div>
