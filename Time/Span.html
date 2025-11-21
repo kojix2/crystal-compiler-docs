@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Time::Span - Crystal 1.18.0-dev</title>
+  <title>Time::Span - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent open current" data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7240,7 +7245,7 @@ c.hours   <span class="c"># =&gt; 10</span></code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L39" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L39" target="_blank">
         time/span.cr
       </a>
     
@@ -7313,9 +7318,9 @@ c.hours   <span class="c"># =&gt; 10</span></code></pre>
       </li>
     
       <li class="entry-summary">
-        <a href="#new%28%2A%2Cdays%3AInt%3D0%2Chours%3AInt%3D0%2Cminutes%3AInt%3D0%2Cseconds%3AInt%3D0%2Cnanoseconds%3AInt%3D0%29-class-method" class="signature"><strong>.new</strong>(*, days : Int = <span class="n">0</span>, hours : Int = <span class="n">0</span>, minutes : Int = <span class="n">0</span>, seconds : Int = <span class="n">0</span>, nanoseconds : Int = <span class="n">0</span>)</a>
+        <a href="#new%28%2A%2Cweeks%3AInt%3D0%2Cdays%3AInt%3D0%2Chours%3AInt%3D0%2Cminutes%3AInt%3D0%2Cseconds%3AInt%3D0%2Cnanoseconds%3AInt%3D0%29-class-method" class="signature"><strong>.new</strong>(*, weeks : Int = <span class="n">0</span>, days : Int = <span class="n">0</span>, hours : Int = <span class="n">0</span>, minutes : Int = <span class="n">0</span>, seconds : Int = <span class="n">0</span>, nanoseconds : Int = <span class="n">0</span>)</a>
         
-          <div class="summary"><p>Creates a new <code><a href="../Time/Span.html">Time::Span</a></code> from the <em>days</em>, <em>hours</em>, <em>minutes</em>, <em>seconds</em> and <em>nanoseconds</em> given</p></div>
+          <div class="summary"><p>Creates a new <code><a href="../Time/Span.html">Time::Span</a></code> from the *weeks, <em>days</em>, <em>hours</em>, <em>minutes</em>, <em>seconds</em> and <em>nanoseconds</em> given</p></div>
         
       </li>
     
@@ -7891,20 +7896,16 @@ c.hours   <span class="c"># =&gt; 10</span></code></pre>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8050,7 +8051,7 @@ c.hours   <span class="c"># =&gt; 10</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L279" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L280" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8075,7 +8076,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L66" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L66" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8100,22 +8101,22 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L92" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L92" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="new(*,days:Int=0,hours:Int=0,minutes:Int=0,seconds:Int=0,nanoseconds:Int=0)-class-method">
+    <div class="entry-detail" id="new(*,weeks:Int=0,days:Int=0,hours:Int=0,minutes:Int=0,seconds:Int=0,nanoseconds:Int=0)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(*, days : <a href="../Int.html">Int</a> = <span class="n">0</span>, hours : <a href="../Int.html">Int</a> = <span class="n">0</span>, minutes : <a href="../Int.html">Int</a> = <span class="n">0</span>, seconds : <a href="../Int.html">Int</a> = <span class="n">0</span>, nanoseconds : <a href="../Int.html">Int</a> = <span class="n">0</span>)
+        def self.<strong>new</strong>(*, weeks : <a href="../Int.html">Int</a> = <span class="n">0</span>, days : <a href="../Int.html">Int</a> = <span class="n">0</span>, hours : <a href="../Int.html">Int</a> = <span class="n">0</span>, minutes : <a href="../Int.html">Int</a> = <span class="n">0</span>, seconds : <a href="../Int.html">Int</a> = <span class="n">0</span>, nanoseconds : <a href="../Int.html">Int</a> = <span class="n">0</span>)
 
-        <a class="method-permalink" href="#new%28%2A%2Cdays%3AInt%3D0%2Chours%3AInt%3D0%2Cminutes%3AInt%3D0%2Cseconds%3AInt%3D0%2Cnanoseconds%3AInt%3D0%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28%2A%2Cweeks%3AInt%3D0%2Cdays%3AInt%3D0%2Chours%3AInt%3D0%2Cminutes%3AInt%3D0%2Cseconds%3AInt%3D0%2Cnanoseconds%3AInt%3D0%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Creates a new <code><a href="../Time/Span.html">Time::Span</a></code> from the <em>days</em>, <em>hours</em>, <em>minutes</em>, <em>seconds</em> and <em>nanoseconds</em> given</p>
+          <p>Creates a new <code><a href="../Time/Span.html">Time::Span</a></code> from the *weeks, <em>days</em>, <em>hours</em>, <em>minutes</em>, <em>seconds</em> and <em>nanoseconds</em> given</p>
 <p>Any time unit can be omitted.</p>
 <pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Span</span>.new(days: <span class="n">1</span>)                                                   <span class="c"># =&gt; 1.00:00:00</span>
 <span class="t">Time</span><span class="t">::</span><span class="t">Span</span>.new(days: <span class="n">1</span>, hours: <span class="n">2</span>, minutes: <span class="n">3</span>)                             <span class="c"># =&gt; 1.02:03:00</span>
@@ -8125,7 +8126,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L105" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L105" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8158,7 +8159,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L381" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8193,7 +8194,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L289" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8214,7 +8215,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L297" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L298" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8230,7 +8231,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L268" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8246,7 +8247,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L283" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8262,7 +8263,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L252" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L253" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8278,7 +8279,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L260" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L261" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8299,7 +8300,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L302" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L303" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8320,7 +8321,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L317" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8336,7 +8337,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L321" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L322" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8352,7 +8353,7 @@ the nanosecond overflow gets added as seconds.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L325" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L326" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8374,7 +8375,7 @@ represents by removing the sign.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L227" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L228" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8395,7 +8396,7 @@ represents by removing the sign.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L248" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L249" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8417,7 +8418,7 @@ represents by removing the sign.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L128" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8438,7 +8439,7 @@ represents by removing the sign.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L243" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L244" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8459,7 +8460,7 @@ represents by removing the sign.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L132" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8493,7 +8494,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L335" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L336" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8514,7 +8515,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L158" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8535,7 +8536,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L153" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8556,7 +8557,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8578,7 +8579,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8602,7 +8603,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L414" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L415" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8626,7 +8627,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L403" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L404" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8647,7 +8648,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L147" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8669,7 +8670,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L331" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L332" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8690,7 +8691,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L216" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L217" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8711,7 +8712,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L221" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L222" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8733,7 +8734,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L181" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L182" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8754,7 +8755,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L186" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L187" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8775,7 +8776,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L206" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L207" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8796,7 +8797,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L201" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L202" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8817,7 +8818,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L191" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8838,7 +8839,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L211" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8859,7 +8860,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L196" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L197" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8881,7 +8882,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L173" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8905,7 +8906,7 @@ in this time span.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L392" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L393" target="_blank">View source</a>]
         
       </div>
     </div>

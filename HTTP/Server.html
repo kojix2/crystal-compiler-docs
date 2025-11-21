@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::Server - Crystal 1.18.0-dev</title>
+  <title>HTTP::Server - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7315,21 +7320,21 @@ entirely consumed in the handler chain. Otherwise the connection will be closed.
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L133" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L133" target="_blank">
         http/server.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server/context.cr#L4" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server/context.cr#L4" target="_blank">
         http/server/context.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server/response.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server/response.cr#L5" target="_blank">
         http/server/response.cr
       </a>
     
@@ -7413,7 +7418,7 @@ entirely consumed in the handler chain. Otherwise the connection will be closed.
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#build_middleware%28handlers%2Clast_handler%3AContext-%3E%7CNil%3Dnil%29-class-method" class="signature"><strong>.build_middleware</strong>(handlers, last_handler : Context ->  | Nil = <span class="n">nil</span>)</a>
+        <a href="#build_middleware%28handlers%3AIndexable%28HTTP%3A%3AHandler%29%2Clast_handler%3AContext-%3E%7CNil%3Dnil%29%3AHTTP%3A%3AHandler-class-method" class="signature"><strong>.build_middleware</strong>(handlers : Indexable(HTTP::Handler), last_handler : Context ->  | Nil = <span class="n">nil</span>) : HTTP::Handler</a>
         
           <div class="summary"><p>Builds all handlers as the middleware for <code><a href="../HTTP/Server.html">HTTP::Server</a></code>.</p></div>
         
@@ -7581,7 +7586,7 @@ entirely consumed in the handler chain. Otherwise the connection will be closed.
       </li>
     
       <li class="entry-summary">
-        <a href="#max_headers_size%3D%28size%3AInt32%29-instance-method" class="signature"><strong>#max_headers_size=</strong>(size : Int32)</a>
+        <a href="#max_headers_size%3D%28size%3AInt32%29%3AInt32-instance-method" class="signature"><strong>#max_headers_size=</strong>(size : Int32) : Int32</a>
         
           <div class="summary"><p>Sets the maximum permitted combined size for the headers in an HTTP request.</p></div>
         
@@ -7595,7 +7600,7 @@ entirely consumed in the handler chain. Otherwise the connection will be closed.
       </li>
     
       <li class="entry-summary">
-        <a href="#max_request_line_size%3D%28size%3AInt32%29-instance-method" class="signature"><strong>#max_request_line_size=</strong>(size : Int32)</a>
+        <a href="#max_request_line_size%3D%28size%3AInt32%29%3AInt32-instance-method" class="signature"><strong>#max_request_line_size=</strong>(size : Int32) : Int32</a>
         
           <div class="summary"><p>Sets the maximum permitted size for the request line in an HTTP request.</p></div>
         
@@ -7836,20 +7841,16 @@ entirely consumed in the handler chain. Otherwise the connection will be closed.
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7995,7 +7996,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L151" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8016,7 +8017,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8037,7 +8038,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L156" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L156" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8058,7 +8059,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L161" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L161" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8075,12 +8076,12 @@ array and the given block.</p>
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="build_middleware(handlers,last_handler:Context-&gt;|Nil=nil)-class-method">
+    <div class="entry-detail" id="build_middleware(handlers:Indexable(HTTP::Handler),last_handler:Context-&gt;|Nil=nil):HTTP::Handler-class-method">
       <div class="signature">
         
-        def self.<strong>build_middleware</strong>(handlers, last_handler : <a href="../HTTP/Server/Context.html">Context</a> ->  | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>)
+        def self.<strong>build_middleware</strong>(handlers : <a href="../Indexable.html">Indexable</a>(<a href="../HTTP/Handler.html">HTTP::Handler</a>), last_handler : <a href="../HTTP/Server/Context.html">Context</a> ->  | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="../HTTP/Handler.html">HTTP::Handler</a>
 
-        <a class="method-permalink" href="#build_middleware%28handlers%2Clast_handler%3AContext-%3E%7CNil%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#build_middleware%28handlers%3AIndexable%28HTTP%3A%3AHandler%29%2Clast_handler%3AContext-%3E%7CNil%3Dnil%29%3AHTTP%3A%3AHandler-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8091,7 +8092,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L540" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L540" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8121,7 +8122,7 @@ array and the given block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L420" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L420" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8149,7 +8150,7 @@ server.bind(<span class="s">&quot;tls://127.0.0.1:443?key=private.key&amp;cert=c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L380" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L380" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8177,7 +8178,7 @@ server.bind(<span class="s">&quot;tls://127.0.0.1:443?key=private.key&amp;cert=c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L385" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L385" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8198,7 +8199,7 @@ server.bind(<span class="s">&quot;tls://127.0.0.1:443?key=private.key&amp;cert=c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L406" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L406" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8226,7 +8227,7 @@ which allows multiple processes to bind to the same port.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L212" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8254,7 +8255,7 @@ which allows multiple processes to bind to the same port.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L237" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L237" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8283,7 +8284,7 @@ which allows multiple processes to bind to the same port.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8312,7 +8313,7 @@ server.bind_tls <span class="s">&quot;127.0.0.1&quot;</span>, <span class="n">80
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L305" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8341,7 +8342,7 @@ address <span class="o">=</span> server.bind_tls <span class="s">&quot;127.0.0.1
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L305" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8370,7 +8371,7 @@ address <span class="o">=</span> server.bind_tls <span class="t">Socket</span><s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L305" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8395,7 +8396,7 @@ server.bind_unix <span class="s">&quot;/tmp/my-socket.sock&quot;</span></code></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L280" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L280" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8420,7 +8421,7 @@ server.bind_unix(<span class="t">Socket</span><span class="t">::</span><span cla
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L301" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L301" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8446,7 +8447,7 @@ server.bind_unused_port <span class="c"># =&gt; Socket::IPAddress.new(&quot;127.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L268" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L268" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8468,7 +8469,7 @@ requests, but it won't accept new connections.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L489" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L489" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8489,7 +8490,7 @@ requests, but it won't accept new connections.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8510,7 +8511,7 @@ requests, but it won't accept new connections.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L414" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L414" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8533,7 +8534,7 @@ and starts the server. Blocks until the server is closed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L432" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L432" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8556,7 +8557,7 @@ and starts the server. Blocks until the server is closed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L442" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L442" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8577,7 +8578,7 @@ and starts the server. Blocks until the server is closed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L455" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L455" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8598,7 +8599,7 @@ and starts the server. Blocks until the server is closed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L142" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L142" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8625,17 +8626,17 @@ the server responds with the status code <code>432 <a href="../HTTP/Request.html
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L191" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L191" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="max_headers_size=(size:Int32)-instance-method">
+    <div class="entry-detail" id="max_headers_size=(size:Int32):Int32-instance-method">
       <div class="signature">
         
-        def <strong>max_headers_size=</strong>(size : <a href="../Int32.html">Int32</a>)
+        def <strong>max_headers_size=</strong>(size : <a href="../Int32.html">Int32</a>) : <a href="../Int32.html">Int32</a>
 
-        <a class="method-permalink" href="#max_headers_size%3D%28size%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#max_headers_size%3D%28size%3AInt32%29%3AInt32-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8646,7 +8647,7 @@ the server responds with the status code <code>432 <a href="../HTTP/Request.html
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L196" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L196" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8672,17 +8673,17 @@ the server responds with the status code <code>414 <a href="../URI.html">URI</a>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L173" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L173" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="max_request_line_size=(size:Int32)-instance-method">
+    <div class="entry-detail" id="max_request_line_size=(size:Int32):Int32-instance-method">
       <div class="signature">
         
-        def <strong>max_request_line_size=</strong>(size : <a href="../Int32.html">Int32</a>)
+        def <strong>max_request_line_size=</strong>(size : <a href="../Int32.html">Int32</a>) : <a href="../Int32.html">Int32</a>
 
-        <a class="method-permalink" href="#max_request_line_size%3D%28size%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#max_request_line_size%3D%28size%3AInt32%29%3AInt32-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8693,7 +8694,7 @@ the server responds with the status code <code>414 <a href="../URI.html">URI</a>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/server.cr#L178" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/server.cr#L178" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>IO - Crystal 1.18.0-dev</title>
+  <title>IO - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7180,7 +7185,7 @@
   <p>The <code><a href="IO.html">IO</a></code> class is the basis for all input and output in Crystal.</p>
 <p>This class is inherited by types like <code><a href="File.html">File</a></code>, <code><a href="Socket.html">Socket</a></code> and <code><a href="IO/Memory.html">IO::Memory</a></code> and
 provides many useful methods for reading from and writing to an IO, like <code><a href="IO.html#print%28obj%3A_%29%3ANil-instance-method">#print</a></code>, <code><a href="IO.html#puts%3ANil-instance-method">#puts</a></code>,
-<code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> and <code><a href="IO.html#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>.</p>
+<code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> and <code><a href="IO.html#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>.</p>
 <p>The only requirement for a type including the <code><a href="IO.html">IO</a></code> module is to define
 these two methods:</p>
 <ul>
@@ -7217,8 +7222,8 @@ io.print <span class="s">&quot;xyz&quot;</span>
   </svg>
 </a>Encoding</h3>
 <p>An <code><a href="IO.html">IO</a></code> can be set an encoding with the <code><a href="IO.html#set_encoding%28encoding%3AString%2Cinvalid%3ASymbol%7CNil%3Dnil%29%3ANil-instance-method">#set_encoding</a></code> method. When this is
-set, all string operations (<code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, <code><a href="IO.html#gets_to_end%3AString-instance-method">#gets_to_end</a></code>, <code><a href="IO.html#read_char%3AChar%7CNil-instance-method">#read_char</a></code>, <code>&lt;&lt;</code>, <code><a href="IO.html#print%28obj%3A_%29%3ANil-instance-method">#print</a></code>, <code><a href="IO.html#puts%3ANil-instance-method">#puts</a></code>
-<code><a href="IO.html#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>) will write in the given encoding, and read from the given encoding.
+set, all string operations (<code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, <code><a href="IO.html#gets_to_end%3AString-instance-method">#gets_to_end</a></code>, <code><a href="IO.html#read_char%3AChar%7CNil-instance-method">#read_char</a></code>, <code>&lt;&lt;</code>, <code><a href="IO.html#print%28obj%3A_%29%3ANil-instance-method">#print</a></code>, <code><a href="IO.html#puts%3ANil-instance-method">#puts</a></code>
+<code><a href="IO.html#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>) will write in the given encoding, and read from the given encoding.
 Byte operations (<code><a href="IO.html#read%28slice%3ABytes%29-instance-method">#read</a></code>, <code><a href="IO.html#write%28slice%3ABytes%29%3ANil-instance-method">#write</a></code>, <code><a href="IO.html#read_byte%3AUInt8%7CNil-instance-method">#read_byte</a></code>, <code><a href="IO.html#write_byte%28byte%3AUInt8%29%3ANil-instance-method">#write_byte</a></code>, <code><a href="IO.html#getb_to_end%3ABytes-instance-method">#getb_to_end</a></code>) never do
 encoding/decoding operations.</p>
 <p>If an encoding is not set, the default one is UTF-8.</p>
@@ -7299,28 +7304,28 @@ in the given encoding.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L60" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L60" target="_blank">
         io.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/encoding.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/encoding.cr#L5" target="_blank">
         io/encoding.cr:5
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/encoding.cr#L28" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/encoding.cr#L28" target="_blank">
         io/encoding.cr:28
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/error.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/error.cr#L1" target="_blank">
         io/error.cr
       </a>
     
@@ -7368,21 +7373,21 @@ in the given encoding.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#copy%28src%2Cdst%2Climit%3AInt%29%3AInt64-class-method" class="signature"><strong>.copy</strong>(src, dst, limit : Int) : Int64</a>
+        <a href="#copy%28src%3AIO%2Cdst%3AIO%2Climit%3AInt%29%3AInt64-class-method" class="signature"><strong>.copy</strong>(src : IO, dst : IO, limit : Int) : Int64</a>
         
           <div class="summary"><p>Copy at most <em>limit</em> bytes from <em>src</em> to <em>dst</em>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#copy%28src%2Cdst%29%3AInt64-class-method" class="signature"><strong>.copy</strong>(src, dst) : Int64</a>
+        <a href="#copy%28src%3AIO%2Cdst%3AIO%29%3AInt64-class-method" class="signature"><strong>.copy</strong>(src : IO, dst : IO) : Int64</a>
         
           <div class="summary"><p>Copy all contents from <em>src</em> to <em>dst</em>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#pipe%28read_blocking%3Dnil%2Cwrite_blocking%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="signature"><strong>.pipe</strong>(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)</a>
+        <a href="#pipe%28read_blocking%3ABool%7CNil%3Dnil%2Cwrite_blocking%3ABool%7CNil%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="signature"><strong>.pipe</strong>(read_blocking : Bool | Nil = <span class="n">nil</span>, write_blocking : Bool | Nil = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)</a>
         
           <div class="summary"><p>Creates a pair of pipe endpoints (connected to each other) and returns them as a two-element <code><a href="Tuple.html">Tuple</a></code>.</p></div>
         
@@ -7419,7 +7424,7 @@ in the given encoding.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#%3C%3C%28obj%29%3Aself-instance-method" class="signature"><strong>#<<</strong>(obj) : <span class="k">self</span></a>
+        <a href="#%3C%3C%28obj%3A_%29%3Aself-instance-method" class="signature"><strong>#<<</strong>(obj : _) : <span class="k">self</span></a>
         
           <div class="summary"><p>Writes the given object into this <code><a href="IO.html">IO</a></code>.</p></div>
         
@@ -7470,14 +7475,14 @@ in the given encoding.</p>
       <li class="entry-summary">
         <a href="#each_line%28%2Aargs%2C%2A%2Aoptions%2C%26block%3AString-%3E%29%3ANil-instance-method" class="signature"><strong>#each_line</strong>(*args, **options, &block : String -> ) : Nil</a>
         
-          <div class="summary"><p>Invokes the given block with each <em>line</em> in this <code><a href="IO.html">IO</a></code>, where a line is defined by the arguments passed to this method, which can be the same ones as in the <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p></div>
+          <div class="summary"><p>Invokes the given block with each <em>line</em> in this <code><a href="IO.html">IO</a></code>, where a line is defined by the arguments passed to this method, which can be the same ones as in the <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#each_line%28%2Aargs%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#each_line</strong>(*args, **options)</a>
         
-          <div class="summary"><p>Returns an <code><a href="Iterator.html">Iterator</a></code> for the <em>lines</em> in this <code><a href="IO.html">IO</a></code>, where a line is defined by the arguments passed to this method, which can be the same ones as in the <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p></div>
+          <div class="summary"><p>Returns an <code><a href="Iterator.html">Iterator</a></code> for the <em>lines</em> in this <code><a href="IO.html">IO</a></code>, where a line is defined by the arguments passed to this method, which can be the same ones as in the <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p></div>
         
       </li>
     
@@ -7503,13 +7508,6 @@ in the given encoding.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(limit : Int, chomp = <span class="n">false</span>) : String | Nil</a>
-        
-          <div class="summary"><p>Reads a line of at most <em>limit</em> bytes from this <code><a href="IO.html">IO</a></code>.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
         <a href="#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(delimiter : Char, limit : Int, chomp = <span class="n">false</span>) : String | Nil</a>
         
           <div class="summary"><p>Reads until <em>delimiter</em> is found, <em>limit</em> bytes are read, or the end of the <code><a href="IO.html">IO</a></code> is reached.</p></div>
@@ -7517,7 +7515,21 @@ in the given encoding.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#gets%28delimiter%3AChar%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(delimiter : Char, chomp = <span class="n">false</span>) : String | Nil</a>
+        <a href="#gets%28chomp%3ABool%3Dtrue%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(chomp : Bool = <span class="n">true</span>) : String | Nil</a>
+        
+          <div class="summary"><p>Reads a line from this <code><a href="IO.html">IO</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gets%28limit%3AInt%2Cchomp%3ABool%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(limit : Int, chomp : Bool = <span class="n">false</span>) : String | Nil</a>
+        
+          <div class="summary"><p>Reads a line of at most <em>limit</em> bytes from this <code><a href="IO.html">IO</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gets%28delimiter%3AChar%2Cchomp%3ABool%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(delimiter : Char, chomp : Bool = <span class="n">false</span>) : String | Nil</a>
         
           <div class="summary"><p>Reads until <em>delimiter</em> is found, or the end of the <code><a href="IO.html">IO</a></code> is reached.</p></div>
         
@@ -7527,13 +7539,6 @@ in the given encoding.</p>
         <a href="#gets%28delimiter%3AString%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(delimiter : String, chomp = <span class="n">false</span>) : String | Nil</a>
         
           <div class="summary"><p>Reads until <em>delimiter</em> is found or the end of the <code><a href="IO.html">IO</a></code> is reached.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#gets%28chomp%3Dtrue%29%3AString%7CNil-instance-method" class="signature"><strong>#gets</strong>(chomp = <span class="n">true</span>) : String | Nil</a>
-        
-          <div class="summary"><p>Reads a line from this <code><a href="IO.html">IO</a></code>.</p></div>
         
       </li>
     
@@ -7580,14 +7585,14 @@ in the given encoding.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="signature"><strong>#printf</strong>(format_string, args : Array | Tuple) : Nil</a>
+        <a href="#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="signature"><strong>#printf</strong>(format_string : String, args : Array | Tuple) : Nil</a>
         
           <div class="summary"><p>Writes a formatted string to this IO.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#printf%28format_string%2C%2Aargs%29%3ANil-instance-method" class="signature"><strong>#printf</strong>(format_string, *args) : Nil</a>
+        <a href="#printf%28format_string%3AString%2C%2Aargs%29%3ANil-instance-method" class="signature"><strong>#printf</strong>(format_string : String, *args) : Nil</a>
         
           <div class="summary"><p>Writes a formatted string to this IO.</p></div>
         
@@ -7673,7 +7678,7 @@ in the given encoding.</p>
       <li class="entry-summary">
         <a href="#read_line%28%2Aargs%2C%2A%2Aoptions%29%3AString-instance-method" class="signature"><strong>#read_line</strong>(*args, **options) : String</a>
         
-          <div class="summary"><p>Same as <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, but raises <code><a href="IO/EOFError.html">EOFError</a></code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p></div>
+          <div class="summary"><p>Same as <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, but raises <code><a href="IO/EOFError.html">EOFError</a></code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p></div>
         
       </li>
     
@@ -7685,7 +7690,7 @@ in the given encoding.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#read_utf8%28slice%3ABytes%29-instance-method" class="signature"><strong>#read_utf8</strong>(slice : Bytes)</a>
+        <a href="#read_utf8%28slice%3ABytes%29%3AInt32-instance-method" class="signature"><strong>#read_utf8</strong>(slice : Bytes) : Int32</a>
         
           <div class="summary"><p>Reads UTF-8 decoded bytes into the given <em>slice</em>.</p></div>
         
@@ -7762,7 +7767,7 @@ in the given encoding.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#write_bytes%28object%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="signature"><strong>#write_bytes</strong>(object, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</a>
+        <a href="#write_bytes%28object%3A_%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="signature"><strong>#write_bytes</strong>(object : _, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</a>
         
           <div class="summary"><p>Writes the given object to this <code><a href="IO.html">IO</a></code> using the specified <em>format</em>.</p></div>
         
@@ -8018,20 +8023,16 @@ in the given encoding.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8162,12 +8163,12 @@ in the given encoding.</p>
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="copy(src,dst,limit:Int):Int64-class-method">
+    <div class="entry-detail" id="copy(src:IO,dst:IO,limit:Int):Int64-class-method">
       <div class="signature">
         
-        def self.<strong>copy</strong>(src, dst, limit : <a href="Int.html">Int</a>) : <a href="Int64.html">Int64</a>
+        def self.<strong>copy</strong>(src : <a href="IO.html">IO</a>, dst : <a href="IO.html">IO</a>, limit : <a href="Int.html">Int</a>) : <a href="Int64.html">Int64</a>
 
-        <a class="method-permalink" href="#copy%28src%2Cdst%2Climit%3AInt%29%3AInt64-class-method">#</a>
+        <a class="method-permalink" href="#copy%28src%3AIO%2Cdst%3AIO%2Climit%3AInt%29%3AInt64-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8184,17 +8185,17 @@ io2.to_s <span class="c"># =&gt; &quot;hel&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1195" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1195" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="copy(src,dst):Int64-class-method">
+    <div class="entry-detail" id="copy(src:IO,dst:IO):Int64-class-method">
       <div class="signature">
         
-        def self.<strong>copy</strong>(src, dst) : <a href="Int64.html">Int64</a>
+        def self.<strong>copy</strong>(src : <a href="IO.html">IO</a>, dst : <a href="IO.html">IO</a>) : <a href="Int64.html">Int64</a>
 
-        <a class="method-permalink" href="#copy%28src%2Cdst%29%3AInt64-class-method">#</a>
+        <a class="method-permalink" href="#copy%28src%3AIO%2Cdst%3AIO%29%3AInt64-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8211,17 +8212,17 @@ io2.to_s <span class="c"># =&gt; &quot;hello&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1175" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="pipe(read_blocking=nil,write_blocking=nil):Tuple(IO::FileDescriptor,IO::FileDescriptor)-class-method">
+    <div class="entry-detail" id="pipe(read_blocking:Bool|Nil=nil,write_blocking:Bool|Nil=nil):Tuple(IO::FileDescriptor,IO::FileDescriptor)-class-method">
       <div class="signature">
         
-        def self.<strong>pipe</strong>(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>) : <a href="Tuple.html">Tuple</a>(<a href="IO/FileDescriptor.html">IO::FileDescriptor</a>, <a href="IO/FileDescriptor.html">IO::FileDescriptor</a>)
+        def self.<strong>pipe</strong>(read_blocking : <a href="Bool.html">Bool</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>, write_blocking : <a href="Bool.html">Bool</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="Tuple.html">Tuple</a>(<a href="IO/FileDescriptor.html">IO::FileDescriptor</a>, <a href="IO/FileDescriptor.html">IO::FileDescriptor</a>)
 
-        <a class="method-permalink" href="#pipe%28read_blocking%3Dnil%2Cwrite_blocking%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method">#</a>
+        <a class="method-permalink" href="#pipe%28read_blocking%3ABool%7CNil%3Dnil%2Cwrite_blocking%3ABool%7CNil%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8238,7 +8239,7 @@ reader.gets <span class="c"># =&gt; &quot;world&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8266,7 +8267,7 @@ to the given block. Both endpoints are closed after the block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L157" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8292,7 +8293,7 @@ stream2 <span class="o">=</span> <span class="t">IO</span><span class="t">::</sp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1218" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8311,12 +8312,12 @@ stream2 <span class="o">=</span> <span class="t">IO</span><span class="t">::</sp
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="&lt;&lt;(obj):self-instance-method">
+    <div class="entry-detail" id="&lt;&lt;(obj:_):self-instance-method">
       <div class="signature">
         
-        def <strong><<</strong>(obj) : <span class="k">self</span>
+        def <strong><<</strong>(obj : _) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#%3C%3C%28obj%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#%3C%3C%28obj%3A_%29%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8333,7 +8334,7 @@ io.to_s <span class="c"># =&gt; &quot;1-Crystal&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L178" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L178" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8355,7 +8356,7 @@ io.to_s <span class="c"># =&gt; &quot;1-Crystal&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L110" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L110" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8377,7 +8378,7 @@ io.to_s <span class="c"># =&gt; &quot;1-Crystal&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L116" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8407,7 +8408,7 @@ io.each_byte <span class="k">do</span> <span class="o">|</span>byte<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1032" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1032" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8434,7 +8435,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; 130</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1048" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1048" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8462,7 +8463,7 @@ io.each_char <span class="k">do</span> <span class="o">|</span>char<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L997" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L997" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8487,7 +8488,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; &#39;め&#39;</span></c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1011" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1011" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8504,7 +8505,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; &#39;め&#39;</span></c
           
           <p>Invokes the given block with each <em>line</em> in this <code><a href="IO.html">IO</a></code>, where a line
 is defined by the arguments passed to this method, which can be the same
-ones as in the <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p>
+ones as in the <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p>
 <pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new(<span class="s">&quot;hello\nworld&quot;</span>)
 io.each_line <span class="k">do</span> <span class="o">|</span>line<span class="o">|</span>
   puts line
@@ -8517,7 +8518,7 @@ io.each_line <span class="k">do</span> <span class="o">|</span>line<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L962" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L962" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8534,7 +8535,7 @@ io.each_line <span class="k">do</span> <span class="o">|</span>line<span class="
           
           <p>Returns an <code><a href="Iterator.html">Iterator</a></code> for the <em>lines</em> in this <code><a href="IO.html">IO</a></code>, where a line
 is defined by the arguments passed to this method, which can be the same
-ones as in the <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p>
+ones as in the <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code> methods.</p>
 <pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new(<span class="s">&quot;hello\nworld&quot;</span>)
 iter <span class="o">=</span> io.each_line
 iter.<span class="k">next</span> <span class="c"># =&gt; &quot;hello&quot;</span>
@@ -8544,7 +8545,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; &quot;world&quot;</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L978" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8565,7 +8566,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; &quot;world&quot;</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1080" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1080" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8587,7 +8588,7 @@ iter.<span class="k">next</span> <span class="c"># =&gt; &quot;world&quot;</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8611,36 +8612,7 @@ io.getb_to_end <span class="c"># =&gt; Bytes[]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L580" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="gets(limit:Int,chomp=false):String|Nil-instance-method">
-      <div class="signature">
-        
-        def <strong>gets</strong>(limit : <a href="Int.html">Int</a>, chomp = <span class="n">false</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
-
-        <a class="method-permalink" href="#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-          <p>Reads a line of at most <em>limit</em> bytes from this <code><a href="IO.html">IO</a></code>.
-A line is terminated by the <code>\n</code> character.
-Returns <code>nil</code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
-<pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new <span class="s">&quot;hello\nworld&quot;</span>
-io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;hel&quot;</span>
-io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;lo\n&quot;</span>
-io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;wor&quot;</span>
-io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;ld&quot;</span>
-io.gets(<span class="n">3</span>) <span class="c"># =&gt; nil</span></code></pre>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L615" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L580" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8667,17 +8639,75 @@ io.gets(<span class="s">&#39;w&#39;</span>, <span class="n">10</span>) <span cla
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L643" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L643" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="gets(delimiter:Char,chomp=false):String|Nil-instance-method">
+    <div class="entry-detail" id="gets(chomp:Bool=true):String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>gets</strong>(delimiter : <a href="Char.html">Char</a>, chomp = <span class="n">false</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
+        def <strong>gets</strong>(chomp : <a href="Bool.html">Bool</a> = <span class="n">true</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#gets%28delimiter%3AChar%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#gets%28chomp%3ABool%3Dtrue%29%3AString%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Reads a line from this <code><a href="IO.html">IO</a></code>. A line is terminated by the <code>\n</code> character.
+Returns <code>nil</code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
+<p>By default the newline is removed from the returned string,
+unless <em>chomp</em> is <code>false</code>.</p>
+<pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new <span class="s">&quot;hello\nworld\nfoo\n&quot;</span>
+io.gets               <span class="c"># =&gt; &quot;hello&quot;</span>
+io.gets(chomp: <span class="n">false</span>) <span class="c"># =&gt; &quot;world\n&quot;</span>
+io.gets               <span class="c"># =&gt; &quot;foo&quot;</span>
+io.gets               <span class="c"># =&gt; nil</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L599" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gets(limit:Int,chomp:Bool=false):String|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>gets</strong>(limit : <a href="Int.html">Int</a>, chomp : <a href="Bool.html">Bool</a> = <span class="n">false</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#gets%28limit%3AInt%2Cchomp%3ABool%3Dfalse%29%3AString%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Reads a line of at most <em>limit</em> bytes from this <code><a href="IO.html">IO</a></code>.
+A line is terminated by the <code>\n</code> character.
+Returns <code>nil</code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
+<pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new <span class="s">&quot;hello\nworld&quot;</span>
+io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;hel&quot;</span>
+io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;lo\n&quot;</span>
+io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;wor&quot;</span>
+io.gets(<span class="n">3</span>) <span class="c"># =&gt; &quot;ld&quot;</span>
+io.gets(<span class="n">3</span>) <span class="c"># =&gt; nil</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L615" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gets(delimiter:Char,chomp:Bool=false):String|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>gets</strong>(delimiter : <a href="Char.html">Char</a>, chomp : <a href="Bool.html">Bool</a> = <span class="n">false</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#gets%28delimiter%3AChar%2Cchomp%3ABool%3Dfalse%29%3AString%7CNil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8694,7 +8724,7 @@ io.gets(<span class="s">&#39;w&#39;</span>) <span class="c"># =&gt; nil</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L629" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L629" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8720,36 +8750,7 @@ io.gets(<span class="s">&quot;wo&quot;</span>) <span class="c"># =&gt; nil</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L818" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="gets(chomp=true):String|Nil-instance-method">
-      <div class="signature">
-        
-        def <strong>gets</strong>(chomp = <span class="n">true</span>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
-
-        <a class="method-permalink" href="#gets%28chomp%3Dtrue%29%3AString%7CNil-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-          <p>Reads a line from this <code><a href="IO.html">IO</a></code>. A line is terminated by the <code>\n</code> character.
-Returns <code>nil</code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
-<p>By default the newline is removed from the returned string,
-unless <em>chomp</em> is <code>false</code>.</p>
-<pre><code class="language-crystal">io <span class="o">=</span> <span class="t">IO</span><span class="t">::</span><span class="t">Memory</span>.new <span class="s">&quot;hello\nworld\nfoo\n&quot;</span>
-io.gets               <span class="c"># =&gt; &quot;hello&quot;</span>
-io.gets(chomp: <span class="n">false</span>) <span class="c"># =&gt; &quot;world\n&quot;</span>
-io.gets               <span class="c"># =&gt; &quot;foo&quot;</span>
-io.gets               <span class="c"># =&gt; nil</span></code></pre>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L599" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L818" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8773,7 +8774,7 @@ io.gets_to_end <span class="c"># =&gt; &quot;&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L558" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L558" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8805,7 +8806,7 @@ this method.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L466" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L466" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8834,7 +8835,7 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1130" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8862,7 +8863,7 @@ file.gets_to_end <span class="c"># =&gt; &quot;lo&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1146" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8888,7 +8889,7 @@ io.to_s <span class="c"># =&gt; &quot;1-Crystal&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L192" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8913,17 +8914,17 @@ io.to_s <span class="c"># =&gt; &quot;1-Crystal&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L205" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="printf(format_string,args:Array|Tuple):Nil-instance-method">
+    <div class="entry-detail" id="printf(format_string:String,args:Array|Tuple):Nil-instance-method">
       <div class="signature">
         
-        def <strong>printf</strong>(format_string, args : <a href="Array.html">Array</a> | <a href="Tuple.html">Tuple</a>) : <a href="Nil.html">Nil</a>
+        def <strong>printf</strong>(format_string : <a href="String.html">String</a>, args : <a href="Array.html">Array</a> | <a href="Tuple.html">Tuple</a>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8935,17 +8936,17 @@ For details on the format string, see top-level <code>::printf</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L274" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L274" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="printf(format_string,*args):Nil-instance-method">
+    <div class="entry-detail" id="printf(format_string:String,*args):Nil-instance-method">
       <div class="signature">
         
-        def <strong>printf</strong>(format_string, *args) : <a href="Nil.html">Nil</a>
+        def <strong>printf</strong>(format_string : <a href="String.html">String</a>, *args) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#printf%28format_string%2C%2Aargs%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#printf%28format_string%3AString%2C%2Aargs%29%3ANil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8957,7 +8958,7 @@ For details on the format string, see top-level <code>::printf</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L269" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8983,7 +8984,7 @@ io.to_s <span class="c"># =&gt; &quot;hello\nworld\n&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L221" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L221" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9008,7 +9009,7 @@ io.to_s <span class="c"># =&gt; &quot;1\nCrystal\n&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L235" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L235" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9032,7 +9033,7 @@ io.to_s <span class="c"># =&gt; &quot;\n&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L247" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L247" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9057,7 +9058,7 @@ io.to_s <span class="c"># =&gt; &quot;1\n-\nCrystal\n&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L260" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L260" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9087,7 +9088,7 @@ io.read(slice) <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L95" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L95" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9111,7 +9112,7 @@ io.read(slice) <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1161" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1161" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9136,7 +9137,7 @@ io.read_byte <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L286" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L286" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9165,7 +9166,7 @@ io.read_bytes(<span class="t">Int32</span>, <span class="t">IO</span><span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L933" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L933" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9190,7 +9191,7 @@ io.read_char <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L303" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9217,7 +9218,7 @@ io.read_fully(slice) <span class="c"># raises IO::EOFError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L526" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L526" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9245,7 +9246,7 @@ io.read_fully?(slice) <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L541" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L541" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9260,13 +9261,13 @@ io.read_fully?(slice) <span class="c"># =&gt; nil</span></code></pre>
       
         <div class="doc">
           
-          <p>Same as <code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, but raises <code><a href="IO/EOFError.html">EOFError</a></code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
+          <p>Same as <code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, but raises <code><a href="IO/EOFError.html">EOFError</a></code> if called at the end of this <code><a href="IO.html">IO</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L858" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L858" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9293,17 +9294,17 @@ io.read_string(<span class="n">6</span>) <span class="c"># raises IO::EOFError</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L437" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L437" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="read_utf8(slice:Bytes)-instance-method">
+    <div class="entry-detail" id="read_utf8(slice:Bytes):Int32-instance-method">
       <div class="signature">
         
-        def <strong>read_utf8</strong>(slice : <a href="Bytes.html">Bytes</a>)
+        def <strong>read_utf8</strong>(slice : <a href="Bytes.html">Bytes</a>) : <a href="Int32.html">Int32</a>
 
-        <a class="method-permalink" href="#read_utf8%28slice%3ABytes%29-instance-method">#</a>
+        <a class="method-permalink" href="#read_utf8%28slice%3ABytes%29%3AInt32-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -9326,7 +9327,7 @@ buffer.to_slice[<span class="n">0</span>, bytes_read]             <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L419" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L419" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9359,7 +9360,7 @@ io.read_utf8_byte <span class="c"># =&gt; nil</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L394" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L394" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9381,7 +9382,7 @@ may implement it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1054" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1054" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9413,7 +9414,7 @@ file.gets(<span class="n">1</span>) <span class="c"># =&gt; &quot;c&quot;</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1113" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1113" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9434,14 +9435,14 @@ file.gets(<span class="n">1</span>) <span class="c"># =&gt; &quot;c&quot;</span>
 <li><code>nil</code>: an exception is raised on invalid byte sequences</li>
 <li><code>:skip</code>: invalid byte sequences are ignored</li>
 </ul>
-<p>String operations (<code><a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, <code><a href="IO.html#gets_to_end%3AString-instance-method">#gets_to_end</a></code>, <code><a href="IO.html#read_char%3AChar%7CNil-instance-method">#read_char</a></code>, <code>&lt;&lt;</code>, <code><a href="IO.html#print%28obj%3A_%29%3ANil-instance-method">#print</a></code>, <code><a href="IO.html#puts%3ANil-instance-method">#puts</a></code>
-<code><a href="IO.html#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>) will use this encoding.</p>
+<p>String operations (<code><a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method">#gets</a></code>, <code><a href="IO.html#gets_to_end%3AString-instance-method">#gets_to_end</a></code>, <code><a href="IO.html#read_char%3AChar%7CNil-instance-method">#read_char</a></code>, <code>&lt;&lt;</code>, <code><a href="IO.html#print%28obj%3A_%29%3ANil-instance-method">#print</a></code>, <code><a href="IO.html#puts%3ANil-instance-method">#puts</a></code>
+<code><a href="IO.html#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method">#printf</a></code>) will use this encoding.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1066" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1066" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9467,7 +9468,7 @@ io.skip(<span class="n">1</span>) <span class="c"># raises IO::EOFError</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L871" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L871" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9489,7 +9490,7 @@ are no more bytes.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L883" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L883" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9510,7 +9511,7 @@ are no more bytes.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L1151" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L1151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9534,7 +9535,7 @@ are no more bytes.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L945" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L945" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9559,7 +9560,7 @@ io.to_s <span class="c"># =&gt; &quot;abcd&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L105" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L105" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9583,17 +9584,17 @@ io.to_s <span class="c"># =&gt; &quot;a&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L896" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L896" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="write_bytes(object,format:IO::ByteFormat=IO::ByteFormat::SystemEndian):Nil-instance-method">
+    <div class="entry-detail" id="write_bytes(object:_,format:IO::ByteFormat=IO::ByteFormat::SystemEndian):Nil-instance-method">
       <div class="signature">
         
-        def <strong>write_bytes</strong>(object, format : <a href="IO/ByteFormat.html">IO::ByteFormat</a> = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : <a href="Nil.html">Nil</a>
+        def <strong>write_bytes</strong>(object : _, format : <a href="IO/ByteFormat.html">IO::ByteFormat</a> = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#write_bytes%28object%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#write_bytes%28object%3A_%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -9612,7 +9613,7 @@ io.gets(<span class="n">4</span>) <span class="c"># =&gt; &quot;\u{4}\u{3}\u{2}\
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L915" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L915" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9643,7 +9644,7 @@ io.to_slice <span class="c"># =&gt; Bytes[196, 227]</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L484" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L484" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9675,7 +9676,7 @@ io.to_slice <span class="c"># =&gt; Bytes[196, 227]</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io.cr#L496" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io.cr#L496" target="_blank">View source</a>]
         
       </div>
     </div>

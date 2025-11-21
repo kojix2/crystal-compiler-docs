@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>JSON::Token - Crystal 1.18.0-dev</title>
+  <title>JSON::Token - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7193,7 +7198,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L1" target="_blank">
         json/token.cr
       </a>
     
@@ -7244,7 +7249,14 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#column_number%3D%28column_number%3AInt32%29-instance-method" class="signature"><strong>#column_number=</strong>(column_number : Int32)</a>
+        <a href="#column_number%3D%28column_number%29-instance-method" class="signature"><strong>#column_number=</strong>(column_number)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#column_number_i64%3AInt64-instance-method" class="signature"><strong>#column_number_i64</strong> : Int64</a>
+        
+          <div class="summary"><p><span class="flag lime">EXPERIMENTAL</span> </p></div>
         
       </li>
     
@@ -7274,7 +7286,14 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#line_number%3D%28line_number%3AInt32%29-instance-method" class="signature"><strong>#line_number=</strong>(line_number : Int32)</a>
+        <a href="#line_number%3D%28line_number%29-instance-method" class="signature"><strong>#line_number=</strong>(line_number)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#line_number_i64%3AInt64-instance-method" class="signature"><strong>#line_number_i64</strong> : Int64</a>
+        
+          <div class="summary"><p><span class="flag lime">EXPERIMENTAL</span> </p></div>
         
       </li>
     
@@ -7540,20 +7559,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7693,7 +7708,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L64" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7725,23 +7740,44 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L34" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L49" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="column_number=(column_number:Int32)-instance-method">
+    <div class="entry-detail" id="column_number=(column_number)-instance-method">
       <div class="signature">
         
-        def <strong>column_number=</strong>(column_number : <a href="../Int32.html">Int32</a>)
+        def <strong>column_number=</strong>(column_number)
 
-        <a class="method-permalink" href="#column_number%3D%28column_number%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#column_number%3D%28column_number%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L34" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="column_number_i64:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>column_number_i64</strong> : <a href="../Int64.html">Int64</a>
+
+        <a class="method-permalink" href="#column_number_i64%3AInt64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L54" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7757,7 +7793,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L27" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7773,7 +7809,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7789,7 +7825,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7805,7 +7841,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7821,23 +7857,44 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L36" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="line_number=(line_number:Int32)-instance-method">
+    <div class="entry-detail" id="line_number=(line_number)-instance-method">
       <div class="signature">
         
-        def <strong>line_number=</strong>(line_number : <a href="../Int32.html">Int32</a>)
+        def <strong>line_number=</strong>(line_number)
 
-        <a class="method-permalink" href="#line_number%3D%28line_number%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#line_number%3D%28line_number%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L45" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="line_number_i64:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>line_number_i64</strong> : <a href="../Int64.html">Int64</a>
+
+        <a class="method-permalink" href="#line_number_i64%3AInt64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L41" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7853,7 +7910,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7869,7 +7926,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7885,7 +7942,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7901,7 +7958,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7933,7 +7990,7 @@ which includes its class name and its object address.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/token.cr#L45" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/token.cr#L72" target="_blank">View source</a>]
         
       </div>
     </div>

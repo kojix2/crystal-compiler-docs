@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Slice(T) - Crystal 1.18.0-dev</title>
+  <title>Slice(T) - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7226,35 +7231,35 @@ will raise. For example the slice of bytes returned by
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L381" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L381" target="_blank">
         primitives.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L13" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L13" target="_blank">
         slice.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice/sort.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice/sort.cr#L1" target="_blank">
         slice/sort.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L394" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L397" target="_blank">
         yaml/from_yaml.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L326" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L326" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -7663,9 +7668,9 @@ will raise. For example the slice of bytes returned by
       </li>
     
       <li class="entry-summary">
-        <a href="#shuffle%21%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3Aself-instance-method" class="signature"><strong>#shuffle!</strong>(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : <span class="k">self</span></a>
+        <a href="#shuffle%21%28random%3ARandom%7CNil%3Dnil%29%3Aself-instance-method" class="signature"><strong>#shuffle!</strong>(random : Random | Nil = <span class="n">nil</span>) : <span class="k">self</span></a>
         
-          <div class="summary"><p>Modifies <code>self</code> by randomizing the order of elements in the collection using the given <em>random</em> number generator.</p></div>
+          <div class="summary"><p>Modifies <code>self</code> by randomizing the order of elements in the collection.</p></div>
         
       </li>
     
@@ -7926,8 +7931,8 @@ will raise. For example the slice of bytes returned by
     rotate!</a>, 
     
   
-    <a href="Indexable/Mutable.html#shuffle%21%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3Aself-instance-method" class="tooltip">
-      <span>shuffle!(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : <span class="k">self</span></span>
+    <a href="Indexable/Mutable.html#shuffle%21%28random%3ARandom%7CNil%3Dnil%29%3Aself-instance-method" class="tooltip">
+      <span>shuffle!(random : Random | Nil = <span class="n">nil</span>) : <span class="k">self</span></span>
     shuffle!</a>, 
     
   
@@ -8138,8 +8143,8 @@ will raise. For example the slice of bytes returned by
     rindex!</a>, 
     
   
-    <a href="Indexable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)</span>
+    <a href="Indexable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>)</span>
     sample</a>, 
     
   
@@ -8479,8 +8484,8 @@ will raise. For example the slice of bytes returned by
     reject</a>, 
     
   
-    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : T</span>
+    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>) : T</span>
     sample</a>, 
     
   
@@ -8874,20 +8879,16 @@ will raise. For example the slice of bytes returned by
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -9033,7 +9034,7 @@ will raise. For example the slice of bytes returned by
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L211" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9056,7 +9057,7 @@ slice.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L154" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L155" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9080,7 +9081,7 @@ slice.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L195" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L196" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9096,7 +9097,7 @@ slice.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L395" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L398" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9125,7 +9126,7 @@ slice      <span class="c"># =&gt; Bytes[97, 98, 99]</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L70" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L70" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9151,7 +9152,7 @@ slice <span class="c"># =&gt; Slice[10, 10, 10]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L121" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9178,7 +9179,7 @@ slice <span class="c"># =&gt; Bytes[0, 0, 0]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L86" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L86" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9205,7 +9206,7 @@ slice <span class="c"># =&gt; Slice[10, 11, 12]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L106" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L106" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9250,7 +9251,7 @@ x.read_only? <span class="c"># =&gt; true</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L401" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L401" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9295,7 +9296,7 @@ specific numerical item type.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L34" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L34" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9333,7 +9334,7 @@ slice2 <span class="c"># =&gt; Slice[12, 13, 14]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L167" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L168" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9359,7 +9360,7 @@ intermediate results.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L183" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L184" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9389,7 +9390,7 @@ value, that result is the return value of the comparison.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L827" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L818" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9414,7 +9415,7 @@ elements are equal, <code>false</code> otherwise.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L852" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L843" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9447,7 +9448,7 @@ slice[<span class="n">-3</span>, <span class="n">10</span>] <span class="c"># ra
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L269" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L270" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9484,7 +9485,7 @@ slice[<span class="n">1</span>..<span class="n">33</span>] <span class="c"># rai
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L319" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L320" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9514,7 +9515,7 @@ ary[<span class="n">3</span>] <span class="o">=</span> <span class="n">5</span> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L219" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L220" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9547,7 +9548,7 @@ slice[<span class="n">-3</span>, <span class="n">10</span>]? <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L242" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L243" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9577,7 +9578,7 @@ slice[<span class="n">1</span>..<span class="n">33</span>]? <span class="c"># =&
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L289" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9593,7 +9594,7 @@ slice[<span class="n">1</span>..<span class="n">33</span>]? <span class="c"># =&
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L807" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L798" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9616,7 +9617,7 @@ from calling <code><a href="Slice.html#clone-instance-method">#clone</a></code> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9632,7 +9633,7 @@ from calling <code><a href="Slice.html#clone-instance-method">#clone</a></code> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L505" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L496" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9654,7 +9655,7 @@ from calling <code><a href="Slice.html#clone-instance-method">#clone</a></code> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L541" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L532" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9670,7 +9671,7 @@ from calling <code><a href="Slice.html#clone-instance-method">#clone</a></code> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L512" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L503" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9698,7 +9699,7 @@ dst.copy_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L530" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L521" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9720,7 +9721,7 @@ dst.copy_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L141" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L142" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9749,7 +9750,7 @@ array               <span class="c"># =&gt; [1, 2, 9, 9, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L466" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L457" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9776,7 +9777,7 @@ array               <span class="c"># =&gt; [1, 2, 9, 9, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L477" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L468" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9801,7 +9802,7 @@ array         <span class="c"># =&gt; [2, 2, 2, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L445" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L446" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9830,7 +9831,7 @@ a.fill(<span class="n">2</span>, <span class="n">3</span>) { <span class="o">|</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L492" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L483" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9857,7 +9858,7 @@ a.fill(<span class="n">2</span>..<span class="n">4</span>) { <span class="o">|</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L500" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L491" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9887,7 +9888,7 @@ array                               <span class="c"># =&gt; [9, 16, 25, 36]</spa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L484" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L475" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9908,7 +9909,7 @@ array                               <span class="c"># =&gt; [9, 16, 25, 36]</spa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1246" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1237" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9938,7 +9939,7 @@ slice.hexdump(<span class="t">STDOUT</span>)</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L737" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L728" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9969,7 +9970,7 @@ slice.to_unsafe_bytes.hexdump <span class="c"># =&gt; &quot;00000000  61 00 3e 0
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L687" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L678" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9996,7 +9997,7 @@ slice.to_unsafe_bytes.hexdump <span class="c"># =&gt; &quot;00000000  61 00 3e 0
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L643" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L634" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10023,7 +10024,7 @@ starting from the given <em>offset</em>, or <code>nil</code> if <em>object</em> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1226" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1217" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10057,7 +10058,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L587" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L578" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10080,7 +10081,7 @@ slice.map <span class="o">&amp;</span>.to_s <span class="c"># =&gt; Slice[&quot;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L422" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L423" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10106,7 +10107,7 @@ a <span class="c"># =&gt; [1, 4, 9]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L411" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L412" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10129,7 +10130,7 @@ from there.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L438" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L439" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10156,7 +10157,7 @@ gems <span class="c"># =&gt; [&quot;0: crystal&quot;, &quot;1: pearl&quot;, &quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L429" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L430" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10172,7 +10173,7 @@ gems <span class="c"># =&gt; [&quot;0: crystal&quot;, &quot;1: pearl&quot;, &quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L545" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L536" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10195,7 +10196,7 @@ overlap; the copy is always done in a non-destructive manner.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L583" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L574" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10211,7 +10212,7 @@ overlap; the copy is always done in a non-destructive manner.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L552" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L543" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10241,7 +10242,7 @@ dst.move_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L571" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L562" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10257,7 +10258,7 @@ dst.move_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L902" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L893" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10278,7 +10279,7 @@ dst.move_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L56" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L56" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10300,7 +10301,7 @@ dst.move_to src <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L353" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L354" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10333,7 +10334,7 @@ a3 <span class="c"># =&gt; [3, 4, 5, 6, 7, 8, 9, 0, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L369" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L370" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10361,24 +10362,31 @@ slice.same?(slice[<span class="n">0</span>, <span class="n">2</span>])     <span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L881" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L872" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="shuffle!(random:Random=Random::DEFAULT):self-instance-method">
+    <div class="entry-detail" id="shuffle!(random:Random|Nil=nil):self-instance-method">
       <div class="signature">
         
-        def <strong>shuffle!</strong>(random : <a href="Random.html">Random</a> = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : <span class="k">self</span>
+        def <strong>shuffle!</strong>(random : <a href="Random.html">Random</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#shuffle%21%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#shuffle%21%28random%3ARandom%7CNil%3Dnil%29%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Modifies <code>self</code> by randomizing the order of elements in the collection
-using the given <em>random</em> number generator. Returns <code>self</code>.</p>
+          <p>Modifies <code>self</code> by randomizing the order of elements in the collection.
+Returns <code>self</code>.</p>
 <pre><code class="language-crystal">a <span class="o">=</span> [<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>]
+a.shuffle! <span class="c"># =&gt; [3, 5, 2, 4, 1]</span>
+a          <span class="c"># =&gt; [3, 5, 2, 4, 1]</span></code></pre>
+<p>Uses the <em>random</em> instance when provided if the randomness needs to be
+controlled or to follow some traits. For example the following shuffle will
+always result in the same order:</p>
+<pre><code class="language-crystal">a <span class="o">=</span> [<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>]
+a.shuffle!(<span class="t">Random</span>.new(<span class="n">42</span>)) <span class="c"># =&gt; [3, 2, 4, 5, 1]</span>
 a.shuffle!(<span class="t">Random</span>.new(<span class="n">42</span>)) <span class="c"># =&gt; [3, 2, 4, 5, 1]</span>
 a                          <span class="c"># =&gt; [3, 2, 4, 5, 1]</span></code></pre>
 <p>Raises if this slice is read-only.</p>
@@ -10387,7 +10395,7 @@ a                          <span class="c"># =&gt; [3, 2, 4, 5, 1]</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L361" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L362" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10409,7 +10417,7 @@ a                          <span class="c"># =&gt; [3, 2, 4, 5, 1]</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L53" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L53" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10436,7 +10444,7 @@ a      <span class="c"># =&gt; Slice[3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L936" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L927" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10465,7 +10473,7 @@ a <span class="c"># =&gt; Slice[3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L970" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L961" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10503,7 +10511,7 @@ integer type, <code><a href="Char.html">Char</a></code>, any enum type, any <cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1026" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1017" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10546,7 +10554,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1103" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1094" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10577,7 +10585,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1173" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10603,7 +10611,7 @@ a <span class="c"># =&gt; Slice[&quot;fig&quot;, &quot;pear&quot;, &quot;apple&q
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1206" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1197" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10633,7 +10641,7 @@ a.swap(<span class="n">2</span>, <span class="n">3</span>)  <span class="c"># ra
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L345" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L346" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10659,7 +10667,7 @@ a.swap(<span class="n">2</span>, <span class="n">3</span>)  <span class="c"># ra
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L907" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L898" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10684,7 +10692,7 @@ a.swap(<span class="n">2</span>, <span class="n">3</span>)  <span class="c"># ra
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L889" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L880" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10700,7 +10708,7 @@ a.swap(<span class="n">2</span>, <span class="n">3</span>)  <span class="c"># ra
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L885" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L876" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10723,7 +10731,7 @@ slice.to_unsafe[<span class="n">0</span>] <span class="c"># =&gt; 10</span></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L920" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L911" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10753,7 +10761,7 @@ ints <span class="c"># =&gt; Slice[0x01AD0304, 0x05060708]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L628" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L619" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10769,7 +10777,7 @@ ints <span class="c"># =&gt; Slice[0x01AD0304, 0x05060708]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L327" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L327" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10801,7 +10809,7 @@ of performance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L325" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L326" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10835,7 +10843,7 @@ of performance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L330" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L331" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10869,7 +10877,7 @@ bytes.unsafe_slice_of(<span class="t">Int32</span>) <span class="c"># =&gt; Slic
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L610" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L601" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10896,7 +10904,7 @@ a               <span class="c"># =&gt; Slice[3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L952" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L943" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10925,7 +10933,7 @@ a <span class="c"># =&gt; Slice[3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L992" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L983" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10961,7 +10969,7 @@ the result could also be <code>[b, a]</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1064" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1055" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11004,7 +11012,7 @@ the result could also be <code>[b, a]</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1137" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11034,7 +11042,7 @@ a <span class="c"># =&gt; Slice[&quot;apple&quot;, &quot;pear&quot;, &quot;fig&q
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1193" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1184" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11062,7 +11070,7 @@ Which results in a performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L1218" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L1209" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11091,7 +11099,7 @@ array.update(<span class="n">5</span>) { <span class="o">|</span>x<span class="o
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/slice.cr#L337" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/slice.cr#L338" target="_blank">View source</a>]
         
       </div>
     </div>

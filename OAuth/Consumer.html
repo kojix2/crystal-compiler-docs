@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>OAuth::Consumer - Crystal 1.18.0-dev</title>
+  <title>OAuth::Consumer - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7253,7 +7258,7 @@ client.get <span class="s">&quot;/some_path&quot;</span></code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L53" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L53" target="_blank">
         oauth/consumer.cr
       </a>
     
@@ -7308,28 +7313,28 @@ client.get <span class="s">&quot;/some_path&quot;</span></code></pre>
       </li>
     
       <li class="entry-summary">
-        <a href="#get_access_token%28request_token%2Coauth_verifier%2Cextra_params%3Dnil%29%3AAccessToken-instance-method" class="signature"><strong>#get_access_token</strong>(request_token, oauth_verifier, extra_params = <span class="n">nil</span>) : AccessToken</a>
+        <a href="#get_access_token%28request_token%3ARequestToken%2Coauth_verifier%3AString%2Cextra_params%3AHash%28String%2CString%29%7CNil%3Dnil%29%3AAccessToken-instance-method" class="signature"><strong>#get_access_token</strong>(request_token : RequestToken, oauth_verifier : String, extra_params : Hash(String, String) | Nil = <span class="n">nil</span>) : AccessToken</a>
         
           <div class="summary"><p>Gets an access token from a previously obtained request token and an <em>oauth_verifier</em> obtained from an authorize URI, as specified by <a href="https://tools.ietf.org/html/rfc5849#section-2.3">RFC 5849, Section 2.3</a>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#get_authorize_uri%28request_token%2Coauth_callback%3Dnil%29%3AString-instance-method" class="signature"><strong>#get_authorize_uri</strong>(request_token, oauth_callback = <span class="n">nil</span>) : String</a>
+        <a href="#get_authorize_uri%28request_token%3ARequestToken%2Coauth_callback%3AString%7CNil%3Dnil%29%3AString-instance-method" class="signature"><strong>#get_authorize_uri</strong>(request_token : RequestToken, oauth_callback : String | Nil = <span class="n">nil</span>) : String</a>
         
           <div class="summary"><p>Returns an authorize URI from a given request token to redirect the user to obtain an access token, as specified by <a href="https://tools.ietf.org/html/rfc5849#section-2.2">RFC 5849, Section 2.2</a>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#get_authorize_uri%28request_token%2Coauth_callback%3Dnil%2C%26block%3AURI%3A%3AParams%3A%3ABuilder-%3E%29%3AString-instance-method" class="signature"><strong>#get_authorize_uri</strong>(request_token, oauth_callback = <span class="n">nil</span>, &block : URI::Params::Builder -> ) : String</a>
+        <a href="#get_authorize_uri%28request_token%3ARequestToken%2Coauth_callback%3AString%7CNil%3Dnil%2C%26block%3AURI%3A%3AParams%3A%3ABuilder-%3E%29%3AString-instance-method" class="signature"><strong>#get_authorize_uri</strong>(request_token : RequestToken, oauth_callback : String | Nil = <span class="n">nil</span>, &block : URI::Params::Builder -> ) : String</a>
         
           <div class="summary"><p>Returns an authorize URI from a given request token to redirect the user to obtain an access token, as specified by <a href="https://tools.ietf.org/html/rfc5849#section-2.2">RFC 5849, Section 2.2</a>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#get_request_token%28oauth_callback%3D%22oob%22%29-instance-method" class="signature"><strong>#get_request_token</strong>(oauth_callback = <span class="s">&quot;oob&quot;</span>)</a>
+        <a href="#get_request_token%28oauth_callback%3AString%3D%22oob%22%29%3ARequestToken-instance-method" class="signature"><strong>#get_request_token</strong>(oauth_callback : String = <span class="s">&quot;oob&quot;</span>) : RequestToken</a>
         
           <div class="summary"><p>Obtains a request token, also known as &quot;temporary credentials&quot;, as specified by <a href="https://tools.ietf.org/html/rfc5849#section-2.1">RFC 5849, Section 2.1</a>.</p></div>
         
@@ -7570,20 +7575,16 @@ client.get <span class="s">&quot;/some_path&quot;</span></code></pre>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7732,7 +7733,7 @@ If they are absolute, the absolute URL will be used.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L62" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7770,17 +7771,17 @@ If they are absolute, the absolute URL will be used.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L129" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get_access_token(request_token,oauth_verifier,extra_params=nil):AccessToken-instance-method">
+    <div class="entry-detail" id="get_access_token(request_token:RequestToken,oauth_verifier:String,extra_params:Hash(String,String)|Nil=nil):AccessToken-instance-method">
       <div class="signature">
         
-        def <strong>get_access_token</strong>(request_token, oauth_verifier, extra_params = <span class="n">nil</span>) : <a href="../OAuth/AccessToken.html">AccessToken</a>
+        def <strong>get_access_token</strong>(request_token : <a href="../OAuth/RequestToken.html">RequestToken</a>, oauth_verifier : <a href="../String.html">String</a>, extra_params : <a href="../Hash.html">Hash</a>(<a href="../String.html">String</a>, <a href="../String.html">String</a>) | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="../OAuth/AccessToken.html">AccessToken</a>
 
-        <a class="method-permalink" href="#get_access_token%28request_token%2Coauth_verifier%2Cextra_params%3Dnil%29%3AAccessToken-instance-method">#</a>
+        <a class="method-permalink" href="#get_access_token%28request_token%3ARequestToken%2Coauth_verifier%3AString%2Cextra_params%3AHash%28String%2CString%29%7CNil%3Dnil%29%3AAccessToken-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7794,17 +7795,17 @@ obtained from an authorize URI, as specified by
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L119" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L119" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get_authorize_uri(request_token,oauth_callback=nil):String-instance-method">
+    <div class="entry-detail" id="get_authorize_uri(request_token:RequestToken,oauth_callback:String|Nil=nil):String-instance-method">
       <div class="signature">
         
-        def <strong>get_authorize_uri</strong>(request_token, oauth_callback = <span class="n">nil</span>) : <a href="../String.html">String</a>
+        def <strong>get_authorize_uri</strong>(request_token : <a href="../OAuth/RequestToken.html">RequestToken</a>, oauth_callback : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#get_authorize_uri%28request_token%2Coauth_callback%3Dnil%29%3AString-instance-method">#</a>
+        <a class="method-permalink" href="#get_authorize_uri%28request_token%3ARequestToken%2Coauth_callback%3AString%7CNil%3Dnil%29%3AString-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7817,17 +7818,17 @@ to obtain an access token, as specified by
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L84" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get_authorize_uri(request_token,oauth_callback=nil,&amp;block:URI::Params::Builder-&gt;):String-instance-method">
+    <div class="entry-detail" id="get_authorize_uri(request_token:RequestToken,oauth_callback:String|Nil=nil,&amp;block:URI::Params::Builder-&gt;):String-instance-method">
       <div class="signature">
         
-        def <strong>get_authorize_uri</strong>(request_token, oauth_callback = <span class="n">nil</span>, &block : <a href="../URI/Params/Builder.html">URI::Params::Builder</a> -> ) : <a href="../String.html">String</a>
+        def <strong>get_authorize_uri</strong>(request_token : <a href="../OAuth/RequestToken.html">RequestToken</a>, oauth_callback : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>, &block : <a href="../URI/Params/Builder.html">URI::Params::Builder</a> -> ) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#get_authorize_uri%28request_token%2Coauth_callback%3Dnil%2C%26block%3AURI%3A%3AParams%3A%3ABuilder-%3E%29%3AString-instance-method">#</a>
+        <a class="method-permalink" href="#get_authorize_uri%28request_token%3ARequestToken%2Coauth_callback%3AString%7CNil%3Dnil%2C%26block%3AURI%3A%3AParams%3A%3ABuilder-%3E%29%3AString-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7842,17 +7843,17 @@ defined by the standard.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L94" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get_request_token(oauth_callback=&quot;oob&quot;)-instance-method">
+    <div class="entry-detail" id="get_request_token(oauth_callback:String=&quot;oob&quot;):RequestToken-instance-method">
       <div class="signature">
         
-        def <strong>get_request_token</strong>(oauth_callback = <span class="s">&quot;oob&quot;</span>)
+        def <strong>get_request_token</strong>(oauth_callback : <a href="../String.html">String</a> = <span class="s">&quot;oob&quot;</span>) : <a href="../OAuth/RequestToken.html">RequestToken</a>
 
-        <a class="method-permalink" href="#get_request_token%28oauth_callback%3D%22oob%22%29-instance-method">#</a>
+        <a class="method-permalink" href="#get_request_token%28oauth_callback%3AString%3D%22oob%22%29%3ARequestToken-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7865,7 +7866,7 @@ defined by the standard.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/consumer.cr#L75" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/consumer.cr#L75" target="_blank">View source</a>]
         
       </div>
     </div>

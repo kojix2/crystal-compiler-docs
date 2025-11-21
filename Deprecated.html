@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Deprecated - Crystal 1.18.0-dev</title>
+  <title>Deprecated - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7175,11 +7180,27 @@
     Overview
   </h2>
 
-  <p>This annotation marks methods, classes, constants, and macros as deprecated.</p>
-<p>It receives an optional <code>StringLiteral</code> as single argument containing a deprecation notice.</p>
+  <p>This annotation marks features as deprecated.</p>
+<p>It can annotate methods, macros, types, constants, aliases and method parameters.</p>
+<p>It receives an optional <code>StringLiteral</code> as single argument containing a
+deprecation notice.</p>
 <pre><code class="language-crystal">@[<span class="t">Deprecated</span>(<span class="s">&quot;Use `#bar` instead&quot;</span>)]
 <span class="k">def</span> <span class="m">foo</span>
+<span class="k">end</span>
+
+@[<span class="t">Deprecated</span>(<span class="s">&quot;Here may be dragons&quot;</span>)]
+<span class="k">class</span> <span class="t">Foo</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="m">foo</span>(bar, @[<span class="t">Deprecated</span>(<span class="s">&quot;Do not try this at home&quot;</span>)] baz)
 <span class="k">end</span></code></pre>
+<p>Deprecations are shown in the API docs and the compiler prints a warning when
+using a deprecated feature.</p>
+<p>Deprecated types only trigger a warning when they are actually <em>used</em> (e.g.
+calling a class method), not when they're just part of type restriction, for
+example.
+Deprecated parameters only trigger a warning when the particular parameter is
+passed in a call. Calls without this parameter are unaffected.</p>
 
 
 
@@ -7206,7 +7227,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/annotations.cr#L10" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/annotations.cr#L29" target="_blank">
         annotations.cr
       </a>
     

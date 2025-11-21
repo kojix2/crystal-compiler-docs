@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>JSON::Serializable - Crystal 1.18.0-dev</title>
+  <title>JSON::Serializable - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7235,7 +7240,7 @@ can be placed on the instance variable. Annotating property, getter and setter m
 <li><strong>ignore_serialize</strong>: If truthy, skip this field in serialization (default: <code>false</code>). The value can be any Crystal expression and is evaluated at runtime.</li>
 <li><strong>ignore_deserialize</strong>: if <code>true</code> skip this field in deserialization (by default false)</li>
 <li><strong>key</strong>: the value of the key in the json object (by default the name of the instance variable)</li>
-<li><strong>root</strong>: assume the value is inside a JSON object with a given key (see <code><a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method">Object.from_json(string_or_io, root)</a></code>)</li>
+<li><strong>root</strong>: assume the value is inside a JSON object with a given key (see <code><a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method">Object.from_json(string_or_io, root)</a></code>)</li>
 <li><strong>converter</strong>: specify an alternate type for parsing and generation. The converter must define <code>from_json(<a href="../JSON/PullParser.html">JSON::PullParser</a>)</code> and <code>to_json(value, <a href="../JSON/Builder.html">JSON::Builder</a>)</code>. Examples of converters are a <code><a href="../Time/Format.html">Time::Format</a></code> instance and <code><a href="../Time/EpochConverter.html">Time::EpochConverter</a></code> for <code><a href="../Time.html">Time</a></code>.</li>
 <li><strong>presence</strong>: if <code>true</code>, a <code>@{{key}}_present</code> instance variable will be generated when the key was present (even if it has a <code>null</code> value), <code>false</code> by default</li>
 <li><strong>emit_null</strong>: if <code>true</code>, emits a <code>null</code> value for nilable property (by default nulls are not emitted)</li>
@@ -7250,6 +7255,10 @@ can be placed on the instance variable. Annotating property, getter and setter m
 <span class="k">end</span>
 
 <span class="t">A</span>.from_json(<span class="s">%&lt;{&quot;a&quot;:1}&gt;</span>) <span class="c"># =&gt; A(@a=1, @b=1.0)</span></code></pre>
+<p><span class="flag purple">NOTE</span>  <code><a href="../JSON/Serializable.html">JSON::Serializable</a></code> defines an internal constructor on any including
+type, which means the default constructor (<code>def initialize; end</code>) is absent
+unless explicitly defined by the user, even when all instance variables have
+a default initializer.</p>
 <h3><a id="extensions-jsonserializablestrict-and-jsonserializableunmapped." class="anchor" href="#extensions-jsonserializablestrict-and-jsonserializableunmapped.">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
@@ -7373,7 +7382,7 @@ person.name <span class="c"># =&gt; &quot;JANE&quot;</span></code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/serialization.cr#L152" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/serialization.cr#L157" target="_blank">
         json/serialization.cr
       </a>
     
@@ -7385,23 +7394,6 @@ person.name <span class="c"># =&gt; &quot;JANE&quot;</span></code></pre>
 
 
   
-  <h2>
-    <a id="constructors" class="anchor" href="#constructors">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Constructors
-  </h2>
-  <ul class="list-summary">
-    
-      <li class="entry-summary">
-        <a href="#new%28%2A%2C__pull_for_json_serializablepull%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(*, __pull_for_json_serializable pull : JSON::PullParser)</a>
-        
-      </li>
-    
-  </ul>
-
 
   
 
@@ -7451,32 +7443,6 @@ person.name <span class="c"># =&gt; &quot;JANE&quot;</span></code></pre>
   </div>
 
   
-  <h2>
-    <a id="constructor-detail" class="anchor" href="#constructor-detail">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Constructor Detail
-  </h2>
-  
-    <div class="entry-detail" id="new(*,__pull_for_json_serializablepull:JSON::PullParser)-class-method">
-      <div class="signature">
-        
-        def self.<strong>new</strong>(*, __pull_for_json_serializable pull : <a href="../JSON/PullParser.html">JSON::PullParser</a>)
-
-        <a class="method-permalink" href="#new%28%2A%2C__pull_for_json_serializablepull%3AJSON%3A%3APullParser%29-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/serialization.cr#L181" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-
 
   
 
@@ -7535,7 +7501,7 @@ maps a discriminator value to a class to deserialize</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/serialization.cr#L412" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/serialization.cr#L418" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7563,7 +7529,7 @@ maps a discriminator value to a class to deserialize</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/serialization.cr#L278" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/serialization.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>

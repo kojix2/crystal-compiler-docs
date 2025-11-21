@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Array(T) - Crystal 1.18.0-dev</title>
+  <title>Array(T) - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7246,42 +7251,42 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L48" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L48" target="_blank">
         array.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L345" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L377" target="_blank">
         json/any.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L93" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L93" target="_blank">
         json/to_json.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/uri/params/to_www_form.cr#L8" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/uri/params/to_www_form.cr#L8" target="_blank">
         uri/params/to_www_form.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L380" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L380" target="_blank">
         yaml/any.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L34" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L34" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -7964,9 +7969,9 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
       </li>
     
       <li class="entry-summary">
-        <a href="#shuffle%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="signature"><strong>#shuffle</strong>(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)</a>
+        <a href="#shuffle%28random%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="signature"><strong>#shuffle</strong>(random : Random | Nil = <span class="n">nil</span>) : Array(T)</a>
         
-          <div class="summary"><p>Returns an array with all the elements in the collection randomized using the given <em>random</em> number generator.</p></div>
+          <div class="summary"><p>Returns a new instance with all elements in the collection randomized.</p></div>
         
       </li>
     
@@ -8269,8 +8274,8 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
     rotate!</a>, 
     
   
-    <a href="Indexable/Mutable.html#shuffle%21%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3Aself-instance-method" class="tooltip">
-      <span>shuffle!(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : <span class="k">self</span></span>
+    <a href="Indexable/Mutable.html#shuffle%21%28random%3ARandom%7CNil%3Dnil%29%3Aself-instance-method" class="tooltip">
+      <span>shuffle!(random : Random | Nil = <span class="n">nil</span>) : <span class="k">self</span></span>
     shuffle!</a>, 
     
   
@@ -8481,8 +8486,8 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
     rindex!</a>, 
     
   
-    <a href="Indexable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)</span>
+    <a href="Indexable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>)</span>
     sample</a>, 
     
   
@@ -8822,8 +8827,8 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
     reject</a>, 
     
   
-    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : T</span>
+    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>) : T</span>
     sample</a>, 
     
   
@@ -9224,20 +9229,16 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -9383,7 +9384,7 @@ set <span class="o">&lt;&lt;</span> <span class="n">3</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9410,7 +9411,7 @@ by passing it to a C function.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L191" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L191" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9443,7 +9444,7 @@ different initial value for each position.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9459,7 +9460,7 @@ different initial value for each position.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L102" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L102" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9487,7 +9488,7 @@ ary.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L112" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L112" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9503,7 +9504,7 @@ ary.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L206" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L206" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9524,7 +9525,7 @@ ary.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L94" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9540,7 +9541,7 @@ ary.size <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L117" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L117" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9568,7 +9569,7 @@ ary <span class="c"># =&gt; [[2], [1], [1]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L171" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L171" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9584,7 +9585,7 @@ ary <span class="c"># =&gt; [[2], [1], [1]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L214" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L214" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9620,7 +9621,7 @@ Traversal of elements starts from the last given array.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1273" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1273" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9644,7 +9645,7 @@ Traversal of elements starts from the last given array.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1279" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1279" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9678,7 +9679,7 @@ creating an Array in memory, which might be expensive.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L53" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L53" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9694,7 +9695,7 @@ creating an Array in memory, which might be expensive.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L15" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L15" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9718,7 +9719,7 @@ Traversal of elements starts from the last given array.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1259" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1259" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9742,7 +9743,7 @@ Traversal of elements starts from the last given array.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1265" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1265" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9781,7 +9782,7 @@ and <em>other</em>, excluding any duplicates. The order is preserved from <code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L264" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L264" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9803,7 +9804,7 @@ and <em>other</em>, excluding any duplicates. The order is preserved from <code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L375" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L375" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9827,7 +9828,7 @@ The type of the new array is the union of the types of both the original arrays.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L329" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L329" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9850,7 +9851,7 @@ that appear in <em>other</em>. The order of <code>self</code> is preserved.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L351" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L351" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9873,7 +9874,7 @@ a <span class="o">&lt;&lt;</span> <span class="n">3</span> <span class="c"># =&g
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L409" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L409" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9903,7 +9904,7 @@ value, that result is the return value of the comparison.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L246" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L246" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9928,7 +9929,7 @@ ary <span class="o">==</span> [<span class="n">2</span>, <span class="n">3</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L222" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L222" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9944,7 +9945,7 @@ ary <span class="o">==</span> [<span class="n">2</span>, <span class="n">3</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L346" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L378" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9960,7 +9961,7 @@ ary <span class="o">==</span> [<span class="n">2</span>, <span class="n">3</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L381" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L381" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9985,7 +9986,7 @@ ary <span class="o">==</span> [<span class="n">2</span>, <span class="n">3</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L226" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L226" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10016,7 +10017,7 @@ a[<span class="n">6</span>, <span class="n">1</span>]  <span class="c"># raises 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L648" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L648" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10070,7 +10071,7 @@ a[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L617" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L617" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10102,7 +10103,7 @@ a <span class="c"># =&gt; [1, 6, 7, 8, 9, 10, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L512" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L512" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10134,7 +10135,7 @@ a <span class="c"># =&gt; [1, 6, 2, 3, 4, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L430" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L430" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10170,7 +10171,7 @@ a <span class="c"># =&gt; [1, 2, 6, 7, 8, 9, 10]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L562" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L562" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10202,7 +10203,7 @@ a <span class="c"># =&gt; [1, 2, 6]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L493" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L493" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10235,7 +10236,7 @@ a <span class="c"># =&gt; [1, 6, 7, 8, 9, 10, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L539" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L539" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10268,7 +10269,7 @@ a <span class="c"># =&gt; [1, 6, 2, 3, 4, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L474" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L474" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10289,7 +10290,7 @@ a <span class="c"># =&gt; [1, 6, 2, 3, 4, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L653" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L653" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10313,7 +10314,7 @@ a[<span class="n">6</span>..]?   <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L628" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L628" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10337,7 +10338,7 @@ any duplicates, and preserving the order from <code>self</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L295" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L295" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10360,7 +10361,7 @@ a.clear <span class="c"># =&gt; []</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L679" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10392,7 +10393,7 @@ ary2 <span class="c"># =&gt; [[1, 2], [3, 4], [7, 8]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L701" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L701" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10414,7 +10415,7 @@ ary2 <span class="c"># =&gt; [[1, 2], [3, 4], [7, 8]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L721" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L721" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10438,7 +10439,7 @@ ary <span class="c"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L732" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L732" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10462,7 +10463,7 @@ ary <span class="c"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L743" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L743" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10486,7 +10487,7 @@ ary <span class="c"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L756" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L756" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10515,7 +10516,7 @@ a             <span class="c"># =&gt; [&quot;a&quot;, &quot;c&quot;]</span></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L790" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10543,7 +10544,7 @@ a.delete_at(<span class="n">99</span>, <span class="n">1</span>) <span class="c"
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L843" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L843" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10569,7 +10570,7 @@ a.delete_at(<span class="n">99</span>) <span class="c"># raises IndexError</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L803" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L803" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10596,7 +10597,7 @@ a.delete_at(<span class="n">99</span>..<span class="n">100</span>) <span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L828" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L828" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10625,7 +10626,7 @@ a.delete_at(<span class="n">99</span>, <span class="n">1</span>) <span class="c"
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L855" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L855" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10657,7 +10658,7 @@ ary2 <span class="c"># =&gt; [[5, 2], [3, 4], [7, 8]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L875" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L875" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10673,7 +10674,7 @@ ary2 <span class="c"># =&gt; [[5, 2], [3, 4], [7, 8]]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1291" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1291" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10700,7 +10701,7 @@ a.fill(<span class="n">2</span>) { <span class="o">|</span>i<span class="o">|</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L894" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L894" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10727,7 +10728,7 @@ a.fill(<span class="n">2</span>) { <span class="o">|</span>i<span class="o">|</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L900" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L900" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10755,7 +10756,7 @@ a.fill(<span class="n">2</span>, <span class="n">2</span>) { <span class="o">|</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L918" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L918" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10783,7 +10784,7 @@ array               <span class="c"># =&gt; [1, 2, 9, 9, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L962" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L962" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10808,7 +10809,7 @@ a.fill(<span class="n">9</span>, <span class="n">2</span>) <span class="c"># =&g
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L938" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L938" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10832,7 +10833,7 @@ a.fill(<span class="n">9</span>, <span class="n">2</span>..<span class="n">3</sp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L981" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L981" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10856,7 +10857,7 @@ array         <span class="c"># =&gt; [2, 2, 2, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L923" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L923" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10881,7 +10882,7 @@ a.fill(<span class="n">9</span>, <span class="n">2</span>) <span class="c"># =&g
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L944" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L944" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10910,7 +10911,7 @@ array               <span class="c"># =&gt; [1, 2, 9, 9, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L969" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L969" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10933,7 +10934,7 @@ array               <span class="c"># =&gt; [1, 2, 9, 9, 5]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L992" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L992" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10960,7 +10961,7 @@ a.flatten              <span class="c"># =&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1251" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1251" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10987,7 +10988,7 @@ starting from the given <em>offset</em>, or <code>nil</code> if <em>object</em> 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L2225" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L2226" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11014,7 +11015,7 @@ a.insert(<span class="n">-1</span>, <span class="s">&quot;z&quot;</span>) <span 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1007" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1007" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11049,7 +11050,7 @@ fruits.insert_all(<span class="n">-7</span>, [<span class="s">&quot;indices&quot
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1049" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1049" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11082,7 +11083,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1091" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1091" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11105,7 +11106,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1101" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1101" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11126,7 +11127,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11152,7 +11153,7 @@ results <span class="c"># =&gt; [&quot;0: crystal&quot;, &quot;1: pearl&quot;, &
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1218" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11184,7 +11185,7 @@ a        <span class="c"># =&gt; []</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1363" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1363" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11211,7 +11212,7 @@ a     <span class="c"># =&gt; [&quot;a&quot;, &quot;b&quot;]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1314" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1314" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11237,7 +11238,7 @@ a.pop { <span class="s">&quot;Testing&quot;</span> } <span class="c"># =&gt; &qu
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1328" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1328" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11259,7 +11260,7 @@ a.pop { <span class="s">&quot;Testing&quot;</span> } <span class="c"># =&gt; &qu
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1380" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1380" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11275,7 +11276,7 @@ a.pop { <span class="s">&quot;Testing&quot;</span> } <span class="c"># =&gt; &qu
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1799" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1800" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11299,7 +11300,7 @@ Traversal of elements starts from <em>ary</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1388" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1388" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11323,7 +11324,7 @@ Traversal of elements starts from <em>enumerable</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1396" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1396" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11354,7 +11355,7 @@ a.push(<span class="n">1</span>)   <span class="c"># =&gt; [&quot;a&quot;, &quot
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1414" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1414" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11378,7 +11379,7 @@ a.push(<span class="s">&quot;b&quot;</span>, <span class="s">&quot;c&quot;</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11404,7 +11405,7 @@ ary <span class="c"># =&gt; [1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1157" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11430,7 +11431,7 @@ ary <span class="c"># =&gt; [1, 2, 8]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1172" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11446,7 +11447,7 @@ ary <span class="c"># =&gt; [1, 2, 8]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L2114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L2115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11462,7 +11463,7 @@ ary <span class="c"># =&gt; [1, 2, 8]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1283" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1283" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11491,7 +11492,7 @@ a2 <span class="c"># =&gt; [1, 2, 3]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1450" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1450" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11514,7 +11515,7 @@ a.reverse <span class="c"># =&gt; [3, 2, 1]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1471" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11540,7 +11541,7 @@ a           <span class="c"># =&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1490" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1490" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11572,7 +11573,7 @@ a3 <span class="c"># =&gt; [3, 4, 5, 6, 7, 8, 9, 0, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1476" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1476" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11598,7 +11599,7 @@ ary <span class="c"># =&gt; [6, 4, 8]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11624,7 +11625,7 @@ ary <span class="c"># =&gt; [6, 4]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1143" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1143" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11656,7 +11657,7 @@ a          <span class="c"># =&gt; []</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1568" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1568" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11682,7 +11683,7 @@ a       <span class="c"># =&gt; [&quot;b&quot;, &quot;c&quot;]</span></code></pr
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1511" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1511" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11711,7 +11712,7 @@ a                    <span class="c"># =&gt; []</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1528" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1528" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11741,29 +11742,29 @@ a        <span class="c"># =&gt; []</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1603" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1603" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="shuffle(random:Random=Random::DEFAULT):Array(T)-instance-method">
+    <div class="entry-detail" id="shuffle(random:Random|Nil=nil):Array(T)-instance-method">
       <div class="signature">
         
-        def <strong>shuffle</strong>(random : <a href="Random.html">Random</a> = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : <a href="Array.html">Array</a>(T)
+        def <strong>shuffle</strong>(random : <a href="Random.html">Random</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="Array.html">Array</a>(T)
 
-        <a class="method-permalink" href="#shuffle%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method">#</a>
+        <a class="method-permalink" href="#shuffle%28random%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Returns an array with all the elements in the collection randomized
-using the given <em>random</em> number generator.</p>
+          <p>Returns a new instance with all elements in the collection randomized.</p>
+<p>See <code><a href="Indexable/Mutable.html#shuffle%21%28random%3ARandom%7CNil%3Dnil%29%3Aself-instance-method">Indexable::Mutable#shuffle!</a></code> for details.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1609" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1610" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11785,7 +11786,7 @@ using the given <em>random</em> number generator.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L212" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11809,7 +11810,7 @@ from the original array.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1230" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1230" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11836,7 +11837,7 @@ a      <span class="c"># =&gt; [3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1626" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11865,7 +11866,7 @@ a <span class="c"># =&gt; [3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1659" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1660" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11894,7 +11895,7 @@ that allocates a new instance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1690" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1691" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11927,7 +11928,7 @@ non-modifying option that allocates a new instance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1702" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1703" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11958,7 +11959,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1738" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1739" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11990,7 +11991,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1763" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1764" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12016,7 +12017,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1780" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1781" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12032,7 +12033,7 @@ performance advantage over stable sort.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L94" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12056,7 +12057,7 @@ to <em>io</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1791" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12081,7 +12082,7 @@ ary.to_unsafe[<span class="n">0</span>] <span class="c"># =&gt; 1</span></code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1815" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12097,7 +12098,7 @@ ary.to_unsafe[<span class="n">0</span>] <span class="c"># =&gt; 1</span></code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L35" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12121,7 +12122,7 @@ a           <span class="c"># =&gt; [[:a, :b], [:c, :d], [:e, :f]]</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1826" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1827" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12150,7 +12151,7 @@ a                <span class="c"># =&gt; [4, 9, 16]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1858" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1859" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12174,7 +12175,7 @@ a                 <span class="c"># =&gt; [1, 4, 9]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1881" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1882" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12198,7 +12199,7 @@ a      <span class="c"># =&gt; [ &quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &q
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1892" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1893" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12223,7 +12224,7 @@ a                   <span class="c"># =&gt; [{&quot;student&quot;, &quot;sam&quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1919" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1920" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12247,7 +12248,7 @@ a       <span class="c"># =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1935" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1936" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12271,7 +12272,7 @@ a                    <span class="c"># =&gt; [{&quot;student&quot;, &quot;sam&qu
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1960" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1961" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12303,7 +12304,7 @@ of performance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L664" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L664" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12337,7 +12338,7 @@ of performance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L669" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L669" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12368,7 +12369,7 @@ a.unshift(<span class="n">1</span>)   <span class="c"># =&gt; [1, &quot;c&quot;,
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L2000" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L2001" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12390,7 +12391,7 @@ of values to add to the array. Returns <code>self</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L2011" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L2012" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12417,7 +12418,7 @@ a               <span class="c"># =&gt; [3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1641" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1642" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12446,7 +12447,7 @@ a <span class="c"># =&gt; [3, 1, 2]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1681" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1682" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12475,7 +12476,7 @@ option that allocates a new instance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1696" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1697" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12508,7 +12509,7 @@ for a non-modifying option that allocates a new instance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1712" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1713" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12538,7 +12539,7 @@ a <span class="c"># =&gt; [&quot;apple&quot;, &quot;pear&quot;, &quot;fig&quot;]
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1758" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1759" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12569,7 +12570,7 @@ for a non-modifying option that allocates a new instance.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/array.cr#L1772" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/array.cr#L1773" target="_blank">View source</a>]
         
       </div>
     </div>

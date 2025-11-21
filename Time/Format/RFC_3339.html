@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Time::Format::RFC_3339 - Crystal 1.18.0-dev</title>
+  <title>Time::Format::RFC_3339 - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent open current" data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7178,8 +7183,8 @@
   <p>The <a href="https://tools.ietf.org/html/rfc3339">RFC 3339</a> datetime format (<a href="https://web.archive.org/web/20250306154328/http://xml.coverpages.org/ISO-FDIS-8601.pdf">ISO 8601</a> profile).</p>
 <pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">RFC_3339</span>.format(<span class="t">Time</span>.utc(<span class="n">2016</span>, <span class="n">2</span>, <span class="n">15</span>, <span class="n">4</span>, <span class="n">35</span>, <span class="n">50</span>)) <span class="c"># =&gt; &quot;2016-02-15T04:35:50Z&quot;</span>
 
-<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">RFC_3339</span>.parse(<span class="s">&quot;2016-02-15T04:35:50Z&quot;</span>) <span class="c"># =&gt; 2016-02-15 04:35:50.0 UTC</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">RFC_3339</span>.parse(<span class="s">&quot;2016-02-15 04:35:50Z&quot;</span>) <span class="c"># =&gt; 2016-02-15 04:35:50.0 UTC</span></code></pre>
+<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">RFC_3339</span>.parse(<span class="s">&quot;2016-02-15T04:35:50Z&quot;</span>) <span class="c"># =&gt; 2016-02-15 04:35:50Z</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">RFC_3339</span>.parse(<span class="s">&quot;2016-02-15 04:35:50Z&quot;</span>) <span class="c"># =&gt; 2016-02-15 04:35:50Z</span></code></pre>
 
 
 
@@ -7206,7 +7211,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/rfc_3339.cr#L10" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/rfc_3339.cr#L10" target="_blank">
         time/format/custom/rfc_3339.cr
       </a>
     
@@ -7231,14 +7236,14 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#format%28time%3ATime%2Cio%3AIO%2Cfraction_digits%3D0%29-class-method" class="signature"><strong>.format</strong>(time : Time, io : IO, fraction_digits = <span class="n">0</span>)</a>
+        <a href="#format%28time%3ATime%2Cio%3AIO%2Cfraction_digits%3D0%2C%2A%2Cpreferred_separator%3D%27T%27%29-class-method" class="signature"><strong>.format</strong>(time : Time, io : IO, fraction_digits = <span class="n">0</span>, *, preferred_separator = <span class="s">&#39;T&#39;</span>)</a>
         
           <div class="summary"><p>Formats a <code><a href="../../Time.html">Time</a></code> into the given <em>io</em>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#format%28time%3ATime%2Cfraction_digits%3D0%29%3AString-class-method" class="signature"><strong>.format</strong>(time : Time, fraction_digits = <span class="n">0</span>) : String</a>
+        <a href="#format%28time%3ATime%2Cfraction_digits%3D0%2C%2A%2Cpreferred_separator%3D%27T%27%29%3AString-class-method" class="signature"><strong>.format</strong>(time : Time, fraction_digits = <span class="n">0</span>, *, preferred_separator = <span class="s">&#39;T&#39;</span>) : String</a>
         
           <div class="summary"><p>Formats a <code><a href="../../Time.html">Time</a></code> into a <code><a href="../../String.html">String</a></code>.</p></div>
         
@@ -7275,12 +7280,12 @@
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="format(time:Time,io:IO,fraction_digits=0)-class-method">
+    <div class="entry-detail" id="format(time:Time,io:IO,fraction_digits=0,*,preferred_separator=&#39;T&#39;)-class-method">
       <div class="signature">
         
-        def self.<strong>format</strong>(time : <a href="../../Time.html">Time</a>, io : <a href="../../IO.html">IO</a>, fraction_digits = <span class="n">0</span>)
+        def self.<strong>format</strong>(time : <a href="../../Time.html">Time</a>, io : <a href="../../IO.html">IO</a>, fraction_digits = <span class="n">0</span>, *, preferred_separator = <span class="s">&#39;T&#39;</span>)
 
-        <a class="method-permalink" href="#format%28time%3ATime%2Cio%3AIO%2Cfraction_digits%3D0%29-class-method">#</a>
+        <a class="method-permalink" href="#format%28time%3ATime%2Cio%3AIO%2Cfraction_digits%3D0%2C%2A%2Cpreferred_separator%3D%27T%27%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7291,17 +7296,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/rfc_3339.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/rfc_3339.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="format(time:Time,fraction_digits=0):String-class-method">
+    <div class="entry-detail" id="format(time:Time,fraction_digits=0,*,preferred_separator=&#39;T&#39;):String-class-method">
       <div class="signature">
         
-        def self.<strong>format</strong>(time : <a href="../../Time.html">Time</a>, fraction_digits = <span class="n">0</span>) : <a href="../../String.html">String</a>
+        def self.<strong>format</strong>(time : <a href="../../Time.html">Time</a>, fraction_digits = <span class="n">0</span>, *, preferred_separator = <span class="s">&#39;T&#39;</span>) : <a href="../../String.html">String</a>
 
-        <a class="method-permalink" href="#format%28time%3ATime%2Cfraction_digits%3D0%29%3AString-class-method">#</a>
+        <a class="method-permalink" href="#format%28time%3ATime%2Cfraction_digits%3D0%2C%2A%2Cpreferred_separator%3D%27T%27%29%3AString-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7312,7 +7317,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/rfc_3339.cr#L26" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/rfc_3339.cr#L26" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7333,7 +7338,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/rfc_3339.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/rfc_3339.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>

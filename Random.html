@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Random - Crystal 1.18.0-dev</title>
+  <title>Random - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7183,7 +7188,7 @@
 r.rand      <span class="c"># =&gt; 0.0372991</span>
 r.next_bool <span class="c"># =&gt; true</span>
 r.next_int  <span class="c"># =&gt; 2223112</span></code></pre>
-<p>This module also defines a global method <code><a href="Random.html#rand%3AFloat64-instance-method">#rand</a></code>, which <code>Array#sample</code> and <code><a href="Array.html#shuffle%28random%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method">Array#shuffle</a></code> delegates.</p>
+<p>This module also defines a global method <code><a href="Random.html#rand%3AFloat64-instance-method">#rand</a></code>, which <code>Array#sample</code> and <code><a href="Array.html#shuffle%28random%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method">Array#shuffle</a></code> delegates.</p>
 <pre><code class="language-crystal">rand     <span class="c"># =&gt; 0.293829</span>
 rand(<span class="n">10</span>) <span class="c"># =&gt; 8</span></code></pre>
 <p>An instance of each class that includes <code><a href="Random.html">Random</a></code> is a random number generator with its own state.
@@ -7250,21 +7255,21 @@ numbers.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L941" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L997" target="_blank">
         big/big_int.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L52" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L52" target="_blank">
         random.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/secure.cr#L18" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/secure.cr#L18" target="_blank">
         random/secure.cr
       </a>
     
@@ -7288,6 +7293,10 @@ numbers.</p>
       <dt class="entry-const" id="DEFAULT">
         <strong>DEFAULT</strong> = <code><span class="t">PCG32</span>.new</code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p><span class="flag red">DEPRECATED</span>  Use <code><a href="Random.html#rand%3AFloat64-instance-method">#rand</a></code>, <code><a href="Random.html#next_int%3AInt32-class-method">Random.next_int</a></code> or <code><a href="Random/Secure.html#random_bytes%28buf%3ABytes%29%3ANil-instance-method">Random::Secure.random_bytes</a></code> for example, or create a local instance with <code><a href="Random.html#new-class-method">Random.new</a></code> instead.</p>
+      </dd>
       
     
   </dl>
@@ -7334,6 +7343,20 @@ numbers.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
+        <a href="#next_bool%3ABool-class-method" class="signature"><strong>.next_bool</strong> : Bool</a>
+        
+          <div class="summary"><p>See <code><a href="Random.html#next_bool%3ABool-instance-method">#next_bool</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#next_int%3AInt32-class-method" class="signature"><strong>.next_int</strong> : Int32</a>
+        
+          <div class="summary"><p>See <code><a href="Random.html#next_int%3AInt32-instance-method">#next_int</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#rand%28x%29-class-method" class="signature"><strong>.rand</strong>(x)</a>
         
           <div class="summary"><p>See <code><a href="Random.html#rand%28max%3AInt%29%3AInt-instance-method">#rand(x)</a></code>.</p></div>
@@ -7374,6 +7397,13 @@ numbers.</p>
         <a href="#hex%28n%3AInt%3D16%29%3AString-instance-method" class="signature"><strong>#hex</strong>(n : Int = <span class="n">16</span>) : String</a>
         
           <div class="summary"><p>Generates a hexadecimal string based on <em>n</em> random bytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new_seed-instance-method" class="signature"><strong>#new_seed</strong></a>
+        
+          <div class="summary"><p>Reseed the generator.</p></div>
         
       </li>
     
@@ -7602,6 +7632,20 @@ numbers.</p>
       </li>
     
       <li class="entry-summary">
+        <a href="#split%3Aself-instance-method" class="signature"><strong>#split</strong> : <span class="k">self</span></a>
+        
+          <div class="summary"><p>Splits the current instance into two seemingly independent instances that will return distinct sequences of random numbers.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#split_internal%28other%3Aself%29%3ANil-instance-method" class="signature"><strong>#split_internal</strong>(other : <span class="k">self</span>) : Nil</a>
+        
+          <div class="summary"><p>The internal implementation for <code><a href="Random.html#split%3Aself-instance-method">#split</a></code> where <em>self</em> is the original instance and <em>other</em> the duplicated instance to be returned.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#urlsafe_base64%28n%3AInt%3D16%2Cpadding%3Dfalse%29%3AString-instance-method" class="signature"><strong>#urlsafe_base64</strong>(n : Int = <span class="n">16</span>, padding = <span class="n">false</span>) : String</a>
         
           <div class="summary"><p>Generates <em>n</em> random bytes that are encoded as a URL-safe base64 string.</p></div>
@@ -7642,7 +7686,7 @@ numbers.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L56" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L78" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7663,7 +7707,7 @@ numbers.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L61" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L83" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7679,6 +7723,48 @@ numbers.</p>
 </a>
     Class Method Detail
   </h2>
+  
+    <div class="entry-detail" id="next_bool:Bool-class-method">
+      <div class="signature">
+        
+        def self.<strong>next_bool</strong> : <a href="Bool.html">Bool</a>
+
+        <a class="method-permalink" href="#next_bool%3ABool-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>See <code><a href="Random.html#next_bool%3ABool-instance-method">#next_bool</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L485" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="next_int:Int32-class-method">
+      <div class="signature">
+        
+        def self.<strong>next_int</strong> : <a href="Int32.html">Int32</a>
+
+        <a class="method-permalink" href="#next_int%3AInt32-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>See <code><a href="Random.html#next_int%3AInt32-instance-method">#next_int</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L490" target="_blank">View source</a>]
+        
+      </div>
+    </div>
   
     <div class="entry-detail" id="rand(x)-class-method">
       <div class="signature">
@@ -7696,7 +7782,7 @@ numbers.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L435" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L500" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7717,7 +7803,7 @@ numbers.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L430" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L495" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7760,7 +7846,7 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L388" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L443" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7787,7 +7873,28 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L425" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L480" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new_seed-instance-method">
+      <div class="signature">
+        
+        def <strong>new_seed</strong>
+
+        <a class="method-permalink" href="#new_seed-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Reseed the generator.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L88" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7809,7 +7916,7 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7830,7 +7937,7 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L86" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L141" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7851,7 +7958,7 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L81" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7874,7 +7981,7 @@ the maximal value for the chosen type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L69" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L96" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7899,7 +8006,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L111" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L166" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7923,7 +8030,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L309" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7947,7 +8054,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L263" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7971,7 +8078,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L279" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L334" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7993,7 +8100,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L343" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8015,7 +8122,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8037,7 +8144,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8059,7 +8166,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8081,7 +8188,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8103,7 +8210,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8125,7 +8232,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8147,7 +8254,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8169,7 +8276,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8191,7 +8298,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8213,7 +8320,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8235,7 +8342,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8257,7 +8364,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8279,7 +8386,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8301,7 +8408,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8323,7 +8430,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8345,7 +8452,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8367,7 +8474,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8389,7 +8496,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8411,7 +8518,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8433,7 +8540,7 @@ and less than <em>max</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8457,7 +8564,7 @@ r.rand <span class="c"># =&gt; 0.0372991</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L98" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L153" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8480,7 +8587,7 @@ r.rand <span class="c"># =&gt; 0.0372991</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L368" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L423" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8504,7 +8611,61 @@ slice <span class="c"># =&gt; [217, 118, 38, 196]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L347" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L402" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split:self-instance-method">
+      <div class="signature">
+        
+        def <strong>split</strong> : <span class="k">self</span>
+
+        <a class="method-permalink" href="#split%3Aself-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Splits the current instance into two seemingly independent instances that
+will return distinct sequences of random numbers. Returns a new instance.</p>
+<pre><code class="language-crystal">random <span class="o">=</span> <span class="t">Random</span>.new
+split1 <span class="o">=</span> random.split
+split2 <span class="o">=</span> random.split
+
+<span class="n">5</span>.times.map { random.rand(<span class="n">99</span>) }.to_a <span class="c"># =&gt; [79, 42, 54, 17, 52]</span>
+<span class="n">5</span>.times.map { split1.rand(<span class="n">99</span>) }.to_a <span class="c"># =&gt; [90, 37, 15, 74, 61]</span>
+<span class="n">5</span>.times.map { split2.rand(<span class="n">99</span>) }.to_a <span class="c"># =&gt; [6, 87, 5, 73, 71]</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split_internal(other:self):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>split_internal</strong>(other : <span class="k">self</span>) : <a href="Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#split_internal%28other%3Aself%29%3ANil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The internal implementation for <code><a href="Random.html#split%3Aself-instance-method">#split</a></code> where <em>self</em> is the original
+instance and <em>other</em> the duplicated instance to be returned.</p>
+<p>The default <code><a href="Random.html">Random</a></code> implementation in stdlib is splittable, but not every
+PRNG algorithm is splittable, so the method raises a <code><a href="NotImplementedError.html">NotImplementedError</a></code>
+exception by default.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L122" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8535,7 +8696,7 @@ cryptographically quality PRNG such as <code><a href="Random/ISAAC.html">Random:
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random.cr#L409" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random.cr#L464" target="_blank">View source</a>]
         
       </div>
     </div>

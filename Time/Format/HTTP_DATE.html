@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Time::Format::HTTP_DATE - Crystal 1.18.0-dev</title>
+  <title>Time::Format::HTTP_DATE - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent open current" data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7183,10 +7188,10 @@
 <li><a href="https://docs.microsoft.com/en-us/windows/desktop/wininet/http-cookies#set-cookie-header">IIS date format</a></li>
 <li><a href="http://en.cppreference.com/w/c/chrono/asctime">asctime</a></li>
 </ul>
-<pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun, 14 Feb 2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; 2016-02-14 21:00:00 UTC</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sunday, 14-Feb-16 21:00:00 GMT&quot;</span>) <span class="c"># =&gt; 2016-02-14 21:00:00 UTC</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun, 14-Feb-2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; 2016-02-14 21:00:00 UTC</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun Feb 14 21:00:00 2016&quot;</span>)       <span class="c"># =&gt; 2016-02-14 21:00:00 UTC</span>
+<pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun, 14 Feb 2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; 2016-02-14 21:00:00Z</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sunday, 14-Feb-16 21:00:00 GMT&quot;</span>) <span class="c"># =&gt; 2016-02-14 21:00:00Z</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun, 14-Feb-2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; 2016-02-14 21:00:00Z</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.parse(<span class="s">&quot;Sun Feb 14 21:00:00 2016&quot;</span>)       <span class="c"># =&gt; 2016-02-14 21:00:00Z</span>
 
 <span class="t">Time</span><span class="t">::</span><span class="t">Format</span><span class="t">::</span><span class="t">HTTP_DATE</span>.format(<span class="t">Time</span>.utc(<span class="n">2016</span>, <span class="n">2</span>, <span class="n">15</span>)) <span class="c"># =&gt; &quot;Mon, 15 Feb 2016 00:00:00 GMT&quot;</span></code></pre>
 
@@ -7215,7 +7220,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/http_date.cr#L20" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/http_date.cr#L20" target="_blank">
         time/format/custom/http_date.cr
       </a>
     
@@ -7301,7 +7306,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/http_date.cr#L31" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/http_date.cr#L31" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7323,7 +7328,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/http_date.cr#L40" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/http_date.cr#L40" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7344,7 +7349,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/format/custom/http_date.cr#L22" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/format/custom/http_date.cr#L22" target="_blank">View source</a>]
         
       </div>
     </div>

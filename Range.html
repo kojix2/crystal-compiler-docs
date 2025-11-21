@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Range(B, E) - Crystal 1.18.0-dev</title>
+  <title>Range(B, E) - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7263,14 +7268,14 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L59" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L59" target="_blank">
         range.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range/bsearch.cr#L70" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range/bsearch.cr#L70" target="_blank">
         range/bsearch.cr
       </a>
     
@@ -7435,16 +7440,16 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
       </li>
     
       <li class="entry-summary">
-        <a href="#sample%28random%3ARandom%3DRandom%3A%3ADEFAULT%29-instance-method" class="signature"><strong>#sample</strong>(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)</a>
+        <a href="#sample%28random%3ARandom%7CNil%3Dnil%29-instance-method" class="signature"><strong>#sample</strong>(random : Random | Nil = <span class="n">nil</span>)</a>
         
-          <div class="summary"><p>Optimized version of <code><a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method">Enumerable#sample</a></code> that runs in O(1) time when <code>self</code> is an <code><a href="Int.html">Int</a></code> or <code><a href="Float.html">Float</a></code> range.</p></div>
+          <div class="summary"><p>Optimized version of <code><a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method">Enumerable#sample</a></code> that runs in O(1) time when <code>self</code> is an <code><a href="Int.html">Int</a></code> or <code><a href="Float.html">Float</a></code> range.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#sample%28n%3AInt%2Crandom%3DRandom%3A%3ADEFAULT%29-instance-method" class="signature"><strong>#sample</strong>(n : Int, random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)</a>
+        <a href="#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29-instance-method" class="signature"><strong>#sample</strong>(n : Int, random : Random | Nil = <span class="n">nil</span>)</a>
         
-          <div class="summary"><p>:inherit:</p></div>
+          <div class="summary"><p>Returns an <code><a href="Array.html">Array</a></code> of <em>n</em> random elements from <code>self</code>.</p></div>
         
       </li>
     
@@ -7861,8 +7866,8 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
     reject</a>, 
     
   
-    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : T</span>
+    <a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>) : T</span>
     sample</a>, 
     
   
@@ -8174,20 +8179,16 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8334,7 +8335,7 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L89" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L89" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8366,7 +8367,7 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L92" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L92" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8395,7 +8396,7 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L308" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L308" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8418,7 +8419,7 @@ r.includes?(<span class="t">Xs</span>.new(<span class="n">5</span>)) <span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L69" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L69" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8446,7 +8447,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range/bsearch.cr#L84" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range/bsearch.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8467,7 +8468,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L455" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L459" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8488,7 +8489,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L287" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L287" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8510,7 +8511,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L101" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L101" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8533,7 +8534,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L111" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8555,7 +8556,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8578,7 +8579,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L77" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L77" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8601,7 +8602,7 @@ is itself or lies in front.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L261" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L261" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8623,7 +8624,7 @@ Returns <code>false</code> otherwise (default).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L81" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L81" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8650,7 +8651,7 @@ Returns <code>false</code> otherwise (default).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L275" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L275" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8684,7 +8685,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L318" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8710,7 +8711,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L459" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L463" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8734,7 +8735,7 @@ passing each in turn to the block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L155" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8756,22 +8757,22 @@ passing each in turn to the block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L184" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L184" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="sample(random:Random=Random::DEFAULT)-instance-method">
+    <div class="entry-detail" id="sample(random:Random|Nil=nil)-instance-method">
       <div class="signature">
         
-        def <strong>sample</strong>(random : <a href="Random.html">Random</a> = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)
+        def <strong>sample</strong>(random : <a href="Random.html">Random</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#sample%28random%3ARandom%3DRandom%3A%3ADEFAULT%29-instance-method">#</a>
+        <a class="method-permalink" href="#sample%28random%3ARandom%7CNil%3Dnil%29-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Optimized version of <code><a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method">Enumerable#sample</a></code> that runs in O(1) time when <code>self</code>
+          <p>Optimized version of <code><a href="Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method">Enumerable#sample</a></code> that runs in O(1) time when <code>self</code>
 is an <code><a href="Int.html">Int</a></code> or <code><a href="Float.html">Float</a></code> range. In these cases, this range is considered to be
 a distribution of numeric values rather than a collection of elements, and
 the method simply calls <code>random.rand(self)</code>.</p>
@@ -8781,23 +8782,34 @@ the method simply calls <code>random.rand(self)</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L347" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L347" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="sample(n:Int,random=Random::DEFAULT)-instance-method">
+    <div class="entry-detail" id="sample(n:Int,random:Random|Nil=nil)-instance-method">
       <div class="signature">
         
-        def <strong>sample</strong>(n : <a href="Int.html">Int</a>, random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>)
+        def <strong>sample</strong>(n : <a href="Int.html">Int</a>, random : <a href="Random.html">Random</a> | <a href="Nil.html">Nil</a> = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#sample%28n%3AInt%2Crandom%3DRandom%3A%3ADEFAULT%29-instance-method">#</a>
+        <a class="method-permalink" href="#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>:inherit:</p>
-<p>If <code>self</code> is not empty and <code>n</code> is equal to 1, calls <code><a href="Range.html#sample%28random%3ARandom%3DRandom%3A%3ADEFAULT%29-instance-method">#sample(random)</a></code> exactly
+          <p>Returns an <code><a href="Array.html">Array</a></code> of <em>n</em> random elements from <code>self</code>. All elements have
+equal probability of being drawn. Sampling is done without replacement; if
+<em>n</em> is larger than the size of this collection, the returned <code><a href="Array.html">Array</a></code> has the
+same size as <code>self</code>.</p>
+<p>Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if <em>n</em> is negative.</p>
+<pre><code class="language-crystal">[<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>].sample(<span class="n">2</span>) <span class="c"># =&gt; [3, 5]</span>
+{<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>}.sample(<span class="n">2</span>) <span class="c"># =&gt; [3, 4]</span></code></pre>
+<p>Uses the <em>random</em> instance when provided if the randomness needs to be
+controlled or to follow some traits. For example the following calls use a
+custom seed or a secure random source:</p>
+<pre><code class="language-crystal">{<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>}.sample(<span class="n">2</span>, <span class="t">Random</span>.new(<span class="n">1</span>))  <span class="c"># =&gt; [1, 5]</span>
+{<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>, <span class="n">4</span>, <span class="n">5</span>}.sample(<span class="n">2</span>, <span class="t">Random</span><span class="t">::</span><span class="t">Secure</span>) <span class="c"># =&gt; [2, 5]</span></code></pre>
+<p>If <code>self</code> is not empty and <code>n</code> is equal to 1, calls <code><a href="Range.html#sample%28random%3ARandom%7CNil%3Dnil%29-instance-method">#sample(random)</a></code> exactly
 once. Thus, <em>random</em> will be left in a different state compared to the
 implementation in <code><a href="Enumerable.html">Enumerable</a></code>.</p>
         </div>
@@ -8805,7 +8817,7 @@ implementation in <code><a href="Enumerable.html">Enumerable</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L371" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L373" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8832,7 +8844,7 @@ Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if either <co
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L486" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L490" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8867,7 +8879,7 @@ successors and iteration is based on calling <code>#succ</code> sequentially
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L212" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8902,7 +8914,7 @@ successors and iteration is based on calling <code>#succ</code> sequentially
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L242" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8924,7 +8936,7 @@ an <code><a href="Int.html">Int</a></code> range.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L324" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L324" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8949,7 +8961,7 @@ an <code><a href="Int.html">Int</a></code> range.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/range.cr#L312" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/range.cr#L312" target="_blank">View source</a>]
         
       </div>
     </div>

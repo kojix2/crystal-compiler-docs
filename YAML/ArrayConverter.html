@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>YAML::ArrayConverter(Converter) - Crystal 1.18.0-dev</title>
+  <title>YAML::ArrayConverter(Converter) - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7187,7 +7192,7 @@ to serialize the elements of an <code><a href="../Array.html">Array</a>(T)</code
 <span class="k">end</span>
 
 timestamp <span class="o">=</span> <span class="t">Timestamp</span>.from_yaml(<span class="s">%({&quot;values&quot;:[1459859781,1567628762]})</span>)
-timestamp.values  <span class="c"># =&gt; [2016-04-05 12:36:21 UTC, 2019-09-04 20:26:02 UTC]</span>
+timestamp.values  <span class="c"># =&gt; [2016-04-05 12:36:21Z, 2019-09-04 20:26:02Z]</span>
 timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- 1459859781\n- 1567628762\n&quot;</span></code></pre>
 <p><code><a href="../YAML/ArrayConverter.html#new%28converter%3AConverter%29-class-method">YAML::ArrayConverter.new</a></code> should be used if the nested converter is also an
 instance instead of a type.</p>
@@ -7201,7 +7206,7 @@ instance instead of a type.</p>
 <span class="k">end</span>
 
 timestamp <span class="o">=</span> <span class="t">Timestamp</span>.from_yaml(<span class="s">%({&quot;values&quot;:[&quot;Apr 5, 2016&quot;,&quot;Sep 4, 2019&quot;]})</span>)
-timestamp.values  <span class="c"># =&gt; [2016-04-05 00:00:00 UTC, 2019-09-04 00:00:00 UTC]</span>
+timestamp.values  <span class="c"># =&gt; [2016-04-05 00:00:00Z, 2019-09-04 00:00:00Z]</span>
 timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- Apr 5, 2016\n- Sep 4, 2019\n&quot;</span></code></pre>
 <p>This implies that <code><a href="../YAML/ArrayConverter.html">YAML::ArrayConverter</a>(T)</code> and
 <code><a href="../YAML/ArrayConverter.html">YAML::ArrayConverter</a>(T.class)<a href="../YAML/ArrayConverter.html#new%28converter%3AConverter%29-class-method">.new(T)</a></code> perform the same serializations.</p>
@@ -7231,14 +7236,14 @@ timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- Apr 5, 2016\n- S
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L372" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L372" target="_blank">
         yaml/from_yaml.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L303" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L303" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -7322,7 +7327,7 @@ timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- Apr 5, 2016\n- S
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L317" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L317" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7350,7 +7355,7 @@ timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- Apr 5, 2016\n- S
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L389" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L392" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7366,7 +7371,7 @@ timestamp.to_yaml <span class="c"># =&gt; &quot;---\nvalues:\n- Apr 5, 2016\n- S
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L321" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L321" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>IO::Buffered - Crystal 1.18.0-dev</title>
+  <title>IO::Buffered - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7176,8 +7181,8 @@
   </h2>
 
   <p>The <code><a href="../IO/Buffered.html">IO::Buffered</a></code> mixin enhances an <code><a href="../IO.html">IO</a></code> with input/output buffering.</p>
-<p>The buffering behaviour can be turned on/off with the <code><a href="../IO/Buffered.html#sync%3D%28sync%29-instance-method">#sync=</a></code> and
-<code><a href="../IO/Buffered.html#read_buffering%3D%28read_buffering%29-instance-method">#read_buffering=</a></code> methods.</p>
+<p>The buffering behaviour can be turned on/off with the <code><a href="../IO/Buffered.html#sync%3D%28sync%3ABool%29%3ABool-instance-method">#sync=</a></code> and
+<code><a href="../IO/Buffered.html#read_buffering%3D%28read_buffering%3ABool%29%3ABool-instance-method">#read_buffering=</a></code> methods.</p>
 <p>Additionally, several methods, like <code>#gets</code>, are implemented in a more
 efficient way.</p>
 
@@ -7230,7 +7235,7 @@ efficient way.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L8" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L8" target="_blank">
         io/buffered.cr
       </a>
     
@@ -7280,14 +7285,14 @@ efficient way.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#flush-instance-method" class="signature"><strong>#flush</strong></a>
+        <a href="#flush%3Aself-instance-method" class="signature"><strong>#flush</strong> : <span class="k">self</span></a>
         
           <div class="summary"><p>Flushes any buffered data and the underlying <code><a href="../IO.html">IO</a></code>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#flush_on_newline%3D%28flush_on_newline%29-instance-method" class="signature"><strong>#flush_on_newline=</strong>(flush_on_newline)</a>
+        <a href="#flush_on_newline%3D%28flush_on_newline%3ABool%29%3ABool-instance-method" class="signature"><strong>#flush_on_newline=</strong>(flush_on_newline : Bool) : Bool</a>
         
           <div class="summary"><p>Turns on/off flushing the underlying <code><a href="../IO.html">IO</a></code> when a newline is written.</p></div>
         
@@ -7322,7 +7327,7 @@ efficient way.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#read_buffering%3D%28read_buffering%29-instance-method" class="signature"><strong>#read_buffering=</strong>(read_buffering)</a>
+        <a href="#read_buffering%3D%28read_buffering%3ABool%29%3ABool-instance-method" class="signature"><strong>#read_buffering=</strong>(read_buffering : Bool) : Bool</a>
         
           <div class="summary"><p>Turns on/off <code><a href="../IO.html">IO</a></code> <strong>read</strong> buffering.</p></div>
         
@@ -7336,14 +7341,14 @@ efficient way.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#rewind-instance-method" class="signature"><strong>#rewind</strong></a>
+        <a href="#rewind%3Aself-instance-method" class="signature"><strong>#rewind</strong> : <span class="k">self</span></a>
         
           <div class="summary"><p>Rewinds the underlying <code><a href="../IO.html">IO</a></code>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#sync%3D%28sync%29-instance-method" class="signature"><strong>#sync=</strong>(sync)</a>
+        <a href="#sync%3D%28sync%3ABool%29%3ABool-instance-method" class="signature"><strong>#sync=</strong>(sync : Bool) : Bool</a>
         
           <div class="summary"><p>Turns on/off <code><a href="../IO.html">IO</a></code> <strong>write</strong> buffering.</p></div>
         
@@ -7438,7 +7443,7 @@ efficient way.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L45" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L45" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7460,7 +7465,7 @@ Cannot be changed after any of the buffers have been allocated</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L51" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L51" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7481,17 +7486,17 @@ Cannot be changed after any of the buffers have been allocated</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L257" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L257" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="flush-instance-method">
+    <div class="entry-detail" id="flush:self-instance-method">
       <div class="signature">
         
-        def <strong>flush</strong>
+        def <strong>flush</strong> : <span class="k">self</span>
 
-        <a class="method-permalink" href="#flush-instance-method">#</a>
+        <a class="method-permalink" href="#flush%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7502,17 +7507,17 @@ Cannot be changed after any of the buffers have been allocated</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L249" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="flush_on_newline=(flush_on_newline)-instance-method">
+    <div class="entry-detail" id="flush_on_newline=(flush_on_newline:Bool):Bool-instance-method">
       <div class="signature">
         
-        def <strong>flush_on_newline=</strong>(flush_on_newline)
+        def <strong>flush_on_newline=</strong>(flush_on_newline : <a href="../Bool.html">Bool</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#flush_on_newline%3D%28flush_on_newline%29-instance-method">#</a>
+        <a class="method-permalink" href="#flush_on_newline%3D%28flush_on_newline%3ABool%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7523,7 +7528,7 @@ Cannot be changed after any of the buffers have been allocated</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L239" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L239" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7544,7 +7549,7 @@ Cannot be changed after any of the buffers have been allocated</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L244" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L244" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7569,7 +7574,7 @@ is in the buffer is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L110" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L110" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7596,7 +7601,7 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L203" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L203" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7617,17 +7622,17 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L80" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="read_buffering=(read_buffering)-instance-method">
+    <div class="entry-detail" id="read_buffering=(read_buffering:Bool):Bool-instance-method">
       <div class="signature">
         
-        def <strong>read_buffering=</strong>(read_buffering)
+        def <strong>read_buffering=</strong>(read_buffering : <a href="../Bool.html">Bool</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#read_buffering%3D%28read_buffering%29-instance-method">#</a>
+        <a class="method-permalink" href="#read_buffering%3D%28read_buffering%3ABool%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7638,7 +7643,7 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L229" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L229" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7659,17 +7664,17 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L234" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L234" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="rewind-instance-method">
+    <div class="entry-detail" id="rewind:self-instance-method">
       <div class="signature">
         
-        def <strong>rewind</strong>
+        def <strong>rewind</strong> : <span class="k">self</span>
 
-        <a class="method-permalink" href="#rewind-instance-method">#</a>
+        <a class="method-permalink" href="#rewind%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7680,17 +7685,17 @@ file.pos     <span class="c"># =&gt; 2</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L264" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L264" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="sync=(sync)-instance-method">
+    <div class="entry-detail" id="sync=(sync:Bool):Bool-instance-method">
       <div class="signature">
         
-        def <strong>sync=</strong>(sync)
+        def <strong>sync=</strong>(sync : <a href="../Bool.html">Bool</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#sync%3D%28sync%29-instance-method">#</a>
+        <a class="method-permalink" href="#sync%3D%28sync%3ABool%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7703,7 +7708,7 @@ underlying <code><a href="../IO.html">IO</a></code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L218" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7724,7 +7729,7 @@ underlying <code><a href="../IO.html">IO</a></code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L224" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L224" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7746,7 +7751,7 @@ underlying <code><a href="../IO.html">IO</a></code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L37" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7768,7 +7773,7 @@ underlying <code><a href="../IO.html">IO</a></code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L32" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L32" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7791,7 +7796,7 @@ Returns the number of bytes read.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L22" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L22" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7813,7 +7818,7 @@ Returns the number of bytes read.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L42" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L42" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7835,7 +7840,7 @@ Returns the number of bytes read.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L27" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7856,7 +7861,7 @@ Returns the number of bytes read.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/io/buffered.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/io/buffered.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>

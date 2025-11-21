@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Object - Crystal 1.18.0-dev</title>
+  <title>Object - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7393,70 +7398,70 @@ macros take the exact same arguments.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/colorize.cr#L217" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/colorize.cr#L217" target="_blank">
         colorize.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L146" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L146" target="_blank">
         docs_pseudo_methods.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L327" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L359" target="_blank">
         json/any.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L1" target="_blank">
         json/to_json.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L201" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L201" target="_blank">
         object.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L7" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L7" target="_blank">
         object/properties.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L9" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L9" target="_blank">
         primitives.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/spec/expectations.cr#L531" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/spec/expectations.cr#L562" target="_blank">
         spec/expectations.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L356" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L356" target="_blank">
         yaml/any.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L1" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -7468,32 +7473,6 @@ macros take the exact same arguments.</p>
 
 
   
-  <h2>
-    <a id="constructors" class="anchor" href="#constructors">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Constructors
-  </h2>
-  <ul class="list-summary">
-    
-      <li class="entry-summary">
-        <a href="#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="signature"><strong>.from_json</strong>(string_or_io : String | IO, root : String) : Object</a>
-        
-          <div class="summary"><p>Deserializes the given JSON in <em>string_or_io</em> into an instance of <code>self</code>, assuming the JSON consists of an JSON object with key <em>root</em>, and whose value is the value to deserialize.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#from_json%28string_or_io%3AString%7CIO%29%3AObject-class-method" class="signature"><strong>.from_json</strong>(string_or_io : String | IO) : Object</a>
-        
-          <div class="summary"><p>Deserializes the given JSON in <em>string_or_io</em> into an instance of <code>self</code>.</p></div>
-        
-      </li>
-    
-  </ul>
-
 
   
   <h2>
@@ -7505,6 +7484,20 @@ macros take the exact same arguments.</p>
     Class Method Summary
   </h2>
   <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="signature"><strong>.from_json</strong>(string_or_io : String | IO, root : String)</a>
+        
+          <div class="summary"><p>Deserializes the given JSON in <em>string_or_io</em> into an instance of <code>self</code>, assuming the JSON consists of an JSON object with key <em>root</em>, and whose value is the value to deserialize.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#from_json%28string_or_io%3AString%7CIO%29-class-method" class="signature"><strong>.from_json</strong>(string_or_io : String | IO)</a>
+        
+          <div class="summary"><p>Deserializes the given JSON in <em>string_or_io</em> into an instance of <code>self</code>.</p></div>
+        
+      </li>
     
       <li class="entry-summary">
         <a href="#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="signature"><strong>.from_yaml</strong>(string_or_io : String | IO)</a>
@@ -7982,21 +7975,23 @@ macros take the exact same arguments.</p>
   </div>
 
   
+
+  
   <h2>
-    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
   </svg>
 </a>
-    Constructor Detail
+    Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="from_json(string_or_io:String|IO,root:String):Object-class-method">
+    <div class="entry-detail" id="from_json(string_or_io:String|IO,root:String)-class-method">
       <div class="signature">
         
-        def self.<strong>from_json</strong>(string_or_io : <a href="String.html">String</a> | <a href="IO.html">IO</a>, root : <a href="String.html">String</a>) : <a href="Object.html">Object</a>
+        def self.<strong>from_json</strong>(string_or_io : <a href="String.html">String</a> | <a href="IO.html">IO</a>, root : <a href="String.html">String</a>)
 
-        <a class="method-permalink" href="#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method">#</a>
+        <a class="method-permalink" href="#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8011,17 +8006,17 @@ the value to deserialize.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L24" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L24" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="from_json(string_or_io:String|IO):Object-class-method">
+    <div class="entry-detail" id="from_json(string_or_io:String|IO)-class-method">
       <div class="signature">
         
-        def self.<strong>from_json</strong>(string_or_io : <a href="String.html">String</a> | <a href="IO.html">IO</a>) : <a href="Object.html">Object</a>
+        def self.<strong>from_json</strong>(string_or_io : <a href="String.html">String</a> | <a href="IO.html">IO</a>)
 
-        <a class="method-permalink" href="#from_json%28string_or_io%3AString%7CIO%29%3AObject-class-method">#</a>
+        <a class="method-permalink" href="#from_json%28string_or_io%3AString%7CIO%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8038,22 +8033,10 @@ method.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
-  
-
-
-  
-  <h2>
-    <a id="class-method-detail" class="anchor" href="#class-method-detail">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Class Method Detail
-  </h2>
   
     <div class="entry-detail" id="from_yaml(string_or_io:String|IO)-class-method">
       <div class="signature">
@@ -8077,7 +8060,7 @@ method.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8121,7 +8104,7 @@ method.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L318" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8163,7 +8146,7 @@ to <code>nil</code>. There are no initial value or lazy initialization.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L439" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L439" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8195,7 +8178,7 @@ to <code>nil</code>. There are no initial value or lazy initialization.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L373" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L373" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8218,7 +8201,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L512" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L512" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8241,7 +8224,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L594" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L594" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8264,7 +8247,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L553" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L553" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8297,7 +8280,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L487" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L487" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8319,7 +8302,7 @@ instance variables cloned (<code>clone</code> is in turn invoked on them).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L680" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L680" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8351,7 +8334,7 @@ any of the fields.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L627" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L627" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8381,7 +8364,7 @@ any of the fields.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L653" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L653" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8409,7 +8392,7 @@ any of the fields.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L602" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L602" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8447,7 +8430,7 @@ wrapper.capitalize     <span class="c"># =&gt; &quot;Hello&quot;</span></code></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L548" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L548" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8478,7 +8461,7 @@ wrapper.gsub(<span class="o">/</span><span class="t">E</span><span class="o">/</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L672" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L672" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8500,7 +8483,7 @@ wrapper.gsub(<span class="o">/</span><span class="t">E</span><span class="o">/</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8542,7 +8525,7 @@ initialized to <code>nil</code>. There are no initial value or lazy initializati
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L132" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L132" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8574,7 +8557,7 @@ initialized to <code>nil</code>. There are no initial value or lazy initializati
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L66" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L66" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8597,7 +8580,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L186" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L186" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8620,7 +8603,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L268" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L268" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8643,7 +8626,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L227" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L227" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8665,7 +8648,7 @@ methods to access instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object/properties.cr#L161" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object/properties.cr#L161" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8707,7 +8690,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L159" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L159" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8731,7 +8714,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L212" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8752,7 +8735,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L217" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L217" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8774,7 +8757,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L205" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8790,7 +8773,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L328" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L360" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8806,7 +8789,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L357" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L357" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8843,7 +8826,7 @@ way to do it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L248" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L248" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8866,7 +8849,7 @@ pattern-match semantics.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L256" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8913,7 +8896,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L220" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L220" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8957,7 +8940,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L248" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L248" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8986,7 +8969,7 @@ value.<span class="k">class</span>   <span class="c"># =&gt; String</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L27" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9046,7 +9029,7 @@ deep_copy[<span class="s">&quot;foo&quot;</span>]    <span class="c"># =&gt; [1,
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L495" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L495" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9075,7 +9058,7 @@ accumulate the result:</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L273" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L273" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9101,7 +9084,7 @@ though usually the macro <code><a href="Object.html#def_hash%28%2Afields%29-macr
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L284" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9126,7 +9109,7 @@ though usually the macro <code><a href="Object.html#def_hash%28%2Afields%29-macr
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L403" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L403" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9151,7 +9134,7 @@ though usually the macro <code><a href="Object.html#def_hash%28%2Afields%29-macr
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L408" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L408" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9181,7 +9164,7 @@ implementations are provided by <code><a href="Struct.html#inspect%28io%3AIO%29%
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L346" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L346" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9206,7 +9189,7 @@ object, typically intended for developers.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L327" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L327" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9239,7 +9222,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L175" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9262,7 +9245,7 @@ str.itself.object_id <span class="o">==</span> str.object_id <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L443" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L443" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9291,7 +9274,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L188" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L188" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9320,7 +9303,7 @@ Either way, consider instead raising a concrete exception with a descriptive mes
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L429" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L429" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9348,7 +9331,7 @@ Either way, consider instead raising a concrete exception with a descriptive mes
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L422" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L422" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9369,7 +9352,7 @@ Either way, consider instead raising a concrete exception with a descriptive mes
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L360" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L360" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9393,7 +9376,7 @@ for custom pretty printing.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L355" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L355" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9423,7 +9406,7 @@ It cannot be redefined nor overridden.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/docs_pseudo_methods.cr#L262" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/docs_pseudo_methods.cr#L262" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9450,7 +9433,7 @@ in order to perform operations on intermediate results within the chain.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L377" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L377" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9466,7 +9449,7 @@ in order to perform operations on intermediate results within the chain.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9482,7 +9465,7 @@ in order to perform operations on intermediate results within the chain.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L2" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L2" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9498,7 +9481,7 @@ in order to perform operations on intermediate results within the chain.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L14" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9514,7 +9497,7 @@ in order to perform operations on intermediate results within the chain.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L20" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9543,7 +9526,7 @@ typically intended for users, to <em>io</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L318" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9568,7 +9551,7 @@ typically intended for users.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L295" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L295" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9584,7 +9567,7 @@ typically intended for users.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9600,7 +9583,7 @@ typically intended for users.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L2" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L2" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9625,7 +9608,7 @@ perform operations only when the value is not <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L391" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L391" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9659,7 +9642,7 @@ as <code><a href="Tuple.html">Tuple</a>(...)</code> and so on, never as <code><a
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/object.cr#L521" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/object.cr#L521" target="_blank">View source</a>]
         
       </div>
     </div>

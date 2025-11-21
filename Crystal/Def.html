@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Def - Crystal 1.18.0-dev</title>
+  <title>Crystal::Def - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7241,70 +7246,70 @@ body
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L10" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L10" target="_blank">
         compiler/crystal/codegen/ast.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/macros/methods.cr#L1507" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros/methods.cr#L1527" target="_blank">
         compiler/crystal/macros/methods.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L142" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L136" target="_blank">
         compiler/crystal/semantic/ast.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/bindings.cr#L349" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/bindings.cr#L349" target="_blank">
         compiler/crystal/semantic/bindings.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/default_arguments.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/default_arguments.cr#L3" target="_blank">
         compiler/crystal/semantic/default_arguments.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/hooks.cr#L111" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/hooks.cr#L111" target="_blank">
         compiler/crystal/semantic/hooks.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L125" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L123" target="_blank">
         compiler/crystal/semantic/new.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/warnings.cr#L151" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/warnings.cr#L151" target="_blank">
         compiler/crystal/semantic/warnings.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1095" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1107" target="_blank">
         compiler/crystal/syntax/ast.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/to_json.cr#L13" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/to_json.cr#L13" target="_blank">
         compiler/crystal/tools/doc/to_json.cr
       </a>
     
@@ -7642,6 +7647,11 @@ body
     
       <li class="entry-summary">
         <a href="#freeze_type%3D%28freeze_type%3AType%7CNil%29-instance-method" class="signature"><strong>#freeze_type=</strong>(freeze_type : Type | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#has_any_args%3F-instance-method" class="signature"><strong>#has_any_args?</strong></a>
         
       </li>
     
@@ -8670,20 +8680,16 @@ body
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8823,7 +8829,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1120" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1132" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8851,7 +8857,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L252" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L250" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8867,7 +8873,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L227" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L225" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8920,7 +8926,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8936,7 +8942,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8952,7 +8958,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1118" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8968,7 +8974,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1118" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8984,7 +8990,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1124" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9000,7 +9006,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L197" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L191" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9021,7 +9027,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L157" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9042,7 +9048,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L157" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9058,7 +9064,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1099" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9074,7 +9080,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1099" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9090,7 +9096,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1117" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9106,7 +9112,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1117" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9122,7 +9128,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1151" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1163" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9138,7 +9144,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1102" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1114" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9154,7 +9160,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1102" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1114" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9176,7 +9182,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1106" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1118" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9198,7 +9204,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1106" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1118" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9214,7 +9220,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L153" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L147" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9230,7 +9236,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L153" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L147" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9246,7 +9252,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1101" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1113" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9262,7 +9268,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1101" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1113" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9278,7 +9284,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9294,7 +9300,7 @@ body
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9316,7 +9322,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L80" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9332,7 +9338,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L71" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9348,7 +9354,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1126" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9364,7 +9370,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1126" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9380,7 +9386,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9396,7 +9402,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9412,7 +9418,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1113" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1125" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9428,7 +9434,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1113" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1125" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9444,7 +9450,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9460,7 +9466,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9476,7 +9482,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L224" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9492,7 +9498,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L149" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9508,7 +9514,7 @@ that must respect the C calling convention.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L149" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9534,7 +9540,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1109" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9550,7 +9556,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1109" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9566,7 +9572,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1100" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1112" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9582,7 +9588,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1100" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1112" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9598,7 +9604,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/default_arguments.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/default_arguments.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9614,7 +9620,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L257" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L255" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9630,7 +9636,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L126" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L124" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9646,7 +9652,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L132" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9662,7 +9668,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/new.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/new.cr#L153" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9678,7 +9684,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L247" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L241" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9694,7 +9700,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L248" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9710,7 +9716,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1096" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1108" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9726,7 +9732,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1096" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1108" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9742,7 +9748,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L146" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9758,7 +9764,23 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L146" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has_any_args?-instance-method">
+      <div class="signature">
+        
+        def <strong>has_any_args?</strong>
+
+        <a class="method-permalink" href="#has_any_args%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1167" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9797,7 +9819,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/macros/methods.cr#L1508" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros/methods.cr#L1528" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9813,7 +9835,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L88" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L88" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9829,7 +9851,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1112" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1124" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9845,7 +9867,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1112" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1124" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9861,7 +9883,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L185" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L179" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9877,7 +9899,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L182" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L176" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9893,7 +9915,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L189" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L183" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9909,7 +9931,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9925,7 +9947,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/bindings.cr#L350" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/bindings.cr#L350" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9948,7 +9970,7 @@ def's splat index.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L241" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L235" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9971,7 +9993,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L199" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9992,7 +10014,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L163" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10013,7 +10035,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L163" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10029,7 +10051,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1098" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1110" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10045,7 +10067,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1098" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1110" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10061,7 +10083,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1119" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10077,7 +10099,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1119" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10093,7 +10115,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10114,7 +10136,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L166" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10135,7 +10157,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L166" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10151,7 +10173,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L150" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L144" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10167,7 +10189,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L150" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L144" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10188,7 +10210,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L160" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L154" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10209,7 +10231,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L160" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L154" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10225,7 +10247,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L193" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L187" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10246,7 +10268,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L169" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10267,7 +10289,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L169" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10283,7 +10305,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10299,7 +10321,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10315,7 +10337,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10331,7 +10353,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10347,7 +10369,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10363,7 +10385,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10379,7 +10401,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L149" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L143" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10395,7 +10417,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L149" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L143" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10411,7 +10433,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L114" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10427,7 +10449,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L154" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L148" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10443,7 +10465,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L154" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L148" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10459,7 +10481,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1097" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1109" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10475,7 +10497,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1097" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1109" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10491,7 +10513,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1103" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10507,7 +10529,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1103" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10528,7 +10550,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L166" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L160" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10549,7 +10571,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L166" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L160" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10565,7 +10587,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L156" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L150" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10581,7 +10603,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L156" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L150" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10602,7 +10624,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L180" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L174" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10623,7 +10645,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L180" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L174" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10639,7 +10661,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/warnings.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/warnings.cr#L152" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10655,7 +10677,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L151" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10671,7 +10693,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L151" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10687,7 +10709,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1120" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10703,7 +10725,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1120" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10719,7 +10741,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/to_json.cr#L14" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/to_json.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10735,7 +10757,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1128" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10751,7 +10773,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1128" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10767,7 +10789,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/codegen/ast.cr#L67" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/codegen/ast.cr#L67" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10783,7 +10805,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L147" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L141" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10799,7 +10821,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L147" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L141" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10815,7 +10837,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1110" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1122" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10831,7 +10853,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L1110" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L1122" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10847,7 +10869,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L148" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L142" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10863,7 +10885,7 @@ by named arguments.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L148" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L142" target="_blank">View source</a>]
         
       </div>
     </div>

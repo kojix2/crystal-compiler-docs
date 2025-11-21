@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>TCPServer - Crystal 1.18.0-dev</title>
+  <title>TCPServer - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7238,7 +7243,7 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L27" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L27" target="_blank">
         socket/tcp_server.cr
       </a>
     
@@ -7465,6 +7470,16 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     <a href="IPSocket.html#connect%28addr%2Ctimeout%3Dnil%2C%26%29-instance-method" class="tooltip">
       <span>connect(addr, timeout = <span class="n">nil</span>, &)</span>
     connect</a>, 
+    
+  
+    <a href="IPSocket.html#ipv6_only%3D%28val%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>ipv6_only=(val : Bool) : Bool</span>
+    ipv6_only=</a>, 
+    
+  
+    <a href="IPSocket.html#ipv6_only%3F%3ABool-instance-method" class="tooltip">
+      <span>ipv6_only? : Bool</span>
+    ipv6_only?</a>, 
     
   
     <a href="IPSocket.html#local_address%3ASocket%3A%3AIPAddress-instance-method" class="tooltip">
@@ -7840,13 +7855,13 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     close</a>, 
     
   
-    <a href="IO/Buffered.html#flush-instance-method" class="tooltip">
-      <span>flush</span>
+    <a href="IO/Buffered.html#flush%3Aself-instance-method" class="tooltip">
+      <span>flush : <span class="k">self</span></span>
     flush</a>, 
     
   
-    <a href="IO/Buffered.html#flush_on_newline%3D%28flush_on_newline%29-instance-method" class="tooltip">
-      <span>flush_on_newline=(flush_on_newline)</span>
+    <a href="IO/Buffered.html#flush_on_newline%3D%28flush_on_newline%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>flush_on_newline=(flush_on_newline : Bool) : Bool</span>
     flush_on_newline=</a>, 
     
   
@@ -7870,8 +7885,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     read</a>, 
     
   
-    <a href="IO/Buffered.html#read_buffering%3D%28read_buffering%29-instance-method" class="tooltip">
-      <span>read_buffering=(read_buffering)</span>
+    <a href="IO/Buffered.html#read_buffering%3D%28read_buffering%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>read_buffering=(read_buffering : Bool) : Bool</span>
     read_buffering=</a>, 
     
   
@@ -7880,13 +7895,13 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     read_buffering?</a>, 
     
   
-    <a href="IO/Buffered.html#rewind-instance-method" class="tooltip">
-      <span>rewind</span>
+    <a href="IO/Buffered.html#rewind%3Aself-instance-method" class="tooltip">
+      <span>rewind : <span class="k">self</span></span>
     rewind</a>, 
     
   
-    <a href="IO/Buffered.html#sync%3D%28sync%29-instance-method" class="tooltip">
-      <span>sync=(sync)</span>
+    <a href="IO/Buffered.html#sync%3D%28sync%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>sync=(sync : Bool) : Bool</span>
     sync=</a>, 
     
   
@@ -7942,8 +7957,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
   <h3>Instance methods inherited from class <code><a href="IO.html">IO</a></code></h3>
   
   
-    <a href="IO.html#%3C%3C%28obj%29%3Aself-instance-method" class="tooltip">
-      <span><<(obj) : <span class="k">self</span></span>
+    <a href="IO.html#%3C%3C%28obj%3A_%29%3Aself-instance-method" class="tooltip">
+      <span><<(obj : _) : <span class="k">self</span></span>
     <<</a>, 
     
   
@@ -7987,8 +8002,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     getb_to_end</a>, 
     
   
-    <a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="tooltip">
-      <span>gets(limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : String, chomp = <span class="n">false</span>) : String | Nil<br/>gets(chomp = <span class="n">true</span>) : String | Nil</span>
+    <a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="tooltip">
+      <span>gets(delimiter : Char, limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(chomp : Bool = <span class="n">true</span>) : String | Nil<br/>gets(limit : Int, chomp : Bool = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, chomp : Bool = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : String, chomp = <span class="n">false</span>) : String | Nil</span>
     gets</a>, 
     
   
@@ -8017,8 +8032,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     print</a>, 
     
   
-    <a href="IO.html#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="tooltip">
-      <span>printf(format_string, args : Array | Tuple) : Nil<br/>printf(format_string, *args) : Nil</span>
+    <a href="IO.html#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="tooltip">
+      <span>printf(format_string : String, args : Array | Tuple) : Nil<br/>printf(format_string : String, *args) : Nil</span>
     printf</a>, 
     
   
@@ -8072,8 +8087,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     read_string</a>, 
     
   
-    <a href="IO.html#read_utf8%28slice%3ABytes%29-instance-method" class="tooltip">
-      <span>read_utf8(slice : Bytes)</span>
+    <a href="IO.html#read_utf8%28slice%3ABytes%29%3AInt32-instance-method" class="tooltip">
+      <span>read_utf8(slice : Bytes) : Int32</span>
     read_utf8</a>, 
     
   
@@ -8127,8 +8142,8 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
     write_byte</a>, 
     
   
-    <a href="IO.html#write_bytes%28object%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="tooltip">
-      <span>write_bytes(object, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</span>
+    <a href="IO.html#write_bytes%28object%3A_%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="tooltip">
+      <span>write_bytes(object : _, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</span>
     write_bytes</a>, 
     
   
@@ -8152,13 +8167,13 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
   <h3>Class methods inherited from class <code><a href="IO.html">IO</a></code></h3>
   
   
-    <a href="IO.html#copy%28src%2Cdst%2Climit%3AInt%29%3AInt64-class-method" class="tooltip">
-      <span>copy(src, dst, limit : Int) : Int64<br/>copy(src, dst) : Int64</span>
+    <a href="IO.html#copy%28src%3AIO%2Cdst%3AIO%2Climit%3AInt%29%3AInt64-class-method" class="tooltip">
+      <span>copy(src : IO, dst : IO, limit : Int) : Int64<br/>copy(src : IO, dst : IO) : Int64</span>
     copy</a>, 
     
   
-    <a href="IO.html#pipe%28read_blocking%3Dnil%2Cwrite_blocking%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="tooltip">
-      <span>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)<br/>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>, &)</span>
+    <a href="IO.html#pipe%28read_blocking%3ABool%7CNil%3Dnil%2Cwrite_blocking%3ABool%7CNil%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="tooltip">
+      <span>pipe(read_blocking : Bool | Nil = <span class="n">nil</span>, write_blocking : Bool | Nil = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)<br/>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>, &)</span>
     pipe</a>, 
     
   
@@ -8402,20 +8417,16 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8560,7 +8571,7 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L36" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L36" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8581,7 +8592,7 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L31" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L31" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8602,7 +8613,7 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L68" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L68" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8628,7 +8639,7 @@ event loop runtime requirements.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L63" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L63" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8663,7 +8674,7 @@ block. Eventually closes the server socket when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L89" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L89" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8686,7 +8697,7 @@ server socket when the block returns.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8735,7 +8746,7 @@ loop <span class="k">do</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/tcp_server.cr#L117" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/tcp_server.cr#L117" target="_blank">View source</a>]
         
       </div>
     </div>

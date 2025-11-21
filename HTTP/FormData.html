@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::FormData - Crystal 1.18.0-dev</title>
+  <title>HTTP::FormData - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7268,28 +7273,28 @@ is an example showing how to upload a file to the server above in crystal.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L81" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L81" target="_blank">
         http/formdata.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata/builder.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata/builder.cr#L1" target="_blank">
         http/formdata/builder.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata/parser.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata/parser.cr#L1" target="_blank">
         http/formdata/parser.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata/part.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata/part.cr#L1" target="_blank">
         http/formdata/part.cr
       </a>
     
@@ -7342,7 +7347,7 @@ is an example showing how to upload a file to the server above in crystal.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#parse_content_disposition%28content_disposition%29%3ATuple%28String%2CFileMetadata%29-class-method" class="signature"><strong>.parse_content_disposition</strong>(content_disposition) : Tuple(String, FileMetadata)</a>
+        <a href="#parse_content_disposition%28content_disposition%3AString%29%3ATuple%28String%2CFileMetadata%29-class-method" class="signature"><strong>.parse_content_disposition</strong>(content_disposition : String) : Tuple(String, FileMetadata)</a>
         
           <div class="summary"><p>Parses a <code>Content-Disposition</code> header string into a field name and <code><a href="../HTTP/FormData/FileMetadata.html">FileMetadata</a></code>.</p></div>
         
@@ -7403,7 +7408,7 @@ io.to_s                          <span class="c"># =&gt; &quot;HTTP/1.1 200 OK\r
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L215" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L215" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7434,7 +7439,7 @@ io.to_s <span class="c"># =&gt; &quot;--boundary\r\nContent-Disposition: form-da
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L189" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L189" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7463,7 +7468,7 @@ form_data <span class="o">=</span> <span class="s">&quot;--aA40\r\nContent-Dispo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L95" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L95" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7495,17 +7500,17 @@ request <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L118" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L118" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="parse_content_disposition(content_disposition):Tuple(String,FileMetadata)-class-method">
+    <div class="entry-detail" id="parse_content_disposition(content_disposition:String):Tuple(String,FileMetadata)-class-method">
       <div class="signature">
         
-        def self.<strong>parse_content_disposition</strong>(content_disposition) : <a href="../Tuple.html">Tuple</a>(<a href="../String.html">String</a>, <a href="../HTTP/FormData/FileMetadata.html">FileMetadata</a>)
+        def self.<strong>parse_content_disposition</strong>(content_disposition : <a href="../String.html">String</a>) : <a href="../Tuple.html">Tuple</a>(<a href="../String.html">String</a>, <a href="../HTTP/FormData/FileMetadata.html">FileMetadata</a>)
 
-        <a class="method-permalink" href="#parse_content_disposition%28content_disposition%29%3ATuple%28String%2CFileMetadata%29-class-method">#</a>
+        <a class="method-permalink" href="#parse_content_disposition%28content_disposition%3AString%29%3ATuple%28String%2CFileMetadata%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7520,7 +7525,7 @@ in <a href="https://tools.ietf.org/html/rfc2388">RFC 2388</a>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/formdata.cr#L133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/formdata.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>

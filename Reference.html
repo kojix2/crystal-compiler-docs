@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Reference - Crystal 1.18.0-dev</title>
+  <title>Reference - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7427,8 +7432,6 @@ the instance is no longer referred by any other entity in the program.</p>
     
       <li class="other-type"><a href="Fiber.html">Fiber</a></li>
     
-      <li class="other-type"><a href="Fiber/ExecutionContext/Concurrent.html">Fiber::ExecutionContext::Concurrent</a></li>
-    
       <li class="other-type"><a href="Fiber/ExecutionContext/Isolated.html">Fiber::ExecutionContext::Isolated</a></li>
     
       <li class="other-type"><a href="Fiber/ExecutionContext/Parallel.html">Fiber::ExecutionContext::Parallel</a></li>
@@ -7595,6 +7598,8 @@ the instance is no longer referred by any other entity in the program.</p>
     
       <li class="other-type"><a href="System/User.html">System::User</a></li>
     
+      <li class="other-type"><a href="Thread.html">Thread</a></li>
+    
       <li class="other-type"><a href="Time/Location.html">Time::Location</a></li>
     
       <li class="other-type"><a href="URI.html">URI</a></li>
@@ -7646,28 +7651,28 @@ the instance is no longer referred by any other entity in the program.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L339" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L371" target="_blank">
         json/any.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L36" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L36" target="_blank">
         primitives.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L15" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L15" target="_blank">
         reference.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L374" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L374" target="_blank">
         yaml/any.cr
       </a>
     
@@ -7973,20 +7978,16 @@ the instance is no longer referred by any other entity in the program.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8126,7 +8127,7 @@ the instance is no longer referred by any other entity in the program.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L36" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L36" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8176,7 +8177,7 @@ foo <span class="o">=</span> <span class="t">Foo</span>.unsafe_construct(<span c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L53" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L53" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8242,7 +8243,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L95" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L95" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8277,7 +8278,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8293,7 +8294,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/any.cr#L340" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L372" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8309,7 +8310,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/any.cr#L375" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/any.cr#L375" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8330,7 +8331,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L65" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L65" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8353,7 +8354,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L84" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8374,7 +8375,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L98" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L98" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8390,7 +8391,7 @@ foo.i <span class="c"># =&gt; 123</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L36" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L36" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8419,7 +8420,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L114" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L114" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8447,7 +8448,7 @@ string2.object_id <span class="o">==</span> string.object_id <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L50" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L50" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8463,7 +8464,7 @@ string2.object_id <span class="o">==</span> string.object_id <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8485,7 +8486,7 @@ string2.object_id <span class="o">==</span> string.object_id <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L71" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8506,7 +8507,7 @@ string2.object_id <span class="o">==</span> string.object_id <span class="c"># =
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8534,7 +8535,7 @@ which includes its class name and its object address.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/reference.cr#L173" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/reference.cr#L173" target="_blank">View source</a>]
         
       </div>
     </div>

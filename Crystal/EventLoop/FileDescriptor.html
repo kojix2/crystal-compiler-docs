@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::EventLoop::FileDescriptor - Crystal 1.18.0-dev</title>
+  <title>Crystal::EventLoop::FileDescriptor - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7205,7 +7210,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L2" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L2" target="_blank">
         crystal/event_loop/file_descriptor.cr
       </a>
     
@@ -7236,7 +7241,7 @@
       <li class="entry-summary">
         <a href="#close%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="signature"><strong>#close</strong>(file_descriptor : Crystal::System::FileDescriptor) : Nil</a>
         
-          <div class="summary"><p>Closes the file descriptor resource.</p></div>
+          <div class="summary"><p>Closes the system fd or handle.</p></div>
         
       </li>
     
@@ -7265,6 +7270,13 @@
         <a href="#reopened%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="signature"><strong>#reopened</strong>(file_descriptor : Crystal::System::FileDescriptor) : Nil</a>
         
           <div class="summary"><p>Hook to react on the file descriptor after it has been reopened.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shutdown%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method" class="signature"><strong>#shutdown</strong>(file_descriptor : Crystal::System::FileDescriptor) : Nil</a>
+        
+          <div class="summary"><p>Internal shutdown of the file descriptor.</p></div>
         
       </li>
     
@@ -7323,13 +7335,13 @@
       
         <div class="doc">
           
-          <p>Closes the file descriptor resource.</p>
+          <p>Closes the system fd or handle.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L50" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L58" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7354,7 +7366,7 @@ the current thread if possible, especially when <em>blocking</em> is <code>false
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7379,7 +7391,7 @@ blocking arg is nil.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L10" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7404,7 +7416,7 @@ Returns 0 when EOF is reached.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L28" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L28" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7427,7 +7439,32 @@ file descriptor.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shutdown(file_descriptor:Crystal::System::FileDescriptor):Nil-instance-method">
+      <div class="signature">
+        abstract 
+        def <strong>shutdown</strong>(file_descriptor : Crystal::System::FileDescriptor) : <a href="../../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#shutdown%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Internal shutdown of the file descriptor. Called after the
+<code><a href="../../IO/FileDescriptor.html">IO::FileDescriptor</a></code> has been marked closed but before calling <code><a href="../../Crystal/EventLoop/FileDescriptor.html#close%28file_descriptor%3ACrystal%3A%3ASystem%3A%3AFileDescriptor%29%3ANil-instance-method">#close</a></code> to
+actually close the system fd or handle.</p>
+<p>Implementations shall resume all pending waiters and let them fail because
+the IO has been closed.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L55" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7448,7 +7485,7 @@ file descriptor.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L31" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L31" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7469,7 +7506,7 @@ file descriptor.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L42" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L42" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7493,7 +7530,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/crystal/event_loop/file_descriptor.cr#L39" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/file_descriptor.cr#L39" target="_blank">View source</a>]
         
       </div>
     </div>

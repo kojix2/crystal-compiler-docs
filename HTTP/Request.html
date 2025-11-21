@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::Request - Crystal 1.18.0-dev</title>
+  <title>HTTP::Request - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7211,7 +7216,7 @@ header will be set appropriately.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L17" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L17" target="_blank">
         http/request.cr
       </a>
     
@@ -7234,7 +7239,7 @@ header will be set appropriately.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28method%3AString%2Cresource%3AString%2Cheaders%3AHeaders%7CNil%3Dnil%2Cbody%3AString%7CBytes%7CIO%7CNil%3Dnil%2Cversion%3D%22HTTP/1.1%22%29-class-method" class="signature"><strong>.new</strong>(method : String, resource : String, headers : Headers | Nil = <span class="n">nil</span>, body : String | Bytes | IO | Nil = <span class="n">nil</span>, version = <span class="s">&quot;HTTP/1.1&quot;</span>)</a>
+        <a href="#new%28method%3AString%2Cresource%3AString%2Cheaders%3AHeaders%7CNil%3Dnil%2Cbody%3AString%7CBytes%7CIO%7CNil%3Dnil%2Cversion%3AString%3D%22HTTP/1.1%22%29%3Aself-class-method" class="signature"><strong>.new</strong>(method : String, resource : String, headers : Headers | Nil = <span class="n">nil</span>, body : String | Bytes | IO | Nil = <span class="n">nil</span>, version : String = <span class="s">&quot;HTTP/1.1&quot;</span>) : <span class="k">self</span></a>
         
       </li>
     
@@ -7253,7 +7258,7 @@ header will be set appropriately.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#from_io%28io%2C%2A%2Cmax_request_line_size%3AInt32%3DHTTP%3A%3AMAX_REQUEST_LINE_SIZE%2Cmax_headers_size%3AInt32%3DHTTP%3A%3AMAX_HEADERS_SIZE%29%3AHTTP%3A%3ARequest%7CHTTP%3A%3AStatus%7CNil-class-method" class="signature"><strong>.from_io</strong>(io, *, max_request_line_size : Int32 = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_REQUEST_LINE_SIZE</span>, max_headers_size : Int32 = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_HEADERS_SIZE</span>) : HTTP::Request | HTTP::Status | Nil</a>
+        <a href="#from_io%28io%3AIO%2C%2A%2Cmax_request_line_size%3AInt32%3DHTTP%3A%3AMAX_REQUEST_LINE_SIZE%2Cmax_headers_size%3AInt32%3DHTTP%3A%3AMAX_HEADERS_SIZE%29%3AHTTP%3A%3ARequest%7CHTTP%3A%3AStatus%7CNil-class-method" class="signature"><strong>.from_io</strong>(io : IO, *, max_request_line_size : Int32 = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_REQUEST_LINE_SIZE</span>, max_headers_size : Int32 = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_HEADERS_SIZE</span>) : HTTP::Request | HTTP::Status | Nil</a>
         
           <div class="summary"><p>Returns a <code><a href="../HTTP/Request.html">HTTP::Request</a></code> instance if successfully parsed, <code>nil</code> on EOF or <code><a href="../HTTP/Status.html">HTTP::Status</a></code> otherwise.</p></div>
         
@@ -7281,22 +7286,22 @@ header will be set appropriately.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#body%3D%28body%3AString%29-instance-method" class="signature"><strong>#body=</strong>(body : String)</a>
+        <a href="#body%3D%28body%3AString%29%3AString-instance-method" class="signature"><strong>#body=</strong>(body : String) : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#body%3D%28body%3ABytes%29-instance-method" class="signature"><strong>#body=</strong>(body : Bytes)</a>
+        <a href="#body%3D%28body%3ABytes%29%3AString-instance-method" class="signature"><strong>#body=</strong>(body : Bytes) : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#body%3D%28body%3AIO%29-instance-method" class="signature"><strong>#body=</strong>(body : IO)</a>
+        <a href="#body%3D%28body%3AIO%29%3AIO-instance-method" class="signature"><strong>#body=</strong>(body : IO) : IO</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#body%3D%28body%3ANil%29-instance-method" class="signature"><strong>#body=</strong>(body : Nil)</a>
+        <a href="#body%3D%28body%3ANil%29%3ANil-instance-method" class="signature"><strong>#body=</strong>(body : Nil) : Nil</a>
         
       </li>
     
@@ -7306,7 +7311,7 @@ header will be set appropriately.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#content_length%3D%28length%3AInt%29-instance-method" class="signature"><strong>#content_length=</strong>(length : Int)</a>
+        <a href="#content_length%3D%28length%3AInt%29%3AString-instance-method" class="signature"><strong>#content_length=</strong>(length : Int) : String</a>
         
       </li>
     
@@ -7408,7 +7413,7 @@ header will be set appropriately.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#path%3D%28path%29-instance-method" class="signature"><strong>#path=</strong>(path)</a>
+        <a href="#path%3D%28path%3AString%29%3AString-instance-method" class="signature"><strong>#path=</strong>(path : String) : String</a>
         
           <div class="summary"><p>Sets request's path component.</p></div>
         
@@ -7422,7 +7427,7 @@ header will be set appropriately.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#query%3D%28value%29-instance-method" class="signature"><strong>#query=</strong>(value)</a>
+        <a href="#query%3D%28value%3AString%7CNil%29%3AString%7CNil-instance-method" class="signature"><strong>#query=</strong>(value : String | Nil) : String | Nil</a>
         
           <div class="summary"><p>Sets request's query component.</p></div>
         
@@ -7455,7 +7460,7 @@ header will be set appropriately.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#to_io%28io%29-instance-method" class="signature"><strong>#to_io</strong>(io)</a>
+        <a href="#to_io%28io%3AIO%29%3ANil-instance-method" class="signature"><strong>#to_io</strong>(io : IO) : Nil</a>
         
       </li>
     
@@ -7711,20 +7716,16 @@ header will be set appropriately.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7853,18 +7854,18 @@ header will be set appropriately.</p>
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(method:String,resource:String,headers:Headers|Nil=nil,body:String|Bytes|IO|Nil=nil,version=&quot;HTTP/1.1&quot;)-class-method">
+    <div class="entry-detail" id="new(method:String,resource:String,headers:Headers|Nil=nil,body:String|Bytes|IO|Nil=nil,version:String=&quot;HTTP/1.1&quot;):self-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(method : <a href="../String.html">String</a>, resource : <a href="../String.html">String</a>, headers : <a href="../HTTP/Headers.html">Headers</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>, body : <a href="../String.html">String</a> | <a href="../Bytes.html">Bytes</a> | <a href="../IO.html">IO</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>, version = <span class="s">&quot;HTTP/1.1&quot;</span>)
+        def self.<strong>new</strong>(method : <a href="../String.html">String</a>, resource : <a href="../String.html">String</a>, headers : <a href="../HTTP/Headers.html">Headers</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>, body : <a href="../String.html">String</a> | <a href="../Bytes.html">Bytes</a> | <a href="../IO.html">IO</a> | <a href="../Nil.html">Nil</a> = <span class="n">nil</span>, version : <a href="../String.html">String</a> = <span class="s">&quot;HTTP/1.1&quot;</span>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#new%28method%3AString%2Cresource%3AString%2Cheaders%3AHeaders%7CNil%3Dnil%2Cbody%3AString%7CBytes%7CIO%7CNil%3Dnil%2Cversion%3D%22HTTP/1.1%22%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28method%3AString%2Cresource%3AString%2Cheaders%3AHeaders%7CNil%3Dnil%2Cbody%3AString%7CBytes%7CIO%7CNil%3Dnil%2Cversion%3AString%3D%22HTTP/1.1%22%29%3Aself-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L62" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7881,12 +7882,12 @@ header will be set appropriately.</p>
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="from_io(io,*,max_request_line_size:Int32=HTTP::MAX_REQUEST_LINE_SIZE,max_headers_size:Int32=HTTP::MAX_HEADERS_SIZE):HTTP::Request|HTTP::Status|Nil-class-method">
+    <div class="entry-detail" id="from_io(io:IO,*,max_request_line_size:Int32=HTTP::MAX_REQUEST_LINE_SIZE,max_headers_size:Int32=HTTP::MAX_HEADERS_SIZE):HTTP::Request|HTTP::Status|Nil-class-method">
       <div class="signature">
         
-        def self.<strong>from_io</strong>(io, *, max_request_line_size : <a href="../Int32.html">Int32</a> = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_REQUEST_LINE_SIZE</span>, max_headers_size : <a href="../Int32.html">Int32</a> = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_HEADERS_SIZE</span>) : <a href="../HTTP/Request.html">HTTP::Request</a> | <a href="../HTTP/Status.html">HTTP::Status</a> | <a href="../Nil.html">Nil</a>
+        def self.<strong>from_io</strong>(io : <a href="../IO.html">IO</a>, *, max_request_line_size : <a href="../Int32.html">Int32</a> = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_REQUEST_LINE_SIZE</span>, max_headers_size : <a href="../Int32.html">Int32</a> = <span class="t">HTTP</span><span class="t">::</span><span class="t">MAX_HEADERS_SIZE</span>) : <a href="../HTTP/Request.html">HTTP::Request</a> | <a href="../HTTP/Status.html">HTTP::Status</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#from_io%28io%2C%2A%2Cmax_request_line_size%3AInt32%3DHTTP%3A%3AMAX_REQUEST_LINE_SIZE%2Cmax_headers_size%3AInt32%3DHTTP%3A%3AMAX_HEADERS_SIZE%29%3AHTTP%3A%3ARequest%7CHTTP%3A%3AStatus%7CNil-class-method">#</a>
+        <a class="method-permalink" href="#from_io%28io%3AIO%2C%2A%2Cmax_request_line_size%3AInt32%3DHTTP%3A%3AMAX_REQUEST_LINE_SIZE%2Cmax_headers_size%3AInt32%3DHTTP%3A%3AMAX_HEADERS_SIZE%29%3AHTTP%3A%3ARequest%7CHTTP%3A%3AStatus%7CNil-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7898,7 +7899,7 @@ header will be set appropriately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L152" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7928,71 +7929,71 @@ header will be set appropriately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L20" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="body=(body:String)-instance-method">
+    <div class="entry-detail" id="body=(body:String):String-instance-method">
       <div class="signature">
         
-        def <strong>body=</strong>(body : <a href="../String.html">String</a>)
+        def <strong>body=</strong>(body : <a href="../String.html">String</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#body%3D%28body%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#body%3D%28body%3AString%29%3AString-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L123" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L123" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="body=(body:Bytes)-instance-method">
+    <div class="entry-detail" id="body=(body:Bytes):String-instance-method">
       <div class="signature">
         
-        def <strong>body=</strong>(body : <a href="../Bytes.html">Bytes</a>)
+        def <strong>body=</strong>(body : <a href="../Bytes.html">Bytes</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#body%3D%28body%3ABytes%29-instance-method">#</a>
+        <a class="method-permalink" href="#body%3D%28body%3ABytes%29%3AString-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L128" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L128" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="body=(body:IO)-instance-method">
+    <div class="entry-detail" id="body=(body:IO):IO-instance-method">
       <div class="signature">
         
-        def <strong>body=</strong>(body : <a href="../IO.html">IO</a>)
+        def <strong>body=</strong>(body : <a href="../IO.html">IO</a>) : <a href="../IO.html">IO</a>
 
-        <a class="method-permalink" href="#body%3D%28body%3AIO%29-instance-method">#</a>
+        <a class="method-permalink" href="#body%3D%28body%3AIO%29%3AIO-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="body=(body:Nil)-instance-method">
+    <div class="entry-detail" id="body=(body:Nil):Nil-instance-method">
       <div class="signature">
         
-        def <strong>body=</strong>(body : <a href="../Nil.html">Nil</a>)
+        def <strong>body=</strong>(body : <a href="../Nil.html">Nil</a>) : <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#body%3D%28body%3ANil%29-instance-method">#</a>
+        <a class="method-permalink" href="#body%3D%28body%3ANil%29%3ANil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L136" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8008,23 +8009,23 @@ header will be set appropriately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L119" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L119" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="content_length=(length:Int)-instance-method">
+    <div class="entry-detail" id="content_length=(length:Int):String-instance-method">
       <div class="signature">
         
-        def <strong>content_length=</strong>(length : <a href="../Int.html">Int</a>)
+        def <strong>content_length=</strong>(length : <a href="../Int.html">Int</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#content_length%3D%28length%3AInt%29-instance-method">#</a>
+        <a class="method-permalink" href="#content_length%3D%28length%3AInt%29%3AString-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8046,7 +8047,7 @@ headers, see <code><a href="../HTTP/Cookies.html">HTTP::Cookies</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L74" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L74" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8067,7 +8068,7 @@ headers, see <code><a href="../HTTP/Cookies.html">HTTP::Cookies</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L98" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L98" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8090,7 +8091,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L87" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L87" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8106,7 +8107,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8122,7 +8123,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8144,7 +8145,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L320" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L320" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8167,7 +8168,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L299" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L299" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8183,7 +8184,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8199,7 +8200,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L345" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L345" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8215,7 +8216,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L111" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8231,7 +8232,7 @@ is not present or the body is <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L107" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8256,7 +8257,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8281,7 +8282,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8297,7 +8298,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8313,7 +8314,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8334,17 +8335,17 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L272" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L272" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="path=(path)-instance-method">
+    <div class="entry-detail" id="path=(path:String):String-instance-method">
       <div class="signature">
         
-        def <strong>path=</strong>(path)
+        def <strong>path=</strong>(path : <a href="../String.html">String</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#path%3D%28path%29-instance-method">#</a>
+        <a class="method-permalink" href="#path%3D%28path%3AString%29%3AString-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8355,7 +8356,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L277" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L277" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8376,17 +8377,17 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L282" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L282" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="query=(value)-instance-method">
+    <div class="entry-detail" id="query=(value:String|Nil):String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>query=</strong>(value)
+        def <strong>query=</strong>(value : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#query%3D%28value%29-instance-method">#</a>
+        <a class="method-permalink" href="#query%3D%28value%3AString%7CNil%29%3AString%7CNil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8397,7 +8398,7 @@ Middlewares can overwrite this value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L288" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8419,7 +8420,7 @@ see <code><a href="../URI/Params.html">URI::Params</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L80" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8457,7 +8458,7 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L51" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L51" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8495,7 +8496,7 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L51" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L51" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8511,23 +8512,23 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L102" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L102" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_io(io)-instance-method">
+    <div class="entry-detail" id="to_io(io:IO):Nil-instance-method">
       <div class="signature">
         
-        def <strong>to_io</strong>(io)
+        def <strong>to_io</strong>(io : <a href="../IO.html">IO</a>) : <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#to_io%28io%29-instance-method">#</a>
+        <a class="method-permalink" href="#to_io%28io%3AIO%29%3ANil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8549,7 +8550,7 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L327" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L327" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8565,7 +8566,7 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8581,7 +8582,7 @@ server <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/request.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/request.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Time::Location - Crystal 1.18.0-dev</title>
+  <title>Time::Location - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent open current" data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7190,7 +7195,7 @@ provided by the operating system.</p>
 <pre><code class="language-crystal">location <span class="o">=</span> <span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Europe/Berlin&quot;</span>)
 location <span class="c"># =&gt; #&lt;Time::Location Europe/Berlin&gt;</span>
 time <span class="o">=</span> <span class="t">Time</span>.local(<span class="n">2016</span>, <span class="n">2</span>, <span class="n">15</span>, <span class="n">21</span>, <span class="n">1</span>, <span class="n">10</span>, location: location)
-time <span class="c"># =&gt; 2016-02-15 21:01:10 +01:00 Europe/Berlin</span></code></pre>
+time <span class="c"># =&gt; 2016-02-15 21:01:10+01:00[Europe/Berlin]</span></code></pre>
 <p>A custom time zone database can be configured through the environment variable
 <code>ZONEINFO</code>. See <code><a href="../Time/Location.html#load%28name%3AString%29%3ALocation-class-method">.load</a></code> for details.</p>
 <h3><a id="fixed-offset" class="anchor" href="#fixed-offset">
@@ -7254,28 +7259,28 @@ but its value can be changed:</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L174" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L174" target="_blank">
         json/to_json.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L49" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L49" target="_blank">
         time/location.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location/loader.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location/loader.cr#L1" target="_blank">
         time/location/loader.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L241" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L241" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -7382,6 +7387,13 @@ but its value can be changed:</p>
     
       <li class="entry-summary">
         <a href="#from_json_object_key%3F%28key%3AString%29%3ATime%3A%3ALocation-class-method" class="signature"><strong>.from_json_object_key?</strong>(key : String) : Time::Location</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#load%3F%28name%3AString%29%3ALocation%7CNil-class-method" class="signature"><strong>.load?</strong>(name : String) : Location | Nil</a>
+        
+          <div class="summary"><p>Loads the <code><a href="../Time/Location.html">Location</a></code> with the given <em>name</em>.</p></div>
         
       </li>
     
@@ -7737,20 +7749,16 @@ but its value can be changed:</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7896,7 +7904,7 @@ from UTC.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L219" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L219" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7918,7 +7926,7 @@ from UTC.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L226" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L226" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7967,12 +7975,15 @@ If the loader encounters a format error in the time zone database,
 <p>Files are cached based on the modification time, so subsequent request for
 the same location name will most likely return the same instance of
 <code><a href="../Time/Location.html">Location</a></code>, unless the time zone database has been updated in between.</p>
+<ul>
+<li><code><a href="../Time/Location.html#load%3F%28name%3AString%29%3ALocation%7CNil-class-method">.load?</a></code> returns <code>nil</code> if the location is unavailable.</li>
+</ul>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L302" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L304" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8008,7 +8019,7 @@ POSIX, and not supported in Crystal.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L381" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L400" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8037,7 +8048,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L363" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8053,7 +8064,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L334" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8069,7 +8080,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L481" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L481" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8097,7 +8108,71 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L485" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L485" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="load?(name:String):Location|Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>load?</strong>(name : <a href="../String.html">String</a>) : <a href="../Time/Location.html">Location</a> | <a href="../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#load%3F%28name%3AString%29%3ALocation%7CNil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Loads the <code><a href="../Time/Location.html">Location</a></code> with the given <em>name</em>.</p>
+<pre><code class="language-crystal">location <span class="o">=</span> <span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Europe/Berlin&quot;</span>)</code></pre>
+<p><em>name</em> is understood to be a location name in the IANA Time
+Zone database, such as <code>&quot;America/New_York&quot;</code>. As special cases,
+<code>&quot;<a href="../Time/Location.html#UTC">UTC</a>&quot;</code>, <code>&quot;Etc/<a href="../Time/Location.html#UTC">UTC</a>&quot;</code> and empty string (<code>&quot;&quot;</code>) return <code><a href="../Time/Location.html#UTC">Location::UTC</a></code>, and
+<code>&quot;Local&quot;</code> returns <code><a href="../Time/Location.html#local%3ALocation-class-method">Location.local</a></code>.</p>
+<p>The implementation uses a list of system-specific paths to look for a time
+zone database.
+The first time zone database entry matching the given name that is
+successfully loaded and parsed is returned.
+Typical paths on Unix-based operating systems are <code>/usr/share/zoneinfo/</code>,
+<code>/usr/share/lib/zoneinfo/</code>, or <code>/usr/lib/locale/TZ/</code>.</p>
+<p>A time zone database may not be present on all systems, especially non-Unix
+systems. In this case, you may need to distribute a copy of the database
+with an application that depends on time zone data being available.</p>
+<p>A custom lookup path can be set as environment variable <code>ZONEINFO</code>.
+The path can point to the root of a directory structure or an
+uncompressed ZIP file, each representing the time zone database using files
+and folders of the expected names.</p>
+<p>Example:</p>
+<pre><code class="language-crystal"><span class="c"># This tries to load the file `/usr/share/zoneinfo/Custom/Location`</span>
+<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/usr/share/zoneinfo/&quot;</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)
+
+<span class="c"># This tries to load the file `Custom/Location` in the uncompressed ZIP</span>
+<span class="c"># file at `/path/to/zoneinfo.zip`</span>
+<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/path/to/zoneinfo.zip&quot;</span>
+<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)</code></pre>
+<p>If the location name cannot be found, <code><a href="../Time/Location/InvalidLocationNameError.html">InvalidLocationNameError</a></code> is raised.
+If the loader encounters a format error in the time zone database,
+<code><a href="../Time/Location/InvalidTZDataError.html">InvalidTZDataError</a></code> is raised.</p>
+<p>Files are cached based on the modification time, so subsequent request for
+the same location name will most likely return the same instance of
+<code><a href="../Time/Location.html">Location</a></code>, unless the time zone database has been updated in between.</p>
+<ul>
+<li><code><a href="../Time/Location.html#load%3F%28name%3AString%29%3ALocation%7CNil-class-method">.load?</a></code> returns <code>nil</code> if the location is unavailable.</li>
+</ul>
+<p>Returns <code>nil</code> if the location is unavailable.
+Raises <code><a href="../Time/Location/InvalidLocationNameError.html">InvalidLocationNameError</a></code> if the name is invalid.
+Raises <code><a href="../Time/Location/InvalidTZDataError.html">InvalidTZDataError</a></code> if the loader encounters a format error in the
+time zone database.</p>
+<ul>
+<li><code><a href="../Time/Location.html#load%28name%3AString%29%3ALocation-class-method">.load</a></code> raises if the location is unavailable.</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L316" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8126,7 +8201,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L363" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8159,7 +8234,7 @@ since no default transition rules are assumed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L249" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8218,7 +8293,7 @@ daylight saving time (e.g. <code>&quot;EST5EDT,0/0,J365/25&quot;</code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L536" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L555" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8272,7 +8347,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L430" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L449" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8293,7 +8368,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L527" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L546" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8314,7 +8389,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L443" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L462" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8331,13 +8406,13 @@ and the values of all instance variables.</p>
           
           <p>Returns the time zone offset observed at <em>unix_seconds</em>.</p>
 <p><em>unix_seconds</em> expresses the number of seconds since UNIX epoch
-(<code>1970-01-01 00:00:00 <a href="../Time/Location.html#UTC">UTC</a></code>).</p>
+(<code>1970-01-01 00:00:00Z</code>).</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L451" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L470" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8360,7 +8435,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L202" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L202" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8376,7 +8451,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L175" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L175" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8397,7 +8472,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L445" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8413,7 +8488,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L242" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8434,7 +8509,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L522" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L541" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8455,7 +8530,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/location.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L205" target="_blank">View source</a>]
         
       </div>
     </div>

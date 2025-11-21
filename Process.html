@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Process - Crystal 1.18.0-dev</title>
+  <title>Process - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7193,42 +7198,42 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/kernel.cr#L580" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/kernel.cr#L580" target="_blank">
         kernel.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L1" target="_blank">
         process.cr:1
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L14" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L14" target="_blank">
         process.cr:14
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/executable_path.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/executable_path.cr#L5" target="_blank">
         process/executable_path.cr:5
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/executable_path.cr#L105" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/executable_path.cr#L105" target="_blank">
         process/executable_path.cr:105
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L1" target="_blank">
         process/shell.cr
       </a>
     
@@ -7294,6 +7299,14 @@
         <a href="#chroot%28path%3AString%29%3ANil-class-method" class="signature"><strong>.chroot</strong>(path : String) : Nil</a>
         
           <div class="summary"><p>Changes the root directory and the current working directory for the current process.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#debugger_present%3F%3ABool-class-method" class="signature"><strong>.debugger_present?</strong> : Bool</a>
+        
+          <div class="summary"><p>Returns whether a debugger is attached to the current process.</p>
+<p><span class="flag lime">EXPERIMENTAL</span> </p></div>
         
       </li>
     
@@ -7813,20 +7826,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7985,7 +7994,7 @@ process, and passing <em>args</em> is not supported.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L272" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L279" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8026,7 +8035,31 @@ unprivileged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L476" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="debugger_present?:Bool-class-method">
+      <div class="signature">
+        
+        def self.<strong>debugger_present?</strong> : <a href="Bool.html">Bool</a>
+
+        <a class="method-permalink" href="#debugger_present%3F%3ABool-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns whether a debugger is attached to the current process.</p>
+<p>Currently supported on Windows and Linux. Always returns <code>false</code> on other
+systems.</p>
+<p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L118" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8048,7 +8081,7 @@ unprivileged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L207" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L216" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8074,7 +8107,7 @@ will be expanded).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/executable_path.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/executable_path.cr#L35" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8097,7 +8130,7 @@ returns <code>true</code> for a process in the zombie or similar state.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L125" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8121,7 +8154,7 @@ not run any handlers registered with <code>at_exit</code>, use <code>::exit</cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L20" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8144,7 +8177,7 @@ in <em>path</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/executable_path.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/executable_path.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8170,7 +8203,7 @@ cannot be ignored in this way.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L104" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L104" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8199,7 +8232,7 @@ previously set interrupt handler.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L62" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8245,7 +8278,7 @@ puts <span class="s">&quot;bye&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L95" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L95" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8269,7 +8302,7 @@ platform-specific manner, unquoting tokens if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L111" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8294,7 +8327,7 @@ POSIX shell rules, unquoting tokens if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L131" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8323,7 +8356,7 @@ used in a batch script.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L194" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L194" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8344,7 +8377,7 @@ used in a batch script.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L35" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8365,7 +8398,7 @@ used in a batch script.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L30" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L30" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8386,7 +8419,7 @@ used in a batch script.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L25" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L25" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8410,7 +8443,7 @@ system does not re-parent the current process if the parent terminates; thus
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L44" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L44" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8436,7 +8469,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8457,7 +8490,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L22" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L22" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8481,7 +8514,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L34" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L34" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8502,7 +8535,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process/shell.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process/shell.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8523,7 +8556,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L109" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L109" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8546,7 +8579,7 @@ See also: <code><a href="Process.html#quote_posix%28args%3AEnumerable%28String%2
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L176" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L185" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8571,7 +8604,7 @@ will be closed automatically at the end of the block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L191" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L200" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8592,7 +8625,7 @@ will be closed automatically at the end of the block.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L49" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L49" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8614,7 +8647,7 @@ of terminated children are returned on Unix; they are zero on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L122" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8649,7 +8682,7 @@ of terminated children are returned on Unix; they are zero on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L399" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L404" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8670,7 +8703,7 @@ of terminated children are returned on Unix; they are zero on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8691,7 +8724,7 @@ of terminated children are returned on Unix; they are zero on Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8713,7 +8746,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L389" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L394" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8729,7 +8762,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L293" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8750,7 +8783,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L243" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L250" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8771,7 +8804,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L243" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L250" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8792,7 +8825,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L246" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L253" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8813,7 +8846,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L246" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L253" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8834,7 +8867,7 @@ Note that this returns <code>true</code> for processes in the zombie or similar 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L238" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L245" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8858,7 +8891,7 @@ Windows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L367" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L372" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8887,7 +8920,7 @@ unavailable. The terminated process has an exit status of 1.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L414" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L419" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8908,7 +8941,7 @@ unavailable. The terminated process has an exit status of 1.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L394" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L399" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8929,7 +8962,7 @@ unavailable. The terminated process has an exit status of 1.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/process.cr#L372" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/process.cr#L377" target="_blank">View source</a>]
         
       </div>
     </div>

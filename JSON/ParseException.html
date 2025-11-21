@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>JSON::ParseException - Crystal 1.18.0-dev</title>
+  <title>JSON::ParseException - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7218,7 +7223,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json.cr#L122" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L122" target="_blank">
         json.cr
       </a>
     
@@ -7241,7 +7246,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28message%2Cline_number%3AInt32%2Ccolumn_number%3AInt32%2Ccause%3Dnil%29-class-method" class="signature"><strong>.new</strong>(message, line_number : Int32, column_number : Int32, cause = <span class="n">nil</span>)</a>
+        <a href="#new%28message%2Cline_number%2Ccolumn_number%2Ccause%3Dnil%29-class-method" class="signature"><strong>.new</strong>(message, line_number, column_number, cause = <span class="n">nil</span>)</a>
         
       </li>
     
@@ -7269,12 +7274,33 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#column_number_i64%3AInt64-instance-method" class="signature"><strong>#column_number_i64</strong> : Int64</a>
+        
+          <div class="summary"><p><span class="flag lime">EXPERIMENTAL</span> </p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#line_number%3AInt32-instance-method" class="signature"><strong>#line_number</strong> : Int32</a>
         
       </li>
     
       <li class="entry-summary">
+        <a href="#line_number_i64%3AInt64-instance-method" class="signature"><strong>#line_number_i64</strong> : Int64</a>
+        
+          <div class="summary"><p><span class="flag lime">EXPERIMENTAL</span> </p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#location%3ATuple%28Int32%2CInt32%29-instance-method" class="signature"><strong>#location</strong> : Tuple(Int32, Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#location_i64%3ATuple%28Int64%2CInt64%29-instance-method" class="signature"><strong>#location_i64</strong> : Tuple(Int64, Int64)</a>
+        
+          <div class="summary"><p><span class="flag lime">EXPERIMENTAL</span> </p></div>
         
       </li>
     
@@ -7587,20 +7613,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7729,18 +7751,18 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(message,line_number:Int32,column_number:Int32,cause=nil)-class-method">
+    <div class="entry-detail" id="new(message,line_number,column_number,cause=nil)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(message, line_number : <a href="../Int32.html">Int32</a>, column_number : <a href="../Int32.html">Int32</a>, cause = <span class="n">nil</span>)
+        def self.<strong>new</strong>(message, line_number, column_number, cause = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#new%28message%2Cline_number%3AInt32%2Ccolumn_number%3AInt32%2Ccause%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28message%2Cline_number%2Ccolumn_number%2Ccause%3Dnil%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json.cr#L126" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L144" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7772,7 +7794,28 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json.cr#L124" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L130" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="column_number_i64:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>column_number_i64</strong> : <a href="../Int64.html">Int64</a>
+
+        <a class="method-permalink" href="#column_number_i64%3AInt64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7788,7 +7831,28 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json.cr#L123" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L126" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="line_number_i64:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>line_number_i64</strong> : <a href="../Int64.html">Int64</a>
+
+        <a class="method-permalink" href="#line_number_i64%3AInt64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7804,7 +7868,28 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json.cr#L130" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L150" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="location_i64:Tuple(Int64,Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>location_i64</strong> : <a href="../Tuple.html">Tuple</a>(<a href="../Int64.html">Int64</a>, <a href="../Int64.html">Int64</a>)
+
+        <a class="method-permalink" href="#location_i64%3ATuple%28Int64%2CInt64%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json.cr#L155" target="_blank">View source</a>]
         
       </div>
     </div>

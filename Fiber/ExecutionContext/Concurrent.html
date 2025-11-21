@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Fiber::ExecutionContext::Concurrent - Crystal 1.18.0-dev</title>
+  <title>Fiber::ExecutionContext::Concurrent - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7163,7 +7168,7 @@
 </h1>
 
 
-  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Fiber/ExecutionContext/Concurrent.html">Fiber::ExecutionContext::Concurrent</a></li><li class="superclass"><a href="../../Reference.html">Reference</a></li><li class="superclass"><a href="../../Object.html">Object</a></li></ul>
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Fiber/ExecutionContext/Concurrent.html">Fiber::ExecutionContext::Concurrent</a></li><li class="superclass"><a href="../../Fiber/ExecutionContext/Parallel.html">Fiber::ExecutionContext::Parallel</a></li><li class="superclass"><a href="../../Reference.html">Reference</a></li><li class="superclass"><a href="../../Object.html">Object</a></li></ul>
 
 
 
@@ -7186,8 +7191,8 @@ between themselves (for example no atomics or thread safety required), but
 data shared with other contexts needs to be protected (e.g. <code><a href="../../Mutex.html">Mutex</a></code>), and
 communication with fibers in other contexts requires safe primitives, for
 example <code><a href="../../Channel.html">Channel</a></code>.</p>
-<p>A blocking fiber blocks the entire context, and thus all the
-other fibers in the context.</p>
+<p>A blocking fiber blocks the entire context, and thus all the other fibers in
+the context.</p>
 <p>For example: we can start a concurrent context to run consumer fibers, while
 the default context produces values. Because the consumer fibers will never
 run in parallel and don't yield between reading <em>result</em> then writing it, we
@@ -7228,22 +7233,6 @@ for more complex operations.</p>
 
 
 
-  <h2>
-    <a id="included-modules" class="anchor" href="#included-modules">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Included Modules
-  </h2>
-  <ul class="other-types-list">
-    
-      <li class="other-type"><a href="../../Fiber/ExecutionContext.html">Fiber::ExecutionContext</a></li>
-    
-      <li class="other-type">Fiber::ExecutionContext::Scheduler</li>
-    
-  </ul>
-
 
 
 
@@ -7263,7 +7252,7 @@ for more complex operations.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L58" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/concurrent.cr#L56" target="_blank">
         fiber/execution_context/concurrent.cr
       </a>
     
@@ -7288,6 +7277,8 @@ for more complex operations.</p>
       <li class="entry-summary">
         <a href="#new%28name%3AString%29%3Aself-class-method" class="signature"><strong>.new</strong>(name : String) : <span class="k">self</span></a>
         
+          <div class="summary"><p>Creates a <code><a href="../../Fiber/ExecutionContext/Concurrent.html">Concurrent</a></code> context.</p></div>
+        
       </li>
     
   </ul>
@@ -7309,28 +7300,9 @@ for more complex operations.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#inspect%28io%3AIO%29%3ANil-instance-method" class="signature"><strong>#inspect</strong>(io : IO) : Nil</a>
+        <a href="#resize%28maximum%3AInt32%29%3ANil-instance-method" class="signature"><strong>#resize</strong>(maximum : Int32) : Nil</a>
         
-          <div class="summary"><p>Appends a String representation of this object which includes its class name, its object address and the values of all instance variables.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#name%3AString-instance-method" class="signature"><strong>#name</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#status%3AString-instance-method" class="signature"><strong>#status</strong> : String</a>
-        
-          <div class="summary"><p>Returns the current status of the scheduler.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_s%28io%3AIO%29%3ANil-instance-method" class="signature"><strong>#to_s</strong>(io : IO) : Nil</a>
-        
-          <div class="summary"><p>Appends a short String representation of this object which includes its class name and its object address.</p></div>
+          <div class="summary"><p>Always raises an <code><a href="../../ArgumentError.html">ArgumentError</a></code> exception because a concurrent context cannot be resized.</p></div>
         
       </li>
     
@@ -7342,29 +7314,49 @@ for more complex operations.</p>
     
       
 
-  <h3>Instance methods inherited from module <code>Fiber::ExecutionContext::Scheduler</code></h3>
+  <h3>Instance methods inherited from class <code><a href="../../Fiber/ExecutionContext/Parallel.html">Fiber::ExecutionContext::Parallel</a></code></h3>
   
   
-    <a href="../../Fiber/ExecutionContext/Scheduler.html#spawn%28%2A%2Cname%3AString%7CNil%3Dnil%2C%26block%3A-%3E%29%3AFiber-instance-method" class="tooltip">
-      <span>spawn(*, name : String | Nil = <span class="n">nil</span>, &block :  -> ) : Fiber<br/>spawn(*, name : String | Nil = <span class="n">nil</span>, same_thread : Bool, &) : Fiber</span>
-    spawn</a>, 
+    <a href="../../Fiber/ExecutionContext/Parallel.html#capacity%3AInt32-instance-method" class="tooltip">
+      <span>capacity : Int32</span>
+    capacity</a>, 
     
   
-    <a href="../../Fiber/ExecutionContext/Scheduler.html#status%3AString-instance-method" class="tooltip">
-      <span>status : String</span>
-    status</a>
+    <a href="../../Fiber/ExecutionContext/Parallel.html#inspect%28io%3AIO%29%3ANil-instance-method" class="tooltip">
+      <span>inspect(io : IO) : Nil</span>
+    inspect</a>, 
+    
+  
+    <a href="../../Fiber/ExecutionContext/Parallel.html#name%3AString-instance-method" class="tooltip">
+      <span>name : String</span>
+    name</a>, 
+    
+  
+    <a href="../../Fiber/ExecutionContext/Parallel.html#resize%28maximum%3AInt32%29%3ANil-instance-method" class="tooltip">
+      <span>resize(maximum : Int32) : Nil</span>
+    resize</a>, 
+    
+  
+    <a href="../../Fiber/ExecutionContext/Parallel.html#size%3AInt32-instance-method" class="tooltip">
+      <span>size : Int32</span>
+    size</a>, 
+    
+  
+    <a href="../../Fiber/ExecutionContext/Parallel.html#to_s%28io%3AIO%29%3ANil-instance-method" class="tooltip">
+      <span>to_s(io : IO) : Nil</span>
+    to_s</a>
     
   
 
 
       
 
-  <h3>Constructor methods inherited from module <code>Fiber::ExecutionContext::Scheduler</code></h3>
+  <h3>Constructor methods inherited from class <code><a href="../../Fiber/ExecutionContext/Parallel.html">Fiber::ExecutionContext::Parallel</a></code></h3>
   
   
-    <a href="../../Fiber/ExecutionContext/Scheduler.html#current%3AScheduler-class-method" class="tooltip">
-      <span>current : Scheduler</span>
-    current</a>
+    <a href="../../Fiber/ExecutionContext/Parallel.html#new%28name%3AString%2Cmaximum%3AInt32%29%3Aself-class-method" class="tooltip">
+      <span>new(name : String, maximum : Int32) : <span class="k">self</span><br/>new(name : String, size : Range(Nil, Int32)) : <span class="k">self</span><br/>new(name : String, size : Range(Int32, Int32)) : <span class="k">self</span></span>
+    new</a>
     
   
 
@@ -7395,12 +7387,7 @@ for more complex operations.</p>
   
     <a href="../../Fiber/ExecutionContext.html#current%3AExecutionContext-class-method" class="tooltip">
       <span>current : ExecutionContext</span>
-    current</a>, 
-    
-  
-    <a href="../../Fiber/ExecutionContext.html#default%3AExecutionContext-class-method" class="tooltip">
-      <span>default : ExecutionContext</span>
-    default</a>
+    current</a>
     
   
 
@@ -7413,6 +7400,11 @@ for more complex operations.</p>
     <a href="../../Fiber/ExecutionContext.html#current%3F%3AExecutionContext%7CNil-class-method" class="tooltip">
       <span>current? : ExecutionContext | Nil</span>
     current?</a>, 
+    
+  
+    <a href="../../Fiber/ExecutionContext.html#default%3AExecutionContext%3A%3AParallel-class-method" class="tooltip">
+      <span>default : ExecutionContext::Parallel</span>
+    default</a>, 
     
   
     <a href="../../Fiber/ExecutionContext.html#default_workers_count%3AInt32-class-method" class="tooltip">
@@ -7660,20 +7652,16 @@ for more complex operations.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
   
+  
+    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7810,10 +7798,16 @@ for more complex operations.</p>
         <a class="method-permalink" href="#new%28name%3AString%29%3Aself-class-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Creates a <code><a href="../../Fiber/ExecutionContext/Concurrent.html">Concurrent</a></code> context. The context will only really start when a
+fiber is spawned into it.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L87" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/concurrent.cr#L64" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7834,109 +7828,24 @@ for more complex operations.</p>
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="inspect(io:IO):Nil-instance-method">
+    <div class="entry-detail" id="resize(maximum:Int32):Nil-instance-method">
       <div class="signature">
         
-        def <strong>inspect</strong>(io : <a href="../../IO.html">IO</a>) : <a href="../../Nil.html">Nil</a>
+        def <strong>resize</strong>(maximum : <a href="../../Int32.html">Int32</a>) : <a href="../../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#inspect%28io%3AIO%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#resize%28maximum%3AInt32%29%3ANil-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-            <div class="doc-inherited">
-              Description copied from class <a href="../../Reference.html">Reference</a>
-            </div>
-          
-          <p>Appends a String representation of this object
-which includes its class name, its object address
-and the values of all instance variables.</p>
-<pre><code class="language-crystal"><span class="k">class</span> <span class="t">Person</span>
-  <span class="k">def</span> <span class="m">initialize</span>(@name : <span class="t">String</span>, @age : <span class="t">Int32</span>)
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="t">Person</span>.new(<span class="s">&quot;John&quot;</span>, <span class="n">32</span>).inspect <span class="c"># =&gt; #&lt;Person:0x10fd31f20 @name=&quot;John&quot;, @age=32&gt;</span></code></pre>
+          <p>Always raises an <code><a href="../../ArgumentError.html">ArgumentError</a></code> exception because a concurrent context
+cannot be resized.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L301" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="name:String-instance-method">
-      <div class="signature">
-        
-        def <strong>name</strong> : <a href="../../String.html">String</a>
-
-        <a class="method-permalink" href="#name%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L62" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="status:String-instance-method">
-      <div class="signature">
-        
-        def <strong>status</strong> : <a href="../../String.html">String</a>
-
-        <a class="method-permalink" href="#status%3AString-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-            <div class="doc-inherited">
-              Description copied from module Fiber::ExecutionContext::Scheduler
-            </div>
-          
-          <p>Returns the current status of the scheduler. For example <code>&quot;running&quot;</code>,
-<code>&quot;event-loop&quot;</code> or <code>&quot;parked&quot;</code>.</p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L311" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_s(io:IO):Nil-instance-method">
-      <div class="signature">
-        
-        def <strong>to_s</strong>(io : <a href="../../IO.html">IO</a>) : <a href="../../Nil.html">Nil</a>
-
-        <a class="method-permalink" href="#to_s%28io%3AIO%29%3ANil-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-            <div class="doc-inherited">
-              Description copied from class <a href="../../Reference.html">Reference</a>
-            </div>
-          
-          <p>Appends a short String representation of this object
-which includes its class name and its object address.</p>
-<pre><code class="language-crystal"><span class="k">class</span> <span class="t">Person</span>
-  <span class="k">def</span> <span class="m">initialize</span>(@name : <span class="t">String</span>, @age : <span class="t">Int32</span>)
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="t">Person</span>.new(<span class="s">&quot;John&quot;</span>, <span class="n">32</span>).to_s <span class="c"># =&gt; #&lt;Person:0x10a199f20&gt;</span></code></pre>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/concurrent.cr#L70" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Call - Crystal 1.18.0-dev</title>
+  <title>Crystal::Call - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7213,42 +7218,42 @@ the symbol of that operator instead of a string.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/macros/methods.cr#L2308" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros/methods.cr#L2328" target="_blank">
         compiler/crystal/macros/methods.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L614" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L608" target="_blank">
         compiler/crystal/semantic/ast.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L6" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L6" target="_blank">
         compiler/crystal/semantic/call.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L39" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L39" target="_blank">
         compiler/crystal/semantic/call_error.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L1" target="_blank">
         compiler/crystal/semantic/lib.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L669" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L673" target="_blank">
         compiler/crystal/syntax/ast.cr
       </a>
     
@@ -7566,6 +7571,13 @@ the symbol of that operator instead of a string.</p>
     
       <li class="entry-summary">
         <a href="#global%3F%3ABool-instance-method" class="signature"><strong>#global?</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#has_any_args%3F-instance-method" class="signature"><strong>#has_any_args?</strong></a>
+        
+          <div class="summary"><p>Returns <code>true</code> if this call has any arguments.</p></div>
         
       </li>
     
@@ -8539,20 +8551,16 @@ the symbol of that operator instead of a string.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8692,7 +8700,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L685" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L689" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8708,7 +8716,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L703" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8724,7 +8732,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L691" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L695" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8740,7 +8748,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L703" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L707" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8768,7 +8776,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L824" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L824" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8784,7 +8792,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L816" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8800,7 +8808,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L1004" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L1004" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8816,7 +8824,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L707" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L711" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8869,7 +8877,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L720" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8885,7 +8893,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L820" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L820" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8901,7 +8909,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L798" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L798" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8917,7 +8925,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L672" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L676" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8933,7 +8941,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L672" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L676" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8949,7 +8957,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L682" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L686" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8965,7 +8973,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L682" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L686" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8981,7 +8989,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8997,7 +9005,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L615" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9013,7 +9021,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L615" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9029,7 +9037,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L673" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L677" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9045,7 +9053,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L673" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L677" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9061,7 +9069,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L674" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L678" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9077,7 +9085,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L674" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L678" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9093,7 +9101,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1105" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1107" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9109,7 +9117,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L765" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L765" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9125,7 +9133,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L180" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L180" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9141,7 +9149,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L92" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L92" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9157,7 +9165,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L142" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L142" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9173,7 +9181,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L107" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9189,7 +9197,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L33" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9205,7 +9213,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L899" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L899" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9221,7 +9229,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L224" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L224" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9237,7 +9245,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L978" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9253,7 +9261,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L452" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L452" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9269,7 +9277,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L459" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L459" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9285,7 +9293,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L950" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L950" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9301,7 +9309,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/ast.cr#L617" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/ast.cr#L611" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9317,7 +9325,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L229" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L229" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9333,7 +9341,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L705" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L705" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9349,7 +9357,7 @@ the symbol of that operator instead of a string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L812" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L812" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9375,7 +9383,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L678" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L682" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9391,7 +9399,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L678" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L682" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9407,7 +9415,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L728" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L728" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9423,7 +9431,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9439,7 +9447,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9455,7 +9463,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9471,7 +9479,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9487,7 +9495,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L681" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L685" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9503,7 +9511,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L681" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L685" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9519,7 +9527,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L731" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L731" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9535,7 +9543,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L1000" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L1000" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9551,7 +9559,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L680" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L684" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9567,7 +9575,30 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L680" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L684" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has_any_args?-instance-method">
+      <div class="signature">
+        
+        def <strong>has_any_args?</strong>
+
+        <a class="method-permalink" href="#has_any_args%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns <code>true</code> if this call has any arguments.</p>
+<p>Does not consider a block, only block argument.
+<code>foo {}</code> would be <code>false</code>, but <code>foo(&amp;x)</code> would be <code>true</code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L752" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9583,7 +9614,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L683" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L687" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9599,7 +9630,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L683" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L687" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9638,7 +9669,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L760" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L760" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9654,7 +9685,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L359" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L359" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9670,7 +9701,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/macros/methods.cr#L2309" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros/methods.cr#L2329" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9686,7 +9717,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L746" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L746" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9702,7 +9733,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9718,7 +9749,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L121" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9734,7 +9765,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L311" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L311" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9750,7 +9781,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L204" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L204" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9766,7 +9797,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L208" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L208" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9782,7 +9813,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L212" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9798,7 +9829,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L216" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L216" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9814,7 +9845,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L220" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L220" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9830,7 +9861,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L231" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L231" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9846,7 +9877,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L235" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L235" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9862,7 +9893,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L257" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L257" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9878,7 +9909,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L239" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L239" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9894,7 +9925,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L334" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9910,7 +9941,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L351" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L351" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9926,7 +9957,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9942,7 +9973,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L190" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L190" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9958,7 +9989,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L698" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L698" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9974,7 +10005,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L651" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L651" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9995,7 +10026,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L787" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L787" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10011,7 +10042,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L720" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L720" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10027,7 +10058,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L671" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10043,7 +10074,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L671" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10059,7 +10090,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L737" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L741" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10075,7 +10106,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L676" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L680" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10091,7 +10122,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L676" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L680" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10107,7 +10138,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L711" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L715" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10123,7 +10154,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L718" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L722" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10139,7 +10170,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L675" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10155,7 +10186,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L675" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10171,7 +10202,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L565" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L565" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10187,7 +10218,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L670" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L674" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10203,7 +10234,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L670" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L674" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10219,7 +10250,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10235,7 +10266,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L742" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L742" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10251,7 +10282,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10267,7 +10298,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10283,7 +10314,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L9" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10299,7 +10330,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1146" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1148" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10315,7 +10346,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1267" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10331,7 +10362,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10347,7 +10378,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L790" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10363,7 +10394,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L441" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L441" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10379,7 +10410,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L43" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10395,7 +10426,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L887" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L887" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10411,7 +10442,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L37" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10427,7 +10458,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/lib.cr#L2" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/lib.cr#L2" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10443,7 +10474,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L633" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L633" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10459,7 +10490,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L589" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L589" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10475,7 +10506,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10491,7 +10522,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10507,7 +10538,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10523,7 +10554,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L1019" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L1019" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10539,7 +10570,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call_error.cr#L714" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call_error.cr#L714" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10555,7 +10586,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L1263" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L1265" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10571,7 +10602,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L25" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L25" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10587,7 +10618,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L10" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10603,7 +10634,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L10" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10619,7 +10650,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/macros/methods.cr#L2336" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros/methods.cr#L2356" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10635,7 +10666,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L494" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L494" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10651,7 +10682,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10667,7 +10698,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10683,7 +10714,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L679" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L683" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10699,7 +10730,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/ast.cr#L679" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/ast.cr#L683" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10715,7 +10746,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10731,7 +10762,7 @@ supports having doc comments, so by default this returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/semantic/call.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/semantic/call.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP - Crystal 1.18.0-dev</title>
+  <title>HTTP - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7203,49 +7208,49 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http.cr#L10" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http.cr#L10" target="_blank">
         http.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/client.cr#L76" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/client.cr#L76" target="_blank">
         http/client.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L7" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L7" target="_blank">
         http/common.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/content.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/content.cr#L3" target="_blank">
         http/content.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookie.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookie.cr#L1" target="_blank">
         http/cookie.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L3" target="_blank">
         http/cookies.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/params.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/params.cr#L3" target="_blank">
         http/params.cr
       </a>
     
@@ -7307,14 +7312,14 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#dequote_string%28str%29%3AString-class-method" class="signature"><strong>.dequote_string</strong>(str) : String</a>
+        <a href="#dequote_string%28str%3AString%29%3AString-class-method" class="signature"><strong>.dequote_string</strong>(str : String) : String</a>
         
           <div class="summary"><p>Dequotes an <a href="https://tools.ietf.org/html/rfc2616#page-17">RFC 2616</a> quoted-string.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#expect_continue%3F%28headers%29%3ABool-class-method" class="signature"><strong>.expect_continue?</strong>(headers) : Bool</a>
+        <a href="#expect_continue%3F%28headers%3AHTTP%3A%3AHeaders%29%3ABool-class-method" class="signature"><strong>.expect_continue?</strong>(headers : HTTP::Headers) : Bool</a>
         
       </li>
     
@@ -7333,21 +7338,21 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#quote_string%28string%2Cio%29%3ANil-class-method" class="signature"><strong>.quote_string</strong>(string, io) : Nil</a>
+        <a href="#quote_string%28string%3AString%2Cio%3AIO%29%3ANil-class-method" class="signature"><strong>.quote_string</strong>(string : String, io : IO) : Nil</a>
         
           <div class="summary"><p>Encodes a string to an <a href="https://tools.ietf.org/html/rfc2616#page-17">RFC 2616</a> quoted-string.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#quote_string%28string%29%3AString-class-method" class="signature"><strong>.quote_string</strong>(string) : String</a>
+        <a href="#quote_string%28string%3AString%29%3AString-class-method" class="signature"><strong>.quote_string</strong>(string : String) : String</a>
         
           <div class="summary"><p>Encodes a string to an <a href="https://tools.ietf.org/html/rfc2616#page-17">RFC 2616</a> quoted-string.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#serialize_chunked_body%28io%2Cbody%29-class-method" class="signature"><strong>.serialize_chunked_body</strong>(io, body)</a>
+        <a href="#serialize_chunked_body%28io%3AIO%2Cbody%3AIO%29%3ANil-class-method" class="signature"><strong>.serialize_chunked_body</strong>(io : IO, body : IO) : Nil</a>
         
       </li>
     
@@ -7359,7 +7364,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#serialize_headers_and_string_body%28io%2Cheaders%2Cbody%29-class-method" class="signature"><strong>.serialize_headers_and_string_body</strong>(io, headers, body)</a>
+        <a href="#serialize_headers_and_string_body%28io%3AIO%2Cheaders%3AHTTP%3A%3AHeaders%2Cbody%3AString%29%3ANil-class-method" class="signature"><strong>.serialize_headers_and_string_body</strong>(io : IO, headers : HTTP::Headers, body : String) : Nil</a>
         
       </li>
     
@@ -7387,12 +7392,12 @@
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="dequote_string(str):String-class-method">
+    <div class="entry-detail" id="dequote_string(str:String):String-class-method">
       <div class="signature">
         
-        def self.<strong>dequote_string</strong>(str) : <a href="String.html">String</a>
+        def self.<strong>dequote_string</strong>(str : <a href="String.html">String</a>) : <a href="String.html">String</a>
 
-        <a class="method-permalink" href="#dequote_string%28str%29%3AString-class-method">#</a>
+        <a class="method-permalink" href="#dequote_string%28str%3AString%29%3AString-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7408,23 +7413,23 @@ quoted <span class="o">=</span> <span class="s">%q(\&quot;foo\\bar\&quot;)</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L383" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L383" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="expect_continue?(headers):Bool-class-method">
+    <div class="entry-detail" id="expect_continue?(headers:HTTP::Headers):Bool-class-method">
       <div class="signature">
         
-        def self.<strong>expect_continue?</strong>(headers) : <a href="Bool.html">Bool</a>
+        def self.<strong>expect_continue?</strong>(headers : <a href="HTTP/Headers.html">HTTP::Headers</a>) : <a href="Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#expect_continue%3F%28headers%29%3ABool-class-method">#</a>
+        <a class="method-permalink" href="#expect_continue%3F%28headers%3AHTTP%3A%3AHeaders%29%3ABool-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L337" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L337" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7453,7 +7458,7 @@ timezone <code>GMT</code> (interpreted as <code>UTC</code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L370" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L370" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7471,26 +7476,26 @@ timezone <code>GMT</code> (interpreted as <code>UTC</code>).</p>
           <p>Parse a time string using the formats specified by <a href="https://tools.ietf.org/html/rfc2616#section-3.3.1">RFC 2616</a></p>
 <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;http&quot;</span>
 
-<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sun, 14 Feb 2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; &quot;2016-02-14 21:00:00 UTC&quot;</span>
-<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sunday, 14-Feb-16 21:00:00 GMT&quot;</span>) <span class="c"># =&gt; &quot;2016-02-14 21:00:00 UTC&quot;</span>
-<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sun Feb 14 21:00:00 2016&quot;</span>)       <span class="c"># =&gt; &quot;2016-02-14 21:00:00 UTC&quot;</span></code></pre>
+<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sun, 14 Feb 2016 21:00:00 GMT&quot;</span>)  <span class="c"># =&gt; &quot;2016-02-14 21:00:00Z&quot;</span>
+<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sunday, 14-Feb-16 21:00:00 GMT&quot;</span>) <span class="c"># =&gt; &quot;2016-02-14 21:00:00Z&quot;</span>
+<span class="t">HTTP</span>.parse_time(<span class="s">&quot;Sun Feb 14 21:00:00 2016&quot;</span>)       <span class="c"># =&gt; &quot;2016-02-14 21:00:00Z&quot;</span></code></pre>
 <p>Uses <code><a href="Time/Format/HTTP_DATE.html">Time::Format::HTTP_DATE</a></code> as parser.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L352" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L352" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="quote_string(string,io):Nil-class-method">
+    <div class="entry-detail" id="quote_string(string:String,io:IO):Nil-class-method">
       <div class="signature">
         
-        def self.<strong>quote_string</strong>(string, io) : <a href="Nil.html">Nil</a>
+        def self.<strong>quote_string</strong>(string : <a href="String.html">String</a>, io : <a href="IO.html">IO</a>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#quote_string%28string%2Cio%29%3ANil-class-method">#</a>
+        <a class="method-permalink" href="#quote_string%28string%3AString%2Cio%3AIO%29%3ANil-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7510,17 +7515,17 @@ io.gets_to_end <span class="c"># =&gt; %q(\&quot;foo\\\ bar\&quot;)</span></code
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L413" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L413" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="quote_string(string):String-class-method">
+    <div class="entry-detail" id="quote_string(string:String):String-class-method">
       <div class="signature">
         
-        def self.<strong>quote_string</strong>(string) : <a href="String.html">String</a>
+        def self.<strong>quote_string</strong>(string : <a href="String.html">String</a>) : <a href="String.html">String</a>
 
-        <a class="method-permalink" href="#quote_string%28string%29%3AString-class-method">#</a>
+        <a class="method-permalink" href="#quote_string%28string%3AString%29%3AString-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7536,23 +7541,23 @@ string <span class="o">=</span> <span class="s">%q(&quot;foo\ bar&quot;)</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L438" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L438" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="serialize_chunked_body(io,body)-class-method">
+    <div class="entry-detail" id="serialize_chunked_body(io:IO,body:IO):Nil-class-method">
       <div class="signature">
         
-        def self.<strong>serialize_chunked_body</strong>(io, body)
+        def self.<strong>serialize_chunked_body</strong>(io : <a href="IO.html">IO</a>, body : <a href="IO.html">IO</a>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#serialize_chunked_body%28io%2Cbody%29-class-method">#</a>
+        <a class="method-permalink" href="#serialize_chunked_body%28io%3AIO%2Cbody%3AIO%29%3ANil-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L298" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L298" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7573,23 +7578,23 @@ string <span class="o">=</span> <span class="s">%q(&quot;foo\ bar&quot;)</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L293" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L293" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="serialize_headers_and_string_body(io,headers,body)-class-method">
+    <div class="entry-detail" id="serialize_headers_and_string_body(io:IO,headers:HTTP::Headers,body:String):Nil-class-method">
       <div class="signature">
         
-        def self.<strong>serialize_headers_and_string_body</strong>(io, headers, body)
+        def self.<strong>serialize_headers_and_string_body</strong>(io : <a href="IO.html">IO</a>, headers : <a href="HTTP/Headers.html">HTTP::Headers</a>, body : <a href="String.html">String</a>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#serialize_headers_and_string_body%28io%2Cheaders%2Cbody%29-class-method">#</a>
+        <a class="method-permalink" href="#serialize_headers_and_string_body%28io%3AIO%2Cheaders%3AHTTP%3A%3AHeaders%2Cbody%3AString%29%3ANil-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/common.cr#L285" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/common.cr#L285" target="_blank">View source</a>]
         
       </div>
     </div>

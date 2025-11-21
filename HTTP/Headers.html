@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::Headers - Crystal 1.18.0-dev</title>
+  <title>HTTP::Headers - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7221,7 +7226,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L7" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L7" target="_blank">
         http/headers.cr
       </a>
     
@@ -7284,61 +7289,61 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#%3D%3D%28other%3Aself%29-instance-method" class="signature"><strong>#==</strong>(other : <span class="k">self</span>)</a>
+        <a href="#%3D%3D%28other%3Aself%29%3ABool-instance-method" class="signature"><strong>#==</strong>(other : <span class="k">self</span>) : Bool</a>
         
           <div class="summary"><p>Equality operator.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%28key%29%3AString-instance-method" class="signature"><strong>#[]</strong>(key) : String</a>
+        <a href="#%5B%5D%28key%3AString%29%3AString-instance-method" class="signature"><strong>#[]</strong>(key : String) : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3D%28key%2Cvalue%3AString%29-instance-method" class="signature"><strong>#[]=</strong>(key, value : String)</a>
+        <a href="#%5B%5D%3D%28key%3AString%2Cvalue%3AString%29%3AString-instance-method" class="signature"><strong>#[]=</strong>(key : String, value : String) : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3D%28key%2Cvalue%3AArray%28String%29%29-instance-method" class="signature"><strong>#[]=</strong>(key, value : Array(String))</a>
+        <a href="#%5B%5D%3D%28key%3AString%2Cvalue%3AArray%28String%29%29%3AArray%28String%29-instance-method" class="signature"><strong>#[]=</strong>(key : String, value : Array(String)) : Array(String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3F%28key%29%3AString%7CNil-instance-method" class="signature"><strong>#[]?</strong>(key) : String | Nil</a>
+        <a href="#%5B%5D%3F%28key%3AString%29%3AString%7CNil-instance-method" class="signature"><strong>#[]?</strong>(key : String) : String | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add%28key%2Cvalue%3AString%29%3Aself-instance-method" class="signature"><strong>#add</strong>(key, value : String) : <span class="k">self</span></a>
+        <a href="#add%28key%3AString%2Cvalue%3AString%29%3Aself-instance-method" class="signature"><strong>#add</strong>(key : String, value : String) : <span class="k">self</span></a>
         
           <div class="summary"><p>Adds a header with <em>key</em> and <em>value</em> to the header set.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add%28key%2Cvalue%3AArray%28String%29%29%3Aself-instance-method" class="signature"><strong>#add</strong>(key, value : Array(String)) : <span class="k">self</span></a>
+        <a href="#add%28key%3AString%2Cvalue%3AArray%28String%29%29%3Aself-instance-method" class="signature"><strong>#add</strong>(key : String, value : Array(String)) : <span class="k">self</span></a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add%3F%28key%2Cvalue%3AString%29%3ABool-instance-method" class="signature"><strong>#add?</strong>(key, value : String) : Bool</a>
+        <a href="#add%3F%28key%3AString%2Cvalue%3AString%29%3ABool-instance-method" class="signature"><strong>#add?</strong>(key : String, value : String) : Bool</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add%3F%28key%2Cvalue%3AArray%28String%29%29%3ABool-instance-method" class="signature"><strong>#add?</strong>(key, value : Array(String)) : Bool</a>
+        <a href="#add%3F%28key%3AString%2Cvalue%3AArray%28String%29%29%3ABool-instance-method" class="signature"><strong>#add?</strong>(key : String, value : Array(String)) : Bool</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#clone-instance-method" class="signature"><strong>#clone</strong></a>
+        <a href="#clone%3AHTTP%3A%3AHeaders-instance-method" class="signature"><strong>#clone</strong> : HTTP::Headers</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#delete%28key%29%3AString%7CNil-instance-method" class="signature"><strong>#delete</strong>(key) : String | Nil</a>
+        <a href="#delete%28key%3AString%29%3AString%7CNil-instance-method" class="signature"><strong>#delete</strong>(key : String) : String | Nil</a>
         
       </li>
     
@@ -7364,7 +7369,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#fetch%28key%2Cdefault%29%3AString%7CNil-instance-method" class="signature"><strong>#fetch</strong>(key, default) : String | Nil</a>
+        <a href="#fetch%28key%3AString%2Cdefault%3AString%7CNil%29%3AString%7CNil-instance-method" class="signature"><strong>#fetch</strong>(key : String, default : String | Nil) : String | Nil</a>
         
       </li>
     
@@ -7374,17 +7379,17 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#get%28key%29%3AArray%28String%29-instance-method" class="signature"><strong>#get</strong>(key) : Array(String)</a>
+        <a href="#get%28key%3AString%29%3AArray%28String%29-instance-method" class="signature"><strong>#get</strong>(key : String) : Array(String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#get%3F%28key%29%3AArray%28String%29%7CNil-instance-method" class="signature"><strong>#get?</strong>(key) : Array(String) | Nil</a>
+        <a href="#get%3F%28key%3AString%29%3AArray%28String%29%7CNil-instance-method" class="signature"><strong>#get?</strong>(key : String) : Array(String) | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#has_key%3F%28key%29%3ABool-instance-method" class="signature"><strong>#has_key?</strong>(key) : Bool</a>
+        <a href="#has_key%3F%28key%3AString%29%3ABool-instance-method" class="signature"><strong>#has_key?</strong>(key : String) : Bool</a>
         
       </li>
     
@@ -7396,7 +7401,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#includes_word%3F%28key%2Cword%29%3ABool-instance-method" class="signature"><strong>#includes_word?</strong>(key, word) : Bool</a>
+        <a href="#includes_word%3F%28key%3AString%2Cword%3AString%29%3ABool-instance-method" class="signature"><strong>#includes_word?</strong>(key : String, word : String) : Bool</a>
         
           <div class="summary"><p>Returns if among the headers for <em>key</em> there is some that contains <em>word</em> as a value.</p></div>
         
@@ -7446,7 +7451,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#valid_value%3F%28value%29%3ABool-instance-method" class="signature"><strong>#valid_value?</strong>(value) : Bool</a>
+        <a href="#valid_value%3F%28value%3AString%29%3ABool-instance-method" class="signature"><strong>#valid_value?</strong>(value : String) : Bool</a>
         
       </li>
     
@@ -7746,8 +7751,8 @@
     reject</a>, 
     
   
-    <a href="../Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28%7BString%2CArray%28String%29%7D%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array({String, Array(String)})<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : {String, Array(String)}</span>
+    <a href="../Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28%7BString%2CArray%28String%29%7D%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array({String, Array(String)})<br/>sample(random : Random | Nil = <span class="n">nil</span>) : {String, Array(String)}</span>
     sample</a>, 
     
   
@@ -8059,20 +8064,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8212,7 +8213,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L53" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L53" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8242,7 +8243,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L346" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L351" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8259,12 +8260,12 @@
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="==(other:self)-instance-method">
+    <div class="entry-detail" id="==(other:self):Bool-instance-method">
       <div class="signature">
         
-        def <strong>==</strong>(other : <span class="k">self</span>)
+        def <strong>==</strong>(other : <span class="k">self</span>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#%3D%3D%28other%3Aself%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3D%3D%28other%3Aself%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8283,81 +8284,81 @@ single element.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L202" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L202" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[](key):String-instance-method">
+    <div class="entry-detail" id="[](key:String):String-instance-method">
       <div class="signature">
         
-        def <strong>[]</strong>(key) : <a href="../String.html">String</a>
+        def <strong>[]</strong>(key : <a href="../String.html">String</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#%5B%5D%28key%29%3AString-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%28key%3AString%29%3AString-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L72" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L72" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]=(key,value:String)-instance-method">
+    <div class="entry-detail" id="[]=(key:String,value:String):String-instance-method">
       <div class="signature">
         
-        def <strong>[]=</strong>(key, value : <a href="../String.html">String</a>)
+        def <strong>[]=</strong>(key : <a href="../String.html">String</a>, value : <a href="../String.html">String</a>) : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#%5B%5D%3D%28key%2Cvalue%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3D%28key%3AString%2Cvalue%3AString%29%3AString-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]=(key,value:Array(String))-instance-method">
+    <div class="entry-detail" id="[]=(key:String,value:Array(String)):Array(String)-instance-method">
       <div class="signature">
         
-        def <strong>[]=</strong>(key, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>))
+        def <strong>[]=</strong>(key : <a href="../String.html">String</a>, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)) : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)
 
-        <a class="method-permalink" href="#%5B%5D%3D%28key%2Cvalue%3AArray%28String%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3D%28key%3AString%2Cvalue%3AArray%28String%29%29%3AArray%28String%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L66" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L66" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]?(key):String|Nil-instance-method">
+    <div class="entry-detail" id="[]?(key:String):String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>[]?</strong>(key) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
+        def <strong>[]?</strong>(key : <a href="../String.html">String</a>) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#%5B%5D%3F%28key%29%3AString%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3F%28key%3AString%29%3AString%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L77" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L77" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add(key,value:String):self-instance-method">
+    <div class="entry-detail" id="add(key:String,value:String):self-instance-method">
       <div class="signature">
         
-        def <strong>add</strong>(key, value : <a href="../String.html">String</a>) : <span class="k">self</span>
+        def <strong>add</strong>(key : <a href="../String.html">String</a>, value : <a href="../String.html">String</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#add%28key%2Cvalue%3AString%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#add%28key%3AString%2Cvalue%3AString%29%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8376,87 +8377,87 @@ headers[<span class="s">&quot;Connection&quot;</span>] <span class="c"># =&gt; &
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L135" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L135" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add(key,value:Array(String)):self-instance-method">
+    <div class="entry-detail" id="add(key:String,value:Array(String)):self-instance-method">
       <div class="signature">
         
-        def <strong>add</strong>(key, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)) : <span class="k">self</span>
+        def <strong>add</strong>(key : <a href="../String.html">String</a>, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#add%28key%2Cvalue%3AArray%28String%29%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#add%28key%3AString%2Cvalue%3AArray%28String%29%29%3Aself-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L141" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L141" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add?(key,value:String):Bool-instance-method">
+    <div class="entry-detail" id="add?(key:String,value:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>add?</strong>(key, value : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
+        def <strong>add?</strong>(key : <a href="../String.html">String</a>, value : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#add%3F%28key%2Cvalue%3AString%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#add%3F%28key%3AString%2Cvalue%3AString%29%3ABool-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L147" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L147" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add?(key,value:Array(String)):Bool-instance-method">
+    <div class="entry-detail" id="add?(key:String,value:Array(String)):Bool-instance-method">
       <div class="signature">
         
-        def <strong>add?</strong>(key, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)) : <a href="../Bool.html">Bool</a>
+        def <strong>add?</strong>(key : <a href="../String.html">String</a>, value : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#add%3F%28key%2Cvalue%3AArray%28String%29%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#add%3F%28key%3AString%2Cvalue%3AArray%28String%29%29%3ABool-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L153" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L153" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="clone-instance-method">
+    <div class="entry-detail" id="clone:HTTP::Headers-instance-method">
       <div class="signature">
         
-        def <strong>clone</strong>
+        def <strong>clone</strong> : <a href="../HTTP/Headers.html">HTTP::Headers</a>
 
-        <a class="method-permalink" href="#clone-instance-method">#</a>
+        <a class="method-permalink" href="#clone%3AHTTP%3A%3AHeaders-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L266" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L271" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="delete(key):String|Nil-instance-method">
+    <div class="entry-detail" id="delete(key:String):String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>delete</strong>(key) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
+        def <strong>delete</strong>(key : <a href="../String.html">String</a>) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#delete%28key%29%3AString%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#delete%28key%3AString%29%3AString%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L176" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L176" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8484,7 +8485,7 @@ value types are passed by value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L258" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L263" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8509,7 +8510,7 @@ value types are passed by value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L244" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L244" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8540,23 +8541,23 @@ value types are passed by value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L172" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="fetch(key,default):String|Nil-instance-method">
+    <div class="entry-detail" id="fetch(key:String,default:String|Nil):String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>fetch</strong>(key, default) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
+        def <strong>fetch</strong>(key : <a href="../String.html">String</a>, default : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>) : <a href="../String.html">String</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#fetch%28key%2Cdefault%29%3AString%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#fetch%28key%3AString%2Cdefault%3AString%7CNil%29%3AString%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L159" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L159" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8572,55 +8573,55 @@ value types are passed by value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L163" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L163" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get(key):Array(String)-instance-method">
+    <div class="entry-detail" id="get(key:String):Array(String)-instance-method">
       <div class="signature">
         
-        def <strong>get</strong>(key) : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)
+        def <strong>get</strong>(key : <a href="../String.html">String</a>) : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>)
 
-        <a class="method-permalink" href="#get%28key%29%3AArray%28String%29-instance-method">#</a>
+        <a class="method-permalink" href="#get%28key%3AString%29%3AArray%28String%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L250" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L250" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="get?(key):Array(String)|Nil-instance-method">
+    <div class="entry-detail" id="get?(key:String):Array(String)|Nil-instance-method">
       <div class="signature">
         
-        def <strong>get?</strong>(key) : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>) | <a href="../Nil.html">Nil</a>
+        def <strong>get?</strong>(key : <a href="../String.html">String</a>) : <a href="../Array.html">Array</a>(<a href="../String.html">String</a>) | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#get%3F%28key%29%3AArray%28String%29%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#get%3F%28key%3AString%29%3AArray%28String%29%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L259" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="has_key?(key):Bool-instance-method">
+    <div class="entry-detail" id="has_key?(key:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>has_key?</strong>(key) : <a href="../Bool.html">Bool</a>
+        def <strong>has_key?</strong>(key : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#has_key%3F%28key%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#has_key%3F%28key%3AString%29%3ABool-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L168" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L168" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8641,17 +8642,17 @@ value types are passed by value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L222" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L222" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="includes_word?(key,word):Bool-instance-method">
+    <div class="entry-detail" id="includes_word?(key:String,word:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>includes_word?</strong>(key, word) : <a href="../Bool.html">Bool</a>
+        def <strong>includes_word?</strong>(key : <a href="../String.html">String</a>, word : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#includes_word%3F%28key%2Cword%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#includes_word%3F%28key%3AString%2Cword%3AString%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8667,7 +8668,7 @@ headers.includes_word?(<span class="s">&quot;Connection&quot;</span>, <span clas
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L90" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L90" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8701,7 +8702,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L294" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L299" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8717,7 +8718,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L181" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L181" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8733,7 +8734,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L298" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L303" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8749,7 +8750,7 @@ p1.inspect <span class="c"># &quot;Point(@x=1, @y=2)&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L270" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L275" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8775,7 +8776,7 @@ headers.serialize <span class="c"># =&gt; &quot;foo: bar\r\nbaz: qux\r\nbaz: qox
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L339" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8801,7 +8802,7 @@ headers.serialize <span class="c"># =&gt; &quot;foo: bar\r\nbaz: qux\r\nbaz: qox
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L327" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L332" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8826,23 +8827,23 @@ headers.serialize <span class="c"># =&gt; &quot;foo: bar\r\nbaz: qux\r\nbaz: qox
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L274" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L279" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="valid_value?(value):Bool-instance-method">
+    <div class="entry-detail" id="valid_value?(value:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>valid_value?</strong>(value) : <a href="../Bool.html">Bool</a>
+        def <strong>valid_value?</strong>(value : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#valid_value%3F%28value%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#valid_value%3F%28value%3AString%29%3ABool-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/headers.cr#L342" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/headers.cr#L347" target="_blank">View source</a>]
         
       </div>
     </div>

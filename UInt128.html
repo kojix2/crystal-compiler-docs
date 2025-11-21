@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>UInt128 - Crystal 1.18.0-dev</title>
+  <title>UInt128 - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7193,21 +7198,21 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/number.cr#L134" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/number.cr#L134" target="_blank">
         big/number.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2588" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2621" target="_blank">
         int.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">
         primitives.cr
       </a>
     
@@ -7256,6 +7261,11 @@
     Constructors
   </h2>
   <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#from_digits%28digits%3AEnumerable%28Int%29%2Cbase%3AInt%3D10%29%3Aself-class-method" class="signature"><strong>.from_digits</strong>(digits : Enumerable(Int), base : Int = <span class="n">10</span>) : <span class="k">self</span></a>
+        
+      </li>
     
       <li class="entry-summary">
         <a href="#new%28value%3AString%2Cbase%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue%2Cunderscore%3ABool%3Dfalse%2Cprefix%3ABool%3Dfalse%2Cstrict%3ABool%3Dtrue%2Cleading_zero_is_octal%3ABool%3Dfalse%29%3Aself-class-method" class="signature"><strong>.new</strong>(value : String, base : Int = <span class="n">10</span>, whitespace : Bool = <span class="n">true</span>, underscore : Bool = <span class="n">false</span>, prefix : Bool = <span class="n">false</span>, strict : Bool = <span class="n">true</span>, leading_zero_is_octal : Bool = <span class="n">false</span>) : <span class="k">self</span></a>
@@ -8971,7 +8981,7 @@
     
   
     <a href="Int.html#%3C%3D%3E%28other%3ABigInt%29-instance-method" class="tooltip">
-      <span><=>(other : BigInt)<br/><=>(other : Int) : Int32<br/><=>(other : BigFloat)<br/><=>(other : BigRational)<br/><=>(other : BigDecimal)</span>
+      <span><=>(other : BigInt)<br/><=>(other : Int) : Int32<br/><=>(other : BigFloat) : Int32<br/><=>(other : BigRational) : Int32<br/><=>(other : BigDecimal)</span>
     <=></a>, 
     
   
@@ -9203,6 +9213,11 @@
     <a href="Int.html#tdiv%28other%3AInt%29-instance-method" class="tooltip">
       <span>tdiv(other : Int)</span>
     tdiv</a>, 
+    
+  
+    <a href="Int.html#tdivmod%28other%3AInt%29-instance-method" class="tooltip">
+      <span>tdivmod(other : Int)</span>
+    tdivmod</a>, 
     
   
     <a href="Int.html#times%28%26block%3Aself-%3E%29%3ANil-instance-method" class="tooltip">
@@ -9953,20 +9968,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -10095,6 +10106,22 @@
     Constructor Detail
   </h2>
   
+    <div class="entry-detail" id="from_digits(digits:Enumerable(Int),base:Int=10):self-class-method">
+      <div class="signature">
+        
+        def self.<strong>from_digits</strong>(digits : <a href="Enumerable.html">Enumerable</a>(<a href="Int.html">Int</a>), base : <a href="Int.html">Int</a> = <span class="n">10</span>) : <span class="k">self</span>
+
+        <a class="method-permalink" href="#from_digits%28digits%3AEnumerable%28Int%29%2Cbase%3AInt%3D10%29%3Aself-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2829" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="new(value:String,base:Int=10,whitespace:Bool=true,underscore:Bool=false,prefix:Bool=false,strict:Bool=true,leading_zero_is_octal:Bool=false):self-class-method">
       <div class="signature">
         
@@ -10114,7 +10141,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2600" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2633" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10130,7 +10157,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10146,7 +10173,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10167,7 +10194,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2605" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2638" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10188,7 +10215,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2610" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2643" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10216,7 +10243,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10251,7 +10278,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10272,7 +10299,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10293,7 +10320,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10314,7 +10341,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10335,7 +10362,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10356,7 +10383,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10377,7 +10404,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10398,7 +10425,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10419,7 +10446,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10440,7 +10467,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10462,7 +10489,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10484,7 +10511,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10505,7 +10532,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10526,7 +10553,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10547,7 +10574,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10568,7 +10595,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10589,7 +10616,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10610,7 +10637,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10631,7 +10658,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10652,7 +10679,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10673,7 +10700,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10694,7 +10721,7 @@ or if <code>self</code> and <em>other</em> are unordered.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10716,7 +10743,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10738,7 +10765,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10760,7 +10787,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10782,7 +10809,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10804,7 +10831,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10826,7 +10853,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10848,7 +10875,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10870,7 +10897,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10892,7 +10919,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10914,7 +10941,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10936,7 +10963,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10958,7 +10985,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10980,7 +11007,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11002,7 +11029,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11024,7 +11051,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11046,7 +11073,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11068,7 +11095,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11090,7 +11117,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11112,7 +11139,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11134,7 +11161,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11156,7 +11183,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11178,7 +11205,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11200,7 +11227,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11222,7 +11249,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11244,7 +11271,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11266,7 +11293,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11288,7 +11315,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11310,7 +11337,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11332,7 +11359,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11354,7 +11381,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11370,7 +11397,7 @@ In case of overflow a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2618" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2651" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11392,7 +11419,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11414,7 +11441,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11436,7 +11463,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11458,7 +11485,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11480,7 +11507,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11502,7 +11529,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11524,7 +11551,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11546,7 +11573,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11568,7 +11595,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11590,7 +11617,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11611,7 +11638,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11632,7 +11659,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11654,7 +11681,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11676,7 +11703,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11698,7 +11725,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11720,7 +11747,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11742,7 +11769,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11764,7 +11791,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11786,7 +11813,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11808,7 +11835,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11830,7 +11857,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11852,7 +11879,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11873,7 +11900,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11894,7 +11921,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11916,7 +11943,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11938,7 +11965,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11960,7 +11987,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11982,7 +12009,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12004,7 +12031,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12026,7 +12053,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12048,7 +12075,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12070,7 +12097,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12092,7 +12119,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12114,7 +12141,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12135,7 +12162,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12156,7 +12183,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12172,7 +12199,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12188,7 +12215,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12204,7 +12231,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12220,7 +12247,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12236,7 +12263,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12252,7 +12279,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12268,7 +12295,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12284,7 +12311,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12300,7 +12327,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12316,7 +12343,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12332,7 +12359,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2615" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2648" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12348,7 +12375,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2616" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2649" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12364,7 +12391,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/number.cr#L135" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/number.cr#L135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12380,7 +12407,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/number.cr#L136" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/number.cr#L136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12396,7 +12423,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/number.cr#L137" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/number.cr#L137" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12417,7 +12444,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12438,7 +12465,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12459,7 +12486,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12480,7 +12507,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12501,7 +12528,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12522,7 +12549,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12543,7 +12570,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12564,7 +12591,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12585,7 +12612,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12606,7 +12633,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12627,7 +12654,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12648,7 +12675,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12669,7 +12696,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12690,7 +12717,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12711,7 +12738,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12732,7 +12759,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12753,7 +12780,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12774,7 +12801,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12795,7 +12822,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12816,7 +12843,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12837,7 +12864,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12858,7 +12885,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12879,7 +12906,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12900,7 +12927,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12921,7 +12948,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12942,7 +12969,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12963,7 +12990,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12984,7 +13011,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13005,7 +13032,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13026,7 +13053,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13047,7 +13074,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13068,7 +13095,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13089,7 +13116,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13110,7 +13137,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13131,7 +13158,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13152,7 +13179,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13173,7 +13200,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13194,7 +13221,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13215,7 +13242,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13236,7 +13263,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13257,7 +13284,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13278,7 +13305,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13299,7 +13326,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13320,7 +13347,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13341,7 +13368,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13362,7 +13389,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13383,7 +13410,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13404,7 +13431,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13425,7 +13452,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13446,7 +13473,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13467,7 +13494,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13488,7 +13515,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13509,7 +13536,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13530,7 +13557,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13551,7 +13578,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13572,7 +13599,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13593,7 +13620,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13614,7 +13641,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13635,7 +13662,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13656,7 +13683,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13677,7 +13704,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13698,7 +13725,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13719,7 +13746,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13740,7 +13767,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13761,7 +13788,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13782,7 +13809,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13803,7 +13830,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13824,7 +13851,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13845,7 +13872,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13866,7 +13893,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13887,7 +13914,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13908,7 +13935,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13929,7 +13956,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13950,7 +13977,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13971,7 +13998,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13992,7 +14019,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14013,7 +14040,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14034,7 +14061,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14055,7 +14082,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14076,7 +14103,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14103,7 +14130,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2679" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2712" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14130,7 +14157,7 @@ overflows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2694" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2727" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14154,7 +14181,7 @@ significant, and vice-versa.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2724" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2757" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14178,7 +14205,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2736" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2769" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14194,7 +14221,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2775" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2808" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14215,7 +14242,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2741" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2774" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14242,7 +14269,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2709" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2742" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14269,7 +14296,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2713" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2746" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14295,7 +14322,7 @@ bit's direction. Negative shifts are equivalent to <code><a href="UInt128.html#r
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2758" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2791" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14321,7 +14348,7 @@ bit's direction. Negative shifts are equivalent to <code><a href="UInt128.html#r
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2771" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2804" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14343,7 +14370,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14366,7 +14393,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14388,7 +14415,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14411,7 +14438,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14433,7 +14460,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14456,7 +14483,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14478,7 +14505,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14501,7 +14528,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14523,7 +14550,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14546,7 +14573,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14568,7 +14595,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14591,7 +14618,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14613,7 +14640,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14636,7 +14663,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14658,7 +14685,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14681,7 +14708,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14703,7 +14730,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14726,7 +14753,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14752,7 +14779,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2633" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2666" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14778,7 +14805,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2647" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2680" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14800,7 +14827,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14823,7 +14850,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14845,7 +14872,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14868,7 +14895,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14890,7 +14917,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14913,7 +14940,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14935,7 +14962,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14958,7 +14985,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14980,7 +15007,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15003,7 +15030,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15025,7 +15052,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15048,7 +15075,7 @@ a wrapping is performed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15074,7 +15101,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2661" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2694" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15100,7 +15127,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2675" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2708" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15125,7 +15152,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L2745" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2778" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15152,7 +15179,7 @@ be a bottleneck.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/primitives.cr#L428" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/primitives.cr#L428" target="_blank">View source</a>]
         
       </div>
     </div>

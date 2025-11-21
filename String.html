@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>String - Crystal 1.18.0-dev</title>
+  <title>String - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7307,77 +7312,77 @@ remove the offending byte sequences first.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L850" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L850" target="_blank">
         big/big_decimal.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L583" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L583" target="_blank">
         big/big_float.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L895" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L951" target="_blank">
         big/big_int.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L63" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L63" target="_blank">
         json/to_json.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/log/metadata.cr#L235" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/log/metadata.cr#L238" target="_blank">
         log/metadata.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L145" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L145" target="_blank">
         string.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme.cr#L3" target="_blank">
         string/grapheme.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme/grapheme.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme/grapheme.cr#L3" target="_blank">
         string/grapheme/grapheme.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/utf16.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/utf16.cr#L1" target="_blank">
         string/utf16.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/uri/params/to_www_form.cr#L15" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/uri/params/to_www_form.cr#L15" target="_blank">
         uri/params/to_www_form.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L73" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L73" target="_blank">
         yaml/to_yaml.cr
       </a>
     
@@ -8117,16 +8122,16 @@ remove the offending byte sequences first.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#each_line%28chomp%3ABool%3Dtrue%2C%26%3AString-%3E%29%3ANil-instance-method" class="signature"><strong>#each_line</strong>(chomp : Bool = <span class="n">true</span>, & : String -> ) : Nil</a>
+        <a href="#each_line%28chomp%3ABool%3Dtrue%2Cremove_empty%3ABool%3Dfalse%2C%26%3AString-%3E%29%3ANil-instance-method" class="signature"><strong>#each_line</strong>(chomp : Bool = <span class="n">true</span>, remove_empty : Bool = <span class="n">false</span>, & : String -> ) : Nil</a>
         
           <div class="summary"><p>Splits the string after each newline and yields each line.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#each_line%28chomp%3Dtrue%29-instance-method" class="signature"><strong>#each_line</strong>(chomp = <span class="n">true</span>)</a>
+        <a href="#each_line%28chomp%3Dtrue%2C%2A%2Cremove_empty%3ABool%3Dfalse%29-instance-method" class="signature"><strong>#each_line</strong>(chomp = <span class="n">true</span>, *, remove_empty : Bool = <span class="n">false</span>)</a>
         
-          <div class="summary"><p>Returns an <code><a href="Iterator.html">Iterator</a></code> which yields each line of this string (see <code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2C%26%3AString-%3E%29%3ANil-instance-method">String#each_line</a></code>).</p></div>
+          <div class="summary"><p>Returns an <code><a href="Iterator.html">Iterator</a></code> which yields each line of this string (see <code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2Cremove_empty%3ABool%3Dfalse%2C%26%3AString-%3E%29%3ANil-instance-method">String#each_line</a></code>).</p></div>
         
       </li>
     
@@ -8945,7 +8950,7 @@ remove the offending byte sequences first.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#to_big_i%28base%3D10%29%3ABigInt-instance-method" class="signature"><strong>#to_big_i</strong>(base = <span class="n">10</span>) : BigInt</a>
+        <a href="#to_big_i%28base%3AInt32%3D10%29%3ABigInt-instance-method" class="signature"><strong>#to_big_i</strong>(base : Int32 = <span class="n">10</span>) : BigInt</a>
         
           <div class="summary"><p>Returns a <code><a href="BigInt.html">BigInt</a></code> from this string, in the given <em>base</em>.</p></div>
         
@@ -9646,20 +9651,16 @@ remove the offending byte sequences first.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -9804,7 +9805,7 @@ remove the offending byte sequences first.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5864" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5888" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9832,7 +9833,7 @@ str <span class="c"># =&gt; &quot;hello 1&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L306" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L306" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9848,7 +9849,7 @@ str <span class="c"># =&gt; &quot;hello 1&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L198" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L198" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9878,7 +9879,7 @@ slice <span class="o">=</span> <span class="t">UInt16</span>.slice(<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/utf16.cr#L61" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/utf16.cr#L61" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9904,7 +9905,7 @@ slice <span class="o">=</span> <span class="t">UInt16</span>.slice(<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5779" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5803" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9930,7 +9931,7 @@ slice <span class="o">=</span> <span class="t">UInt16</span>.slice(<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5795" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5819" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9956,7 +9957,7 @@ slice <span class="o">=</span> <span class="t">UInt16</span>.slice(<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5747" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5771" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9982,7 +9983,7 @@ slice <span class="o">=</span> <span class="t">UInt16</span>.slice(<span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5763" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5787" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10010,7 +10011,7 @@ it's a bit more performant than interpolating non-string values.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5813" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5837" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10037,7 +10038,7 @@ value2 <span class="o">=</span> <span class="n">123</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5842" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5866" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10067,7 +10068,7 @@ slice[<span class="n">1</span>] <span class="o">=</span> <span class="n">195_u8<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L194" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L194" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10094,7 +10095,7 @@ lazily computed when needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L231" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L231" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10110,7 +10111,7 @@ lazily computed when needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/from_yaml.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/from_yaml.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10139,7 +10140,7 @@ ending zero byte.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L214" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L214" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10155,7 +10156,7 @@ ending zero byte.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/from_json.cr#L190" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/from_json.cr#L190" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10185,7 +10186,7 @@ slice <span class="o">=</span> <span class="t">UInt8</span>.slice(<span class="n
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L172" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10218,7 +10219,7 @@ str <span class="c"># =&gt; &quot;ab&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L263" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L263" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10261,7 +10262,7 @@ codepoint <code>0xfffd</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/utf16.cr#L96" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/utf16.cr#L96" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10300,7 +10301,7 @@ codepoint <code>0xfffd</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5392" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5410" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10323,7 +10324,7 @@ codepoint <code>0xfffd</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3288" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3283" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10346,7 +10347,7 @@ codepoint <code>0xfffd</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3244" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10369,7 +10370,7 @@ codepoint <code>0xfffd</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3267" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3262" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10404,7 +10405,7 @@ the shorter one.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3103" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10437,7 +10438,7 @@ Unicode replacement character at the same string indices.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3070" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3065" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10453,7 +10454,7 @@ Unicode replacement character at the same string indices.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/log/metadata.cr#L236" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/log/metadata.cr#L239" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10481,7 +10482,7 @@ If unsuccessful, it returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3232" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3227" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10509,7 +10510,7 @@ If unsuccessful, it returns <code>nil</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3239" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3234" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10534,7 +10535,7 @@ Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if <em>count<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L878" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L878" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10550,7 +10551,7 @@ Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if <em>count<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L949" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L949" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10578,7 +10579,7 @@ Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if <em>count<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L804" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L804" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10629,7 +10630,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L857" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L857" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10652,7 +10653,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L941" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L941" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10668,7 +10669,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L945" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L945" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10689,7 +10690,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L883" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L883" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10705,7 +10706,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L930" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L930" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10728,7 +10729,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L867" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L867" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10756,7 +10757,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L912" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L912" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10779,7 +10780,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L922" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L922" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10795,7 +10796,7 @@ s[<span class="n">3</span>..<span class="n">-4</span>]  <span class="c"># =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L926" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L926" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10819,7 +10820,7 @@ by ASCII characters.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5422" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5440" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10843,7 +10844,7 @@ by ASCII characters.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3026" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3021" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10871,7 +10872,7 @@ by ASCII characters.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1336" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10894,7 +10895,7 @@ by ASCII characters.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1365" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1360" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10921,7 +10922,7 @@ by ASCII characters.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1355" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1350" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10952,7 +10953,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3756" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3751" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10983,7 +10984,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3783" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3778" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11012,7 +11013,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3824" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3819" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11040,7 +11041,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3881" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3876" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11063,7 +11064,7 @@ will be the size of this string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3917" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3912" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11091,9 +11092,8 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
 <p>Raises <code><a href="ArgumentError.html">ArgumentError</a></code> if <em>count</em> is negative.</p>
 <pre><code class="language-crystal"><span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">0</span>, <span class="n">2</span>)   <span class="c"># =&gt; &quot;he&quot;</span>
 <span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">0</span>, <span class="n">100</span>) <span class="c"># =&gt; &quot;hello&quot;</span>
-<span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">-2</span>, <span class="n">3</span>)  <span class="c"># =&gt; &quot;he&quot;</span>
-<span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">-2</span>, <span class="n">5</span>)  <span class="c"># =&gt; &quot;he&quot;</span>
-<span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">-2</span>, <span class="n">5</span>)  <span class="c"># =&gt; &quot;he&quot;</span>
+<span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">-2</span>, <span class="n">3</span>)  <span class="c"># =&gt; &quot;lo&quot;</span>
+<span class="s">&quot;hello&quot;</span>.byte_slice(<span class="n">-2</span>, <span class="n">5</span>)  <span class="c"># =&gt; &quot;lo&quot;</span>
 <span class="s">&quot;¥hello&quot;</span>.byte_slice(<span class="n">0</span>, <span class="n">2</span>)  <span class="c"># =&gt; &quot;¥&quot;</span>
 <span class="s">&quot;¥hello&quot;</span>.byte_slice(<span class="n">2</span>, <span class="n">2</span>)  <span class="c"># =&gt; &quot;he&quot;</span>
 <span class="s">&quot;¥hello&quot;</span>.byte_slice(<span class="n">0</span>, <span class="n">1</span>)  <span class="c"># =&gt; &quot;\xC2&quot; (invalid UTF-8 character)</span>
@@ -11107,7 +11107,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1188" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1187" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11146,7 +11146,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1217" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1216" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11181,7 +11181,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1279" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1278" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11208,7 +11208,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1232" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1231" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11233,7 +11233,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1253" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11268,7 +11268,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1306" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1303" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11291,7 +11291,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5078" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5096" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11314,7 +11314,7 @@ Otherwise, multi-byte characters may be split, leading to an invalid UTF-8 encod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L318" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11339,7 +11339,7 @@ io.to_s <span class="c"># =&gt; &quot;EiffelTower&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4548" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4566" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11364,7 +11364,7 @@ io.to_s <span class="c"># =&gt; &quot;EiffelTower&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4533" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4551" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11387,7 +11387,7 @@ subsequent letter converted to lowercase.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1454" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1449" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11411,7 +11411,7 @@ io.to_s <span class="c"># =&gt; &quot;Hello&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1484" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1479" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11436,7 +11436,7 @@ io.to_s <span class="c"># =&gt; &quot;Hello&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4663" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4681" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11461,7 +11461,7 @@ io.to_s <span class="c"># =&gt; &quot;-Purple--&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4675" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4693" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11489,7 +11489,7 @@ io.to_s <span class="c"># =&gt; &quot;-Purple--&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L966" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L966" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11516,7 +11516,7 @@ io.to_s <span class="c"># =&gt; &quot;-Purple--&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L981" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L981" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11543,7 +11543,7 @@ will be the bytesize of this string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3901" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3896" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11565,7 +11565,7 @@ will be the bytesize of this string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4988" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5006" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11587,7 +11587,7 @@ will be the bytesize of this string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5643" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11611,7 +11611,7 @@ If <em>suffix</em> is <code>'\n'</code> then <code>&quot;\r\n&quot;</code> is al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1666" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1661" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11635,7 +11635,7 @@ If <em>suffix</em> is <code>&quot;\n&quot;</code> then <code>&quot;\r\n&quot;</c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1683" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1678" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11662,7 +11662,7 @@ will remove \n, \r, and \r\n).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1642" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1637" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11683,7 +11683,7 @@ will remove \n, \r, and \r\n).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5551" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5569" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11710,7 +11710,7 @@ will remove \n, \r, and \r\n).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1325" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1320" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11733,7 +11733,7 @@ will remove \n, \r, and \r\n).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5034" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5052" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11769,7 +11769,7 @@ manner.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3137" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3132" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11792,7 +11792,7 @@ returns the number of times the block returned a truthy value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2902" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2897" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11814,7 +11814,7 @@ returns the number of times the block returned a truthy value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2915" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2910" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11837,7 +11837,7 @@ in this string that match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2922" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2917" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11861,7 +11861,7 @@ block returned a truthy value removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2933" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2928" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11883,7 +11883,7 @@ block returned a truthy value removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2946" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2941" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11907,7 +11907,7 @@ all characters that match the given set removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2957" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2952" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11940,7 +11940,7 @@ is raised.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1090" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1090" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11966,7 +11966,7 @@ at the given range.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1015" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1015" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11994,7 +11994,7 @@ at the given <em>index</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1035" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1035" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12028,7 +12028,7 @@ is raised.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1109" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1109" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12050,7 +12050,7 @@ is raised.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1385" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1380" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12074,7 +12074,7 @@ io.to_s <span class="c"># =&gt; &quot;hello&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1408" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1403" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12105,7 +12105,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5177" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5195" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12136,7 +12136,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5170" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5188" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12167,7 +12167,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5198" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5216" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12188,7 +12188,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5556" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5574" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12214,7 +12214,7 @@ array <span class="c"># =&gt; [97, 98, 226, 152, 131]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5051" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5069" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12241,7 +12241,7 @@ bytes.<span class="k">next</span> <span class="c"># =&gt; 131</span></code></pre
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5068" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5086" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12267,7 +12267,7 @@ array <span class="c"># =&gt; [&#39;a&#39;, &#39;b&#39;, &#39;☃&#39;]</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4940" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4958" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12292,7 +12292,7 @@ chars.<span class="k">next</span> <span class="c"># =&gt; &#39;☃&#39;</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4960" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12320,7 +12320,7 @@ from there.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4976" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4994" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12347,7 +12347,7 @@ array <span class="c"># =&gt; [97, 98, 9731]</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5007" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5025" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12373,7 +12373,7 @@ codepoints.<span class="k">next</span> <span class="c"># =&gt; 9731</span></code
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5023" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5041" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12404,7 +12404,7 @@ can consist of multiple code points which together form a single glyph.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme.cr#L38" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme.cr#L38" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12433,17 +12433,17 @@ can consist of multiple code points which together form a single glyph.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme.cr#L68" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme.cr#L68" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each_line(chomp:Bool=true,&amp;:String-&gt;):Nil-instance-method">
+    <div class="entry-detail" id="each_line(chomp:Bool=true,remove_empty:Bool=false,&amp;:String-&gt;):Nil-instance-method">
       <div class="signature">
         
-        def <strong>each_line</strong>(chomp : <a href="Bool.html">Bool</a> = <span class="n">true</span>, & : <a href="String.html">String</a> -> ) : <a href="Nil.html">Nil</a>
+        def <strong>each_line</strong>(chomp : <a href="Bool.html">Bool</a> = <span class="n">true</span>, remove_empty : <a href="Bool.html">Bool</a> = <span class="n">false</span>, & : <a href="String.html">String</a> -> ) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#each_line%28chomp%3ABool%3Dtrue%2C%26%3AString-%3E%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#each_line%28chomp%3ABool%3Dtrue%2Cremove_empty%3ABool%3Dfalse%2C%26%3AString-%3E%29%3ANil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -12456,6 +12456,7 @@ recognized as line delimiters.</p>
 <span class="s">&quot;hello\nworld&quot;</span>.each_line(chomp: <span class="n">false</span>) { }     <span class="c"># yields &quot;hello\n&quot;, &quot;world&quot;</span>
 <span class="s">&quot;hello\nworld\r\n&quot;</span>.each_line { }               <span class="c"># yields &quot;hello&quot;, &quot;world&quot;</span>
 <span class="s">&quot;hello\nworld\r\n&quot;</span>.each_line(chomp: <span class="n">false</span>) { } <span class="c"># yields &quot;hello\n&quot;, &quot;world\r\n&quot;</span></code></pre>
+<p>If <em>remove_empty</em> is <code>true</code>, any empty lines are removed from the result.</p>
 <p>A trailing line feed is not considered starting a final, empty line.  The
 empty string does not contain any lines.</p>
 <pre><code class="language-crystal"><span class="s">&quot;hello\n&quot;</span>.each_line { } <span class="c"># yields &quot;hello&quot;</span>
@@ -12469,28 +12470,28 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4408" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4420" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each_line(chomp=true)-instance-method">
+    <div class="entry-detail" id="each_line(chomp=true,*,remove_empty:Bool=false)-instance-method">
       <div class="signature">
         
-        def <strong>each_line</strong>(chomp = <span class="n">true</span>)
+        def <strong>each_line</strong>(chomp = <span class="n">true</span>, *, remove_empty : <a href="Bool.html">Bool</a> = <span class="n">false</span>)
 
-        <a class="method-permalink" href="#each_line%28chomp%3Dtrue%29-instance-method">#</a>
+        <a class="method-permalink" href="#each_line%28chomp%3Dtrue%2C%2A%2Cremove_empty%3ABool%3Dfalse%29-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Returns an <code><a href="Iterator.html">Iterator</a></code> which yields each line of this string (see <code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2C%26%3AString-%3E%29%3ANil-instance-method">String#each_line</a></code>).</p>
+          <p>Returns an <code><a href="Iterator.html">Iterator</a></code> which yields each line of this string (see <code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2Cremove_empty%3ABool%3Dfalse%2C%26%3AString-%3E%29%3ANil-instance-method">String#each_line</a></code>).</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4432" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4450" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12511,7 +12512,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3015" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3010" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12539,7 +12540,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1812" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1807" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12563,7 +12564,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5352" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12586,7 +12587,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5345" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5363" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12613,7 +12614,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5373" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5391" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12639,7 +12640,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5642" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5660" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12665,7 +12666,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12690,7 +12691,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme.cr#L48" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme.cr#L48" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12719,7 +12720,7 @@ can consist of multiple code points which together form a single glyph.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/grapheme.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/grapheme.cr#L16" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12742,7 +12743,7 @@ with the block's value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2808" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2803" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12765,7 +12766,7 @@ by the block value's value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2717" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2712" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12789,7 +12790,7 @@ is replaced by the block's return value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2667" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2662" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12813,7 +12814,7 @@ replaced with the given <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2682" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2677" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12840,7 +12841,7 @@ not included in the returned string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2780" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2775" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12863,7 +12864,7 @@ with the given <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2794" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2789" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12906,7 +12907,7 @@ in <em>pattern</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2762" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2757" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12929,7 +12930,7 @@ by the corresponding <em>hash</em> values.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2844" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2839" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12952,7 +12953,7 @@ by the corresponding <em>tuple</em> values.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2856" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2851" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12975,7 +12976,7 @@ the whole thing.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2607" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2602" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12996,7 +12997,7 @@ the whole thing.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5397" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5415" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13023,7 +13024,7 @@ represent a byte in the returned slice.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1858" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1853" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13050,7 +13051,7 @@ represent a byte in the returned slice.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1873" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1868" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13073,7 +13074,7 @@ represent a byte in the returned slice.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3935" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3930" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13101,7 +13102,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3336" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13129,7 +13130,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3374" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3369" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13157,7 +13158,7 @@ If <em>offset</em> is present, it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3432" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3427" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13186,7 +13187,7 @@ it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3452" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3447" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13215,7 +13216,7 @@ it defines the position to start the search.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3457" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3452" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13247,7 +13248,7 @@ the given index.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1907" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1902" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13279,7 +13280,7 @@ the given index.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1938" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1933" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13309,7 +13310,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5122" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13339,7 +13340,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5117" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13369,7 +13370,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5149" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5167" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13399,7 +13400,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5142" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5160" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13424,7 +13425,7 @@ special escape sequence.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1712" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1707" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13448,7 +13449,7 @@ Applying lchop to an empty string returns an empty string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1700" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1695" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13473,7 +13474,7 @@ Applying lchop to an empty string returns an empty string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1741" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1736" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13496,7 +13497,7 @@ Applying lchop to an empty string returns an empty string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1722" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1717" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13525,14 +13526,14 @@ empty string does not contain any lines.</p>
 <span class="s">&quot;\n&quot;</span>.lines      <span class="c"># =&gt; [&quot;&quot;]</span>
 <span class="s">&quot;&quot;</span>.lines        <span class="c"># =&gt; [] of String</span></code></pre>
 <ul>
-<li><code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2C%26%3AString-%3E%29%3ANil-instance-method">#each_line</a></code> yields each line without allocating an array</li>
+<li><code><a href="String.html#each_line%28chomp%3ABool%3Dtrue%2Cremove_empty%3ABool%3Dfalse%2C%26%3AString-%3E%29%3ANil-instance-method">#each_line</a></code> yields each line without allocating an array</li>
 </ul>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4376" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4386" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13556,7 +13557,7 @@ empty string does not contain any lines.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4614" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4632" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13581,7 +13582,7 @@ io.to_s <span class="c"># =&gt; &quot;Purple--&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4626" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4644" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13603,7 +13604,7 @@ io.to_s <span class="c"># =&gt; &quot;Purple--&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2103" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13627,7 +13628,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2121" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2116" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13650,7 +13651,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2099" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2094" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13673,7 +13674,7 @@ the block returns a <em>truthy</em> value are removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13699,7 +13700,7 @@ $~                 <span class="c"># raises Exception</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4809" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4827" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13719,13 +13720,14 @@ Raises <code><a href="Regex/Error.html">Regex::Error</a></code> if there are no 
 <pre><code class="language-crystal"><span class="s">&quot;foo&quot;</span>.match!(<span class="o">/</span>foo<span class="o">/</span>) <span class="c"># =&gt; Regex::MatchData(&quot;foo&quot;)</span>
 $~                  <span class="c"># =&gt; Regex::MatchData(&quot;foo&quot;)</span>
 
-<span class="s">&quot;foo&quot;</span>.match!(<span class="o">/</span>bar<span class="o">/</span>) <span class="c"># =&gt; raises Exception</span></code></pre>
+<span class="s">&quot;foo&quot;</span>.match!(<span class="o">/</span>bar<span class="o">/</span>) <span class="c"># =&gt; raises Exception</span>
+</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4821" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4839" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13752,7 +13754,7 @@ $~                       <span class="c"># raises Exception</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4849" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4867" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13780,7 +13782,7 @@ $~                        <span class="c"># raises Exception</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4864" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4882" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13807,7 +13809,7 @@ $~ <span class="c"># raises Exception</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4835" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4853" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13833,7 +13835,7 @@ $~ <span class="c"># raises Exception</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4877" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4895" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13858,7 +13860,7 @@ If it is not found, returns str followed by two empty strings.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3652" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13883,7 +13885,7 @@ If it is not found, returns str followed by two empty strings.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3670" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3665" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13914,7 +13916,7 @@ config[<span class="s">&quot;missing&quot;</span>]?.presence <span class="o">||<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3048" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3043" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13935,7 +13937,7 @@ config[<span class="s">&quot;missing&quot;</span>]?.presence <span class="o">||<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5083" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5101" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13951,7 +13953,7 @@ config[<span class="s">&quot;missing&quot;</span>]?.presence <span class="o">||<
         <div class="doc">
           
           <p>Returns a new <code><a href="String.html">String</a></code> with <em>suffix</em> removed from the end of the string.</p>
-<pre><code class="language-crystal"><span class="s">&quot;string&quot;</span>.rchop(<span class="s">&#39;g&#39;</span>)   <span class="c"># =&gt; &quot;strin&quot;</span>
+<pre><code class="language-crystal"><span class="s">&quot;strings&quot;</span>.rchop(<span class="s">&#39;s&#39;</span>)  <span class="c"># =&gt; &quot;string&quot;</span>
 <span class="s">&quot;string&quot;</span>.rchop(<span class="s">&#39;x&#39;</span>)   <span class="c"># =&gt; &quot;string&quot;</span>
 <span class="s">&quot;string&quot;</span>.rchop(<span class="s">&quot;ing&quot;</span>) <span class="c"># =&gt; &quot;str&quot;</span>
 <span class="s">&quot;string&quot;</span>.rchop(<span class="s">&quot;inx&quot;</span>) <span class="c"># =&gt; &quot;string&quot;</span></code></pre>
@@ -13960,7 +13962,7 @@ config[<span class="s">&quot;missing&quot;</span>]?.presence <span class="o">||<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1769" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1764" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13980,14 +13982,14 @@ Applying rchop to an empty string returns an empty string.</p>
 <pre><code class="language-crystal"><span class="s">&quot;string\r\n&quot;</span>.rchop <span class="c"># =&gt; &quot;string\r&quot;</span>
 <span class="s">&quot;string\n\r&quot;</span>.rchop <span class="c"># =&gt; &quot;string\n&quot;</span>
 <span class="s">&quot;string\n&quot;</span>.rchop   <span class="c"># =&gt; &quot;string&quot;</span>
-<span class="s">&quot;string&quot;</span>.rchop     <span class="c"># =&gt; &quot;strin&quot;</span>
+<span class="s">&quot;strings&quot;</span>.rchop    <span class="c"># =&gt; &quot;string&quot;</span>
 <span class="s">&quot;x&quot;</span>.rchop.rchop    <span class="c"># =&gt; &quot;&quot;</span></code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1757" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1752" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14003,7 +14005,7 @@ Applying rchop to an empty string returns an empty string.</p>
         <div class="doc">
           
           <p>Returns a new <code><a href="String.html">String</a></code> with <em>suffix</em> removed from the end of the string if possible, else returns <code>nil</code>.</p>
-<pre><code class="language-crystal"><span class="s">&quot;string&quot;</span>.rchop?(<span class="s">&#39;g&#39;</span>)   <span class="c"># =&gt; &quot;strin&quot;</span>
+<pre><code class="language-crystal"><span class="s">&quot;strings&quot;</span>.rchop?(<span class="s">&#39;s&#39;</span>)  <span class="c"># =&gt; &quot;string&quot;</span>
 <span class="s">&quot;string&quot;</span>.rchop?(<span class="s">&#39;x&#39;</span>)   <span class="c"># =&gt; nil</span>
 <span class="s">&quot;string&quot;</span>.rchop?(<span class="s">&quot;ing&quot;</span>) <span class="c"># =&gt; &quot;str&quot;</span>
 <span class="s">&quot;string&quot;</span>.rchop?(<span class="s">&quot;inx&quot;</span>) <span class="c"># =&gt; nil</span></code></pre>
@@ -14012,7 +14014,7 @@ Applying rchop to an empty string returns an empty string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1796" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1791" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14031,14 +14033,14 @@ Applying rchop to an empty string returns an empty string.</p>
 <pre><code class="language-crystal"><span class="s">&quot;string\r\n&quot;</span>.rchop? <span class="c"># =&gt; &quot;string\r&quot;</span>
 <span class="s">&quot;string\n\r&quot;</span>.rchop? <span class="c"># =&gt; &quot;string\n&quot;</span>
 <span class="s">&quot;string\n&quot;</span>.rchop?   <span class="c"># =&gt; &quot;string&quot;</span>
-<span class="s">&quot;string&quot;</span>.rchop?     <span class="c"># =&gt; &quot;strin&quot;</span>
+<span class="s">&quot;strings&quot;</span>.rchop?    <span class="c"># =&gt; &quot;string&quot;</span>
 <span class="s">&quot;&quot;</span>.rchop?           <span class="c"># =&gt; nil</span></code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1782" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1777" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14063,7 +14065,7 @@ Applying rchop to an empty string returns an empty string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4583" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4601" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14090,7 +14092,7 @@ If <em>offset</em> is present, it defines the position to <em>end</em> the searc
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3466" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14117,7 +14119,7 @@ If <em>offset</em> is present, it defines the position to <em>end</em> the searc
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3524" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3519" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14144,7 +14146,7 @@ If <em>offset</em> is present, it defines the position to <em>end</em> the searc
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3586" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3581" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14172,7 +14174,7 @@ Raises <code><a href="Enumerable/NotFoundError.html">Enumerable::NotFoundError</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3610" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3605" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14200,7 +14202,7 @@ Raises <code><a href="Enumerable/NotFoundError.html">Enumerable::NotFoundError</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3620" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14228,7 +14230,7 @@ Raises <code><a href="Enumerable/NotFoundError.html">Enumerable::NotFoundError</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3640" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3635" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14252,7 +14254,7 @@ Raises <code><a href="Enumerable/NotFoundError.html">Enumerable::NotFoundError</
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4638" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4656" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14277,7 +14279,7 @@ io.to_s <span class="c"># =&gt; &quot;--Purple&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4650" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4668" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14303,7 +14305,7 @@ If it is not found, returns two empty strings and str.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3692" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3687" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14329,7 +14331,7 @@ If it is not found, returns two empty strings and str.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3713" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3708" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14351,7 +14353,7 @@ If it is not found, returns two empty strings and str.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2054" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2049" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14375,7 +14377,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2067" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2062" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14398,7 +14400,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2045" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2040" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14421,7 +14423,7 @@ the block returns a <em>truthy</em> value are removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2086" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2081" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14443,7 +14445,7 @@ yielding the matched string for each match.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4911" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4929" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14465,7 +14467,7 @@ yielding a <code><a href="Regex/MatchData.html">Regex::MatchData</a></code> for 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4883" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4901" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14487,7 +14489,7 @@ returning an array of the matched string for each match.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4923" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4941" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14509,7 +14511,7 @@ returning an <code><a href="Array.html">Array</a></code> of <code><a href="Regex
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4901" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4919" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14531,7 +14533,7 @@ UTF-8 encoding are replaced with <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5446" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5464" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14554,7 +14556,7 @@ UTF-8 encoding are replaced with <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5407" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5425" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14585,7 +14587,7 @@ old_pond.split(<span class="n">3</span>) <span class="c"># =&gt; [&quot;Old&quot
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3954" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3949" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14622,7 +14624,7 @@ ary <span class="c"># =&gt; [&quot;Old&quot;, &quot;pond&quot;, &quot;a frog lea
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3983" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14650,7 +14652,7 @@ with the entire remainder added to the last string.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4086" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4081" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14686,7 +14688,7 @@ ary <span class="c"># =&gt; [&quot;foo&quot;, &quot;bar,baz&quot;]</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4110" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14716,7 +14718,7 @@ long_river_name.split(<span class="s">&quot;&quot;</span>)                      
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4161" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4156" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14758,7 +14760,7 @@ ary <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4197" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14773,20 +14775,26 @@ ary <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;
       
         <div class="doc">
           
-          <p>Makes an <code><a href="Array.html">Array</a></code> by splitting the string on <em>separator</em> (and removing instances of <em>separator</em>).</p>
-<p>If <em>limit</em> is present, the array will be limited to <em>limit</em> items and
-the final item will contain the remainder of the string.</p>
-<p>If <em>separator</em> is an empty regex (<code>//</code>), the string will be separated into one-character strings.</p>
-<p>If <em>remove_empty</em> is <code>true</code>, any empty strings are removed from the result.</p>
+          <p>Makes an <code><a href="Array.html">Array</a></code> by splitting the string on <em>separator</em> (and removing
+instances of <em>separator</em>).</p>
+<p>If <em>separator</em> is an empty regex (<code>//</code>), the string will be separated into
+one-character strings. If <em>separator</em> defines any capture groups, their
+matches are also included in the result.</p>
+<p>If <em>limit</em> is present, <em>separator</em> will be matched at most <code>limit - 1</code>
+times, and the final item will contain the remainder of the string. The
+array may contain more than <em>limit</em> items if capture groups are present.</p>
+<p>If <em>remove_empty</em> is <code>true</code>, any empty strings are removed from the result.
+This does not affect matches from <em>separator</em>'s capture groups.</p>
 <pre><code class="language-crystal">long_river_name <span class="o">=</span> <span class="s">&quot;Mississippi&quot;</span>
-long_river_name.split(<span class="o">/</span>s<span class="o">+</span><span class="o">/</span>) <span class="c"># =&gt; [&quot;Mi&quot;, &quot;i&quot;, &quot;ippi&quot;]</span>
-long_river_name.split(<span class="o">//</span>)   <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;p&quot;, &quot;p&quot;, &quot;i&quot;]</span></code></pre>
+long_river_name.split(<span class="o">/</span>s<span class="o">+</span><span class="o">/</span>)  <span class="c"># =&gt; [&quot;Mi&quot;, &quot;i&quot;, &quot;ippi&quot;]</span>
+long_river_name.split(<span class="o">//</span>)    <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;p&quot;, &quot;p&quot;, &quot;i&quot;]</span>
+long_river_name.split(<span class="o">/</span>(i)<span class="o">/</span>) <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;ss&quot;, &quot;i&quot;, &quot;ss&quot;, &quot;i&quot;, &quot;pp&quot;, &quot;i&quot;, &quot;&quot;]</span></code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4258" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4259" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14801,11 +14809,16 @@ long_river_name.split(<span class="o">//</span>)   <span class="c"># =&gt; [&quo
       
         <div class="doc">
           
-          <p>Splits the string after each regex <em>separator</em> and yields each part to a block.</p>
-<p>If <em>limit</em> is present, the array will be limited to <em>limit</em> items and
-the final item will contain the remainder of the string.</p>
-<p>If <em>separator</em> is an empty regex (<code>//</code>), the string will be separated into one-character strings.</p>
-<p>If <em>remove_empty</em> is <code>true</code>, any empty strings are removed from the result.</p>
+          <p>Splits the string after each regex <em>separator</em> and yields each part to a
+block.</p>
+<p>If <em>separator</em> is an empty regex (<code>//</code>), the string will be separated into
+one-character strings. If <em>separator</em> defines any capture groups, their
+matches are also yielded in order.</p>
+<p>If <em>limit</em> is present, <em>separator</em> will be matched at most <code>limit - 1</code>
+times, and the final item will contain the remainder of the string. More
+than <em>limit</em> items may be yielded in total if capture groups are present.</p>
+<p>If <em>remove_empty</em> is <code>true</code>, any empty strings are not yielded. This does
+not affect matches from <em>separator</em>'s capture groups.</p>
 <pre><code class="language-crystal">ary <span class="o">=</span> <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>
 long_river_name <span class="o">=</span> <span class="s">&quot;Mississippi&quot;</span>
 
@@ -14814,13 +14827,17 @@ ary <span class="c"># =&gt; [&quot;Mi&quot;, &quot;i&quot;, &quot;ippi&quot;]</s
 ary.clear
 
 long_river_name.split(<span class="o">//</span>) { <span class="o">|</span>s<span class="o">|</span> ary <span class="o">&lt;&lt;</span> s }
-ary <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;p&quot;, &quot;p&quot;, &quot;i&quot;]</span></code></pre>
+ary <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;s&quot;, &quot;i&quot;, &quot;p&quot;, &quot;p&quot;, &quot;i&quot;]</span>
+ary.clear
+
+long_river_name.split(<span class="o">/</span>(i)<span class="o">/</span>) { <span class="o">|</span>s<span class="o">|</span> ary <span class="o">&lt;&lt;</span> s }
+ary <span class="c"># =&gt; [&quot;M&quot;, &quot;i&quot;, &quot;ss&quot;, &quot;i&quot;, &quot;ss&quot;, &quot;i&quot;, &quot;pp&quot;, &quot;i&quot;, &quot;&quot;]</span></code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4286" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4296" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14846,7 +14863,7 @@ block returned a truthy value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2970" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2965" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14868,7 +14885,7 @@ block returned a truthy value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2985" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2980" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14891,7 +14908,7 @@ that were the same as the previous one.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3010" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L3005" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14918,7 +14935,7 @@ they match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L3000" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2995" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14942,7 +14959,7 @@ they match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5294" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5312" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14965,7 +14982,7 @@ they match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5323" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14992,7 +15009,7 @@ they match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5323" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15014,7 +15031,7 @@ they match the given set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1983" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15038,7 +15055,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2002" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1997" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15061,7 +15078,7 @@ rather; all combinations of its values are stripped.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1968" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1963" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15084,7 +15101,7 @@ the block returns a <em>truthy</em> value are removed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2027" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2022" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15107,7 +15124,7 @@ with the block's value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2447" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2442" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15130,7 +15147,7 @@ the block's return value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2358" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2353" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15154,7 +15171,7 @@ block and replaced by its return value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2313" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2308" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15178,7 +15195,7 @@ block and replaced by its return value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2331" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2326" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15203,7 +15220,7 @@ is not included in the <em>hash</em>, nothing is replaced.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2419" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2414" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15226,7 +15243,7 @@ with the given <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2437" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2432" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15249,7 +15266,7 @@ replaced by <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2507" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2502" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15272,7 +15289,7 @@ replaced by <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2523" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2518" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15295,7 +15312,7 @@ replaced by <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2556" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2551" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15318,7 +15335,7 @@ replaced by <em>replacement</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2572" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2567" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15361,7 +15378,7 @@ in <em>pattern</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2403" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2398" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15384,7 +15401,7 @@ given <em>hash</em> is replaced by the corresponding hash value.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2464" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2459" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15418,7 +15435,7 @@ adding an additional character if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4753" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4771" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15443,7 +15460,7 @@ io.to_s <span class="c"># =&gt; &quot;X-men: The Last Stand&quot;</span></code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1544" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1539" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15470,7 +15487,7 @@ Optionally, if <em>underscore_to_space</em> is <code>true</code>, underscores (<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1504" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1499" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15493,7 +15510,7 @@ Optionally, if <em>underscore_to_space</em> is <code>true</code>, underscores (<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L856" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L856" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15516,17 +15533,17 @@ Optionally, if <em>underscore_to_space</em> is <code>true</code>, underscores (<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L590" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L590" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_big_i(base=10):BigInt-instance-method">
+    <div class="entry-detail" id="to_big_i(base:Int32=10):BigInt-instance-method">
       <div class="signature">
         
-        def <strong>to_big_i</strong>(base = <span class="n">10</span>) : <a href="BigInt.html">BigInt</a>
+        def <strong>to_big_i</strong>(base : <a href="Int32.html">Int32</a> = <span class="n">10</span>) : <a href="BigInt.html">BigInt</a>
 
-        <a class="method-permalink" href="#to_big_i%28base%3D10%29%3ABigInt-instance-method">#</a>
+        <a class="method-permalink" href="#to_big_i%28base%3AInt32%3D10%29%3ABigInt-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -15541,7 +15558,7 @@ Optionally, if <em>underscore_to_space</em> is <code>true</code>, underscores (<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L904" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L960" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15577,7 +15594,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L745" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L745" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15598,7 +15615,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L782" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L782" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15619,7 +15636,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L787" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L787" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15655,7 +15672,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L750" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L750" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15691,7 +15708,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L777" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L777" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15727,7 +15744,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L772" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L772" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15784,7 +15801,7 @@ characters past the number are whitespaces</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L362" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L362" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15808,7 +15825,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L386" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L386" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15829,7 +15846,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L511" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L511" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15850,7 +15867,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L521" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L521" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15871,7 +15888,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L516" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L516" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15892,7 +15909,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L421" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L421" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15913,7 +15930,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L431" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L431" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15934,7 +15951,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L426" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15955,7 +15972,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L451" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L451" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15976,7 +15993,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L461" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L461" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15997,7 +16014,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L456" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L456" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16018,7 +16035,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L481" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L481" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16039,7 +16056,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L491" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L491" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16060,7 +16077,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L486" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L486" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16081,7 +16098,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L391" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L391" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16102,7 +16119,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L401" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L401" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16123,7 +16140,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L396" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L396" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16149,7 +16166,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L375" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L375" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16165,7 +16182,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L64" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L64" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16181,7 +16198,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L68" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L68" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16202,7 +16219,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5566" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5584" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16223,7 +16240,7 @@ of this string, or if the resulting integer doesn't fit an <code><a href="Int32.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5561" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5579" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16247,7 +16264,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5576" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5594" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16268,7 +16285,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L526" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L526" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16289,7 +16306,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L536" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L536" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16310,7 +16327,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L531" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L531" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16331,7 +16348,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L436" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L436" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16352,7 +16369,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L446" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L446" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16373,7 +16390,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L441" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L441" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16394,7 +16411,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L466" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L466" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16415,7 +16432,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L476" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L476" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16436,7 +16453,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L471" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16457,7 +16474,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L496" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L496" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16478,7 +16495,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L506" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L506" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16499,7 +16516,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L501" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L501" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16520,7 +16537,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L406" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L406" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16541,7 +16558,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L416" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L416" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16562,7 +16579,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L411" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L411" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16585,7 +16602,7 @@ obtain a <code><a href="String.html">String</a></code> that is guaranteed to be 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5584" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5602" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16612,7 +16629,7 @@ that expect a null-terminated <code><a href="UInt16.html">UInt16</a>*</code>.</p
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string/utf16.cr#L14" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string/utf16.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16628,7 +16645,7 @@ that expect a null-terminated <code><a href="UInt16.html">UInt16</a>*</code>.</p
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/to_yaml.cr#L74" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/to_yaml.cr#L74" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16654,7 +16671,7 @@ the rest. If <em>to</em> is empty, this acts like <code><a href="String.html#del
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L2261" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L2256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16680,7 +16697,7 @@ the rest. If <em>to</em> is empty, this acts like <code><a href="String.html#del
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4445" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4463" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16704,7 +16721,7 @@ io.to_s <span class="c"># =&gt; &quot;does_what_it_says_on_the_tin&quot;</span><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L4456" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L4474" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16731,7 +16748,7 @@ str.unicode_normalize(<span class="n">:nfkd</span>).codepoints <span class="c">#
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1571" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1566" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16754,7 +16771,7 @@ writes the result to the given <em>io</em>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1579" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1574" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16783,7 +16800,7 @@ bar.unicode_normalized?(<span class="n">:nfd</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1621" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1616" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16805,7 +16822,7 @@ bar.unicode_normalized?(<span class="n">:nfd</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1376" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1371" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16827,7 +16844,7 @@ bar.unicode_normalized?(<span class="n">:nfd</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5591" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16849,7 +16866,7 @@ bar.unicode_normalized?(<span class="n">:nfd</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5598" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5616" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16871,7 +16888,7 @@ bar.unicode_normalized?(<span class="n">:nfd</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1419" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1414" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16895,7 +16912,7 @@ io.to_s <span class="c"># =&gt; &quot;HELLO&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L1442" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L1437" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -16917,7 +16934,7 @@ according to the UTF-8 encoding.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/string.cr#L5440" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/string.cr#L5458" target="_blank">View source</a>]
         
       </div>
     </div>

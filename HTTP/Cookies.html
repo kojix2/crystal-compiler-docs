@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::Cookies - Crystal 1.18.0-dev</title>
+  <title>HTTP::Cookies - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7220,7 +7225,7 @@ a HTTP request or response.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L8" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L8" target="_blank">
         http/cookies.cr
       </a>
     
@@ -7243,7 +7248,7 @@ a HTTP request or response.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#from_client_headers%28headers%29%3Aself-class-method" class="signature"><strong>.from_client_headers</strong>(headers) : <span class="k">self</span></a>
+        <a href="#from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method" class="signature"><strong>.from_client_headers</strong>(headers : HTTP::Headers) : <span class="k">self</span></a>
         
           <div class="summary"><p>Creates a new instance by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p></div>
         
@@ -7253,12 +7258,12 @@ a HTTP request or response.</p>
         <a href="#from_headers%28headers%29%3Aself-class-method" class="signature"><strong>.from_headers</strong>(headers) : <span class="k">self</span></a>
         
           <div class="summary"><p>Creates a new instance by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> and <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p>
-<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#from_client_headers%28headers%29%3Aself-class-method">.from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#from_server_headers%28headers%29%3Aself-class-method">.from_server_headers</a></code> instead.</p></div>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">.from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">.from_server_headers</a></code> instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#from_server_headers%28headers%29%3Aself-class-method" class="signature"><strong>.from_server_headers</strong>(headers) : <span class="k">self</span></a>
+        <a href="#from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method" class="signature"><strong>.from_server_headers</strong>(headers : HTTP::Headers) : <span class="k">self</span></a>
         
           <div class="summary"><p>Creates a new instance by parsing the <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p></div>
         
@@ -7290,7 +7295,7 @@ a HTTP request or response.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#%3C%3C%28cookie%3ACookie%29-instance-method" class="signature"><strong>#<<</strong>(cookie : Cookie)</a>
+        <a href="#%3C%3C%28cookie%3ACookie%29%3ACookie-instance-method" class="signature"><strong>#<<</strong>(cookie : Cookie) : Cookie</a>
         
           <div class="summary"><p>Adds the given <em>cookie</em> to this collection, overrides an existing cookie with the same name if present.</p></div>
         
@@ -7304,56 +7309,56 @@ a HTTP request or response.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%28key%29%3ACookie-instance-method" class="signature"><strong>#[]</strong>(key) : Cookie</a>
+        <a href="#%5B%5D%28key%3AString%29%3ACookie-instance-method" class="signature"><strong>#[]</strong>(key : String) : Cookie</a>
         
           <div class="summary"><p>Gets the current <code><a href="../HTTP/Cookie.html">HTTP::Cookie</a></code> for the given <em>key</em>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3D%28key%2Cvalue%3AString%29-instance-method" class="signature"><strong>#[]=</strong>(key, value : String)</a>
+        <a href="#%5B%5D%3D%28key%3AString%2Cvalue%3AString%29%3ACookie-instance-method" class="signature"><strong>#[]=</strong>(key : String, value : String) : Cookie</a>
         
           <div class="summary"><p>Sets a new cookie in the collection with a string value.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3D%28key%2Cvalue%3ACookie%29-instance-method" class="signature"><strong>#[]=</strong>(key, value : Cookie)</a>
+        <a href="#%5B%5D%3D%28key%3AString%2Cvalue%3ACookie%29%3ACookie-instance-method" class="signature"><strong>#[]=</strong>(key : String, value : Cookie) : Cookie</a>
         
           <div class="summary"><p>Sets a new cookie in the collection to the given <code><a href="../HTTP/Cookie.html">HTTP::Cookie</a></code> instance.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%3F%28key%29%3ACookie%7CNil-instance-method" class="signature"><strong>#[]?</strong>(key) : Cookie | Nil</a>
+        <a href="#%5B%5D%3F%28key%3AString%29%3ACookie%7CNil-instance-method" class="signature"><strong>#[]?</strong>(key : String) : Cookie | Nil</a>
         
           <div class="summary"><p>Gets the current <code><a href="../HTTP/Cookie.html">HTTP::Cookie</a></code> for the given <em>key</em> or <code>nil</code> if none is set.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add_request_headers%28headers%29-instance-method" class="signature"><strong>#add_request_headers</strong>(headers)</a>
+        <a href="#add_request_headers%28headers%3AHTTP%3A%3AHeaders%29%3AHTTP%3A%3AHeaders-instance-method" class="signature"><strong>#add_request_headers</strong>(headers : HTTP::Headers) : HTTP::Headers</a>
         
           <div class="summary"><p>Adds <code><a href="../HTTP/Cookie.html">Cookie</a></code> headers for the cookies in this collection to the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code> instance and returns it.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add_response_headers%28headers%29-instance-method" class="signature"><strong>#add_response_headers</strong>(headers)</a>
+        <a href="#add_response_headers%28headers%3AHTTP%3A%3AHeaders%29%3AHTTP%3A%3AHeaders-instance-method" class="signature"><strong>#add_response_headers</strong>(headers : HTTP::Headers) : HTTP::Headers</a>
         
           <div class="summary"><p>Adds <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code> headers for the cookies in this collection to the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code> instance and returns it.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#clear%3AHash%28String%2CHTTP%3A%3ACookie%29-instance-method" class="signature"><strong>#clear</strong> : Hash(String, HTTP::Cookie)</a>
+        <a href="#clear%3AHash%28String%2CCookie%29-instance-method" class="signature"><strong>#clear</strong> : Hash(String, Cookie)</a>
         
           <div class="summary"><p>Clears the collection, removing all cookies.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#delete%28key%29%3ACookie%7CNil-instance-method" class="signature"><strong>#delete</strong>(key) : Cookie | Nil</a>
+        <a href="#delete%28key%3AString%29%3ACookie%7CNil-instance-method" class="signature"><strong>#delete</strong>(key : String) : Cookie | Nil</a>
         
           <div class="summary"><p>Deletes and returns the <code><a href="../HTTP/Cookie.html">HTTP::Cookie</a></code> for the specified <em>key</em>, or returns <code>nil</code> if <em>key</em> cannot be found in the collection.</p></div>
         
@@ -7367,7 +7372,7 @@ a HTTP request or response.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#each-instance-method" class="signature"><strong>#each</strong></a>
+        <a href="#each%3AIterator%28Cookie%29-instance-method" class="signature"><strong>#each</strong> : Iterator(Cookie)</a>
         
           <div class="summary"><p>Returns an iterator over the cookies of this collection.</p></div>
         
@@ -7381,7 +7386,7 @@ a HTTP request or response.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#fill_from_client_headers%28headers%29%3Aself-instance-method" class="signature"><strong>#fill_from_client_headers</strong>(headers) : <span class="k">self</span></a>
+        <a href="#fill_from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method" class="signature"><strong>#fill_from_client_headers</strong>(headers : HTTP::Headers) : <span class="k">self</span></a>
         
           <div class="summary"><p>Filling cookies by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p></div>
         
@@ -7391,19 +7396,19 @@ a HTTP request or response.</p>
         <a href="#fill_from_headers%28headers%29-instance-method" class="signature"><strong>#fill_from_headers</strong>(headers)</a>
         
           <div class="summary"><p>Filling cookies by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> and <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p>
-<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#fill_from_client_headers%28headers%29%3Aself-instance-method">#fill_from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#fill_from_server_headers%28headers%29%3Aself-instance-method">#fill_from_server_headers</a></code> instead.</p></div>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#fill_from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#fill_from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#fill_from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#fill_from_server_headers</a></code> instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#fill_from_server_headers%28headers%29%3Aself-instance-method" class="signature"><strong>#fill_from_server_headers</strong>(headers) : <span class="k">self</span></a>
+        <a href="#fill_from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method" class="signature"><strong>#fill_from_server_headers</strong>(headers : HTTP::Headers) : <span class="k">self</span></a>
         
           <div class="summary"><p>Filling cookies by parsing the <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code> headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#has_key%3F%28key%29%3ABool-instance-method" class="signature"><strong>#has_key?</strong>(key) : Bool</a>
+        <a href="#has_key%3F%28key%3AString%29%3ABool-instance-method" class="signature"><strong>#has_key?</strong>(key : String) : Bool</a>
         
           <div class="summary"><p>Returns <code>true</code> if a cookie with the given <em>key</em> exists.</p></div>
         
@@ -7747,8 +7752,8 @@ a HTTP request or response.</p>
     reject</a>, 
     
   
-    <a href="../Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%3DRandom%3A%3ADEFAULT%29%3AArray%28T%29-instance-method" class="tooltip">
-      <span>sample(n : Int, random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : Array(T)<br/>sample(random : Random = <span class="t">Random</span><span class="t">::</span><span class="t">DEFAULT</span>) : T</span>
+    <a href="../Enumerable.html#sample%28n%3AInt%2Crandom%3ARandom%7CNil%3Dnil%29%3AArray%28T%29-instance-method" class="tooltip">
+      <span>sample(n : Int, random : Random | Nil = <span class="n">nil</span>) : Array(T)<br/>sample(random : Random | Nil = <span class="n">nil</span>) : T</span>
     sample</a>, 
     
   
@@ -8067,20 +8072,16 @@ a HTTP request or response.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8209,12 +8210,12 @@ a HTTP request or response.</p>
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="from_client_headers(headers):self-class-method">
+    <div class="entry-detail" id="from_client_headers(headers:HTTP::Headers):self-class-method">
       <div class="signature">
         
-        def self.<strong>from_client_headers</strong>(headers) : <span class="k">self</span>
+        def self.<strong>from_client_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#from_client_headers%28headers%29%3Aself-class-method">#</a>
+        <a class="method-permalink" href="#from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8226,7 +8227,7 @@ a HTTP request or response.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L32" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L32" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8244,23 +8245,23 @@ a HTTP request or response.</p>
           <p>Creates a new instance by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> and <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code>
 headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p>
 <p>See <code><a href="../HTTP/Request.html#cookies%3AHTTP%3A%3ACookies-instance-method">HTTP::Request#cookies</a></code> and <code><a href="../HTTP/Client/Response.html#cookies%3AHTTP%3A%3ACookies-instance-method">HTTP::Client::Response#cookies</a></code>.</p>
-<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#from_client_headers%28headers%29%3Aself-class-method">.from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#from_server_headers%28headers%29%3Aself-class-method">.from_server_headers</a></code> instead.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">.from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">.from_server_headers</a></code> instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L16" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="from_server_headers(headers):self-class-method">
+    <div class="entry-detail" id="from_server_headers(headers:HTTP::Headers):self-class-method">
       <div class="signature">
         
-        def self.<strong>from_server_headers</strong>(headers) : <span class="k">self</span>
+        def self.<strong>from_server_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#from_server_headers%28headers%29%3Aself-class-method">#</a>
+        <a class="method-permalink" href="#from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8272,7 +8273,7 @@ headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L49" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L49" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8293,7 +8294,7 @@ headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L64" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L64" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8314,12 +8315,12 @@ headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></cod
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="&lt;&lt;(cookie:Cookie)-instance-method">
+    <div class="entry-detail" id="&lt;&lt;(cookie:Cookie):Cookie-instance-method">
       <div class="signature">
         
-        def <strong><<</strong>(cookie : <a href="../HTTP/Cookie.html">Cookie</a>)
+        def <strong><<</strong>(cookie : <a href="../HTTP/Cookie.html">Cookie</a>) : <a href="../HTTP/Cookie.html">Cookie</a>
 
-        <a class="method-permalink" href="#%3C%3C%28cookie%3ACookie%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3C%3C%28cookie%3ACookie%29%3ACookie-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8332,7 +8333,7 @@ with the same name if present.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8360,12 +8361,12 @@ with the same name if present.</p>
       </div>
     </div>
   
-    <div class="entry-detail" id="[](key):Cookie-instance-method">
+    <div class="entry-detail" id="[](key:String):Cookie-instance-method">
       <div class="signature">
         
-        def <strong>[]</strong>(key) : <a href="../HTTP/Cookie.html">Cookie</a>
+        def <strong>[]</strong>(key : <a href="../String.html">String</a>) : <a href="../HTTP/Cookie.html">Cookie</a>
 
-        <a class="method-permalink" href="#%5B%5D%28key%29%3ACookie-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%28key%3AString%29%3ACookie-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8377,17 +8378,17 @@ with the same name if present.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L107" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]=(key,value:String)-instance-method">
+    <div class="entry-detail" id="[]=(key:String,value:String):Cookie-instance-method">
       <div class="signature">
         
-        def <strong>[]=</strong>(key, value : <a href="../String.html">String</a>)
+        def <strong>[]=</strong>(key : <a href="../String.html">String</a>, value : <a href="../String.html">String</a>) : <a href="../HTTP/Cookie.html">Cookie</a>
 
-        <a class="method-permalink" href="#%5B%5D%3D%28key%2Cvalue%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3D%28key%3AString%2Cvalue%3AString%29%3ACookie-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8404,17 +8405,17 @@ request.cookies[<span class="s">&quot;foo&quot;</span>] <span class="o">=</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L80" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]=(key,value:Cookie)-instance-method">
+    <div class="entry-detail" id="[]=(key:String,value:Cookie):Cookie-instance-method">
       <div class="signature">
         
-        def <strong>[]=</strong>(key, value : <a href="../HTTP/Cookie.html">Cookie</a>)
+        def <strong>[]=</strong>(key : <a href="../String.html">String</a>, value : <a href="../HTTP/Cookie.html">Cookie</a>) : <a href="../HTTP/Cookie.html">Cookie</a>
 
-        <a class="method-permalink" href="#%5B%5D%3D%28key%2Cvalue%3ACookie%29-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3D%28key%3AString%2Cvalue%3ACookie%29%3ACookie-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8431,17 +8432,17 @@ response.cookies[<span class="s">&quot;foo&quot;</span>] <span class="o">=</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L94" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[]?(key):Cookie|Nil-instance-method">
+    <div class="entry-detail" id="[]?(key:String):Cookie|Nil-instance-method">
       <div class="signature">
         
-        def <strong>[]?</strong>(key) : <a href="../HTTP/Cookie.html">Cookie</a> | <a href="../Nil.html">Nil</a>
+        def <strong>[]?</strong>(key : <a href="../String.html">String</a>) : <a href="../HTTP/Cookie.html">Cookie</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#%5B%5D%3F%28key%29%3ACookie%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%3F%28key%3AString%29%3ACookie%7CNil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8458,17 +8459,17 @@ request.cookies[<span class="s">&quot;foo&quot;</span>]?.try <span class="o">&am
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L121" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L121" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add_request_headers(headers)-instance-method">
+    <div class="entry-detail" id="add_request_headers(headers:HTTP::Headers):HTTP::Headers-instance-method">
       <div class="signature">
         
-        def <strong>add_request_headers</strong>(headers)
+        def <strong>add_request_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <a href="../HTTP/Headers.html">HTTP::Headers</a>
 
-        <a class="method-permalink" href="#add_request_headers%28headers%29-instance-method">#</a>
+        <a class="method-permalink" href="#add_request_headers%28headers%3AHTTP%3A%3AHeaders%29%3AHTTP%3A%3AHeaders-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8481,17 +8482,17 @@ given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code> instance and
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L181" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L181" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="add_response_headers(headers)-instance-method">
+    <div class="entry-detail" id="add_response_headers(headers:HTTP::Headers):HTTP::Headers-instance-method">
       <div class="signature">
         
-        def <strong>add_response_headers</strong>(headers)
+        def <strong>add_response_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <a href="../HTTP/Headers.html">HTTP::Headers</a>
 
-        <a class="method-permalink" href="#add_response_headers%28headers%29-instance-method">#</a>
+        <a class="method-permalink" href="#add_response_headers%28headers%3AHTTP%3A%3AHeaders%29%3AHTTP%3A%3AHeaders-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8504,17 +8505,17 @@ given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code> instance and
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L198" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L198" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="clear:Hash(String,HTTP::Cookie)-instance-method">
+    <div class="entry-detail" id="clear:Hash(String,Cookie)-instance-method">
       <div class="signature">
         
-        def <strong>clear</strong> : <a href="../Hash.html">Hash</a>(<a href="../String.html">String</a>, <a href="../HTTP/Cookie.html">HTTP::Cookie</a>)
+        def <strong>clear</strong> : <a href="../Hash.html">Hash</a>(<a href="../String.html">String</a>, <a href="../HTTP/Cookie.html">Cookie</a>)
 
-        <a class="method-permalink" href="#clear%3AHash%28String%2CHTTP%3A%3ACookie%29-instance-method">#</a>
+        <a class="method-permalink" href="#clear%3AHash%28String%2CCookie%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8525,17 +8526,17 @@ given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code> instance and
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="delete(key):Cookie|Nil-instance-method">
+    <div class="entry-detail" id="delete(key:String):Cookie|Nil-instance-method">
       <div class="signature">
         
-        def <strong>delete</strong>(key) : <a href="../HTTP/Cookie.html">Cookie</a> | <a href="../Nil.html">Nil</a>
+        def <strong>delete</strong>(key : <a href="../String.html">String</a>) : <a href="../HTTP/Cookie.html">Cookie</a> | <a href="../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#delete%28key%29%3ACookie%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#delete%28key%3AString%29%3ACookie%7CNil-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8548,7 +8549,7 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L152" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8569,17 +8570,17 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L157" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L157" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each-instance-method">
+    <div class="entry-detail" id="each:Iterator(Cookie)-instance-method">
       <div class="signature">
         
-        def <strong>each</strong>
+        def <strong>each</strong> : <a href="../Iterator.html">Iterator</a>(<a href="../HTTP/Cookie.html">Cookie</a>)
 
-        <a class="method-permalink" href="#each-instance-method">#</a>
+        <a class="method-permalink" href="#each%3AIterator%28Cookie%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8590,7 +8591,7 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L164" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8611,17 +8612,17 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L174" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L174" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="fill_from_client_headers(headers):self-instance-method">
+    <div class="entry-detail" id="fill_from_client_headers(headers:HTTP::Headers):self-instance-method">
       <div class="signature">
         
-        def <strong>fill_from_client_headers</strong>(headers) : <span class="k">self</span>
+        def <strong>fill_from_client_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#fill_from_client_headers%28headers%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#fill_from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8632,7 +8633,7 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L37" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8649,23 +8650,23 @@ returns <code>nil</code> if <em>key</em> cannot be found in the collection. Note
           
           <p>Filling cookies by parsing the <code><a href="../HTTP/Cookie.html">Cookie</a></code> and <code><a href="../Set.html">Set</a>-<a href="../HTTP/Cookie.html">Cookie</a></code>
 headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></code>.</p>
-<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#fill_from_client_headers%28headers%29%3Aself-instance-method">#fill_from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#fill_from_server_headers%28headers%29%3Aself-instance-method">#fill_from_server_headers</a></code> instead.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../HTTP/Cookies.html#fill_from_client_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#fill_from_client_headers</a></code> or <code><a href="../HTTP/Cookies.html#fill_from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#fill_from_server_headers</a></code> instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="fill_from_server_headers(headers):self-instance-method">
+    <div class="entry-detail" id="fill_from_server_headers(headers:HTTP::Headers):self-instance-method">
       <div class="signature">
         
-        def <strong>fill_from_server_headers</strong>(headers) : <span class="k">self</span>
+        def <strong>fill_from_server_headers</strong>(headers : <a href="../HTTP/Headers.html">HTTP::Headers</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#fill_from_server_headers%28headers%29%3Aself-instance-method">#</a>
+        <a class="method-permalink" href="#fill_from_server_headers%28headers%3AHTTP%3A%3AHeaders%29%3Aself-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8676,17 +8677,17 @@ headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L54" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L54" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="has_key?(key):Bool-instance-method">
+    <div class="entry-detail" id="has_key?(key:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>has_key?</strong>(key) : <a href="../Bool.html">Bool</a>
+        def <strong>has_key?</strong>(key : <a href="../String.html">String</a>) : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#has_key%3F%28key%29%3ABool-instance-method">#</a>
+        <a class="method-permalink" href="#has_key%3F%28key%3AString%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8698,7 +8699,7 @@ headers in the given <code><a href="../HTTP/Headers.html">HTTP::Headers</a></cod
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L130" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8748,7 +8749,7 @@ represents the full state of the cookie.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L230" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L230" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8775,7 +8776,7 @@ represents the full state of the cookie.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L235" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L235" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8796,7 +8797,7 @@ represents the full state of the cookie.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L169" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8817,7 +8818,7 @@ represents the full state of the cookie.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L208" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L208" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8844,7 +8845,7 @@ represents the full state of the cookie.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/http/cookies.cr#L223" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/http/cookies.cr#L223" target="_blank">View source</a>]
         
       </div>
     </div>

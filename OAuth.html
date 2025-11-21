@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>OAuth - Crystal 1.18.0-dev</title>
+  <title>OAuth - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7238,14 +7243,14 @@ and invoke its <code><a href="OAuth/AccessToken.html#authenticate%28client%2Ccon
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/access_token.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/access_token.cr#L1" target="_blank">
         oauth/access_token.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/oauth.cr#L40" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/oauth.cr#L40" target="_blank">
         oauth/oauth.cr
       </a>
     
@@ -7270,7 +7275,7 @@ and invoke its <code><a href="OAuth/AccessToken.html#authenticate%28client%2Ccon
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#authenticate%28client%3AHTTP%3A%3AClient%2Ctoken%2Ctoken_secret%2Cconsumer_key%2Cconsumer_secret%2Cextra_params%3Dnil%29%3ANil-class-method" class="signature"><strong>.authenticate</strong>(client : HTTP::Client, token, token_secret, consumer_key, consumer_secret, extra_params = <span class="n">nil</span>) : Nil</a>
+        <a href="#authenticate%28client%3AHTTP%3A%3AClient%2Ctoken%3AString%7CNil%2Ctoken_secret%3AString%7CNil%2Cconsumer_key%3AString%2Cconsumer_secret%3AString%2Cextra_params%3AHash%28String%2CString%29%7CNil%3Dnil%29%3ANil-class-method" class="signature"><strong>.authenticate</strong>(client : HTTP::Client, token : String | Nil, token_secret : String | Nil, consumer_key : String, consumer_secret : String, extra_params : Hash(String, String) | Nil = <span class="n">nil</span>) : Nil</a>
         
           <div class="summary"><p>Sets up an <code><a href="HTTP/Client.html">HTTP::Client</a></code> to add an OAuth authorization header to every request performed.</p></div>
         
@@ -7300,12 +7305,12 @@ and invoke its <code><a href="OAuth/AccessToken.html#authenticate%28client%2Ccon
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="authenticate(client:HTTP::Client,token,token_secret,consumer_key,consumer_secret,extra_params=nil):Nil-class-method">
+    <div class="entry-detail" id="authenticate(client:HTTP::Client,token:String|Nil,token_secret:String|Nil,consumer_key:String,consumer_secret:String,extra_params:Hash(String,String)|Nil=nil):Nil-class-method">
       <div class="signature">
         
-        def self.<strong>authenticate</strong>(client : <a href="HTTP/Client.html">HTTP::Client</a>, token, token_secret, consumer_key, consumer_secret, extra_params = <span class="n">nil</span>) : <a href="Nil.html">Nil</a>
+        def self.<strong>authenticate</strong>(client : <a href="HTTP/Client.html">HTTP::Client</a>, token : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>, token_secret : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>, consumer_key : <a href="String.html">String</a>, consumer_secret : <a href="String.html">String</a>, extra_params : <a href="Hash.html">Hash</a>(<a href="String.html">String</a>, <a href="String.html">String</a>) | <a href="Nil.html">Nil</a> = <span class="n">nil</span>) : <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#authenticate%28client%3AHTTP%3A%3AClient%2Ctoken%2Ctoken_secret%2Cconsumer_key%2Cconsumer_secret%2Cextra_params%3Dnil%29%3ANil-class-method">#</a>
+        <a class="method-permalink" href="#authenticate%28client%3AHTTP%3A%3AClient%2Ctoken%3AString%7CNil%2Ctoken_secret%3AString%7CNil%2Cconsumer_key%3AString%2Cconsumer_secret%3AString%2Cextra_params%3AHash%28String%2CString%29%7CNil%3Dnil%29%3ANil-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -7317,7 +7322,7 @@ Check this module's docs for an example usage.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth/oauth.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth/oauth.cr#L43" target="_blank">View source</a>]
         
       </div>
     </div>

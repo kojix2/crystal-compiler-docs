@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>SemanticVersion - Crystal 1.18.0-dev</title>
+  <title>SemanticVersion - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7219,7 +7224,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L4" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L4" target="_blank">
         semantic_version.cr
       </a>
     
@@ -7689,20 +7694,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7849,7 +7850,7 @@ and optionally build and pre-release version</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L71" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7875,7 +7876,7 @@ semver <span class="c"># =&gt; #&lt;SemanticVersion:0x55b3667c9e70 @major=2, @mi
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7913,7 +7914,7 @@ semver <span class="c"># =&gt; #&lt;SemanticVersion:0x55b3667c9e70 @major=2, @mi
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L61" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L61" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7932,13 +7933,14 @@ semver <span class="c"># =&gt; #&lt;SemanticVersion:0x55b3667c9e70 @major=2, @mi
 <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;semantic_version&quot;</span>
 
 <span class="t">SemanticVersion</span>.valid?(<span class="s">&quot;1.15.0&quot;</span>) <span class="c"># =&gt; true</span>
-<span class="t">SemanticVersion</span>.valid?(<span class="s">&quot;1.2&quot;</span>)    <span class="c"># =&gt; false</span></code></pre>
+<span class="t">SemanticVersion</span>.valid?(<span class="s">&quot;1.2&quot;</span>)    <span class="c"># =&gt; false</span>
+</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L33" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7983,7 +7985,7 @@ semver2 <span class="o">&lt;=&gt;</span> semver1 <span class="c"># =&gt; 1</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L176" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L176" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8018,7 +8020,7 @@ semver2 <span class="o">&lt;=&gt;</span> semver1 <span class="c"># =&gt; 1</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L21" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8043,7 +8045,7 @@ current_version.bump_major <span class="c"># =&gt; SemanticVersion(@build=nil, @
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L127" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8068,7 +8070,7 @@ current_version.bump_minor <span class="c"># =&gt; SemanticVersion(@build=nil, @
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8095,7 +8097,7 @@ next_patch.bump_patch                   <span class="c"># =&gt; SemanticVersion(
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L153" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L153" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8122,7 +8124,7 @@ current_version.copy_with(prerelease: <span class="n">nil</span>) <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8166,7 +8168,7 @@ current_version.copy_with(prerelease: <span class="n">nil</span>) <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8187,7 +8189,7 @@ current_version.copy_with(prerelease: <span class="n">nil</span>) <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L15" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L15" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8208,7 +8210,7 @@ current_version.copy_with(prerelease: <span class="n">nil</span>) <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8229,7 +8231,7 @@ current_version.copy_with(prerelease: <span class="n">nil</span>) <span class="c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L24" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L24" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8254,7 +8256,7 @@ semver.to_s <span class="c"># =&gt; &quot;0.27.1&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/semantic_version.cr#L94" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/semantic_version.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>

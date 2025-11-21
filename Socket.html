@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Socket - Crystal 1.18.0-dev</title>
+  <title>Socket - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7225,35 +7230,35 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L3" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L3" target="_blank">
         socket.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/address.cr#L4" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/address.cr#L4" target="_blank">
         socket/address.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/addrinfo.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/addrinfo.cr#L5" target="_blank">
         socket/addrinfo.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/common.cr#L15" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/common.cr#L15" target="_blank">
         socket/common.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/server.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/server.cr#L1" target="_blank">
         socket/server.cr
       </a>
     
@@ -7278,35 +7283,40 @@
       <li class="entry-summary">
         <a href="#new%28family%3AFamily%2Ctype%3AType%2Cprotocol%3AProtocol%3DProtocol%3A%3AIP%2Cblocking%3Dnil%29-class-method" class="signature"><strong>.new</strong>(family : Family, type : Type, protocol : Protocol = <span class="t">Protocol</span><span class="t">::</span><span class="t">IP</span>, blocking = <span class="n">nil</span>)</a>
         
-          <div class="summary"><p>Creates a socket.</p></div>
+          <div class="summary"><p>Creates a socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#new%28fd%2Cfamily%3AFamily%2Ctype%3AType%2Cprotocol%3AProtocol%3DProtocol%3A%3AIP%2Cblocking%3Dnil%29-class-method" class="signature"><strong>.new</strong>(fd, family : Family, type : Type, protocol : Protocol = <span class="t">Protocol</span><span class="t">::</span><span class="t">IP</span>, blocking = <span class="n">nil</span>)</a>
         
-          <div class="summary"><p>Creates a Socket from an existing system file descriptor or socket handle.</p></div>
+          <div class="summary"><p>Creates a Socket from an existing system file descriptor or socket handle.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#tcp%28family%3AFamily%2Cblocking%3Dnil%29%3Aself-class-method" class="signature"><strong>.tcp</strong>(family : Family, blocking = <span class="n">nil</span>) : <span class="k">self</span></a>
         
-          <div class="summary"><p>Creates a TCP socket.</p></div>
+          <div class="summary"><p>Creates a TCP socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#udp%28family%3AFamily%2Cblocking%3Dnil%29%3Aself-class-method" class="signature"><strong>.udp</strong>(family : Family, blocking = <span class="n">nil</span>) : <span class="k">self</span></a>
         
-          <div class="summary"><p>Creates an UDP socket.</p></div>
+          <div class="summary"><p>Creates an UDP socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#unix%28type%3AType%3DType%3A%3ASTREAM%2Cblocking%3Dnil%29%3Aself-class-method" class="signature"><strong>.unix</strong>(type : Type = <span class="t">Type</span><span class="t">::</span><span class="t">STREAM</span>, blocking = <span class="n">nil</span>) : <span class="k">self</span></a>
         
-          <div class="summary"><p>Creates an UNIX socket.</p></div>
+          <div class="summary"><p>Creates an UNIX socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p></div>
         
       </li>
     
@@ -7768,13 +7778,13 @@
     close</a>, 
     
   
-    <a href="IO/Buffered.html#flush-instance-method" class="tooltip">
-      <span>flush</span>
+    <a href="IO/Buffered.html#flush%3Aself-instance-method" class="tooltip">
+      <span>flush : <span class="k">self</span></span>
     flush</a>, 
     
   
-    <a href="IO/Buffered.html#flush_on_newline%3D%28flush_on_newline%29-instance-method" class="tooltip">
-      <span>flush_on_newline=(flush_on_newline)</span>
+    <a href="IO/Buffered.html#flush_on_newline%3D%28flush_on_newline%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>flush_on_newline=(flush_on_newline : Bool) : Bool</span>
     flush_on_newline=</a>, 
     
   
@@ -7798,8 +7808,8 @@
     read</a>, 
     
   
-    <a href="IO/Buffered.html#read_buffering%3D%28read_buffering%29-instance-method" class="tooltip">
-      <span>read_buffering=(read_buffering)</span>
+    <a href="IO/Buffered.html#read_buffering%3D%28read_buffering%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>read_buffering=(read_buffering : Bool) : Bool</span>
     read_buffering=</a>, 
     
   
@@ -7808,13 +7818,13 @@
     read_buffering?</a>, 
     
   
-    <a href="IO/Buffered.html#rewind-instance-method" class="tooltip">
-      <span>rewind</span>
+    <a href="IO/Buffered.html#rewind%3Aself-instance-method" class="tooltip">
+      <span>rewind : <span class="k">self</span></span>
     rewind</a>, 
     
   
-    <a href="IO/Buffered.html#sync%3D%28sync%29-instance-method" class="tooltip">
-      <span>sync=(sync)</span>
+    <a href="IO/Buffered.html#sync%3D%28sync%3ABool%29%3ABool-instance-method" class="tooltip">
+      <span>sync=(sync : Bool) : Bool</span>
     sync=</a>, 
     
   
@@ -7870,8 +7880,8 @@
   <h3>Instance methods inherited from class <code><a href="IO.html">IO</a></code></h3>
   
   
-    <a href="IO.html#%3C%3C%28obj%29%3Aself-instance-method" class="tooltip">
-      <span><<(obj) : <span class="k">self</span></span>
+    <a href="IO.html#%3C%3C%28obj%3A_%29%3Aself-instance-method" class="tooltip">
+      <span><<(obj : _) : <span class="k">self</span></span>
     <<</a>, 
     
   
@@ -7915,8 +7925,8 @@
     getb_to_end</a>, 
     
   
-    <a href="IO.html#gets%28limit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="tooltip">
-      <span>gets(limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, chomp = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : String, chomp = <span class="n">false</span>) : String | Nil<br/>gets(chomp = <span class="n">true</span>) : String | Nil</span>
+    <a href="IO.html#gets%28delimiter%3AChar%2Climit%3AInt%2Cchomp%3Dfalse%29%3AString%7CNil-instance-method" class="tooltip">
+      <span>gets(delimiter : Char, limit : Int, chomp = <span class="n">false</span>) : String | Nil<br/>gets(chomp : Bool = <span class="n">true</span>) : String | Nil<br/>gets(limit : Int, chomp : Bool = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : Char, chomp : Bool = <span class="n">false</span>) : String | Nil<br/>gets(delimiter : String, chomp = <span class="n">false</span>) : String | Nil</span>
     gets</a>, 
     
   
@@ -7945,8 +7955,8 @@
     print</a>, 
     
   
-    <a href="IO.html#printf%28format_string%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="tooltip">
-      <span>printf(format_string, args : Array | Tuple) : Nil<br/>printf(format_string, *args) : Nil</span>
+    <a href="IO.html#printf%28format_string%3AString%2Cargs%3AArray%7CTuple%29%3ANil-instance-method" class="tooltip">
+      <span>printf(format_string : String, args : Array | Tuple) : Nil<br/>printf(format_string : String, *args) : Nil</span>
     printf</a>, 
     
   
@@ -8000,8 +8010,8 @@
     read_string</a>, 
     
   
-    <a href="IO.html#read_utf8%28slice%3ABytes%29-instance-method" class="tooltip">
-      <span>read_utf8(slice : Bytes)</span>
+    <a href="IO.html#read_utf8%28slice%3ABytes%29%3AInt32-instance-method" class="tooltip">
+      <span>read_utf8(slice : Bytes) : Int32</span>
     read_utf8</a>, 
     
   
@@ -8055,8 +8065,8 @@
     write_byte</a>, 
     
   
-    <a href="IO.html#write_bytes%28object%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="tooltip">
-      <span>write_bytes(object, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</span>
+    <a href="IO.html#write_bytes%28object%3A_%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method" class="tooltip">
+      <span>write_bytes(object : _, format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">SystemEndian</span>) : Nil</span>
     write_bytes</a>, 
     
   
@@ -8080,13 +8090,13 @@
   <h3>Class methods inherited from class <code><a href="IO.html">IO</a></code></h3>
   
   
-    <a href="IO.html#copy%28src%2Cdst%2Climit%3AInt%29%3AInt64-class-method" class="tooltip">
-      <span>copy(src, dst, limit : Int) : Int64<br/>copy(src, dst) : Int64</span>
+    <a href="IO.html#copy%28src%3AIO%2Cdst%3AIO%2Climit%3AInt%29%3AInt64-class-method" class="tooltip">
+      <span>copy(src : IO, dst : IO, limit : Int) : Int64<br/>copy(src : IO, dst : IO) : Int64</span>
     copy</a>, 
     
   
-    <a href="IO.html#pipe%28read_blocking%3Dnil%2Cwrite_blocking%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="tooltip">
-      <span>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)<br/>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>, &)</span>
+    <a href="IO.html#pipe%28read_blocking%3ABool%7CNil%3Dnil%2Cwrite_blocking%3ABool%7CNil%3Dnil%29%3ATuple%28IO%3A%3AFileDescriptor%2CIO%3A%3AFileDescriptor%29-class-method" class="tooltip">
+      <span>pipe(read_blocking : Bool | Nil = <span class="n">nil</span>, write_blocking : Bool | Nil = <span class="n">nil</span>) : Tuple(IO::FileDescriptor, IO::FileDescriptor)<br/>pipe(read_blocking = <span class="n">nil</span>, write_blocking = <span class="n">nil</span>, &)</span>
     pipe</a>, 
     
   
@@ -8330,20 +8340,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8484,12 +8490,13 @@
           
           <p>Creates a socket. Consider using <code><a href="TCPSocket.html">TCPSocket</a></code>, <code><a href="TCPServer.html">TCPServer</a></code>, <code><a href="UDPSocket.html">UDPSocket</a></code>,
 <code><a href="UNIXSocket.html">UNIXSocket</a></code> or <code><a href="UNIXServer.html">UNIXServer</a></code> unless you need full control over the socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L76" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8509,12 +8516,13 @@
 event loop runtime requirements.</p>
 <p><span class="flag purple">NOTE</span>  On Windows, the handle must have been created with
 <code>WSA_FLAG_OVERLAPPED</code>.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L96" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L96" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8531,12 +8539,13 @@ event loop runtime requirements.</p>
           
           <p>Creates a TCP socket. Consider using <code><a href="TCPSocket.html">TCPSocket</a></code> or <code><a href="TCPServer.html">TCPServer</a></code> unless you
 need full control over the socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L52" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L52" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8553,12 +8562,13 @@ need full control over the socket.</p>
           
           <p>Creates an UDP socket. Consider using <code><a href="UDPSocket.html">UDPSocket</a></code> unless you need full
 control over the socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8575,12 +8585,13 @@ control over the socket.</p>
           
           <p>Creates an UNIX socket. Consider using <code><a href="UNIXSocket.html">UNIXSocket</a></code> or <code><a href="UNIXServer.html">UNIXServer</a></code> unless
 you need full control over the socket.</p>
+<p><span class="flag red">DEPRECATED parameter <code><a href="Socket.html#blocking-instance-method">#blocking</a></code></span>  Use Socket.set_blocking instead.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L68" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L68" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8608,7 +8619,7 @@ you need full control over the socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L480" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L480" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8631,7 +8642,7 @@ you need full control over the socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L462" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L462" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8653,7 +8664,7 @@ you need full control over the socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket/address.cr#L944" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket/address.cr#L944" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8675,7 +8686,7 @@ you need full control over the socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L468" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L468" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8718,7 +8729,7 @@ socket.close</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L228" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L228" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8748,7 +8759,7 @@ server <span class="o">=</span> <span class="t">TCPServer</span>.new(<span class
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L246" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L246" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8773,7 +8784,7 @@ sock.bind <span class="s">&quot;localhost&quot;</span>, <span class="n">1234</sp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L164" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8798,7 +8809,7 @@ sock.bind <span class="n">1234</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L178" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L178" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8823,7 +8834,7 @@ sock.bind <span class="t">Socket</span><span class="t">::</span><span class="t">
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L200" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L200" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8845,7 +8856,7 @@ sock.bind <span class="t">Socket</span><span class="t">::</span><span class="t">
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L443" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L443" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8871,7 +8882,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L454" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L454" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8887,7 +8898,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L386" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L386" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8903,7 +8914,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L382" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8919,7 +8930,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L476" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L476" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8935,7 +8946,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L472" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L472" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8956,7 +8967,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L333" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L333" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8977,7 +8988,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L338" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L338" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9003,7 +9014,7 @@ to read from this socket.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L503" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L503" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9028,7 +9039,7 @@ sock.connect <span class="s">&quot;crystal-lang.org&quot;</span>, <span class="n
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L130" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9053,7 +9064,7 @@ sock.connect <span class="t">Socket</span><span class="t">::</span><span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L144" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L144" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9075,7 +9086,7 @@ sock.connect <span class="t">Socket</span><span class="t">::</span><span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L150" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L150" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9091,7 +9102,7 @@ sock.connect <span class="t">Socket</span><span class="t">::</span><span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L28" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L28" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9107,7 +9118,7 @@ sock.connect <span class="t">Socket</span><span class="t">::</span><span class="
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L484" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L484" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9137,7 +9148,7 @@ requirements at runtime.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L22" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L22" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9163,7 +9174,7 @@ It's recommended to always close the socket explicitly via <code>#close</code>.<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L496" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L496" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9196,7 +9207,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L342" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L342" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9212,7 +9223,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L395" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L395" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9228,7 +9239,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L391" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L391" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9244,7 +9255,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L400" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L400" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9277,7 +9288,7 @@ for more information.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L413" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L413" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9298,7 +9309,7 @@ for more information.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L205" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9320,7 +9331,7 @@ Yields an <code><a href="Socket/Error.html">Socket::Error</a></code> on failure.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L211" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L211" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9336,7 +9347,7 @@ Yields an <code><a href="Socket/Error.html">Socket::Error</a></code> on failure.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L30" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L30" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9357,7 +9368,7 @@ Yields an <code><a href="Socket/Error.html">Socket::Error</a></code> on failure.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L33" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9378,7 +9389,7 @@ Yields an <code><a href="Socket/Error.html">Socket::Error</a></code> on failure.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L33" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9400,7 +9411,7 @@ Yields an <code><a href="Socket/Error.html">Socket::Error</a></code> on failure.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L37" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9428,7 +9439,7 @@ bytes_read, client_addr <span class="o">=</span> server.receive(message)</code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L328" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L328" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9455,7 +9466,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L308" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L308" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9471,7 +9482,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L355" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L355" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9487,7 +9498,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L359" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L359" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9503,7 +9514,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L368" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L368" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9519,7 +9530,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L364" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L364" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9535,7 +9546,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L377" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L377" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9551,7 +9562,7 @@ message, client_addr <span class="o">=</span> server.receive</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L373" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L373" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9582,7 +9593,7 @@ sock.send(<span class="s">&quot;text query&quot;</span>, to: server)</code></pre
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L294" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L294" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9616,7 +9627,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L276" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L276" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9632,7 +9643,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L346" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L346" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9648,7 +9659,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L350" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L350" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9676,7 +9687,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L507" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L507" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9692,7 +9703,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L29" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L29" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9713,7 +9724,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L43" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9734,7 +9745,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L43" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9756,7 +9767,7 @@ sock.send(<span class="t">Bytes</span>[<span class="n">0</span>])</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/socket.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/socket.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>

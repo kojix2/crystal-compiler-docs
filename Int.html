@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Int - Crystal 1.18.0-dev</title>
+  <title>Int - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="Time.html">Time</a>
       
@@ -7294,71 +7299,71 @@ the future.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L781" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L781" target="_blank">
         big/big_decimal.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L547" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L547" target="_blank">
         big/big_float.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L814" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L870" target="_blank">
         big/big_int.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L396" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L396" target="_blank">
         big/big_rational.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/number.cr#L24" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/number.cr#L24" target="_blank">
         big/number.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/humanize.cr#L299" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/humanize.cr#L299" target="_blank">
         humanize.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L64" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L64" target="_blank">
         int.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L43" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L43" target="_blank">
         json/to_json.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L419" target="_blank">
-        time/span.cr:419
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L420" target="_blank">
+        time/span.cr:420
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L589" target="_blank">
-        time/span.cr:589
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L590" target="_blank">
+        time/span.cr:590
       </a>
     
     <br/>
@@ -7537,12 +7542,12 @@ the future.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#%3C%3D%3E%28other%3ABigFloat%29-instance-method" class="signature"><strong>#<=></strong>(other : BigFloat)</a>
+        <a href="#%3C%3D%3E%28other%3ABigFloat%29%3AInt32-instance-method" class="signature"><strong>#<=></strong>(other : BigFloat) : Int32</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%3C%3D%3E%28other%3ABigRational%29-instance-method" class="signature"><strong>#<=></strong>(other : BigRational)</a>
+        <a href="#%3C%3D%3E%28other%3ABigRational%29%3AInt32-instance-method" class="signature"><strong>#<=></strong>(other : BigRational) : Int32</a>
         
       </li>
     
@@ -7878,6 +7883,13 @@ the future.</p>
         <a href="#tdiv%28other%3AInt%29-instance-method" class="signature"><strong>#tdiv</strong>(other : Int)</a>
         
           <div class="summary"><p>Divides <code>self</code> by <em>other</em> using truncated division.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tdivmod%28other%3AInt%29-instance-method" class="signature"><strong>#tdivmod</strong>(other : Int)</a>
+        
+          <div class="summary"><p>Returns a <code><a href="Tuple.html">Tuple</a></code> of two elements containing the quotient and modulus obtained by dividing <code>self</code> by <em>number</em> using truncated division.</p></div>
         
       </li>
     
@@ -8656,20 +8668,16 @@ the future.</p>
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="Object.html">Object</a></code></h3>
-  
-  
-    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="Object.html">Object</a></code></h3>
   
+  
+    <a href="Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -8815,7 +8823,7 @@ the future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L815" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L848" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8847,7 +8855,7 @@ the future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L851" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L907" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8870,7 +8878,7 @@ the future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L164" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L197" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8886,7 +8894,7 @@ the future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L847" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L903" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8913,7 +8921,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L349" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8929,7 +8937,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L825" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L881" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8945,7 +8953,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L839" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L895" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8961,7 +8969,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L843" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L899" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8977,7 +8985,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L425" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L425" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8993,7 +9001,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L805" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L805" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9020,7 +9028,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L322" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L355" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9044,7 +9052,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L371" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L404" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9060,7 +9068,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L821" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L877" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9076,7 +9084,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L413" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L413" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9092,7 +9100,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L797" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L797" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9108,7 +9116,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L829" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L885" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9124,7 +9132,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L552" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L552" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9140,7 +9148,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L417" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L417" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9156,7 +9164,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L801" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L801" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9172,7 +9180,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L562" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L562" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9188,7 +9196,7 @@ either use a float base or a float exponent.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L421" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L421" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9224,7 +9232,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L108" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9253,7 +9261,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L257" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L290" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9269,7 +9277,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L817" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L873" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9285,39 +9293,39 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L267" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L300" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="&lt;=&gt;(other:BigFloat)-instance-method">
+    <div class="entry-detail" id="&lt;=&gt;(other:BigFloat):Int32-instance-method">
       <div class="signature">
         
-        def <strong><=></strong>(other : <a href="BigFloat.html">BigFloat</a>)
+        def <strong><=></strong>(other : <a href="BigFloat.html">BigFloat</a>) : <a href="Int32.html">Int32</a>
 
-        <a class="method-permalink" href="#%3C%3D%3E%28other%3ABigFloat%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3C%3D%3E%28other%3ABigFloat%29%3AInt32-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_float.cr#L548" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_float.cr#L548" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="&lt;=&gt;(other:BigRational)-instance-method">
+    <div class="entry-detail" id="&lt;=&gt;(other:BigRational):Int32-instance-method">
       <div class="signature">
         
-        def <strong><=></strong>(other : <a href="BigRational.html">BigRational</a>)
+        def <strong><=></strong>(other : <a href="BigRational.html">BigRational</a>) : <a href="Int32.html">Int32</a>
 
-        <a class="method-permalink" href="#%3C%3D%3E%28other%3ABigRational%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3C%3D%3E%28other%3ABigRational%29%3AInt32-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L409" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L409" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9352,7 +9360,7 @@ or <code>nil</code> if the two objects are not comparable.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L793" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L793" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9368,7 +9376,7 @@ or <code>nil</code> if the two objects are not comparable.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L375" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L408" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9400,7 +9408,7 @@ Also known as arithmetic right shift.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L236" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9416,7 +9424,7 @@ Also known as arithmetic right shift.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L84" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9443,7 +9451,7 @@ Also known as arithmetic right shift.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L273" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L306" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9469,7 +9477,7 @@ Also known as arithmetic right shift.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L388" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L421" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9509,7 +9517,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L473" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L506" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9536,7 +9544,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L402" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L435" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9560,7 +9568,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L444" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L477" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9576,7 +9584,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L281" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L314" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9600,7 +9608,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L77" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L77" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9621,7 +9629,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L436" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L437" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9642,7 +9650,7 @@ If there is no such bit (zero or minus one), zero is returned.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L431" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L432" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9669,7 +9677,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L648" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L681" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9685,7 +9693,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L544" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L577" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9713,7 +9721,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L605" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L638" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9734,7 +9742,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L616" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L649" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9750,7 +9758,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L548" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L581" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9766,7 +9774,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L188" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9782,7 +9790,7 @@ The digits are returned as an array with the least significant digit as the firs
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L285" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9807,7 +9815,7 @@ its type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L508" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L541" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9828,7 +9836,7 @@ its type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L856" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L912" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9849,7 +9857,7 @@ its type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L446" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L447" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9870,7 +9878,7 @@ its type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L441" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L442" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9907,7 +9915,7 @@ system except for uppercase <code>K</code> and is based on powers of 1024 (see
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/humanize.cr#L334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/humanize.cr#L334" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9944,7 +9952,7 @@ system except for uppercase <code>K</code> and is based on powers of 1024 (see
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/humanize.cr#L353" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/humanize.cr#L353" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9973,7 +9981,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L306" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L339" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9994,7 +10002,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L861" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L917" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10016,7 +10024,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L540" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L573" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10037,7 +10045,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L488" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L489" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10058,7 +10066,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L482" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L483" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10079,7 +10087,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L477" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L478" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10100,7 +10108,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L472" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10121,7 +10129,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L456" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L457" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10142,7 +10150,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L451" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L452" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10158,7 +10166,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L634" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L667" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10179,7 +10187,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L596" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L597" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10200,7 +10208,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L591" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L592" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10221,7 +10229,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L498" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L499" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10242,7 +10250,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L493" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L494" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10258,7 +10266,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L552" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L585" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10281,7 +10289,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L825" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L858" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10297,7 +10305,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L560" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L593" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10320,7 +10328,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L184" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L217" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10348,7 +10356,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L277" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L310" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10369,7 +10377,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L299" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L332" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10390,7 +10398,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L294" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L327" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10411,7 +10419,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L466" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L467" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10432,7 +10440,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L461" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L462" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10448,7 +10456,7 @@ without any fractional parts.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L556" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L589" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10467,7 +10475,7 @@ without any fractional parts.</p>
 <p>In truncated division, given two integers x and y:</p>
 <ul>
 <li><code>q = x.tdiv(y)</code> is rounded toward zero</li>
-<li><code>r = x.remainder(y)</code> has the sign of the first argument</li>
+<li><code>r = x.remainder(y)</code> has the sign of x</li>
 <li><code>x == q*y + r</code></li>
 </ul>
 <p>For example:</p>
@@ -10484,7 +10492,47 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L137" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L137" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tdivmod(other:Int)-instance-method">
+      <div class="signature">
+        
+        def <strong>tdivmod</strong>(other : <a href="Int.html">Int</a>)
+
+        <a class="method-permalink" href="#tdivmod%28other%3AInt%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a <code><a href="Tuple.html">Tuple</a></code> of two elements containing the quotient
+and modulus obtained by dividing <code>self</code> by <em>number</em> using
+truncated division.</p>
+<pre><code class="language-crystal"><span class="n">11</span>.tdivmod(<span class="n">3</span>)  <span class="c"># =&gt; {3, 2}</span>
+<span class="n">11</span>.tdivmod(<span class="n">-3</span>) <span class="c"># =&gt; {-4, -1}</span></code></pre>
+<p>In truncated division, given two integers x and y:</p>
+<ul>
+<li><code>q = x.tdiv(y)</code> is rounded toward zero</li>
+<li><code>r = x.remainder(y)</code> has the sign of x</li>
+<li><code>x == q*y + r</code></li>
+</ul>
+<p>For example:</p>
+<pre><code class="language-text"> x     y     x / y     x % y
+ 5     3       1         2
+-5     3      -1        -2
+ 5    -3      -1         2
+-5    -3       1        -2</code></pre>
+<p>Raises if <em>other</em> is <code>0</code>, or if <em>other</em> is <code>-1</code> and
+<code>self</code> is signed and is the minimum value for that
+integer type.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L182" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10500,7 +10548,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L564" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L597" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10516,7 +10564,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L572" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L605" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10532,7 +10580,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L620" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L653" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10548,7 +10596,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L630" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L663" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10571,7 +10619,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_decimal.cr#L789" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_decimal.cr#L789" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10595,7 +10643,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_int.cr#L871" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_int.cr#L927" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10619,7 +10667,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/big/big_rational.cr#L405" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/big/big_rational.cr#L405" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10635,13 +10683,13 @@ integer type.</p>
         <div class="doc">
           
           <p>Writes this integer to the given <em>io</em> in the given <em>format</em>.</p>
-<p>See also: <code><a href="IO.html#write_bytes%28object%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method">IO#write_bytes</a></code>.</p>
+<p>See also: <code><a href="IO.html#write_bytes%28object%3A_%2Cformat%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ASystemEndian%29%3ANil-instance-method">IO#write_bytes</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L808" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L841" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10657,7 +10705,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L44" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L44" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10673,7 +10721,7 @@ integer type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/json/to_json.cr#L48" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/to_json.cr#L48" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10703,7 +10751,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L759" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L792" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10741,7 +10789,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L700" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L733" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10762,7 +10810,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L828" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L861" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10778,7 +10826,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L289" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L322" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10794,7 +10842,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L576" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10810,7 +10858,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/int.cr#L586" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L619" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10831,7 +10879,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L427" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10852,7 +10900,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L421" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L422" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10873,7 +10921,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L606" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L607" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10894,7 +10942,7 @@ zeros. If <code>self</code> and <em>precision</em> are both zero, returns an emp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/time/span.cr#L601" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/span.cr#L602" target="_blank">View source</a>]
         
       </div>
     </div>

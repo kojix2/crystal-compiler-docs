@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>OAuth2::AccessToken::Mac - Crystal 1.18.0-dev</title>
+  <title>OAuth2::AccessToken::Mac - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7193,7 +7198,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L6" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L6" target="_blank">
         oauth2/access_token/mac.cr
       </a>
     
@@ -7216,12 +7221,12 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28access_token%2Cexpires_in%2Cmac_algorithm%3AString%2Cmac_key%3AString%2Crefresh_token%3Dnil%2Cscope%3Dnil%2Cissued_at%3AInt64%3DTime.utc.to_unix%2Cextra%3Dnil%29-class-method" class="signature"><strong>.new</strong>(access_token, expires_in, mac_algorithm : String, mac_key : String, refresh_token = <span class="n">nil</span>, scope = <span class="n">nil</span>, issued_at : Int64 = <span class="t">Time</span>.utc.to_unix, extra = <span class="n">nil</span>)</a>
+        <a href="#new%28access_token%3AString%2Cexpires_in%2Cmac_algorithm%3AString%2Cmac_key%3AString%2Crefresh_token%3AString%7CNil%3Dnil%2Cscope%3AString%7CNil%3Dnil%2Cissued_at%3AInt64%3DTime.utc.to_unix%2Cextra%3AHash%28String%2CString%29%7CNil%3Dnil%29-class-method" class="signature"><strong>.new</strong>(access_token : String, expires_in, mac_algorithm : String, mac_key : String, refresh_token : String | Nil = <span class="n">nil</span>, scope : String | Nil = <span class="n">nil</span>, issued_at : Int64 = <span class="t">Time</span>.utc.to_unix, extra : Hash(String, String) | Nil = <span class="n">nil</span>)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#new%28pull%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        <a href="#new%28pull%3AJSON%3A%3APullParser%29%3Aself-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser) : <span class="k">self</span></a>
         
       </li>
     
@@ -7240,7 +7245,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#signature%28ts%2Cnonce%2Cmethod%2Curi%2Chost%2Cport%2Cext%2Cmac_algorithm%2Cmac_key%29%3AString-class-method" class="signature"><strong>.signature</strong>(ts, nonce, method, uri, host, port, ext, mac_algorithm, mac_key) : String</a>
+        <a href="#signature%28ts%2Cnonce%3AString%2Cmethod%3AString%2Curi%3AString%2Chost%3AString%2Cport%3AInt32%7CString%2Cext%3AString%2Cmac_algorithm%3AString%2Cmac_key%3AString%29%3AString-class-method" class="signature"><strong>.signature</strong>(ts, nonce : String, method : String, uri : String, host : String, port : Int32 | String, ext : String, mac_algorithm : String, mac_key : String) : String</a>
         
       </li>
     
@@ -7393,7 +7398,7 @@
   
   
     <a href="../../OAuth2/AccessToken.html#new%28access_token%3AString%2Cexpires_in%3AInt%7CNil%2Crefresh_token%3AString%7CNil%3Dnil%2Cscope%3AString%7CNil%3Dnil%2Cextra%3ANil%7CHash%28String%2CString%29%3Dnil%29-class-method" class="tooltip">
-      <span>new(access_token : String, expires_in : Int | Nil, refresh_token : String | Nil = <span class="n">nil</span>, scope : String | Nil = <span class="n">nil</span>, extra : Nil | Hash(String, String) = <span class="n">nil</span>)<br/>new(pull : JSON::PullParser)</span>
+      <span>new(access_token : String, expires_in : Int | Nil, refresh_token : String | Nil = <span class="n">nil</span>, scope : String | Nil = <span class="n">nil</span>, extra : Nil | Hash(String, String) = <span class="n">nil</span>)<br/>new(pull : JSON::PullParser) : <span class="k">self</span></span>
     new</a>
     
   
@@ -7635,20 +7640,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
   
+  
+    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7777,34 +7778,34 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(access_token,expires_in,mac_algorithm:String,mac_key:String,refresh_token=nil,scope=nil,issued_at:Int64=Time.utc.to_unix,extra=nil)-class-method">
+    <div class="entry-detail" id="new(access_token:String,expires_in,mac_algorithm:String,mac_key:String,refresh_token:String|Nil=nil,scope:String|Nil=nil,issued_at:Int64=Time.utc.to_unix,extra:Hash(String,String)|Nil=nil)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(access_token, expires_in, mac_algorithm : <a href="../../String.html">String</a>, mac_key : <a href="../../String.html">String</a>, refresh_token = <span class="n">nil</span>, scope = <span class="n">nil</span>, issued_at : <a href="../../Int64.html">Int64</a> = <span class="t">Time</span>.utc.to_unix, extra = <span class="n">nil</span>)
+        def self.<strong>new</strong>(access_token : <a href="../../String.html">String</a>, expires_in, mac_algorithm : <a href="../../String.html">String</a>, mac_key : <a href="../../String.html">String</a>, refresh_token : <a href="../../String.html">String</a> | <a href="../../Nil.html">Nil</a> = <span class="n">nil</span>, scope : <a href="../../String.html">String</a> | <a href="../../Nil.html">Nil</a> = <span class="n">nil</span>, issued_at : <a href="../../Int64.html">Int64</a> = <span class="t">Time</span>.utc.to_unix, extra : <a href="../../Hash.html">Hash</a>(<a href="../../String.html">String</a>, <a href="../../String.html">String</a>) | <a href="../../Nil.html">Nil</a> = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#new%28access_token%2Cexpires_in%2Cmac_algorithm%3AString%2Cmac_key%3AString%2Crefresh_token%3Dnil%2Cscope%3Dnil%2Cissued_at%3AInt64%3DTime.utc.to_unix%2Cextra%3Dnil%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28access_token%3AString%2Cexpires_in%2Cmac_algorithm%3AString%2Cmac_key%3AString%2Crefresh_token%3AString%7CNil%3Dnil%2Cscope%3AString%7CNil%3Dnil%2Cissued_at%3AInt64%3DTime.utc.to_unix%2Cextra%3AHash%28String%2CString%29%7CNil%3Dnil%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L15" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L15" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+    <div class="entry-detail" id="new(pull:JSON::PullParser):self-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(pull : <a href="../../JSON/PullParser.html">JSON::PullParser</a>)
+        def self.<strong>new</strong>(pull : <a href="../../JSON/PullParser.html">JSON::PullParser</a>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#new%28pull%3AJSON%3A%3APullParser%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28pull%3AJSON%3A%3APullParser%29%3Aself-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7821,18 +7822,18 @@
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="signature(ts,nonce,method,uri,host,port,ext,mac_algorithm,mac_key):String-class-method">
+    <div class="entry-detail" id="signature(ts,nonce:String,method:String,uri:String,host:String,port:Int32|String,ext:String,mac_algorithm:String,mac_key:String):String-class-method">
       <div class="signature">
         
-        def self.<strong>signature</strong>(ts, nonce, method, uri, host, port, ext, mac_algorithm, mac_key) : <a href="../../String.html">String</a>
+        def self.<strong>signature</strong>(ts, nonce : <a href="../../String.html">String</a>, method : <a href="../../String.html">String</a>, uri : <a href="../../String.html">String</a>, host : <a href="../../String.html">String</a>, port : <a href="../../Int32.html">Int32</a> | <a href="../../String.html">String</a>, ext : <a href="../../String.html">String</a>, mac_algorithm : <a href="../../String.html">String</a>, mac_key : <a href="../../String.html">String</a>) : <a href="../../String.html">String</a>
 
-        <a class="method-permalink" href="#signature%28ts%2Cnonce%2Cmethod%2Curi%2Chost%2Cport%2Cext%2Cmac_algorithm%2Cmac_key%29%3AString-class-method">#</a>
+        <a class="method-permalink" href="#signature%28ts%2Cnonce%3AString%2Cmethod%3AString%2Curi%3AString%2Chost%3AString%2Cport%3AInt32%7CString%2Cext%3AString%2Cmac_algorithm%3AString%2Cmac_key%3AString%29%3AString-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L37" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L37" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7885,7 +7886,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7924,7 +7925,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7940,7 +7941,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L13" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L13" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7956,7 +7957,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7972,7 +7973,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L11" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L11" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7988,7 +7989,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8004,7 +8005,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8020,7 +8021,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L48" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L48" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8036,7 +8037,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/oauth2/access_token/mac.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/oauth2/access_token/mac.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>

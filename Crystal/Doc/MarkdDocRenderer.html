@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Doc::MarkdDocRenderer - Crystal 1.18.0-dev</title>
+  <title>Crystal::Doc::MarkdDocRenderer - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../../Time.html">Time</a>
       
@@ -7193,7 +7198,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L5" target="_blank">
         compiler/crystal/tools/doc/markd_doc_renderer.cr
       </a>
     
@@ -7201,6 +7206,25 @@
   
 
 
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="SANITIZER">
+        <strong>SANITIZER</strong> = <code><span class="t">Sanitize</span><span class="t">::</span><span class="t">Policy</span><span class="t">::</span><span class="t">HTMLSanitizer</span>.common</code>
+      </dt>
+      
+    
+  </dl>
 
 
 
@@ -7274,7 +7298,27 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#html_block%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method" class="signature"><strong>#html_block</strong>(node : Markd::Node, entering : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#html_inline%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method" class="signature"><strong>#html_inline</strong>(node : Markd::Node, entering : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#in_link%3F%28node%29-instance-method" class="signature"><strong>#in_link?</strong>(node)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sanitize%28node%3AMarkd%3A%3ANode%29%3AString-instance-method" class="signature"><strong>#sanitize</strong>(node : Markd::Node) : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#text%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method" class="signature"><strong>#text</strong>(node : Markd::Node, entering : Bool)</a>
         
       </li>
     
@@ -7539,20 +7583,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../../Object.html">Object</a></code></h3>
   
+  
+    <a href="../../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7692,7 +7732,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L14" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7708,7 +7748,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7740,7 +7780,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L124" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L134" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7756,7 +7796,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L126" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7772,7 +7812,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L57" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7788,7 +7828,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L35" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L45" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7804,7 +7844,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L63" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L73" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7820,7 +7860,39 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="html_block(node:Markd::Node,entering:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>html_block</strong>(node : Markd::Node, entering : <a href="../../Bool.html">Bool</a>)
+
+        <a class="method-permalink" href="#html_block%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L176" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="html_inline(node:Markd::Node,entering:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>html_inline</strong>(node : Markd::Node, entering : <a href="../../Bool.html">Bool</a>)
+
+        <a class="method-permalink" href="#html_inline%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L183" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7836,7 +7908,39 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L55" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L65" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sanitize(node:Markd::Node):String-instance-method">
+      <div class="signature">
+        
+        def <strong>sanitize</strong>(node : Markd::Node) : <a href="../../String.html">String</a>
+
+        <a class="method-permalink" href="#sanitize%28node%3AMarkd%3A%3ANode%29%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L188" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="text(node:Markd::Node,entering:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>text</strong>(node : Markd::Node, entering : <a href="../../Bool.html">Bool</a>)
+
+        <a class="method-permalink" href="#text%28node%3AMarkd%3A%3ANode%2Centering%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/tools/doc/markd_doc_renderer.cr#L172" target="_blank">View source</a>]
         
       </div>
     </div>

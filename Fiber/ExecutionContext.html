@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Fiber::ExecutionContext - Crystal 1.18.0-dev</title>
+  <title>Fiber::ExecutionContext - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7201,11 +7206,11 @@ resumes in the same execution context.</p>
 for common use cases.</p>
 <ul>
 <li><code><a href="../Fiber/ExecutionContext/Concurrent.html">ExecutionContext::Concurrent</a></code>: Fully concurrent with limited parallelism.
-Fibers run concurrently, never in parallel (only one fiber at a time). They
-can use simpler and faster synchronization primitives internally (no atomics,
-limited thread safety). Communication with fibers in other contexts requires
-thread-safe primitives. A blocking fiber blocks the entire thread and all
-other fibers in the context.</li>
+Fibers run concurrently to each other, never in parallel (only one fiber at a
+time). They can use simpler and faster synchronization primitives internally
+(no atomics, limited thread safety). Communication with fibers in other
+contexts requires thread-safe primitives. A blocking fiber blocks the entire
+thread and all other fibers in the context.</li>
 <li><code><a href="../Fiber/ExecutionContext/Parallel.html">ExecutionContext::Parallel</a></code>: Fully concurrent, fully parallel. Fibers
 running in this context can be resumed by multiple system threads in this
 context. They run concurrently and in parallel to each other (multiple fibers
@@ -7223,12 +7228,13 @@ Communication with fibers in other contexts requires thread-safe primitives.</li
     <use href="#octicon-link"/>
   </svg>
 </a>The default execution context</h2>
-<p>The Crystal runtime starts with a single threaded execution context, available
-as <code><a href="../Fiber/ExecutionContext.html#default%3AExecutionContext-class-method">Fiber::ExecutionContext.default</a></code>:</p>
-<pre><code class="language-crystal"><span class="t">Fiber</span><span class="t">::</span><span class="t">ExecutionContext</span>.default.<span class="k">class</span> <span class="c"># =&gt; Fiber::ExecutionContext::Concurrent</span></code></pre>
-<p><span class="flag purple">NOTE</span>  The default context is a <code><a href="../Fiber/ExecutionContext/Concurrent.html">Concurrent</a></code> context for backwards
-compatibility reasons. It might change to a <code><a href="../Fiber/ExecutionContext/Parallel.html">Parallel</a></code> context in the
-future.</p>
+<p>The Crystal runtime starts a default execution context exposed as
+<code><a href="../Fiber/ExecutionContext.html#default%3AExecutionContext%3A%3AParallel-class-method">Fiber::ExecutionContext.default</a></code>. This is where the main fiber is running.</p>
+<p>Its parallelism is set to 1 for backwards compatibility reasons; Crystal used
+to be single-threaded and concurrent only. You can increase the parallelism at
+any time using <code><a href="../Fiber/ExecutionContext/Parallel.html#resize%28maximum%3AInt32%29%3ANil-instance-method">Parallel#resize</a></code>, for example:</p>
+<pre><code class="language-crystal">count <span class="o">=</span> <span class="t">Fiber</span><span class="t">::</span><span class="t">ExecutionContext</span>.default_workers_count
+<span class="t">Fiber</span><span class="t">::</span><span class="t">ExecutionContext</span>.default.resize(count)</code></pre>
 <p><span class="flag lime">EXPERIMENTAL</span> </p>
 
 
@@ -7253,8 +7259,6 @@ future.</p>
   </h2>
   <ul class="other-types-list">
     
-      <li class="other-type"><a href="../Fiber/ExecutionContext/Concurrent.html">Fiber::ExecutionContext::Concurrent</a></li>
-    
       <li class="other-type"><a href="../Fiber/ExecutionContext/Isolated.html">Fiber::ExecutionContext::Isolated</a></li>
     
       <li class="other-type"><a href="../Fiber/ExecutionContext/Parallel.html">Fiber::ExecutionContext::Parallel</a></li>
@@ -7274,63 +7278,63 @@ future.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L70" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L71" target="_blank">
         fiber/execution_context.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/concurrent.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/concurrent.cr#L3" target="_blank">
         fiber/execution_context/concurrent.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/global_queue.cr#L8" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/global_queue.cr#L8" target="_blank">
         fiber/execution_context/global_queue.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/isolated.cr#L4" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/isolated.cr#L4" target="_blank">
         fiber/execution_context/isolated.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/monitor.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/monitor.cr#L1" target="_blank">
         fiber/execution_context/monitor.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/parallel.cr#L4" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/parallel.cr#L4" target="_blank">
         fiber/execution_context/parallel.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/parallel/scheduler.cr#L5" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/parallel/scheduler.cr#L5" target="_blank">
         fiber/execution_context/parallel/scheduler.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/runnables.cr#L14" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/runnables.cr#L14" target="_blank">
         fiber/execution_context/runnables.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context/scheduler.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context/scheduler.cr#L1" target="_blank">
         fiber/execution_context/scheduler.cr
       </a>
     
@@ -7359,13 +7363,6 @@ future.</p>
         
       </li>
     
-      <li class="entry-summary">
-        <a href="#default%3AExecutionContext-class-method" class="signature"><strong>.default</strong> : ExecutionContext</a>
-        
-          <div class="summary"><p>Returns the default <code><a href="../Fiber/ExecutionContext.html">ExecutionContext</a></code> for the process, automatically started when the program started.</p></div>
-        
-      </li>
-    
   </ul>
 
 
@@ -7386,9 +7383,16 @@ future.</p>
       </li>
     
       <li class="entry-summary">
+        <a href="#default%3AExecutionContext%3A%3AParallel-class-method" class="signature"><strong>.default</strong> : ExecutionContext::Parallel</a>
+        
+          <div class="summary"><p>Returns the default <code><a href="../Fiber/ExecutionContext.html">ExecutionContext</a></code> for the process, automatically started when the program started.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#default_workers_count%3AInt32-class-method" class="signature"><strong>.default_workers_count</strong> : Int32</a>
         
-          <div class="summary"><p>Returns the number of threads to start in the default multi threaded execution context.</p></div>
+          <div class="summary"><p>Returns the default maximum parallelism.</p></div>
         
       </li>
     
@@ -7418,7 +7422,7 @@ future.</p>
       <li class="entry-summary">
         <a href="#spawn%28%2A%2Cname%3AString%7CNil%3Dnil%2C%26block%3A-%3E%29%3AFiber-instance-method" class="signature"><strong>#spawn</strong>(*, name : String | Nil = <span class="n">nil</span>, &block :  -> ) : Fiber</a>
         
-          <div class="summary"><p>Creates a new fiber then calls <code>#enqueue</code> to add it to the execution context.</p></div>
+          <div class="summary"><p>Creates a new fiber then calls enqueues it to the execution context.</p></div>
         
       </li>
     
@@ -7456,32 +7460,7 @@ future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L122" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="default:ExecutionContext-class-method">
-      <div class="signature">
-        
-        def self.<strong>default</strong> : <a href="../Fiber/ExecutionContext.html">ExecutionContext</a>
-
-        <a class="method-permalink" href="#default%3AExecutionContext-class-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-          <p>Returns the default <code><a href="../Fiber/ExecutionContext.html">ExecutionContext</a></code> for the process, automatically
-started when the program started.</p>
-<p><span class="flag purple">NOTE</span>  The default context is a <code><a href="../Fiber/ExecutionContext/Concurrent.html">Concurrent</a></code> context for backwards
-compatibility reasons. It might change to a <code><a href="../Fiber/ExecutionContext/Parallel.html">Parallel</a></code> context in the
-future.</p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L128" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7509,7 +7488,32 @@ future.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L126" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L132" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="default:ExecutionContext::Parallel-class-method">
+      <div class="signature">
+        
+        def self.<strong>default</strong> : <a href="../Fiber/ExecutionContext/Parallel.html">ExecutionContext::Parallel</a>
+
+        <a class="method-permalink" href="#default%3AExecutionContext%3A%3AParallel-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the default <code><a href="../Fiber/ExecutionContext.html">ExecutionContext</a></code> for the process, automatically
+started when the program started.</p>
+<p>The default execution context is currently <code><a href="../Fiber/ExecutionContext/Parallel.html">Parallel</a></code> but only starts with
+parallelism set to 1. The parallelism can be changed using
+<code><a href="../Fiber/ExecutionContext/Parallel.html#resize%28maximum%3AInt32%29%3ANil-instance-method">Parallel#resize</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L81" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7524,18 +7528,17 @@ future.</p>
       
         <div class="doc">
           
-          <p>Returns the number of threads to start in the default multi threaded
-execution context. Respects the <code>CRYSTAL_WORKERS</code> environment variable
-and otherwise returns the potential parallelism of the CPU (number of
-hardware threads).</p>
-<p>Currently unused because the default context is single threaded for
-now (this might change later with compilation flags).</p>
+          <p>Returns the default maximum parallelism. Can be used to resize the default
+parallel execution context for example.</p>
+<p>Respects the <code>CRYSTAL_WORKERS</code> environment variable if present and valid,
+and otherwise defaults to the number of logical CPUs available to the
+process or on the computer.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L97" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L97" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7556,7 +7559,7 @@ now (this might change later with compilation flags).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L122" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7585,15 +7588,14 @@ now (this might change later with compilation flags).</p>
       
         <div class="doc">
           
-          <p>Creates a new fiber then calls <code>#enqueue</code> to add it to the execution
-context.</p>
+          <p>Creates a new fiber then calls enqueues it to the execution context.</p>
 <p>May be called from any <code><a href="../Fiber/ExecutionContext.html">ExecutionContext</a></code> (i.e. must be thread-safe).</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/fiber/execution_context.cr#L166" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/fiber/execution_context.cr#L171" target="_blank">View source</a>]
         
       </div>
     </div>

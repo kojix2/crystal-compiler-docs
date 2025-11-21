@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Parser - Crystal 1.18.0-dev</title>
+  <title>Crystal::Parser - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7193,7 +7198,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6" target="_blank">
         compiler/crystal/syntax/parser.cr
       </a>
     
@@ -7253,6 +7258,11 @@
     
       <dt class="entry-const" id="SemicolonOrNewLine">
         <strong>SemicolonOrNewLine</strong> = <code>[<span class="n">:OP_SEMICOLON</span>, <span class="n">:NEWLINE</span>] <span class="k">of</span> <span class="t">Token</span><span class="t">::</span><span class="t">Kind</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="StatementEnd">
+        <strong>StatementEnd</strong> = <code>[<span class="n">:OP_SEMICOLON</span>, <span class="n">:NEWLINE</span>, <span class="n">:SPACE</span>] <span class="k">of</span> <span class="t">Token</span><span class="t">::</span><span class="t">Kind</span></code>
       </dt>
       
     
@@ -8203,6 +8213,11 @@
     
       <li class="entry-summary">
         <a href="#parse_range-instance-method" class="signature"><strong>#parse_range</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_read_instance_var%28atomic%29-instance-method" class="signature"><strong>#parse_read_instance_var</strong>(atomic)</a>
         
       </li>
     
@@ -9338,20 +9353,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -9491,7 +9502,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L27" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9519,7 +9530,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9547,7 +9558,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L550" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L554" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9580,7 +9591,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2890" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2911" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9596,7 +9607,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1555" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1564" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9612,7 +9623,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6250" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6278" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9628,7 +9639,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6387" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6415" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9644,7 +9655,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6391" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6419" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9660,7 +9671,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6404" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6432" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9676,7 +9687,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6395" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6423" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9692,7 +9703,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6399" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6427" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9708,7 +9719,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3340" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3368" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9724,7 +9735,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3314" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3342" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9740,7 +9751,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1332" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9756,7 +9767,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1941" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1961" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9772,7 +9783,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1237" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1247" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9788,7 +9799,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3784" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3813" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9804,7 +9815,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3819" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9820,7 +9831,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2868" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2889" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9836,7 +9847,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4179" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4208" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9852,7 +9863,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6378" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6406" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9868,7 +9879,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6372" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6400" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9884,7 +9895,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3815" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3844" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9900,7 +9911,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6292" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6320" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9916,7 +9927,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6286" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6314" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9932,7 +9943,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6274" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6302" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9948,7 +9959,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2150" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2171" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9964,7 +9975,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2242" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2263" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9980,7 +9991,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2233" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9996,7 +10007,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2210" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2231" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10012,7 +10023,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L17" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10028,7 +10039,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L17" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10044,7 +10055,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5434" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5461" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10060,7 +10071,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6232" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6260" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10076,7 +10087,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10092,7 +10103,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10108,7 +10119,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1350" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10124,7 +10135,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1345" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1354" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10140,7 +10151,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4145" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4174" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10156,7 +10167,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5367" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5394" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10172,7 +10183,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5345" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5372" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10188,7 +10199,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5341" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5368" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10204,7 +10215,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5351" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5378" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10220,7 +10231,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5357" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5384" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10236,7 +10247,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5363" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5390" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10252,7 +10263,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L260" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L264" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10268,7 +10279,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L249" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L253" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10284,7 +10295,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L238" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10300,7 +10311,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2598" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2619" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10316,7 +10327,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2264" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2285" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10332,7 +10343,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2640" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2661" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10348,7 +10359,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1281" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1291" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10364,7 +10375,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L531" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L535" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10380,7 +10391,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1265" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1275" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10396,7 +10407,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4440" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4469" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10412,7 +10423,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6441" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6469" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10428,7 +10439,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6226" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10444,7 +10455,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6362" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6390" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10460,7 +10471,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L90" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L90" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10476,7 +10487,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L84" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10492,7 +10503,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L585" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L589" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10508,7 +10519,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5900" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5928" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10524,7 +10535,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5948" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5976" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10540,7 +10551,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L578" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L582" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10556,7 +10567,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1349" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1358" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10572,7 +10583,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1804" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1823" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10588,7 +10599,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2447" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10604,7 +10615,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L908" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L907" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10620,7 +10631,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L926" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L925" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10636,7 +10647,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5494" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5521" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10652,7 +10663,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5570" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5597" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10668,7 +10679,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5560" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5587" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10684,7 +10695,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5548" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5575" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10700,7 +10711,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5583" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5610" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10716,7 +10727,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L988" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L998" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10732,7 +10743,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L662" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L666" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10748,7 +10759,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L870" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L869" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10764,7 +10775,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5030" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5059" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10780,7 +10791,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5025" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5054" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10796,7 +10807,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L656" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L660" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10812,7 +10823,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L995" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1005" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10835,7 +10846,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4987" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5016" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10851,7 +10862,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1390" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1399" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10867,7 +10878,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4458" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4487" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10883,7 +10894,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4486" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4515" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10899,7 +10910,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4551" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4579" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10915,7 +10926,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4504" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4533" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10931,7 +10942,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5644" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5671" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10947,7 +10958,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6027" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6055" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10963,7 +10974,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6043" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6073" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10979,7 +10990,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6081" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10995,7 +11006,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4896" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4924" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11011,7 +11022,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4653" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4681" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11027,7 +11038,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4818" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4846" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11043,7 +11054,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4722" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4750" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11059,7 +11070,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1559" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1568" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11075,7 +11086,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1608" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1608" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11091,7 +11102,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2741" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2762" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11107,7 +11118,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1688" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1696" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11123,7 +11134,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L580" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L584" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11139,7 +11150,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5656" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5683" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11155,7 +11166,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4471" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4500" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11171,7 +11182,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1305" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1316" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11187,7 +11198,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3084" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3106" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11203,7 +11214,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3986" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4015" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11219,7 +11230,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3796" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3825" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11235,7 +11246,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3564" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3592" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11251,7 +11262,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2061" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2082" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11267,7 +11278,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2412" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2433" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11283,7 +11294,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6137" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6165" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11299,7 +11310,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6106" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11315,7 +11326,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L579" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L583" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11331,7 +11342,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1404" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1413" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11347,7 +11358,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L287" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L291" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11363,7 +11374,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3533" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3561" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11379,7 +11390,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L293" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L297" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11395,7 +11406,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L348" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L352" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11411,7 +11422,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L103" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L103" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11427,7 +11438,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L107" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11443,7 +11454,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3049" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3070" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11459,7 +11470,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5783" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5811" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11475,7 +11486,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1876" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1896" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11491,7 +11502,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1962" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1982" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11507,7 +11518,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1985" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2005" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11523,7 +11534,7 @@ it is used on the context expected type (e.g. type restrictions, rhs of <code>al
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5158" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11546,7 +11557,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5115" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5146" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11562,7 +11573,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1300" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1310" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11578,7 +11589,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4969" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4997" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11594,7 +11605,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2545" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2566" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11610,7 +11621,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2476" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2497" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11626,7 +11637,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4186" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4215" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11642,7 +11653,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4196" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4225" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11658,7 +11669,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3045" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3066" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11674,7 +11685,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3053" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3074" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11690,7 +11701,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5952" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5980" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11706,7 +11717,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5944" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5972" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11722,7 +11733,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L890" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L889" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11738,7 +11749,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5677" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5704" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11754,7 +11765,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5698" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5726" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11770,7 +11781,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5713" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5741" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11786,7 +11797,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5718" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5746" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11802,7 +11813,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L582" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L586" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11818,7 +11829,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L581" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L585" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11834,7 +11845,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3118" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11850,7 +11861,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3224" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3246" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11866,7 +11877,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3373" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3401" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11882,7 +11893,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3335" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3363" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11898,7 +11909,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3465" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3493" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11914,7 +11925,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3291" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3319" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11930,7 +11941,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1773" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1789" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11946,7 +11957,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L624" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L628" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11962,7 +11973,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L133" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11978,7 +11989,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4836" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4864" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11994,7 +12005,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2666" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2687" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12010,7 +12021,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2662" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2683" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12026,7 +12037,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5213" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5240" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12042,7 +12053,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L974" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L973" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12058,7 +12069,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5652" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12074,7 +12085,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L960" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L959" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12090,7 +12101,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5975" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6003" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12106,7 +12117,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L360" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L364" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12122,7 +12133,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L355" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L359" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12138,7 +12149,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L577" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L581" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12154,7 +12165,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4948" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4976" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12170,7 +12181,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3830" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3859" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12186,7 +12197,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4016" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4045" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12202,7 +12213,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1825" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1845" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12218,7 +12229,7 @@ And it also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5162" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5189" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12240,7 +12251,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5148" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5177" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12256,7 +12267,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3359" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3387" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12272,7 +12283,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3323" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3351" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12288,7 +12299,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5920" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5948" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12304,7 +12315,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L629" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12320,7 +12331,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L627" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L631" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12336,7 +12347,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5325" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5352" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12352,7 +12363,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L484" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L488" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12368,7 +12379,23 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L510" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L514" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_read_instance_var(atomic)-instance-method">
+      <div class="signature">
+        
+        def <strong>parse_read_instance_var</strong>(atomic)
+
+        <a class="method-permalink" href="#parse_read_instance_var%28atomic%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L987" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12384,7 +12411,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2730" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2751" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12400,7 +12427,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1473" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1482" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12416,7 +12443,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1513" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1522" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12432,7 +12459,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L930" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L929" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12448,7 +12475,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L952" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L951" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12464,7 +12491,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5648" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12480,7 +12507,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2972" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2993" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12496,7 +12523,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L583" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L587" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12512,7 +12539,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L879" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L878" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12528,7 +12555,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5956" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5984" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12544,7 +12571,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5940" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5968" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12560,7 +12587,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2383" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2404" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12576,7 +12603,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2368" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2389" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12592,7 +12619,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2391" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2412" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12608,7 +12635,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2364" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2385" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12624,7 +12651,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2387" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2408" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12640,7 +12667,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3069" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3091" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12656,7 +12683,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2606" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2627" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12672,7 +12699,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5269" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5296" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12688,7 +12715,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5180" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5207" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12704,7 +12731,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1254" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1264" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12720,7 +12747,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6008" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6036" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12736,7 +12763,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5255" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5282" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12752,7 +12779,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5292" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5319" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12768,7 +12795,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1730" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1746" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12784,7 +12811,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5452" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5479" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12800,7 +12827,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5012" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5041" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12816,7 +12843,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5098" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12832,7 +12859,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4228" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4257" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12848,7 +12875,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4238" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4267" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12864,7 +12891,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1532" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1541" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12880,7 +12907,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4268" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4297" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12896,7 +12923,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5481" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5508" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12912,7 +12939,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2945" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2966" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12928,7 +12955,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1528" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1537" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12944,7 +12971,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L1536" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L1545" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12960,7 +12987,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5652" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12976,7 +13003,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5613" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5640" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12992,7 +13019,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3108" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13008,7 +13035,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4450" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4479" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13024,7 +13051,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4627" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4655" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13040,7 +13067,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6334" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6362" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13056,7 +13083,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6338" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6366" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13072,7 +13099,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6354" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13088,7 +13115,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6350" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6378" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13104,7 +13131,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6328" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6356" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13120,7 +13147,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6433" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6461" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13136,7 +13163,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2352" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2373" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13152,7 +13179,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2268" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2289" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13168,7 +13195,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L4261" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L4290" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13184,7 +13211,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2602" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2623" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13200,7 +13227,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6451" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6479" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13216,7 +13243,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13232,7 +13259,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L19" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L19" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13248,7 +13275,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5423" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5450" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13264,7 +13291,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5388" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5415" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13285,7 +13312,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L5372" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L5399" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13301,7 +13328,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6409" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6437" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13317,7 +13344,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6418" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6446" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13333,7 +13360,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L3034" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L3055" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13349,7 +13376,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6454" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13365,7 +13392,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6358" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6386" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13381,7 +13408,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L16" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13397,7 +13424,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L16" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L16" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13413,7 +13440,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L80" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L80" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13429,7 +13456,7 @@ It also consumes prefix <code>::</code> to specify global path.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L20" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13453,7 +13480,7 @@ and matches it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2904" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2925" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13469,7 +13496,7 @@ and matches it.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L2923" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L2944" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13492,7 +13519,7 @@ the yield result without touching the scopes.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6307" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6335" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -13514,7 +13541,7 @@ and then returns the yield result, resetting the scope afterwards.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/compiler/crystal/syntax/parser.cr#L6320" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/syntax/parser.cr#L6348" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Random::PCG32 - Crystal 1.18.0-dev</title>
+  <title>Random::PCG32 - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7222,7 +7227,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L34" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L34" target="_blank">
         random/pcg32.cr
       </a>
     
@@ -7304,12 +7309,21 @@
       <li class="entry-summary">
         <a href="#new_seed%3AUInt32-instance-method" class="signature"><strong>#new_seed</strong> : UInt32</a>
         
+          <div class="summary"><p>Reseed the generator.</p></div>
+        
       </li>
     
       <li class="entry-summary">
         <a href="#next_u%3AUInt32-instance-method" class="signature"><strong>#next_u</strong> : UInt32</a>
         
           <div class="summary"><p>Generates a random unsigned integer.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#split_internal%28other%3Aself%29%3ANil-instance-method" class="signature"><strong>#split_internal</strong>(other : <span class="k">self</span>) : Nil</a>
+        
+          <div class="summary"><p>The internal implementation for <code>#split</code> where <em>self</em> is the original instance and <em>other</em> the duplicated instance to be returned.</p></div>
         
       </li>
     
@@ -7332,6 +7346,11 @@
     <a href="../Random.html#hex%28n%3AInt%3D16%29%3AString-instance-method" class="tooltip">
       <span>hex(n : Int = <span class="n">16</span>) : String</span>
     hex</a>, 
+    
+  
+    <a href="../Random.html#new_seed-instance-method" class="tooltip">
+      <span>new_seed</span>
+    new_seed</a>, 
     
   
     <a href="../Random.html#next_bool%3ABool-instance-method" class="tooltip">
@@ -7364,6 +7383,16 @@
     random_bytes</a>, 
     
   
+    <a href="../Random.html#split%3Aself-instance-method" class="tooltip">
+      <span>split : <span class="k">self</span></span>
+    split</a>, 
+    
+  
+    <a href="../Random.html#split_internal%28other%3Aself%29%3ANil-instance-method" class="tooltip">
+      <span>split_internal(other : <span class="k">self</span>) : Nil</span>
+    split_internal</a>, 
+    
+  
     <a href="../Random.html#urlsafe_base64%28n%3AInt%3D16%2Cpadding%3Dfalse%29%3AString-instance-method" class="tooltip">
       <span>urlsafe_base64(n : Int = <span class="n">16</span>, padding = <span class="n">false</span>) : String</span>
     urlsafe_base64</a>
@@ -7387,6 +7416,16 @@
 
   <h3>Class methods inherited from module <code><a href="../Random.html">Random</a></code></h3>
   
+  
+    <a href="../Random.html#next_bool%3ABool-class-method" class="tooltip">
+      <span>next_bool : Bool</span>
+    next_bool</a>, 
+    
+  
+    <a href="../Random.html#next_int%3AInt32-class-method" class="tooltip">
+      <span>next_int : Int32</span>
+    next_int</a>, 
+    
   
     <a href="../Random.html#rand%28x%29-class-method" class="tooltip">
       <span>rand(x)<br/>rand : Float64</span>
@@ -7628,20 +7667,16 @@
 
       
 
-  <h3>Constructor methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
-  
-  
-    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29%3AObject-class-method" class="tooltip">
-      <span>from_json(string_or_io : String | IO, root : String) : Object<br/>from_json(string_or_io : String | IO) : Object</span>
-    from_json</a>
-    
-  
-
 
       
 
   <h3>Class methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
   
+  
+    <a href="../Object.html#from_json%28string_or_io%3AString%7CIO%2Croot%3AString%29-class-method" class="tooltip">
+      <span>from_json(string_or_io : String | IO, root : String)<br/>from_json(string_or_io : String | IO)</span>
+    from_json</a>, 
+    
   
     <a href="../Object.html#from_yaml%28string_or_io%3AString%7CIO%29-class-method" class="tooltip">
       <span>from_yaml(string_or_io : String | IO)</span>
@@ -7781,7 +7816,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L46" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L52" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7797,7 +7832,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L42" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L42" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7829,7 +7864,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L73" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L79" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7845,7 +7880,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L57" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L63" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7858,10 +7893,19 @@
         <a class="method-permalink" href="#new_seed%3AUInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+            <div class="doc-inherited">
+              Description copied from module <a href="../Random.html">Random</a>
+            </div>
+          
+          <p>Reseed the generator.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L53" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L59" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7888,7 +7932,36 @@ the maximal value for the chosen type.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/random/pcg32.cr#L65" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L71" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split_internal(other:self):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>split_internal</strong>(other : <span class="k">self</span>) : <a href="../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#split_internal%28other%3Aself%29%3ANil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+            <div class="doc-inherited">
+              Description copied from module <a href="../Random.html">Random</a>
+            </div>
+          
+          <p>The internal implementation for <code>#split</code> where <em>self</em> is the original
+instance and <em>other</em> the duplicated instance to be returned.</p>
+<p>The default <code><a href="../Random.html">Random</a></code> implementation in stdlib is splittable, but not every
+PRNG algorithm is splittable, so the method raises a <code><a href="../NotImplementedError.html">NotImplementedError</a></code>
+exception by default.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/random/pcg32.cr#L97" target="_blank">View source</a>]
         
       </div>
     </div>

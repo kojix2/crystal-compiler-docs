@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.16.3">
-<meta name="crystal_docs.project_version" content="1.18.0-dev">
+<meta name="generator" content="Crystal Docs 1.17.1">
+<meta name="crystal_docs.project_version" content="1.19.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>YAML::Nodes - Crystal 1.18.0-dev</title>
+  <title>YAML::Nodes - Crystal 1.19.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.18.0-dev
+        1.19.0-dev
       </span>
     </div>
   </div>
@@ -6547,6 +6547,11 @@
       
     </li>
   
+  <li class=" " data-id="Crystal/Thread" data-name="thread">
+      <a href="../Thread.html">Thread</a>
+      
+    </li>
+  
   <li class="parent " data-id="Crystal/Time" data-name="time">
       <a href="../Time.html">Time</a>
       
@@ -7179,7 +7184,7 @@
 in-memory YAML document tree. This tree can be generated
 with the <code><a href="../YAML/Nodes.html#parse%28string_or_io%3AString%7CIO%29%3ADocument-class-method">YAML::Nodes.parse</a></code> method or created with a
 <code><a href="../YAML/Nodes/Builder.html">YAML::Nodes::Builder</a></code>.</p>
-<p>This document tree can then be converted to YAML be
+<p>This document tree can then be converted to YAML by
 invoking <code>to_yaml</code> on the document object.</p>
 
 
@@ -7207,14 +7212,14 @@ invoking <code>to_yaml</code> on the document object.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/nodes.cr#L10" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/nodes.cr#L10" target="_blank">
         yaml/nodes.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/nodes/nodes.cr#L1" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/nodes/nodes.cr#L1" target="_blank">
         yaml/nodes/nodes.cr
       </a>
     
@@ -7241,7 +7246,14 @@ invoking <code>to_yaml</code> on the document object.</p>
       <li class="entry-summary">
         <a href="#parse%28string_or_io%3AString%7CIO%29%3ADocument-class-method" class="signature"><strong>.parse</strong>(string_or_io : String | IO) : Document</a>
         
-          <div class="summary"><p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into a <code>YAML::Document</code>.</p></div>
+          <div class="summary"><p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into a <code><a href="../YAML/Nodes/Document.html">YAML::Nodes::Document</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_all%28string_or_io%3AString%7CIO%29%3AArray%28Document%29-class-method" class="signature"><strong>.parse_all</strong>(string_or_io : String | IO) : Array(Document)</a>
+        
+          <div class="summary"><p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into multiple <code><a href="../YAML/Nodes/Document.html">YAML::Nodes::Document</a></code>s.</p></div>
         
       </li>
     
@@ -7279,13 +7291,34 @@ invoking <code>to_yaml</code> on the document object.</p>
       
         <div class="doc">
           
-          <p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into a <code>YAML::Document</code>.</p>
+          <p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into a <code><a href="../YAML/Nodes/Document.html">YAML::Nodes::Document</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/b1410ea/src/yaml/nodes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/nodes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_all(string_or_io:String|IO):Array(Document)-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse_all</strong>(string_or_io : <a href="../String.html">String</a> | <a href="../IO.html">IO</a>) : <a href="../Array.html">Array</a>(<a href="../YAML/Nodes/Document.html">Document</a>)
+
+        <a class="method-permalink" href="#parse_all%28string_or_io%3AString%7CIO%29%3AArray%28Document%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parses a <code><a href="../String.html">String</a></code> or <code><a href="../IO.html">IO</a></code> into multiple <code><a href="../YAML/Nodes/Document.html">YAML::Nodes::Document</a></code>s.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/yaml/nodes.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
