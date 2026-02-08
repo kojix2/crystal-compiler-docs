@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Doc::MainTemplate - Crystal 1.19.0-dev</title>
+  <title>Crystal::Doc::MainTemplate - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7221,7 +7286,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28body%3AString%2Ctypes%3AArray%28Type%29%2Cproject_info%3AProjectInfo%29-class-method" class="signature"><strong>.new</strong>(body : String, types : Array(Type), project_info : ProjectInfo)</a>
+        <a href="#new%28body%3AString%2Ctypes%3AArray%28Type%29%2Cproject_info%3AProjectInfo%2Cbase_path%3AString%7CNil%3Dnil%29-class-method" class="signature"><strong>.new</strong>(body : String, types : Array(Type), project_info : ProjectInfo, base_path : String | Nil = <span class="n">nil</span>)</a>
         
       </li>
     
@@ -7244,6 +7309,11 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
+        <a href="#base_path%3AString%7CNil-instance-method" class="signature"><strong>#base_path</strong> : String | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#body%3AString-instance-method" class="signature"><strong>#body</strong> : String</a>
         
       </li>
@@ -7254,7 +7324,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#copy_with%28body_body%3D%40body%2Ctypes_types%3D%40types%2Cproject_info_project_info%3D%40project_info%29-instance-method" class="signature"><strong>#copy_with</strong>(body _body = @body, types _types = @types, project_info _project_info = @project_info)</a>
+        <a href="#copy_with%28body_body%3D%40body%2Ctypes_types%3D%40types%2Cproject_info_project_info%3D%40project_info%2Cbase_path_base_path%3D%40base_path%29-instance-method" class="signature"><strong>#copy_with</strong>(body _body = @body, types _types = @types, project_info _project_info = @project_info, base_path _base_path = @base_path)</a>
         
       </li>
     
@@ -7641,12 +7711,12 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(body:String,types:Array(Type),project_info:ProjectInfo)-class-method">
+    <div class="entry-detail" id="new(body:String,types:Array(Type),project_info:ProjectInfo,base_path:String|Nil=nil)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(body : <a href="../../String.html">String</a>, types : <a href="../../Array.html">Array</a>(<a href="../../Crystal/Doc/Type.html">Type</a>), project_info : <a href="../../Crystal/Doc/ProjectInfo.html">ProjectInfo</a>)
+        def self.<strong>new</strong>(body : <a href="../../String.html">String</a>, types : <a href="../../Array.html">Array</a>(<a href="../../Crystal/Doc/Type.html">Type</a>), project_info : <a href="../../Crystal/Doc/ProjectInfo.html">ProjectInfo</a>, base_path : <a href="../../String.html">String</a> | <a href="../../Nil.html">Nil</a> = <span class="n">nil</span>)
 
-        <a class="method-permalink" href="#new%28body%3AString%2Ctypes%3AArray%28Type%29%2Cproject_info%3AProjectInfo%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28body%3AString%2Ctypes%3AArray%28Type%29%2Cproject_info%3AProjectInfo%2Cbase_path%3AString%7CNil%3Dnil%29-class-method">#</a>
       </div>
       
       <br/>
@@ -7672,6 +7742,20 @@
 </a>
     Instance Method Detail
   </h2>
+  
+    <div class="entry-detail" id="base_path:String|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>base_path</strong> : <a href="../../String.html">String</a> | <a href="../../Nil.html">Nil</a>
+
+        <a class="method-permalink" href="#base_path%3AString%7CNil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
   
     <div class="entry-detail" id="body:String-instance-method">
       <div class="signature">
@@ -7703,12 +7787,12 @@
       </div>
     </div>
   
-    <div class="entry-detail" id="copy_with(body_body=@body,types_types=@types,project_info_project_info=@project_info)-instance-method">
+    <div class="entry-detail" id="copy_with(body_body=@body,types_types=@types,project_info_project_info=@project_info,base_path_base_path=@base_path)-instance-method">
       <div class="signature">
         
-        def <strong>copy_with</strong>(body _body = @body, types _types = @types, project_info _project_info = @project_info)
+        def <strong>copy_with</strong>(body _body = @body, types _types = @types, project_info _project_info = @project_info, base_path _base_path = @base_path)
 
-        <a class="method-permalink" href="#copy_with%28body_body%3D%40body%2Ctypes_types%3D%40types%2Cproject_info_project_info%3D%40project_info%29-instance-method">#</a>
+        <a class="method-permalink" href="#copy_with%28body_body%3D%40body%2Ctypes_types%3D%40types%2Cproject_info_project_info%3D%40project_info%2Cbase_path_base_path%3D%40base_path%29-instance-method">#</a>
       </div>
       
       <br/>

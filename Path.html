@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Path - Crystal 1.19.0-dev</title>
+  <title>Path - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7651,6 +7716,13 @@ is absolute if it starts with both a drive and a root (see <code><a href="Path.h
       </li>
     
       <li class="entry-summary">
+        <a href="#relative%3F%3ABool-instance-method" class="signature"><strong>#relative?</strong> : Bool</a>
+        
+          <div class="summary"><p>Returns <code>true</code> if this path is relative.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#relative_to%28base%3APath%7CString%29%3APath-instance-method" class="signature"><strong>#relative_to</strong>(base : Path | String) : Path</a>
         
           <div class="summary"><p>Same as <code><a href="Path.html#relative_to%28base%3APath%7CString%29%3APath-instance-method">#relative_to</a></code> but returns <code>self</code> if <code>self</code> can't be expressed as relative path to <em>base</em>.</p></div>
@@ -8259,7 +8331,7 @@ otherwise <code><a href="Path.html#posix%28name%3AString%3D%22%22%29%3APath-clas
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1419" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1426" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8903,7 +8975,7 @@ parts.<span class="k">next</span> <span class="c"># =&gt; Iterator::Stop::INSTAN
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1372" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1379" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9006,7 +9078,7 @@ path (assuming that <code><a href="Dir.html#current%3AString-class-method">Dir.c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1395" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1402" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9245,6 +9317,28 @@ and in the top-most hierarchy, the root path is returned.</p>
       <div>
         
           [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L182" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="relative?:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>relative?</strong> : <a href="Bool.html">Bool</a>
+
+        <a class="method-permalink" href="#relative%3F%3ABool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns <code>true</code> if this path is relative.</p>
+<p>See <code><a href="Path.html#absolute%3F%3ABool-instance-method">#absolute?</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1370" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9543,7 +9637,7 @@ For example, the <code>U+F05C</code> becomes <code>U+005C</code>, the backslash 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1390" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1397" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9564,7 +9658,7 @@ For example, the <code>U+F05C</code> becomes <code>U+005C</code>, the backslash 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1385" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1392" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9587,7 +9681,7 @@ this path is not absolute.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1413" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/path.cr#L1420" target="_blank">View source</a>]
         
       </div>
     </div>

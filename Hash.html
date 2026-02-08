@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Hash(K, V) - Crystal 1.19.0-dev</title>
+  <title>Hash(K, V) - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7252,7 +7317,7 @@ restored by re-indexing the hash with <code><a href="Hash.html#rehash%3ANil-inst
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L383" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L381" target="_blank">
         json/any.cr
       </a>
     
@@ -7751,6 +7816,13 @@ restored by re-indexing the hash with <code><a href="Hash.html#rehash%3ANil-inst
         <a href="#reject%28%26%3AK%2CV-%3E%29%3AHash%28K%2CV%29-instance-method" class="signature"><strong>#reject</strong>(& : K, V -> ) : Hash(K, V)</a>
         
           <div class="summary"><p>Returns a new hash consisting of entries for which the block is falsey.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reject%28keys%3AEnumerable%29%3AHash%28K%2CV%29-instance-method" class="signature"><strong>#reject</strong>(keys : Enumerable) : Hash(K, V)</a>
+        
+          <div class="summary"><p>Returns a new <code><a href="Hash.html">Hash</a></code> without the given keys.</p></div>
         
       </li>
     
@@ -9030,7 +9102,7 @@ Inputs lower than 8 are ignored.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1831" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1857" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9065,7 +9137,7 @@ Inputs lower than 8 are ignored.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1975" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2001" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9081,7 +9153,7 @@ Inputs lower than 8 are ignored.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L384" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9182,7 +9254,7 @@ h[<span class="s">&quot;foo&quot;</span>]? <span class="c"># =&gt; nil</span></c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1214" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9205,7 +9277,7 @@ hash.clear <span class="c"># =&gt; {}</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1969" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1995" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9230,7 +9302,7 @@ hash_a <span class="c"># =&gt; {&quot;foobar&quot; =&gt; {&quot;foo&quot; =&gt; 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2050" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2076" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9253,7 +9325,7 @@ hash.compact <span class="c"># =&gt; {&quot;hello&quot; =&gt; &quot;world&quot;}
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1734" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1757" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9276,7 +9348,7 @@ hash.compact! <span class="c"># =&gt; {&quot;hello&quot; =&gt; &quot;world&quot;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1749" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1775" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9351,7 +9423,7 @@ h.fetch(<span class="s">&quot;foo&quot;</span>, <span class="n">nil</span>) <spa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1362" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1366" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9376,7 +9448,7 @@ h.delete(<span class="s">&quot;baz&quot;</span>) { <span class="o">|</span>key<s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1374" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1378" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9401,7 +9473,7 @@ h.dig <span class="s">&quot;a&quot;</span>, <span class="s">&quot;x&quot;</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1245" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1249" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9426,7 +9498,7 @@ h.dig? <span class="s">&quot;a&quot;</span>, <span class="s">&quot;x&quot;</span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1226" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1230" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9451,7 +9523,7 @@ hash_a <span class="c"># =&gt; {&quot;foo&quot; =&gt; &quot;bar&quot;}</span></c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2036" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2062" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9483,7 +9555,7 @@ h.each <span class="k">do</span> <span class="o">|</span>key_and_value<span clas
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1408" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1412" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9511,7 +9583,7 @@ iterator.<span class="k">next</span> <span class="c"># =&gt; {&quot;baz&quot;, &
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1426" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1430" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9537,7 +9609,7 @@ h.each_key <span class="k">do</span> <span class="o">|</span>key<span class="o">
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1440" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1444" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9568,7 +9640,7 @@ key <span class="c"># =&gt; &quot;baz&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1461" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1465" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9594,7 +9666,7 @@ h.each_value <span class="k">do</span> <span class="o">|</span>value<span class=
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1475" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1479" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9625,7 +9697,7 @@ value <span class="c"># =&gt; &quot;qux&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1496" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1500" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9651,7 +9723,7 @@ h.empty? <span class="c"># =&gt; false</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1388" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1392" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9676,7 +9748,7 @@ h.fetch(<span class="s">&quot;bar&quot;</span>, <span class="s">&quot;foo&quot;<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1290" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1294" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9701,7 +9773,7 @@ h.fetch(<span class="s">&quot;bar&quot;</span>) { <span class="o">|</span>key<sp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1302" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1306" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9722,7 +9794,7 @@ h.fetch(<span class="s">&quot;bar&quot;</span>) { <span class="o">|</span>key<sp
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1840" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1866" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9747,7 +9819,7 @@ hash.first_key? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1853" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1879" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9768,7 +9840,7 @@ hash.first_key? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1858" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1884" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9793,7 +9865,7 @@ hash.first_value? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1871" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1897" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9817,7 +9889,7 @@ h.has_key?(<span class="s">&quot;bar&quot;</span>) <span class="c"># =&gt; false
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1264" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1268" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9841,7 +9913,7 @@ h.has_value?(<span class="s">&quot;bar&quot;</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1275" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1279" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9862,7 +9934,7 @@ h.has_value?(<span class="s">&quot;bar&quot;</span>) <span class="c"># =&gt; tru
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2013" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2039" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9895,7 +9967,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2065" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2091" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9918,7 +9990,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2192" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2218" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9943,7 +10015,7 @@ hash.key_for(<span class="s">&quot;foobar&quot;</span>) <span class="c"># raises
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1325" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1329" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9967,7 +10039,7 @@ hash.key_for(<span class="s">&quot;qux&quot;</span>) { <span class="o">|</span>v
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1348" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1352" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -9992,7 +10064,7 @@ hash.key_for?(<span class="s">&quot;foobar&quot;</span>) <span class="c"># =&gt;
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1337" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10015,7 +10087,7 @@ h.keys <span class="c"># =&gt; [&quot;foo&quot;, &quot;baz&quot;]</span></code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1506" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1510" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10036,7 +10108,7 @@ h.keys <span class="c"># =&gt; [&quot;foo&quot;, &quot;baz&quot;]</span></code><
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1876" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1902" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10061,7 +10133,7 @@ hash.last_key? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1889" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1915" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10082,7 +10154,7 @@ hash.last_key? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1894" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1920" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10107,7 +10179,7 @@ hash.last_value? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1907" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1933" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10134,7 +10206,7 @@ hash
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1530" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1534" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10150,7 +10222,7 @@ hash
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1538" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1544" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10174,7 +10246,7 @@ hash <span class="c"># =&gt; {&quot;foo&quot; =&gt; &quot;bar&quot;, &quot;baz&q
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1553" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1561" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10201,7 +10273,7 @@ hash <span class="c"># =&gt; {&quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 454, 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1568" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1576" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10217,7 +10289,7 @@ hash <span class="c"># =&gt; {&quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 454, 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2105" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10238,7 +10310,7 @@ hash <span class="c"># =&gt; {&quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 454, 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1985" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2011" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10259,7 +10331,7 @@ hash <span class="c"># =&gt; {&quot;a&quot; =&gt; 100, &quot;b&quot; =&gt; 454, 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2008" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2034" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10372,7 +10444,7 @@ hash using the current keys.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2182" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2208" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10396,7 +10468,29 @@ h.reject { <span class="o">|</span>k, v<span class="o">|</span> v <span class="o
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1615" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1623" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reject(keys:Enumerable):Hash(K,V)-instance-method">
+      <div class="signature">
+        
+        def <strong>reject</strong>(keys : <a href="Enumerable.html">Enumerable</a>) : <a href="Hash.html">Hash</a>(K, V)
+
+        <a class="method-permalink" href="#reject%28keys%3AEnumerable%29%3AHash%28K%2CV%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a new <code><a href="Hash.html">Hash</a></code> without the given keys.</p>
+<pre><code class="language-crystal">{<span class="s">&quot;a&quot;</span> <span class="o">=&gt;</span> <span class="n">1</span>, <span class="s">&quot;b&quot;</span> <span class="o">=&gt;</span> <span class="n">2</span>, <span class="s">&quot;c&quot;</span> <span class="o">=&gt;</span> <span class="n">3</span>, <span class="s">&quot;d&quot;</span> <span class="o">=&gt;</span> <span class="n">4</span>}.reject([<span class="s">&quot;a&quot;</span>, <span class="s">&quot;c&quot;</span>]) <span class="c"># =&gt; {&quot;b&quot; =&gt; 2, &quot;d&quot; =&gt; 4}</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1657" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10418,7 +10512,7 @@ h.reject { <span class="o">|</span>k, v<span class="o">|</span> v <span class="o
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1649" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1673" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10439,7 +10533,7 @@ h.reject { <span class="o">|</span>k, v<span class="o">|</span> v <span class="o
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1625" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1633" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10463,7 +10557,7 @@ hash                     <span class="c"># =&gt; {&quot;b&quot; =&gt; 2, &quot;d
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1661" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1684" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10487,7 +10581,7 @@ hash                   <span class="c"># =&gt; {&quot;b&quot; =&gt; 2, &quot;d&q
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1673" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1696" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10511,7 +10605,7 @@ h.<span class="k">select</span> { <span class="o">|</span>k, v<span class="o">|<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1600" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1608" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10536,7 +10630,7 @@ h.<span class="k">select</span> { <span class="o">|</span>k, v<span class="o">|<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1685" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1708" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10561,7 +10655,7 @@ h.<span class="k">select</span> { <span class="o">|</span>k, v<span class="o">|<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1696" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1719" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10582,7 +10676,7 @@ h.<span class="k">select</span> { <span class="o">|</span>k, v<span class="o">|<
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1605" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1613" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10609,7 +10703,7 @@ h1                   <span class="c"># =&gt; {&quot;a&quot; =&gt; 1, &quot;c&quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1710" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1733" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10636,7 +10730,7 @@ h1                   <span class="c"># =&gt; {&quot;a&quot; =&gt; 1, &quot;c&quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1716" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1739" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10663,7 +10757,7 @@ h1                   <span class="c"># =&gt; {&quot;a&quot; =&gt; 1, &quot;c&quo
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1724" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1747" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10691,7 +10785,7 @@ hash.shift <span class="c"># raises IndexError</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1922" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1948" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10720,7 +10814,7 @@ hash                <span class="c"># =&gt; {}</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1952" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1978" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10747,7 +10841,7 @@ hash.shift? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1936" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1962" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10789,7 +10883,7 @@ hash.shift? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1994" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2020" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10810,7 +10904,7 @@ hash.shift? <span class="c"># =&gt; nil</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2003" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2029" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10834,7 +10928,7 @@ h.to_a <span class="c"># =&gt; [{1, &#39;a&#39;}, {2, &#39;b&#39;}, {3, &#39;c&#
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2129" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2155" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10859,7 +10953,7 @@ h.to_a { <span class="o">|</span>_k, v<span class="o">|</span> v.capitalize } <s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2142" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2168" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10880,7 +10974,7 @@ h.to_a { <span class="o">|</span>_k, v<span class="o">|</span> v.capitalize } <s
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2173" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2199" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10928,7 +11022,7 @@ h.to_s.<span class="k">class</span> <span class="c"># =&gt; String</span></code>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2076" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L2102" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10970,7 +11064,7 @@ hash.transform_keys { <span class="o">|</span>key, value<span class="o">|</span>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1762" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1788" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10998,7 +11092,7 @@ hash <span class="c"># =&gt; {&quot;a&quot; =&gt; 1, &quot;bb&quot; =&gt; 2, &qu
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1780" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1806" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11024,7 +11118,7 @@ hash.transform_values { <span class="o">|</span>value, key<span class="o">|</spa
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1796" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1822" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11053,7 +11147,7 @@ hash <span class="c"># =&gt; {:a =&gt; 99, :b =&gt; 101, :c =&gt; 103}</span></c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1817" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1843" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11114,7 +11208,7 @@ h.values <span class="c"># =&gt; [&quot;bar&quot;, &quot;qux&quot;]</span></code
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1516" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1520" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -11137,7 +11231,7 @@ Raises if a key is not found.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1313" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/hash.cr#L1317" target="_blank">View source</a>]
         
       </div>
     </div>

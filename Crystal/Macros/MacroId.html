@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Macros::MacroId - Crystal 1.19.0-dev</title>
+  <title>Crystal::Macros::MacroId - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7241,7 +7306,7 @@ end</code></pre>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2656" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2723" target="_blank">
         compiler/crystal/macros.cr
       </a>
     
@@ -7286,7 +7351,7 @@ end</code></pre>
       <li class="entry-summary">
         <a href="#%3D~%28range%3ARegexLiteral%29%3ABoolLiteral-instance-method" class="signature"><strong>#=~</strong>(range : RegexLiteral) : BoolLiteral</a>
         
-          <div class="summary"><p>Similar to <code><a href="../../String.html#%3D~%28regex%3ARegex%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%29%3AInt32%7CNil-instance-method">String#=~</a></code>.</p></div>
+          <div class="summary"><p>Similar to <code><a href="../../String.html#matches%3F%28regex%3ARegex%2Cpos%3D0%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%29%3ABool-instance-method">String#matches?</a></code>.</p></div>
         
       </li>
     
@@ -7361,6 +7426,13 @@ end</code></pre>
       </li>
     
       <li class="entry-summary">
+        <a href="#gsub%28regex%3ARegexLiteral%2C%26%3AStringLiteral%2CArrayLiteral%28StringLiteral%7CNilLiteral%29-%3E_%29%3AMacroId-instance-method" class="signature"><strong>#gsub</strong>(regex : RegexLiteral, & : StringLiteral, ArrayLiteral(StringLiteral | NilLiteral) -> _) : MacroId</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../String.html#gsub%28pattern%3ARegex%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%2C%26%29%3AString-instance-method">String#gsub(pattern, options, &amp;)</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#gsub%28regex%3ARegexLiteral%2Creplacement%3AStringLiteral%29%3AMacroId-instance-method" class="signature"><strong>#gsub</strong>(regex : RegexLiteral, replacement : StringLiteral) : MacroId</a>
         
           <div class="summary"><p>Similar to <code><a href="../../String.html#gsub%28%26block%3AChar-%3E_%29%3AString-instance-method">String#gsub</a></code>.</p></div>
@@ -7389,7 +7461,14 @@ end</code></pre>
       </li>
     
       <li class="entry-summary">
-        <a href="#scan%28regex%3ARegexLiteral%29%3AArrayLiteral%28HashLiteral%28NumberLiteral%7CStringLiteral%29%2CStringLiteral%7CNilLiteral%29-instance-method" class="signature"><strong>#scan</strong>(regex : RegexLiteral) : ArrayLiteral(HashLiteral(NumberLiteral | StringLiteral), StringLiteral | NilLiteral)</a>
+        <a href="#match%28regex%3ARegexLiteral%29%3AHashLiteral%28NumberLiteral%7CStringLiteral%2CStringLiteral%7CNilLiteral%29-instance-method" class="signature"><strong>#match</strong>(regex : RegexLiteral) : HashLiteral(NumberLiteral | StringLiteral, StringLiteral | NilLiteral)</a>
+        
+          <div class="summary"><p>Matches the given <em>regex</em> against this string and returns a capture hash, or <code>nil</code> if a match cannot be found.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#scan%28regex%3ARegexLiteral%29%3AArrayLiteral%28HashLiteral%28NumberLiteral%7CStringLiteral%2CStringLiteral%7CNilLiteral%29%29-instance-method" class="signature"><strong>#scan</strong>(regex : RegexLiteral) : ArrayLiteral(HashLiteral(NumberLiteral | StringLiteral, StringLiteral | NilLiteral))</a>
         
           <div class="summary"><p>Returns an array of capture hashes for each match of <em>regex</em> in this string.</p></div>
         
@@ -7403,16 +7482,38 @@ end</code></pre>
       </li>
     
       <li class="entry-summary">
+        <a href="#split%28node%3AStringLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method" class="signature"><strong>#split</strong>(node : StringLiteral) : ArrayLiteral(StringLiteral)</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(String)</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#split%28node%3ACharLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method" class="signature"><strong>#split</strong>(node : CharLiteral) : ArrayLiteral(StringLiteral)</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(Char)</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#split%28node%3ARegexLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method" class="signature"><strong>#split</strong>(node : RegexLiteral) : ArrayLiteral(StringLiteral)</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(Regex)</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#split%28node%3AASTNode%29%3AArrayLiteral%28StringLiteral%29-instance-method" class="signature"><strong>#split</strong>(node : ASTNode) : ArrayLiteral(StringLiteral)</a>
         
-          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split</a></code>.</p></div>
+          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(String)</a></code>.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../../Crystal/Macros/MacroId.html#split%28node%3AStringLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method">#split(StringLiteral)</a></code> instead</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#split%3AArrayLiteral%28StringLiteral%29-instance-method" class="signature"><strong>#split</strong> : ArrayLiteral(StringLiteral)</a>
         
-          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split</a></code>.</p></div>
+          <div class="summary"><p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split()</a></code>.</p></div>
         
       </li>
     
@@ -7615,7 +7716,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7636,7 +7737,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2664" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2731" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7651,13 +7752,13 @@ end</code></pre>
       
         <div class="doc">
           
-          <p>Similar to <code><a href="../../String.html#%3D~%28regex%3ARegex%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%29%3AInt32%7CNil-instance-method">String#=~</a></code>.</p>
+          <p>Similar to <code><a href="../../String.html#matches%3F%28regex%3ARegex%2Cpos%3D0%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%29%3ABool-instance-method">String#matches?</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7678,7 +7779,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2660" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2727" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7699,7 +7800,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7720,7 +7821,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7741,7 +7842,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7762,7 +7863,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7783,7 +7884,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7804,7 +7905,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7825,7 +7926,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7846,7 +7947,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7867,7 +7968,29 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gsub(regex:RegexLiteral,&amp;:StringLiteral,ArrayLiteral(StringLiteral|NilLiteral)-&gt;_):MacroId-instance-method">
+      <div class="signature">
+        
+        def <strong>gsub</strong>(regex : <a href="../../Crystal/Macros/RegexLiteral.html">RegexLiteral</a>, & : <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>, <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>) -> _) : <a href="../../Crystal/Macros/MacroId.html">MacroId</a>
+
+        <a class="method-permalink" href="#gsub%28regex%3ARegexLiteral%2C%26%3AStringLiteral%2CArrayLiteral%28StringLiteral%7CNilLiteral%29-%3E_%29%3AMacroId-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../String.html#gsub%28pattern%3ARegex%2C%2A%2Coptions%3ARegex%3A%3AMatchOptions%3DRegex%3A%3AMatchOptions%3A%3ANone%2C%26%29%3AString-instance-method">String#gsub(pattern, options, &amp;)</a></code>.</p>
+<p><span class="flag purple">NOTE</span>  The special variables <code>$~</code> and <code>$1</code>, <code>$2</code>, ... are not supported.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7888,7 +8011,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7909,7 +8032,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7930,7 +8053,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7951,17 +8074,40 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="scan(regex:RegexLiteral):ArrayLiteral(HashLiteral(NumberLiteral|StringLiteral),StringLiteral|NilLiteral)-instance-method">
+    <div class="entry-detail" id="match(regex:RegexLiteral):HashLiteral(NumberLiteral|StringLiteral,StringLiteral|NilLiteral)-instance-method">
       <div class="signature">
         
-        def <strong>scan</strong>(regex : <a href="../../Crystal/Macros/RegexLiteral.html">RegexLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/HashLiteral.html">HashLiteral</a>(<a href="../../Crystal/Macros/NumberLiteral.html">NumberLiteral</a> | <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>), <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>)
+        def <strong>match</strong>(regex : <a href="../../Crystal/Macros/RegexLiteral.html">RegexLiteral</a>) : <a href="../../Crystal/Macros/HashLiteral.html">HashLiteral</a>(<a href="../../Crystal/Macros/NumberLiteral.html">NumberLiteral</a> | <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>, <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>)
 
-        <a class="method-permalink" href="#scan%28regex%3ARegexLiteral%29%3AArrayLiteral%28HashLiteral%28NumberLiteral%7CStringLiteral%29%2CStringLiteral%7CNilLiteral%29-instance-method">#</a>
+        <a class="method-permalink" href="#match%28regex%3ARegexLiteral%29%3AHashLiteral%28NumberLiteral%7CStringLiteral%2CStringLiteral%7CNilLiteral%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Matches the given <em>regex</em> against this string and returns a capture hash, or
+<code>nil</code> if a match cannot be found.</p>
+<p>The capture hash has the same form as <code><a href="../../Regex/MatchData.html#to_h%3AHash%28Int32%7CString%2CString%7CNil%29-instance-method">Regex::MatchData#to_h</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="scan(regex:RegexLiteral):ArrayLiteral(HashLiteral(NumberLiteral|StringLiteral,StringLiteral|NilLiteral))-instance-method">
+      <div class="signature">
+        
+        def <strong>scan</strong>(regex : <a href="../../Crystal/Macros/RegexLiteral.html">RegexLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/HashLiteral.html">HashLiteral</a>(<a href="../../Crystal/Macros/NumberLiteral.html">NumberLiteral</a> | <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>, <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>))
+
+        <a class="method-permalink" href="#scan%28regex%3ARegexLiteral%29%3AArrayLiteral%28HashLiteral%28NumberLiteral%7CStringLiteral%2CStringLiteral%7CNilLiteral%29%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7973,7 +8119,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7994,7 +8140,70 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split(node:StringLiteral):ArrayLiteral(StringLiteral)-instance-method">
+      <div class="signature">
+        
+        def <strong>split</strong>(node : <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>)
+
+        <a class="method-permalink" href="#split%28node%3AStringLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(String)</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split(node:CharLiteral):ArrayLiteral(StringLiteral)-instance-method">
+      <div class="signature">
+        
+        def <strong>split</strong>(node : <a href="../../Crystal/Macros/CharLiteral.html">CharLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>)
+
+        <a class="method-permalink" href="#split%28node%3ACharLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(Char)</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="split(node:RegexLiteral):ArrayLiteral(StringLiteral)-instance-method">
+      <div class="signature">
+        
+        def <strong>split</strong>(node : <a href="../../Crystal/Macros/RegexLiteral.html">RegexLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a>)
+
+        <a class="method-permalink" href="#split%28node%3ARegexLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(Regex)</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8009,13 +8218,14 @@ end</code></pre>
       
         <div class="doc">
           
-          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split</a></code>.</p>
+          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split(String)</a></code>.</p>
+<p><span class="flag red">DEPRECATED</span>  Use <code><a href="../../Crystal/Macros/MacroId.html#split%28node%3AStringLiteral%29%3AArrayLiteral%28StringLiteral%29-instance-method">#split(StringLiteral)</a></code> instead</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8030,13 +8240,13 @@ end</code></pre>
       
         <div class="doc">
           
-          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split</a></code>.</p>
+          <p>Similar to <code><a href="../../String.html#split%28limit%3AInt32%7CNil%3Dnil%29%3AArray%28String%29-instance-method">String#split()</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8057,7 +8267,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8078,7 +8288,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8099,7 +8309,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8120,7 +8330,7 @@ end</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8147,7 +8357,7 @@ This null character is not part of the slice, but ensures that calling
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8168,7 +8378,7 @@ This null character is not part of the slice, but ensures that calling
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8189,7 +8399,7 @@ This null character is not part of the slice, but ensures that calling
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8210,7 +8420,7 @@ This null character is not part of the slice, but ensures that calling
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2657" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L2724" target="_blank">View source</a>]
         
       </div>
     </div>

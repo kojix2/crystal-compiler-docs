@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Process::ExitReason - Crystal 1.19.0-dev</title>
+  <title>Process::ExitReason - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7417,7 +7482,7 @@ new enum members are added to <code><a href="../Process/ExitReason.html">ExitRea
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#abnormal%3F-instance-method" class="signature"><strong>#abnormal?</strong></a>
+        <a href="#abnormal%3F%3ABool-instance-method" class="signature"><strong>#abnormal?</strong> : Bool</a>
         
           <div class="summary"><p>Returns <code>true</code> if the process exited abnormally.</p></div>
         
@@ -7459,7 +7524,7 @@ new enum members are added to <code><a href="../Process/ExitReason.html">ExitRea
       </li>
     
       <li class="entry-summary">
-        <a href="#description-instance-method" class="signature"><strong>#description</strong></a>
+        <a href="#description%3AString-instance-method" class="signature"><strong>#description</strong> : String</a>
         
           <div class="summary"><p>Returns a textual description of this exit reason.</p></div>
         
@@ -8181,12 +8246,12 @@ new enum members are added to <code><a href="../Process/ExitReason.html">ExitRea
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="abnormal?-instance-method">
+    <div class="entry-detail" id="abnormal?:Bool-instance-method">
       <div class="signature">
         
-        def <strong>abnormal?</strong>
+        def <strong>abnormal?</strong> : <a href="../Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#abnormal%3F-instance-method">#</a>
+        <a class="method-permalink" href="#abnormal%3F%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8308,12 +8373,12 @@ new enum members are added to <code><a href="../Process/ExitReason.html">ExitRea
       </div>
     </div>
   
-    <div class="entry-detail" id="description-instance-method">
+    <div class="entry-detail" id="description:String-instance-method">
       <div class="signature">
         
-        def <strong>description</strong>
+        def <strong>description</strong> : <a href="../String.html">String</a>
 
-        <a class="method-permalink" href="#description-instance-method">#</a>
+        <a class="method-permalink" href="#description%3AString-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8321,7 +8386,7 @@ new enum members are added to <code><a href="../Process/ExitReason.html">ExitRea
           <p>Returns a textual description of this exit reason.</p>
 <pre><code class="language-crystal"><span class="t">Process</span><span class="t">::</span><span class="t">ExitReason</span><span class="t">::</span><span class="t">Normal</span>.description  <span class="c"># =&gt; &quot;Process exited normally&quot;</span>
 <span class="t">Process</span><span class="t">::</span><span class="t">ExitReason</span><span class="t">::</span><span class="t">Aborted</span>.description <span class="c"># =&gt; &quot;Process terminated abnormally&quot;</span></code></pre>
-<p><code><a href="../Process/Status.html#description-instance-method">Status#description</a></code> provides more detail for a specific process status.</p>
+<p><code><a href="../Process/Status.html#description%3AString-instance-method">Status#description</a></code> provides more detail for a specific process status.</p>
         </div>
       
       <br/>

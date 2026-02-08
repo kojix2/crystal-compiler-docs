@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::EventLoop::Polling - Crystal 1.19.0-dev</title>
+  <title>Crystal::EventLoop::Polling - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7264,8 +7329,8 @@ before suspending the fiber, then after resume it will raise
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L58" target="_blank">
-        crystal/event_loop/polling.cr:58
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L59" target="_blank">
+        crystal/event_loop/polling.cr:59
       </a>
     
     <br/>
@@ -7532,8 +7597,8 @@ before suspending the fiber, then after resume it will raise
   <h3>Constructor methods inherited from class <code><a href="../../Crystal/EventLoop.html">Crystal::EventLoop</a></code></h3>
   
   
-    <a href="../../Crystal/EventLoop.html#create%3Aself-class-method" class="tooltip">
-      <span>create : <span class="k">self</span></span>
+    <a href="../../Crystal/EventLoop.html#create%28parallelism%3AInt32%3D1%29%3Aself-class-method" class="tooltip">
+      <span>create(parallelism : Int32 = <span class="n">1</span>) : <span class="k">self</span></span>
     create</a>, 
     
   
@@ -8099,7 +8164,7 @@ before suspending the fiber, then after resume it will raise
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L59" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L60" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8115,7 +8180,7 @@ before suspending the fiber, then after resume it will raise
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L63" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L64" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8157,7 +8222,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L279" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8178,7 +8243,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L110" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L111" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8203,7 +8268,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L235" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L240" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8228,7 +8293,7 @@ becomes available. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L369" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L374" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8256,7 +8321,7 @@ raising it as an exception if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L315" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L320" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8281,7 +8346,7 @@ raising it as an exception if necessary.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L153" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L158" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8310,7 +8375,7 @@ the current thread if possible, especially when <em>blocking</em> is <code>false
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L174" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8339,7 +8404,7 @@ blocking arg is nil.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L159" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8368,7 +8433,7 @@ Returns 0 when EOF is reached.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L185" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L190" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8398,7 +8463,7 @@ Returns 0 when the socket is closed and no data available.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L255" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L260" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8428,7 +8493,7 @@ and the source address.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L339" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L344" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8455,7 +8520,7 @@ file descriptor.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L225" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L230" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8476,7 +8541,7 @@ file descriptor.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L118" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L119" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8505,7 +8570,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L333" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L338" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8534,7 +8599,7 @@ the IO has been closed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L229" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L234" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8563,7 +8628,7 @@ the IO has been closed. They don't have to call the <code><a href="../../Crystal
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L363" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L368" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8588,7 +8653,7 @@ the IO has been closed. They don't have to call the <code><a href="../../Crystal
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L138" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L143" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8614,7 +8679,7 @@ whether the blocking flag has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L245" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L250" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8640,7 +8705,7 @@ them, along with whether the blocking mode has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L250" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L255" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8665,7 +8730,7 @@ them, along with whether the blocking mode has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L199" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L204" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8690,7 +8755,7 @@ them, along with whether the blocking mode has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L261" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L266" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8715,7 +8780,7 @@ them, along with whether the blocking mode has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L219" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L224" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8740,7 +8805,7 @@ them, along with whether the blocking mode has been set.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L273" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L278" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8768,7 +8833,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L205" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L210" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8797,7 +8862,7 @@ continuing when ready. Otherwise returns immediately.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L267" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling.cr#L272" target="_blank">View source</a>]
         
       </div>
     </div>

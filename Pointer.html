@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Pointer(T) - Crystal 1.19.0-dev</title>
+  <title>Pointer(T) - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7412,6 +7477,20 @@ x <span class="c"># =&gt; 2</span></code></pre>
       </li>
     
       <li class="entry-summary">
+        <a href="#align_down%28boundary%3AUInt64%29%3APointer%28T%29-instance-method" class="signature"><strong>#align_down</strong>(boundary : UInt64) : Pointer(T)</a>
+        
+          <div class="summary"><p>Returns a pointer with the address of this pointer aligned downwards to the next given byte <em>boundary</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#align_up%28boundary%3AUInt64%29%3APointer%28T%29-instance-method" class="signature"><strong>#align_up</strong>(boundary : UInt64) : Pointer(T)</a>
+        
+          <div class="summary"><p>Returns a pointer with the address of this pointer aligned upwards to the next given byte <em>boundary</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#appender%3APointer%3A%3AAppender-instance-method" class="signature"><strong>#appender</strong> : Pointer::Appender</a>
         
           <div class="summary"><p>Returns a <code><a href="Pointer/Appender.html">Pointer::Appender</a></code> for this pointer.</p></div>
@@ -7978,7 +8057,7 @@ ptr.address <span class="c"># =&gt; 5678</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L489" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L523" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8035,7 +8114,7 @@ ptr[<span class="n">1</span>] <span class="c"># =&gt; 42</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L529" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L563" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8106,7 +8185,7 @@ ptr[<span class="n">9</span>] <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L509" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L543" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8138,7 +8217,7 @@ ptr[<span class="n">3</span>] <span class="c"># =&gt; 13</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L556" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L590" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8163,7 +8242,7 @@ ptr.address <span class="c"># =&gt; 0</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L478" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L512" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8388,6 +8467,60 @@ ptr.address <span class="c"># =&gt; 1234</span></code></pre>
       </div>
     </div>
   
+    <div class="entry-detail" id="align_down(boundary:UInt64):Pointer(T)-instance-method">
+      <div class="signature">
+        
+        def <strong>align_down</strong>(boundary : <a href="UInt64.html">UInt64</a>) : <a href="Pointer.html">Pointer</a>(T)
+
+        <a class="method-permalink" href="#align_down%28boundary%3AUInt64%29%3APointer%28T%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a pointer with the address of this pointer
+aligned downwards to the next given byte <em>boundary</em>.</p>
+<p>INFO: This method requires the given parameter to be a power of 2</p>
+<p>INFO: This method aligns on byte boundaries, not sizeof(T) boundaries</p>
+<pre><code class="language-crystal">ptr <span class="o">=</span> <span class="t">Pointer</span>(<span class="t">Void</span>).new(<span class="n">0x30_u64</span>)
+ptr.align_down(<span class="n">16</span>) <span class="c"># =&gt; Pointer(Void)@0x30</span>
+ptr.align_down(<span class="n">32</span>) <span class="c"># =&gt; Pointer(Void)@0x20</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L482" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="align_up(boundary:UInt64):Pointer(T)-instance-method">
+      <div class="signature">
+        
+        def <strong>align_up</strong>(boundary : <a href="UInt64.html">UInt64</a>) : <a href="Pointer.html">Pointer</a>(T)
+
+        <a class="method-permalink" href="#align_up%28boundary%3AUInt64%29%3APointer%28T%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a pointer with the address of this pointer
+aligned upwards to the next given byte <em>boundary</em>.</p>
+<p>INFO: This method requires the given parameter to be a power of 2</p>
+<p>INFO: This method aligns on byte boundaries, not sizeof(T) boundaries</p>
+<pre><code class="language-crystal">ptr <span class="o">=</span> <span class="t">Pointer</span>(<span class="t">Void</span>).new(<span class="n">0x30_u64</span>)
+ptr.align_up(<span class="n">16</span>) <span class="c"># =&gt; Pointer(Void)@0x30</span>
+ptr.align_up(<span class="n">32</span>) <span class="c"># =&gt; Pointer(Void)@0x40</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L499" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="appender:Pointer::Appender-instance-method">
       <div class="signature">
         
@@ -8404,7 +8537,7 @@ ptr.address <span class="c"># =&gt; 1234</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L562" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L596" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8428,7 +8561,7 @@ ptr.to_slice(<span class="n">6</span>) <span class="c"># =&gt; Slice[0, 0, 0, 13
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L584" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L618" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8444,7 +8577,7 @@ ptr.to_slice(<span class="n">6</span>) <span class="c"># =&gt; Slice[0, 0, 0, 13
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L588" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L622" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8950,7 +9083,7 @@ slice.<span class="k">class</span>                            <span class="c"># 
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L573" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/pointer.cr#L607" target="_blank">View source</a>]
         
       </div>
     </div>

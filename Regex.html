@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Regex - Crystal 1.19.0-dev</title>
+  <title>Regex - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7224,10 +7289,10 @@ $~                     <span class="c"># raises Exception</span></code></pre>
 <code><a href="Regex.html#match%28str%3AString%2Cpos%3AInt32%3D0%2Coptions%3ARegex%3A%3AMatchOptions%3D%3Anone%29%3AMatchData%7CNil-instance-method">Regex#match</a></code>), the returned value will be a <code><a href="Regex/MatchData.html">Regex::MatchData</a></code> if the expression
 matched, <code>nil</code> otherwise.</p>
 <pre><code class="language-crystal"><span class="s">/hay/</span>.match(<span class="s">&quot;haystack&quot;</span>)    <span class="c"># =&gt; Regex::MatchData(&quot;hay&quot;)</span>
-<span class="s">&quot;haystack&quot;</span>.match(<span class="o">/</span>hay<span class="o">/</span>)    <span class="c"># =&gt; Regex::MatchData(&quot;hay&quot;)</span>
+<span class="s">&quot;haystack&quot;</span>.match(<span class="s">/hay/</span>)    <span class="c"># =&gt; Regex::MatchData(&quot;hay&quot;)</span>
 $~                         <span class="c"># =&gt; Regex::MatchData(&quot;hay&quot;)</span>
 <span class="o">/</span>needle<span class="o">/</span>.match(<span class="s">&quot;haystack&quot;</span>) <span class="c"># =&gt; nil</span>
-<span class="s">&quot;haystack&quot;</span>.match(<span class="o">/</span>needle<span class="o">/</span>) <span class="c"># =&gt; nil</span>
+<span class="s">&quot;haystack&quot;</span>.match(<span class="s">/needle/</span>) <span class="c"># =&gt; nil</span>
 $~                         <span class="c"># raises Exception</span></code></pre>
 <p><a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a>
 have their own language for describing strings.</p>
@@ -7251,7 +7316,7 @@ static substrings in the above examples. Certain characters, called
 are given special treatment in regular expressions, and can be used to
 describe more complex patterns. To match metacharacters literally in a
 regular expression, they must be escaped by being preceded with a backslash
-(<code>\</code>). <code><a href="Regex.html#escape%28str%29%3AString-class-method">.escape</a></code> will do this automatically for a given String.</p>
+(<code>\</code>). <code><a href="Regex.html#escape%28str%3AString%29%3AString-class-method">.escape</a></code> will do this automatically for a given String.</p>
 <p>A group of characters (often called a capture group or
 <a href="http://www.pcre.org/current/doc/html/pcre2pattern.html#SEC14">subpattern</a>)
 can be identified by enclosing it in parentheses (<code>()</code>). The contents of
@@ -7375,7 +7440,7 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L389" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L387" target="_blank">
         json/any.cr
       </a>
     
@@ -7423,7 +7488,7 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
       
       <dd class="entry-const-doc">
         <p>List of metacharacters that need to be escaped.</p>
-<p>See <code><a href="Regex.html#needs_escape%3F%28char%3AChar%29%3ABool-class-method">Regex.needs_escape?</a></code> and <code><a href="Regex.html#escape%28str%29%3AString-class-method">Regex.escape</a></code>.</p>
+<p>See <code><a href="Regex.html#needs_escape%3F%28char%3AChar%29%3ABool-class-method">Regex.needs_escape?</a></code> and <code><a href="Regex.html#escape%28str%3AString%29%3AString-class-method">Regex.escape</a></code>.</p>
       </dd>
       
     
@@ -7450,7 +7515,7 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29-class-method" class="signature"><strong>.new</strong>(source : String, options : Options = <span class="t">Options</span><span class="t">::</span><span class="t">None</span>)</a>
+        <a href="#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29%3Aself-class-method" class="signature"><strong>.new</strong>(source : String, options : Options = <span class="t">Options</span><span class="t">::</span><span class="t">None</span>) : <span class="k">self</span></a>
         
           <div class="summary"><p>Creates a new <code><a href="Regex.html">Regex</a></code> out of the given source <code><a href="String.html">String</a></code>.</p></div>
         
@@ -7485,14 +7550,14 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#error%3F%28source%29%3AString%7CNil-class-method" class="signature"><strong>.error?</strong>(source) : String | Nil</a>
+        <a href="#error%3F%28source%3AString%29%3AString%7CNil-class-method" class="signature"><strong>.error?</strong>(source : String) : String | Nil</a>
         
           <div class="summary"><p>Determines Regex's source validity.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#escape%28str%29%3AString-class-method" class="signature"><strong>.escape</strong>(str) : String</a>
+        <a href="#escape%28str%3AString%29%3AString-class-method" class="signature"><strong>.escape</strong>(str : String) : String</a>
         
           <div class="summary"><p>Returns a <code><a href="String.html">String</a></code> constructed by escaping any metacharacters in <em>str</em>.</p></div>
         
@@ -7550,14 +7615,14 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#%3D%3D%28other%3ARegex%29-instance-method" class="signature"><strong>#==</strong>(other : Regex)</a>
+        <a href="#%3D%3D%28other%3ARegex%29%3ABool-instance-method" class="signature"><strong>#==</strong>(other : Regex) : Bool</a>
         
           <div class="summary"><p>Equality.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%3D%3D%3D%28other%3AString%29-instance-method" class="signature"><strong>#===</strong>(other : String)</a>
+        <a href="#%3D%3D%3D%28other%3AString%29%3ABool-instance-method" class="signature"><strong>#===</strong>(other : String) : Bool</a>
         
           <div class="summary"><p>Case equality.</p></div>
         
@@ -7595,7 +7660,7 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#clone-instance-method" class="signature"><strong>#clone</strong></a>
+        <a href="#clone%3ARegex-instance-method" class="signature"><strong>#clone</strong> : Regex</a>
         
       </li>
     
@@ -8202,12 +8267,12 @@ unique names within a single <code><a href="Regex.html">Regex</a></code>.</p>
       </div>
     </div>
   
-    <div class="entry-detail" id="new(source:String,options:Options=Options::None)-class-method">
+    <div class="entry-detail" id="new(source:String,options:Options=Options::None):self-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(source : <a href="String.html">String</a>, options : <a href="Regex/Options.html">Options</a> = <span class="t">Options</span><span class="t">::</span><span class="t">None</span>)
+        def self.<strong>new</strong>(source : <a href="String.html">String</a>, options : <a href="Regex/Options.html">Options</a> = <span class="t">Options</span><span class="t">::</span><span class="t">None</span>) : <span class="k">self</span>
 
-        <a class="method-permalink" href="#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29%3Aself-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8240,10 +8305,10 @@ options <span class="o">=</span> <span class="t">Regex</span><span class="t">::<
           <p>Union. Returns a <code><a href="Regex.html">Regex</a></code> that matches any of <em>patterns</em>.</p>
 <p>All capture groups in the patterns after the first one will have their
 indexes offset.</p>
-<pre><code class="language-crystal">re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>([<span class="o">/</span>skiing<span class="o">/</span>i, <span class="s">&quot;sledding&quot;</span>])
+<pre><code class="language-crystal">re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>([<span class="s">/skiing/</span>i, <span class="s">&quot;sledding&quot;</span>])
 re.match(<span class="s">&quot;Skiing&quot;</span>)   <span class="c"># =&gt; Regex::MatchData(&quot;Skiing&quot;)</span>
 re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Regex::MatchData(&quot;sledding&quot;)</span>
-re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>({<span class="o">/</span>skiing<span class="o">/</span>i, <span class="s">&quot;sledding&quot;</span>})
+re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>({<span class="s">/skiing/</span>i, <span class="s">&quot;sledding&quot;</span>})
 re.match(<span class="s">&quot;Skiing&quot;</span>)   <span class="c"># =&gt; Regex::MatchData(&quot;Skiing&quot;)</span>
 re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Regex::MatchData(&quot;sledding&quot;)</span></code></pre>
         </div>
@@ -8269,7 +8334,7 @@ re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Re
           <p>Union. Returns a <code><a href="Regex.html">Regex</a></code> that matches any of <em>patterns</em>.</p>
 <p>All capture groups in the patterns after the first one will have their
 indexes offset.</p>
-<pre><code class="language-crystal">re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>(<span class="o">/</span>skiing<span class="o">/</span>i, <span class="s">&quot;sledding&quot;</span>)
+<pre><code class="language-crystal">re <span class="o">=</span> <span class="t">Regex</span>.<span class="k">union</span>(<span class="s">/skiing/</span>i, <span class="s">&quot;sledding&quot;</span>)
 re.match(<span class="s">&quot;Skiing&quot;</span>)   <span class="c"># =&gt; Regex::MatchData(&quot;Skiing&quot;)</span>
 re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Regex::MatchData(&quot;sledding&quot;)</span></code></pre>
         </div>
@@ -8294,12 +8359,12 @@ re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Re
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="error?(source):String|Nil-class-method">
+    <div class="entry-detail" id="error?(source:String):String|Nil-class-method">
       <div class="signature">
         
-        def self.<strong>error?</strong>(source) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
+        def self.<strong>error?</strong>(source : <a href="String.html">String</a>) : <a href="String.html">String</a> | <a href="Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#error%3F%28source%29%3AString%7CNil-class-method">#</a>
+        <a class="method-permalink" href="#error%3F%28source%3AString%29%3AString%7CNil-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8318,12 +8383,12 @@ If it's not, a <code><a href="String.html">String</a></code> containing the erro
       </div>
     </div>
   
-    <div class="entry-detail" id="escape(str):String-class-method">
+    <div class="entry-detail" id="escape(str:String):String-class-method">
       <div class="signature">
         
-        def self.<strong>escape</strong>(str) : <a href="String.html">String</a>
+        def self.<strong>escape</strong>(str : <a href="String.html">String</a>) : <a href="String.html">String</a>
 
-        <a class="method-permalink" href="#escape%28str%29%3AString-class-method">#</a>
+        <a class="method-permalink" href="#escape%28str%3AString%29%3AString-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -8469,12 +8534,12 @@ re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Re
       </div>
     </div>
   
-    <div class="entry-detail" id="==(other:Regex)-instance-method">
+    <div class="entry-detail" id="==(other:Regex):Bool-instance-method">
       <div class="signature">
         
-        def <strong>==</strong>(other : <a href="Regex.html">Regex</a>)
+        def <strong>==</strong>(other : <a href="Regex.html">Regex</a>) : <a href="Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#%3D%3D%28other%3ARegex%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3D%3D%28other%3ARegex%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8493,12 +8558,12 @@ re.match(<span class="s">&quot;sledding&quot;</span>) <span class="c"># =&gt; Re
       </div>
     </div>
   
-    <div class="entry-detail" id="===(other:String)-instance-method">
+    <div class="entry-detail" id="===(other:String):Bool-instance-method">
       <div class="signature">
         
-        def <strong>===</strong>(other : <a href="String.html">String</a>)
+        def <strong>===</strong>(other : <a href="String.html">String</a>) : <a href="Bool.html">Bool</a>
 
-        <a class="method-permalink" href="#%3D%3D%3D%28other%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#%3D%3D%3D%28other%3AString%29%3ABool-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8537,7 +8602,7 @@ b <span class="c"># =&gt; &quot;Upper case&quot;</span></code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L390" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/json/any.cr#L388" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8632,12 +8697,12 @@ otherwise <code>nil</code>. <code>$~</code> will contain a <code><a href="Regex/
       </div>
     </div>
   
-    <div class="entry-detail" id="clone-instance-method">
+    <div class="entry-detail" id="clone:Regex-instance-method">
       <div class="signature">
         
-        def <strong>clone</strong>
+        def <strong>clone</strong> : <a href="Regex.html">Regex</a>
 
-        <a class="method-permalink" href="#clone-instance-method">#</a>
+        <a class="method-permalink" href="#clone%3ARegex-instance-method">#</a>
       </div>
       
       <br/>
@@ -8709,7 +8774,7 @@ otherwise <code>nil</code>. <code>$~</code> will contain a <code><a href="Regex/
           <p>Prints to <em>io</em> an unambiguous string representation of this regular expression object.</p>
 <p>Uses the regex literal syntax with basic option flags if sufficient (i.e. no
 other options than <code>IGNORE_CASE</code>, <code>MULTILINE</code>, or <code>EXTENDED</code> are set).
-Otherwise the syntax presents a <code><a href="Regex.html#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29-class-method">Regex.new</a></code> call.</p>
+Otherwise the syntax presents a <code><a href="Regex.html#new%28source%3AString%2Coptions%3AOptions%3DOptions%3A%3ANone%29%3Aself-class-method">Regex.new</a></code> call.</p>
 <pre><code class="language-crystal"><span class="s">/ab+c/</span>ix.inspect                     <span class="c"># =&gt; &quot;/ab+c/ix&quot;</span>
 <span class="t">Regex</span>.new(<span class="s">&quot;ab+c&quot;</span>, <span class="n">:anchored</span>).inspect <span class="c"># =&gt; Regex.new(&quot;ab+c&quot;, Regex::Options::ANCHORED)</span></code></pre>
         </div>
@@ -9153,9 +9218,9 @@ embedded in another <code><a href="Regex.html">Regex</a></code> via interpolatio
 as a non-capturing subexpression in another regular expression.</p>
 <pre><code class="language-crystal">re <span class="o">=</span> <span class="s">/A*/</span>i                 <span class="c"># =&gt; /A*/i</span>
 re.to_s                    <span class="c"># =&gt; &quot;(?i-msx:A*)&quot;</span>
-<span class="s">&quot;Crystal&quot;</span>.match(<span class="o">/</span>t<span class="c">#{re}l/) # =&gt; Regex::MatchData(&quot;tal&quot;)</span>
+<span class="s">&quot;Crystal&quot;</span>.match(<span class="s">/t</span><span class="i">#{</span>re<span class="i">}</span><span class="s">l/</span>) <span class="c"># =&gt; Regex::MatchData(&quot;tal&quot;)</span>
 re <span class="o">=</span> <span class="s">/A*/</span>                  <span class="c"># =&gt; &quot;(?-imsx:A*)&quot;</span>
-<span class="s">&quot;Crystal&quot;</span>.match(<span class="o">/</span>t<span class="c">#{re}l/) # =&gt; nil</span></code></pre>
+<span class="s">&quot;Crystal&quot;</span>.match(<span class="s">/t</span><span class="i">#{</span>re<span class="i">}</span><span class="s">l/</span>) <span class="c"># =&gt; nil</span></code></pre>
         </div>
       
       <br/>

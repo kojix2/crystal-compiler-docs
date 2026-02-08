@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Macros::NamedTupleLiteral - Crystal 1.19.0-dev</title>
+  <title>Crystal::Macros::NamedTupleLiteral - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7209,7 +7274,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L906" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L952" target="_blank">
         compiler/crystal/macros.cr
       </a>
     
@@ -7259,14 +7324,14 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#each%28%26%29%3ANil-instance-method" class="signature"><strong>#each</strong>(&) : Nil</a>
+        <a href="#each%28%26%29%3ANilLiteral-instance-method" class="signature"><strong>#each</strong>(&) : NilLiteral</a>
         
           <div class="summary"><p>Similar to <code><a href="../../NamedTuple.html#each%28%26%29%3ANil-instance-method">NamedTuple#each</a></code></p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#each_with_index%28%26%29%3ANil-instance-method" class="signature"><strong>#each_with_index</strong>(&) : Nil</a>
+        <a href="#each_with_index%28%26%29%3ANilLiteral-instance-method" class="signature"><strong>#each_with_index</strong>(&) : NilLiteral</a>
         
           <div class="summary"><p>Similar to <code><a href="../../NamedTuple.html#each_with_index%28offset%3D0%2C%26%29-instance-method">NamedTuple#each_with_index</a></code></p></div>
         
@@ -7294,9 +7359,37 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#map%3AArrayLiteral-instance-method" class="signature"><strong>#map</strong> : ArrayLiteral</a>
+        <a href="#map%28%26%29%3AArrayLiteral-instance-method" class="signature"><strong>#map</strong>(&) : ArrayLiteral</a>
         
           <div class="summary"><p>Similar to <code><a href="../../NamedTuple.html#map%28%26%29-instance-method">NamedTuple#map</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reject%28%26%29%3ANamedTupleLiteral-instance-method" class="signature"><strong>#reject</strong>(&) : NamedTupleLiteral</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../Hash.html#reject%28%26%3AK%2CV-%3E%29%3AHash%28K%2CV%29-instance-method">Hash#reject</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reject%28%2Akeys%3ASymbolLiteral%7CStringLiteral%7CMacroId%29%3ANamedTupleLiteral-instance-method" class="signature"><strong>#reject</strong>(*keys : SymbolLiteral | StringLiteral | MacroId) : NamedTupleLiteral</a>
+        
+          <div class="summary"><p>Returns a new <code><a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a></code> without the provided <em>keys</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#select%28%26%29%3ANamedTupleLiteral-instance-method" class="signature"><strong>#select</strong>(&) : NamedTupleLiteral</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../Hash.html#select%28%26%3AK%2CV-%3E%29%3AHash%28K%2CV%29-instance-method">Hash#select</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#select%28%2Akeys%3ASymbolLiteral%7CStringLiteral%7CMacroId%29%3ANamedTupleLiteral-instance-method" class="signature"><strong>#select</strong>(*keys : SymbolLiteral | StringLiteral | MacroId) : NamedTupleLiteral</a>
+        
+          <div class="summary"><p>Returns a new <code><a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a></code> with only the provided <em>keys</em>.</p></div>
         
       </li>
     
@@ -7463,7 +7556,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L944" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L1006" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7484,7 +7577,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L948" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L1010" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7505,17 +7598,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L940" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L1002" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each(&amp;):Nil-instance-method">
+    <div class="entry-detail" id="each(&amp;):NilLiteral-instance-method">
       <div class="signature">
         
-        def <strong>each</strong>(&) : <a href="../../Nil.html">Nil</a>
+        def <strong>each</strong>(&) : <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
 
-        <a class="method-permalink" href="#each%28%26%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#each%28%26%29%3ANilLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7526,17 +7619,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L908" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L954" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each_with_index(&amp;):Nil-instance-method">
+    <div class="entry-detail" id="each_with_index(&amp;):NilLiteral-instance-method">
       <div class="signature">
         
-        def <strong>each_with_index</strong>(&) : <a href="../../Nil.html">Nil</a>
+        def <strong>each_with_index</strong>(&) : <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
 
-        <a class="method-permalink" href="#each_with_index%28%26%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#each_with_index%28%26%29%3ANilLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7547,7 +7640,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L912" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L958" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7568,7 +7661,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L916" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L962" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7589,7 +7682,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L952" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L1014" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7610,17 +7703,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L920" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L966" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="map:ArrayLiteral-instance-method">
+    <div class="entry-detail" id="map(&amp;):ArrayLiteral-instance-method">
       <div class="signature">
         
-        def <strong>map</strong> : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>
+        def <strong>map</strong>(&) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>
 
-        <a class="method-permalink" href="#map%3AArrayLiteral-instance-method">#</a>
+        <a class="method-permalink" href="#map%28%26%29%3AArrayLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7631,7 +7724,91 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L936" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L982" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reject(&amp;):NamedTupleLiteral-instance-method">
+      <div class="signature">
+        
+        def <strong>reject</strong>(&) : <a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a>
+
+        <a class="method-permalink" href="#reject%28%26%29%3ANamedTupleLiteral-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../Hash.html#reject%28%26%3AK%2CV-%3E%29%3AHash%28K%2CV%29-instance-method">Hash#reject</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L994" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reject(*keys:SymbolLiteral|StringLiteral|MacroId):NamedTupleLiteral-instance-method">
+      <div class="signature">
+        
+        def <strong>reject</strong>(*keys : <a href="../../Crystal/Macros/SymbolLiteral.html">SymbolLiteral</a> | <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/MacroId.html">MacroId</a>) : <a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a>
+
+        <a class="method-permalink" href="#reject%28%2Akeys%3ASymbolLiteral%7CStringLiteral%7CMacroId%29%3ANamedTupleLiteral-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a new <code><a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a></code> without the provided <em>keys</em>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L998" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="select(&amp;):NamedTupleLiteral-instance-method">
+      <div class="signature">
+        
+        def <strong>select</strong>(&) : <a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a>
+
+        <a class="method-permalink" href="#select%28%26%29%3ANamedTupleLiteral-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../Hash.html#select%28%26%3AK%2CV-%3E%29%3AHash%28K%2CV%29-instance-method">Hash#select</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L986" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="select(*keys:SymbolLiteral|StringLiteral|MacroId):NamedTupleLiteral-instance-method">
+      <div class="signature">
+        
+        def <strong>select</strong>(*keys : <a href="../../Crystal/Macros/SymbolLiteral.html">SymbolLiteral</a> | <a href="../../Crystal/Macros/StringLiteral.html">StringLiteral</a> | <a href="../../Crystal/Macros/MacroId.html">MacroId</a>) : <a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a>
+
+        <a class="method-permalink" href="#select%28%2Akeys%3ASymbolLiteral%7CStringLiteral%7CMacroId%29%3ANamedTupleLiteral-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a new <code><a href="../../Crystal/Macros/NamedTupleLiteral.html">NamedTupleLiteral</a></code> with only the provided <em>keys</em>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L990" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7652,7 +7829,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L924" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L970" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7673,7 +7850,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L928" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L974" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7694,7 +7871,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L932" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L978" target="_blank">View source</a>]
         
       </div>
     </div>

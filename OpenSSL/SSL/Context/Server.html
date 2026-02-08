@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>OpenSSL::SSL::Context::Server - Crystal 1.19.0-dev</title>
+  <title>OpenSSL::SSL::Context::Server - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7198,7 +7263,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L110" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L100" target="_blank">
         openssl/ssl/context.cr
       </a>
     
@@ -7263,6 +7328,14 @@
         <a href="#disable_session_resume_tickets%3ANil-instance-method" class="signature"><strong>#disable_session_resume_tickets</strong> : Nil</a>
         
           <div class="summary"><p>Disables all session ticket generation for this context.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_server_name%28%26block%3AString-%3EOpenSSL%3A%3ASSL%3A%3AContext%3A%3AServer%7CNil%29-instance-method" class="signature"><strong>#on_server_name</strong>(&block : String -> OpenSSL::SSL::Context::Server | Nil)</a>
+        
+          <div class="summary"><p>Sets a Server Name Indication (SNI) callback for this server context.</p>
+<p><span class="flag lime">EXPERIMENTAL</span> </p></div>
         
       </li>
     
@@ -7814,7 +7887,7 @@ Required if <code>verify_mode</code> is <code>peer</code> or <code>force-peer</c
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L159" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L149" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7837,7 +7910,7 @@ Use this only if undoing the defaults that <code><a href="../../../OpenSSL/SSL/C
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7868,7 +7941,7 @@ context.add_options(<span class="t">OpenSSL</span><span class="t">::</span><span
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L120" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7910,7 +7983,52 @@ So if you have that kind of behavior (clients that never read) call this method.
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_server_name(&amp;block:String-&gt;OpenSSL::SSL::Context::Server|Nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>on_server_name</strong>(&block : <a href="../../../String.html">String</a> -> <a href="../../../OpenSSL/SSL/Context/Server.html">OpenSSL::SSL::Context::Server</a> | <a href="../../../Nil.html">Nil</a>)
+
+        <a class="method-permalink" href="#on_server_name%28%26block%3AString-%3EOpenSSL%3A%3ASSL%3A%3AContext%3A%3AServer%7CNil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets a Server Name Indication (SNI) callback for this server context.</p>
+<p>The callback receives the hostname from the client's SNI extension and should
+return an <code><a href="../../../OpenSSL/SSL/Context/Server.html">SSL::Context::Server</a></code> configured for that hostname, or <code>nil</code> to
+continue using the current context.</p>
+<p>This allows a TLS server to present different certificates based on the
+hostname the client is connecting to, enabling virtual hosting over TLS.</p>
+<p>Example:</p>
+<pre><code class="language-crystal">default_context <span class="o">=</span> <span class="t">OpenSSL</span><span class="t">::</span><span class="t">SSL</span><span class="t">::</span><span class="t">Context</span><span class="t">::</span><span class="t">Server</span>.new
+default_context.certificate_chain <span class="o">=</span> <span class="s">&quot;default.crt&quot;</span>
+default_context.private_key <span class="o">=</span> <span class="s">&quot;default.key&quot;</span>
+
+example_context <span class="o">=</span> <span class="t">OpenSSL</span><span class="t">::</span><span class="t">SSL</span><span class="t">::</span><span class="t">Context</span><span class="t">::</span><span class="t">Server</span>.new
+example_context.certificate_chain <span class="o">=</span> <span class="s">&quot;example.com.crt&quot;</span>
+example_context.private_key <span class="o">=</span> <span class="s">&quot;example.com.key&quot;</span>
+
+default_context.on_server_name <span class="k">do</span> <span class="o">|</span>hostname<span class="o">|</span>
+  <span class="k">case</span> hostname
+  <span class="k">when</span> <span class="s">&quot;example.com&quot;</span>, <span class="s">&quot;www.example.com&quot;</span>
+    example_context
+  <span class="k">else</span>
+    <span class="n">nil</span> <span class="c"># use default context</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+<p>See <a href="https://docs.openssl.org/3.5/man3/SSL_CTX_set_tlsext_servername_callback/">SSL_CTX_set_tlsext_servername_callback</a></p>
+<p><span class="flag lime">EXPERIMENTAL</span> </p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/openssl/ssl/context.cr#L212" target="_blank">View source</a>]
         
       </div>
     </div>

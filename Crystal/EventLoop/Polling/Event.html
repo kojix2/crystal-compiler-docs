@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::EventLoop::Polling::Event - Crystal 1.19.0-dev</title>
+  <title>Crystal::EventLoop::Polling::Event - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7372,21 +7437,21 @@ event such as sleep or a select timeout (without IO).</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#wake_at%3ATime%3A%3ASpan-instance-method" class="signature"><strong>#wake_at</strong> : Time::Span</a>
+        <a href="#wake_at%3ATime%3A%3AInstant-instance-method" class="signature"><strong>#wake_at</strong> : Time::Instant</a>
         
           <div class="summary"><p>The absolute time, against the monotonic clock, at which a timed event shall trigger.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#wake_at%3D%28wake_at%3ATime%3A%3ASpan%7CNil%29-instance-method" class="signature"><strong>#wake_at=</strong>(wake_at : Time::Span | Nil)</a>
+        <a href="#wake_at%3D%28wake_at%3ATime%3A%3AInstant%7CNil%29-instance-method" class="signature"><strong>#wake_at=</strong>(wake_at : Time::Instant | Nil)</a>
         
           <div class="summary"><p>Manually set the absolute time (against the monotonic clock).</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#wake_at%3F%3ATime%3A%3ASpan%7CNil-instance-method" class="signature"><strong>#wake_at?</strong> : Time::Span | Nil</a>
+        <a href="#wake_at%3F%3ATime%3A%3AInstant%7CNil-instance-method" class="signature"><strong>#wake_at?</strong> : Time::Instant | Nil</a>
         
           <div class="summary"><p>The absolute time, against the monotonic clock, at which a timed event shall trigger.</p></div>
         
@@ -7897,7 +7962,7 @@ Use <code>&gt;</code> to create a max heap.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L63" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L62" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8074,7 +8139,7 @@ event. Nil for timed events (sleep, select timeout).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L51" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L50" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8089,7 +8154,7 @@ event. Nil for timed events (sleep, select timeout).</p>
       
         <div class="doc">
           
-          <p>True if an IO event has timed out (i.e. we're past <code><a href="../../../Crystal/EventLoop/Polling/Event.html#wake_at%3ATime%3A%3ASpan-instance-method">#wake_at</a></code>).</p>
+          <p>True if an IO event has timed out (i.e. we're past <code><a href="../../../Crystal/EventLoop/Polling/Event.html#wake_at%3ATime%3A%3AInstant-instance-method">#wake_at</a></code>).</p>
         </div>
       
       <br/>
@@ -8116,12 +8181,12 @@ event. Nil for timed events (sleep, select timeout).</p>
       </div>
     </div>
   
-    <div class="entry-detail" id="wake_at:Time::Span-instance-method">
+    <div class="entry-detail" id="wake_at:Time::Instant-instance-method">
       <div class="signature">
         
-        def <strong>wake_at</strong> : <a href="../../../Time/Span.html">Time::Span</a>
+        def <strong>wake_at</strong> : <a href="../../../Time/Instant.html">Time::Instant</a>
 
-        <a class="method-permalink" href="#wake_at%3ATime%3A%3ASpan-instance-method">#</a>
+        <a class="method-permalink" href="#wake_at%3ATime%3A%3AInstant-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8138,12 +8203,12 @@ trigger. Nil for IO events without a timeout.</p>
       </div>
     </div>
   
-    <div class="entry-detail" id="wake_at=(wake_at:Time::Span|Nil)-instance-method">
+    <div class="entry-detail" id="wake_at=(wake_at:Time::Instant|Nil)-instance-method">
       <div class="signature">
         
-        def <strong>wake_at=</strong>(wake_at : <a href="../../../Time/Span.html">Time::Span</a> | <a href="../../../Nil.html">Nil</a>)
+        def <strong>wake_at=</strong>(wake_at : <a href="../../../Time/Instant.html">Time::Instant</a> | <a href="../../../Nil.html">Nil</a>)
 
-        <a class="method-permalink" href="#wake_at%3D%28wake_at%3ATime%3A%3ASpan%7CNil%29-instance-method">#</a>
+        <a class="method-permalink" href="#wake_at%3D%28wake_at%3ATime%3A%3AInstant%7CNil%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -8157,17 +8222,17 @@ objects are allocated once per <code><a href="../../../Fiber.html">Fiber</a></co
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L60" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/crystal/event_loop/polling/event.cr#L59" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="wake_at?:Time::Span|Nil-instance-method">
+    <div class="entry-detail" id="wake_at?:Time::Instant|Nil-instance-method">
       <div class="signature">
         
-        def <strong>wake_at?</strong> : <a href="../../../Time/Span.html">Time::Span</a> | <a href="../../../Nil.html">Nil</a>
+        def <strong>wake_at?</strong> : <a href="../../../Time/Instant.html">Time::Instant</a> | <a href="../../../Nil.html">Nil</a>
 
-        <a class="method-permalink" href="#wake_at%3F%3ATime%3A%3ASpan%7CNil-instance-method">#</a>
+        <a class="method-permalink" href="#wake_at%3F%3ATime%3A%3AInstant%7CNil-instance-method">#</a>
       </div>
       
         <div class="doc">

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Time::Location - Crystal 1.19.0-dev</title>
+  <title>Time::Location - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7197,7 +7262,7 @@ location <span class="c"># =&gt; #&lt;Time::Location Europe/Berlin&gt;</span>
 time <span class="o">=</span> <span class="t">Time</span>.local(<span class="n">2016</span>, <span class="n">2</span>, <span class="n">15</span>, <span class="n">21</span>, <span class="n">1</span>, <span class="n">10</span>, location: location)
 time <span class="c"># =&gt; 2016-02-15 21:01:10+01:00[Europe/Berlin]</span></code></pre>
 <p>A custom time zone database can be configured through the environment variable
-<code>ZONEINFO</code>. See <code><a href="../Time/Location.html#load%28name%3AString%29%3ALocation-class-method">.load</a></code> for details.</p>
+<code>TZDIR</code>. See <code><a href="../Time/Location.html#load%28name%3AString%29%3ALocation-class-method">.load</a></code> for details.</p>
 <h3><a id="fixed-offset" class="anchor" href="#fixed-offset">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
@@ -7956,19 +8021,18 @@ Typical paths on Unix-based operating systems are <code>/usr/share/zoneinfo/</co
 <p>A time zone database may not be present on all systems, especially non-Unix
 systems. In this case, you may need to distribute a copy of the database
 with an application that depends on time zone data being available.</p>
-<p>A custom lookup path can be set as environment variable <code>ZONEINFO</code>.
+<p>A custom lookup path can be set as environment variable <code>TZDIR</code>(<code>ZONEINFO</code>
+is also supported as legacy option).
 The path can point to the root of a directory structure or an
 uncompressed ZIP file, each representing the time zone database using files
 and folders of the expected names.</p>
 <p>Example:</p>
-<pre><code class="language-crystal"><span class="c"># This tries to load the file `/usr/share/zoneinfo/Custom/Location`</span>
-<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/usr/share/zoneinfo/&quot;</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)
-
-<span class="c"># This tries to load the file `Custom/Location` in the uncompressed ZIP</span>
-<span class="c"># file at `/path/to/zoneinfo.zip`</span>
-<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/path/to/zoneinfo.zip&quot;</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)</code></pre>
+<pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)</code></pre>
+<p>If the <code>TZDIR</code> environment variable is <code>&quot;/usr/share/zoneinfo&quot;</code> this tries to
+load the file <code>/usr/share/zoneinfo/Custom/<a href="../Time/Location.html">Location</a></code>.</p>
+<p>If the <code>TZDIR</code> environment variable is <code>&quot;/path/to/zoneinfo.zip&quot;</code> this tries
+to load the file <code>Custom/<a href="../Time/Location.html">Location</a></code> in the uncompressed ZIP file at
+<code>/path/to/zoneinfo.zip</code>.</p>
 <p>If the location name cannot be found, <code><a href="../Time/Location/InvalidLocationNameError.html">InvalidLocationNameError</a></code> is raised.
 If the loader encounters a format error in the time zone database,
 <code><a href="../Time/Location/InvalidTZDataError.html">InvalidTZDataError</a></code> is raised.</p>
@@ -7983,7 +8047,7 @@ the same location name will most likely return the same instance of
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L304" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L305" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8019,7 +8083,7 @@ POSIX, and not supported in Crystal.</li>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L400" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L402" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8048,7 +8112,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L382" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L384" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8138,19 +8202,18 @@ Typical paths on Unix-based operating systems are <code>/usr/share/zoneinfo/</co
 <p>A time zone database may not be present on all systems, especially non-Unix
 systems. In this case, you may need to distribute a copy of the database
 with an application that depends on time zone data being available.</p>
-<p>A custom lookup path can be set as environment variable <code>ZONEINFO</code>.
+<p>A custom lookup path can be set as environment variable <code>TZDIR</code>(<code>ZONEINFO</code>
+is also supported as legacy option).
 The path can point to the root of a directory structure or an
 uncompressed ZIP file, each representing the time zone database using files
 and folders of the expected names.</p>
 <p>Example:</p>
-<pre><code class="language-crystal"><span class="c"># This tries to load the file `/usr/share/zoneinfo/Custom/Location`</span>
-<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/usr/share/zoneinfo/&quot;</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)
-
-<span class="c"># This tries to load the file `Custom/Location` in the uncompressed ZIP</span>
-<span class="c"># file at `/path/to/zoneinfo.zip`</span>
-<span class="t">ENV</span>[<span class="s">&quot;ZONEINFO&quot;</span>] <span class="o">=</span> <span class="s">&quot;/path/to/zoneinfo.zip&quot;</span>
-<span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)</code></pre>
+<pre><code class="language-crystal"><span class="t">Time</span><span class="t">::</span><span class="t">Location</span>.load(<span class="s">&quot;Custom/Location&quot;</span>)</code></pre>
+<p>If the <code>TZDIR</code> environment variable is <code>&quot;/usr/share/zoneinfo&quot;</code> this tries to
+load the file <code>/usr/share/zoneinfo/Custom/<a href="../Time/Location.html">Location</a></code>.</p>
+<p>If the <code>TZDIR</code> environment variable is <code>&quot;/path/to/zoneinfo.zip&quot;</code> this tries
+to load the file <code>Custom/<a href="../Time/Location.html">Location</a></code> in the uncompressed ZIP file at
+<code>/path/to/zoneinfo.zip</code>.</p>
 <p>If the location name cannot be found, <code><a href="../Time/Location/InvalidLocationNameError.html">InvalidLocationNameError</a></code> is raised.
 If the loader encounters a format error in the time zone database,
 <code><a href="../Time/Location/InvalidTZDataError.html">InvalidTZDataError</a></code> is raised.</p>
@@ -8172,7 +8235,7 @@ time zone database.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L316" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L317" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8201,7 +8264,7 @@ expecting a <code><a href="../Time/Location.html">Location</a></code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L382" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L384" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8293,7 +8356,7 @@ daylight saving time (e.g. <code>&quot;EST5EDT,0/0,J365/25&quot;</code>).</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L555" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L558" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8347,7 +8410,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L449" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L452" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8368,7 +8431,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L546" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L549" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8389,7 +8452,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L462" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L465" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8412,7 +8475,7 @@ and the values of all instance variables.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L470" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L473" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8472,7 +8535,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L445" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L448" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8509,7 +8572,7 @@ example <code>Europe/Berlin</code>.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L541" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/time/location.cr#L544" target="_blank">View source</a>]
         
       </div>
     </div>

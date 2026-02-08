@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Crystal::Macros::ArrayLiteral - Crystal 1.19.0-dev</title>
+  <title>Crystal::Macros::ArrayLiteral - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7209,7 +7274,7 @@
   </h2>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L682" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L708" target="_blank">
         compiler/crystal/macros.cr
       </a>
     
@@ -7266,16 +7331,23 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%28index%3ANumberLiteral%29%3AASTNode-instance-method" class="signature"><strong>#[]</strong>(index : NumberLiteral) : ASTNode</a>
+        <a href="#%5B%5D%28start%3ANumberLiteral%2Ccount%3ANumberLiteral%29%3AArrayLiteral%28ASTNode%29%7CNilLiteral-instance-method" class="signature"><strong>#[]</strong>(start : NumberLiteral, count : NumberLiteral) : ArrayLiteral(ASTNode) | NilLiteral</a>
         
-          <div class="summary"><p>Similar to <code><a href="../../Array.html#%5B%5D%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29-instance-method">Array#[]</a></code>, but returns <code><a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a></code> on out of bounds.</p></div>
+          <div class="summary"><p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Int, Int)</a></code>.</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#%5B%5D%28index%3ARangeLiteral%29%3AArrayLiteral%28ASTNode%29-instance-method" class="signature"><strong>#[]</strong>(index : RangeLiteral) : ArrayLiteral(ASTNode)</a>
+        <a href="#%5B%5D%28index%3ANumberLiteral%29%3AASTNode-instance-method" class="signature"><strong>#[]</strong>(index : NumberLiteral) : ASTNode</a>
         
-          <div class="summary"><p>Similar to <code><a href="../../Array.html#%5B%5D%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29-instance-method">Array#[]</a></code>.</p></div>
+          <div class="summary"><p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28range%3ARange%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Int)</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#%5B%5D%28index%3ARangeLiteral%29%3AArrayLiteral%28ASTNode%29%7CNilLiteral-instance-method" class="signature"><strong>#[]</strong>(index : RangeLiteral) : ArrayLiteral(ASTNode) | NilLiteral</a>
+        
+          <div class="summary"><p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28range%3ARange%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Range)</a></code>.</p></div>
         
       </li>
     
@@ -7308,14 +7380,14 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#each%28%26%29%3ANil-instance-method" class="signature"><strong>#each</strong>(&) : Nil</a>
+        <a href="#each%28%26%29%3ANilLiteral-instance-method" class="signature"><strong>#each</strong>(&) : NilLiteral</a>
         
           <div class="summary"><p>Similar to <code>Array#each</code></p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#each_with_index%28%26%29%3ANil-instance-method" class="signature"><strong>#each_with_index</strong>(&) : Nil</a>
+        <a href="#each_with_index%28%26%29%3ANilLiteral-instance-method" class="signature"><strong>#each_with_index</strong>(&) : NilLiteral</a>
         
           <div class="summary"><p>Similar to <code><a href="../../Enumerable.html#each_with_index%28offset%3D0%2C%26%29-instance-method">Enumerable#each_with_index</a></code></p></div>
         
@@ -7617,7 +7689,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L814" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L844" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7638,7 +7710,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L806" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L836" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7659,7 +7731,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L810" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L840" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7680,7 +7752,28 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L802" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L832" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="[](start:NumberLiteral,count:NumberLiteral):ArrayLiteral(ASTNode)|NilLiteral-instance-method">
+      <div class="signature">
+        
+        def <strong>[]</strong>(start : <a href="../../Crystal/Macros/NumberLiteral.html">NumberLiteral</a>, count : <a href="../../Crystal/Macros/NumberLiteral.html">NumberLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/ASTNode.html">ASTNode</a>) | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
+
+        <a class="method-permalink" href="#%5B%5D%28start%3ANumberLiteral%2Ccount%3ANumberLiteral%29%3AArrayLiteral%28ASTNode%29%7CNilLiteral-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Int, Int)</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7695,34 +7788,34 @@
       
         <div class="doc">
           
-          <p>Similar to <code><a href="../../Array.html#%5B%5D%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29-instance-method">Array#[]</a></code>, but returns <code><a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a></code> on out of bounds.</p>
+          <p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28range%3ARange%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Int)</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L782" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L808" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="[](index:RangeLiteral):ArrayLiteral(ASTNode)-instance-method">
+    <div class="entry-detail" id="[](index:RangeLiteral):ArrayLiteral(ASTNode)|NilLiteral-instance-method">
       <div class="signature">
         
-        def <strong>[]</strong>(index : <a href="../../Crystal/Macros/RangeLiteral.html">RangeLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/ASTNode.html">ASTNode</a>)
+        def <strong>[]</strong>(index : <a href="../../Crystal/Macros/RangeLiteral.html">RangeLiteral</a>) : <a href="../../Crystal/Macros/ArrayLiteral.html">ArrayLiteral</a>(<a href="../../Crystal/Macros/ASTNode.html">ASTNode</a>) | <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
 
-        <a class="method-permalink" href="#%5B%5D%28index%3ARangeLiteral%29%3AArrayLiteral%28ASTNode%29-instance-method">#</a>
+        <a class="method-permalink" href="#%5B%5D%28index%3ARangeLiteral%29%3AArrayLiteral%28ASTNode%29%7CNilLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
           
-          <p>Similar to <code><a href="../../Array.html#%5B%5D%28start%3AInt%2Ccount%3AInt%29%3AArray%28T%29-instance-method">Array#[]</a></code>.</p>
+          <p>Similar to <code><a href="../../Array.html#%5B%5D%3F%28range%3ARange%29%3AArray%28T%29%7CNil-instance-method">Array#[]?(Range)</a></code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L786" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L812" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7743,7 +7836,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L820" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7764,7 +7857,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L688" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L714" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7785,7 +7878,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L684" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L710" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7806,17 +7899,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L702" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L728" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each(&amp;):Nil-instance-method">
+    <div class="entry-detail" id="each(&amp;):NilLiteral-instance-method">
       <div class="signature">
         
-        def <strong>each</strong>(&) : <a href="../../Nil.html">Nil</a>
+        def <strong>each</strong>(&) : <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
 
-        <a class="method-permalink" href="#each%28%26%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#each%28%26%29%3ANilLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7827,17 +7920,17 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L742" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L768" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="each_with_index(&amp;):Nil-instance-method">
+    <div class="entry-detail" id="each_with_index(&amp;):NilLiteral-instance-method">
       <div class="signature">
         
-        def <strong>each_with_index</strong>(&) : <a href="../../Nil.html">Nil</a>
+        def <strong>each_with_index</strong>(&) : <a href="../../Crystal/Macros/NilLiteral.html">NilLiteral</a>
 
-        <a class="method-permalink" href="#each_with_index%28%26%29%3ANil-instance-method">#</a>
+        <a class="method-permalink" href="#each_with_index%28%26%29%3ANilLiteral-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -7848,7 +7941,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L746" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L772" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7869,7 +7962,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L706" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L732" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7890,7 +7983,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L710" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L736" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7911,7 +8004,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L714" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L740" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7932,7 +8025,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L718" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L744" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7953,7 +8046,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L722" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L748" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7974,7 +8067,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L726" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L752" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7995,7 +8088,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L734" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L760" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8016,7 +8109,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L738" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L764" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8038,7 +8131,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L820" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L850" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8059,7 +8152,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L798" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L828" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8080,7 +8173,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L762" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L788" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8101,7 +8194,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L758" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L784" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8122,7 +8215,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L754" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L780" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8143,7 +8236,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L750" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L776" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8164,7 +8257,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L766" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L792" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8185,7 +8278,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L730" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L756" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8206,7 +8299,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L770" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L796" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8227,7 +8320,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L774" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L800" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8253,7 +8346,7 @@ if needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L698" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L724" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8275,7 +8368,7 @@ if needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L826" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L856" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8296,7 +8389,7 @@ if needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L778" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L804" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -8317,7 +8410,7 @@ if needed.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L794" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/compiler/crystal/macros.cr#L824" target="_blank">View source</a>]
         
       </div>
     </div>

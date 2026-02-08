@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>HTTP::WebSocket - Crystal 1.19.0-dev</title>
+  <title>HTTP::WebSocket - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="../Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="../Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="../Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="../Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="../Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="../Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="../Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="../Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="../Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="../Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="../Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="../Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7341,7 +7406,7 @@
       <li class="entry-summary">
         <a href="#stream%28binary%3Dtrue%2Cframe_size%3D1024%2C%26%29-instance-method" class="signature"><strong>#stream</strong>(binary = <span class="n">true</span>, frame_size = <span class="n">1024</span>, &)</a>
         
-          <div class="summary"><p>Streams data into io until the io is flushed and sent as a message.</p></div>
+          <div class="summary"><p>Stream data as one message with automatically fragmentation handling with respect to given <code>frame_size</code>.</p></div>
         
       </li>
     
@@ -8044,22 +8109,22 @@ ws.run</code></pre>
       
         <div class="doc">
           
-          <p>Streams data into io until the io is flushed and sent as a message.</p>
+          <p>Stream data as one message with automatically fragmentation handling
+with respect to given <code>frame_size</code>.
+When the io is closed, current data in the buffer is sent in a FIN frame.
+The io is closed when the block returns.</p>
 <p>The method accepts a block with an <code>io</code> argument.
-The io object can call on <code><a href="../IO.html#write%28slice%3ABytes%29%3ANil-instance-method">IO#write</a></code> and <code><a href="../IO.html#flush-instance-method">IO#flush</a></code> method.
-The <code>write</code> method accepts <code><a href="../Bytes.html">Bytes</a></code> (<code><a href="../Slice.html">Slice</a>(<a href="../UInt8.html">UInt8</a>)</code>) and sends the data in chunks of <em>frame_size</em> bytes. The <code>flush</code> method sends all the data in io and resets it.
-The remaining data in it is sent as a message when the block is finished executing.
+The io object can call on <code><a href="../IO.html#write%28slice%3ABytes%29%3ANil-instance-method">IO#write</a></code> method.
+The <code>write</code> method accepts <code><a href="../Bytes.html">Bytes</a></code> (<code><a href="../Slice.html">Slice</a>(<a href="../UInt8.html">UInt8</a>)</code>) and sends the data in chunks of <em>frame_size</em> bytes.
 For further information, see the <code>HTTP::WebSocket::Protocol::StreamIO</code> class.</p>
 <pre><code class="language-crystal"><span class="c"># Open websocket connection</span>
 ws <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</span><span class="t">WebSocket</span>.new(<span class="s">&quot;websocket.example.com&quot;</span>, <span class="s">&quot;/chat&quot;</span>)
 
 <span class="c"># Open stream</span>
-ws.stream(<span class="n">false</span>) <span class="k">do</span> <span class="o">|</span>io<span class="o">|</span>
-  io.write <span class="s">&quot;Hello, &quot;</span>.encode(<span class="s">&quot;UTF-8&quot;</span>) <span class="c"># Sends &quot;Hello, &quot; to io</span>
-  io.flush                           <span class="c"># Sends &quot;Hello, &quot; to the socket</span>
-  io.write <span class="s">&quot;world!&quot;</span>.encode(<span class="s">&quot;UTF-8&quot;</span>)  <span class="c"># Sends &quot;world!&quot; to io</span>
-<span class="k">end</span>
-<span class="c"># Sends &quot;world!&quot; to the socket</span></code></pre>
+ws.stream(<span class="n">false</span>, frame_size: <span class="n">4</span>) <span class="k">do</span> <span class="o">|</span>io<span class="o">|</span>
+  io.write <span class="s">&quot;foo&quot;</span>.encode(<span class="s">&quot;UTF-8&quot;</span>) <span class="c"># Nothing is sent, buffer not full</span>
+  io.write <span class="s">&quot;bar&quot;</span>.encode(<span class="s">&quot;UTF-8&quot;</span>) <span class="c"># Will send a first frame with &quot;foob&quot;</span>
+<span class="k">end</span>                              <span class="c"># io is closed, a FIN frame with &quot;bar&quot; is sent</span></code></pre>
         </div>
       
       <br/>

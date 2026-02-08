@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Crystal Docs 1.17.1">
-<meta name="crystal_docs.project_version" content="1.19.0-dev">
+<meta name="generator" content="Crystal Docs 1.18.2">
+<meta name="crystal_docs.project_version" content="1.20.0-dev">
 <meta name="crystal_docs.project_name" content="Crystal">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/doc.js"></script>
 
   <meta name="repository-name" content="Crystal">
-  <title>Int128 - Crystal 1.19.0-dev</title>
+  <title>Int128 - Crystal 1.20.0-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        1.19.0-dev
+        1.20.0-dev
       </span>
     </div>
   </div>
@@ -6432,6 +6432,66 @@
       
     </li>
   
+  <li class="parent " data-id="Crystal/Sync" data-name="sync">
+      <a href="Sync.html">Sync</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/ConditionVariable" data-name="sync::conditionvariable">
+      <a href="Sync/ConditionVariable.html">ConditionVariable</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Crystal/Sync/Error" data-name="sync::error">
+      <a href="Sync/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Crystal/Sync/Error/Deadlock" data-name="sync::error::deadlock">
+      <a href="Sync/Error/Deadlock.html">Deadlock</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Exclusive" data-name="sync::exclusive(t)">
+      <a href="Sync/Exclusive.html">Exclusive</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Lockable" data-name="sync::lockable">
+      <a href="Sync/Lockable.html">Lockable</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Mutex" data-name="sync::mutex">
+      <a href="Sync/Mutex.html">Mutex</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/RWLock" data-name="sync::rwlock">
+      <a href="Sync/RWLock.html">RWLock</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Shared" data-name="sync::shared(t)">
+      <a href="Sync/Shared.html">Shared</a>
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Sync/Type" data-name="sync::type">
+      <a href="Sync/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
   <li class=" " data-id="Crystal/Syscall" data-name="syscall">
       <a href="Syscall.html">Syscall</a>
       
@@ -6629,6 +6689,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="Crystal/Time/Instant" data-name="time::instant">
+      <a href="Time/Instant.html">Instant</a>
       
     </li>
   
@@ -7205,7 +7270,7 @@
     <br/>
   
     
-      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1673" target="_blank">
+      <a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1676" target="_blank">
         int.cr
       </a>
     
@@ -7264,6 +7329,8 @@
     
       <li class="entry-summary">
         <a href="#from_digits%28digits%3AEnumerable%28Int%29%2Cbase%3AInt%3D10%29%3Aself-class-method" class="signature"><strong>.from_digits</strong>(digits : Enumerable(Int), base : Int = <span class="n">10</span>) : <span class="k">self</span></a>
+        
+          <div class="summary"><p>Returns a number for given digits and base.</p></div>
         
       </li>
     
@@ -10107,10 +10174,25 @@
         <a class="method-permalink" href="#from_digits%28digits%3AEnumerable%28Int%29%2Cbase%3AInt%3D10%29%3Aself-class-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Returns a number for given digits and base.
+The digits are expected as an <code><a href="Enumerable.html">Enumerable</a></code> with the least significant digit as the first element.</p>
+<p>Base must not be less than 2.</p>
+<p>All digits must be within 0...base.</p>
+<pre><code class="language-crystal"><span class="t">Int128</span>.from_digits([<span class="n">5</span>, <span class="n">4</span>, <span class="n">3</span>, <span class="n">2</span>, <span class="n">1</span>])          <span class="c"># =&gt; 12345</span>
+<span class="t">Int128</span>.from_digits([<span class="n">4</span>, <span class="n">6</span>, <span class="n">6</span>, <span class="n">0</span>, <span class="n">5</span>], base: <span class="n">7</span>) <span class="c"># =&gt; 12345</span>
+<span class="t">Int128</span>.from_digits([<span class="n">45</span>, <span class="n">23</span>, <span class="n">1</span>], base: <span class="n">100</span>)   <span class="c"># =&gt; 12345</span>
+
+<span class="t">Int128</span>.from_digits([<span class="n">1</span>], base: <span class="n">-2</span>) <span class="c"># raises ArgumentError</span>
+<span class="t">Int128</span>.from_digits([<span class="n">-1</span>])          <span class="c"># raises ArgumentError</span>
+<span class="t">Int128</span>.from_digits([<span class="n">3</span>], base: <span class="n">2</span>)  <span class="c"># raises ArgumentError</span></code></pre>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2829" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L2816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10134,7 +10216,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1685" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1688" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10187,7 +10269,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1690" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1693" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10208,7 +10290,7 @@ See <code><a href="String.html#to_i%28base%3AInt%3D10%2Cwhitespace%3ABool%3Dtrue
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1695" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1698" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12176,7 +12258,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1703" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1706" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12192,7 +12274,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12208,7 +12290,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12224,7 +12306,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12240,7 +12322,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12256,7 +12338,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12272,7 +12354,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12288,7 +12370,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12304,7 +12386,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12320,7 +12402,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12336,7 +12418,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1699" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12352,7 +12434,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1700" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1703" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -12368,7 +12450,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1701" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1704" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14123,7 +14205,7 @@ overflows.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1775" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1778" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14147,7 +14229,7 @@ significant, and vice-versa.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1805" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1808" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14171,7 +14253,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1817" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1820" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14187,7 +14269,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1856" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1859" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14208,7 +14290,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1822" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1825" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14235,7 +14317,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1790" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1793" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14262,7 +14344,7 @@ and vice-versa. The bit order within each byte is unchanged.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1794" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1797" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14288,7 +14370,7 @@ bit's direction. Negative shifts are equivalent to <code><a href="Int128.html#ro
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1839" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1842" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14314,7 +14396,7 @@ bit's direction. Negative shifts are equivalent to <code><a href="Int128.html#ro
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1852" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1855" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14745,7 +14827,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1718" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1721" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -14771,7 +14853,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1732" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1735" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15067,7 +15149,7 @@ Raises <code><a href="OverflowError.html">OverflowError</a></code> in case of ov
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1746" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1749" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15093,7 +15175,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1760" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1763" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -15118,7 +15200,7 @@ case of overflow.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1826" target="_blank">View source</a>]
+          [<a href="https://github.com/kojix2/crystal-compiler-docs/blob/1afbb01/src/int.cr#L1829" target="_blank">View source</a>]
         
       </div>
     </div>
